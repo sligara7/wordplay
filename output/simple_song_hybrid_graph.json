@@ -1,0 +1,499 @@
+{
+  "metadata": {
+    "framework": "Musical Flow",
+    "num_nodes": 24,
+    "num_edges": 24,
+    "unique_tokens": 24,
+    "total_tokens": 25,
+    "title": "Simple Song (Hybrid)",
+    "dead_ends": 1,
+    "unreachable": 0
+  },
+  "graph": {
+    "directed": true,
+    "nodes": [
+      {
+        "id": "note_all-G4",
+        "name": "all-G4",
+        "type": "note",
+        "raw": {
+          "token": "all-G4",
+          "frequency": 1,
+          "outgoing_transitions": 1
+        }
+      },
+      {
+        "id": "note_are-G4",
+        "name": "are-G4",
+        "type": "note",
+        "raw": {
+          "token": "are-G4",
+          "frequency": 1,
+          "outgoing_transitions": 1
+        }
+      },
+      {
+        "id": "note_day-D4",
+        "name": "day-D4",
+        "type": "note",
+        "raw": {
+          "token": "day-D4",
+          "frequency": 1,
+          "outgoing_transitions": 1
+        }
+      },
+      {
+        "id": "note_day-F4",
+        "name": "day-F4",
+        "type": "note",
+        "raw": {
+          "token": "day-F4",
+          "frequency": 1,
+          "outgoing_transitions": 1
+        }
+      },
+      {
+        "id": "note_every-E4",
+        "name": "every-E4",
+        "type": "note",
+        "raw": {
+          "token": "every-E4",
+          "frequency": 1,
+          "outgoing_transitions": 1
+        }
+      },
+      {
+        "id": "note_feeling-F4",
+        "name": "feeling-F4",
+        "type": "note",
+        "raw": {
+          "token": "feeling-F4",
+          "frequency": 1,
+          "outgoing_transitions": 1
+        }
+      },
+      {
+        "id": "note_feeling-G4",
+        "name": "feeling-G4",
+        "type": "note",
+        "raw": {
+          "token": "feeling-G4",
+          "frequency": 1,
+          "outgoing_transitions": 1
+        }
+      },
+      {
+        "id": "note_good-F4",
+        "name": "good-F4",
+        "type": "note",
+        "raw": {
+          "token": "good-F4",
+          "frequency": 1,
+          "outgoing_transitions": 1
+        }
+      },
+      {
+        "id": "note_great-E4",
+        "name": "great-E4",
+        "type": "note",
+        "raw": {
+          "token": "great-E4",
+          "frequency": 1,
+          "outgoing_transitions": 1
+        }
+      },
+      {
+        "id": "note_hello-C4",
+        "name": "hello-C4",
+        "type": "note",
+        "raw": {
+          "token": "hello-C4",
+          "frequency": 2,
+          "outgoing_transitions": 2
+        }
+      },
+      {
+        "id": "note_how-G4",
+        "name": "how-G4",
+        "type": "note",
+        "raw": {
+          "token": "how-G4",
+          "frequency": 1,
+          "outgoing_transitions": 1
+        }
+      },
+      {
+        "id": "note_in-D4",
+        "name": "in-D4",
+        "type": "note",
+        "raw": {
+          "token": "in-D4",
+          "frequency": 1,
+          "outgoing_transitions": 1
+        }
+      },
+      {
+        "id": "note_long-F4",
+        "name": "long-F4",
+        "type": "note",
+        "raw": {
+          "token": "long-F4",
+          "frequency": 1,
+          "outgoing_transitions": 1
+        }
+      },
+      {
+        "id": "note_making-E4",
+        "name": "making-E4",
+        "type": "note",
+        "raw": {
+          "token": "making-E4",
+          "frequency": 1,
+          "outgoing_transitions": 1
+        }
+      },
+      {
+        "id": "note_music-D4",
+        "name": "music-D4",
+        "type": "note",
+        "raw": {
+          "token": "music-D4",
+          "frequency": 1,
+          "outgoing_transitions": 1
+        }
+      },
+      {
+        "id": "note_my-C4",
+        "name": "my-C4",
+        "type": "note",
+        "raw": {
+          "token": "my-C4",
+          "frequency": 1,
+          "outgoing_transitions": 1
+        }
+      },
+      {
+        "id": "note_singing-A4",
+        "name": "singing-A4",
+        "type": "note",
+        "raw": {
+          "token": "singing-A4",
+          "frequency": 1,
+          "outgoing_transitions": 1
+        }
+      },
+      {
+        "id": "note_single-D4",
+        "name": "single-D4",
+        "type": "note",
+        "raw": {
+          "token": "single-D4",
+          "frequency": 1,
+          "outgoing_transitions": 1
+        }
+      },
+      {
+        "id": "note_songs-A4",
+        "name": "songs-A4",
+        "type": "note",
+        "raw": {
+          "token": "songs-A4",
+          "frequency": 1,
+          "outgoing_transitions": 1
+        }
+      },
+      {
+        "id": "note_today-A4",
+        "name": "today-A4",
+        "type": "note",
+        "raw": {
+          "token": "today-A4",
+          "frequency": 1,
+          "outgoing_transitions": 1
+        }
+      },
+      {
+        "id": "note_way-C4",
+        "name": "way-C4",
+        "type": "note",
+        "raw": {
+          "token": "way-C4",
+          "frequency": 1,
+          "outgoing_transitions": 0
+        }
+      },
+      {
+        "id": "note_world-C4",
+        "name": "world-C4",
+        "type": "note",
+        "raw": {
+          "token": "world-C4",
+          "frequency": 1,
+          "outgoing_transitions": 1
+        }
+      },
+      {
+        "id": "note_world-G4",
+        "name": "world-G4",
+        "type": "note",
+        "raw": {
+          "token": "world-G4",
+          "frequency": 1,
+          "outgoing_transitions": 1
+        }
+      },
+      {
+        "id": "note_you-A4",
+        "name": "you-A4",
+        "type": "note",
+        "raw": {
+          "token": "you-A4",
+          "frequency": 1,
+          "outgoing_transitions": 1
+        }
+      }
+    ],
+    "links": [
+      {
+        "source": "note_hello-C4",
+        "target": "note_world-C4",
+        "type": "note_transition",
+        "weight": 0.5,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 0.5
+        }
+      },
+      {
+        "source": "note_hello-C4",
+        "target": "note_world-G4",
+        "type": "note_transition",
+        "weight": 0.5,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 0.5
+        }
+      },
+      {
+        "source": "note_world-C4",
+        "target": "note_how-G4",
+        "type": "note_transition",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0
+        }
+      },
+      {
+        "source": "note_how-G4",
+        "target": "note_are-G4",
+        "type": "note_transition",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0
+        }
+      },
+      {
+        "source": "note_are-G4",
+        "target": "note_you-A4",
+        "type": "note_transition",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0
+        }
+      },
+      {
+        "source": "note_you-A4",
+        "target": "note_today-A4",
+        "type": "note_transition",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0
+        }
+      },
+      {
+        "source": "note_today-A4",
+        "target": "note_feeling-G4",
+        "type": "note_transition",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0
+        }
+      },
+      {
+        "source": "note_feeling-G4",
+        "target": "note_good-F4",
+        "type": "note_transition",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0
+        }
+      },
+      {
+        "source": "note_good-F4",
+        "target": "note_feeling-F4",
+        "type": "note_transition",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0
+        }
+      },
+      {
+        "source": "note_feeling-F4",
+        "target": "note_great-E4",
+        "type": "note_transition",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0
+        }
+      },
+      {
+        "source": "note_great-E4",
+        "target": "note_every-E4",
+        "type": "note_transition",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0
+        }
+      },
+      {
+        "source": "note_every-E4",
+        "target": "note_single-D4",
+        "type": "note_transition",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0
+        }
+      },
+      {
+        "source": "note_single-D4",
+        "target": "note_day-D4",
+        "type": "note_transition",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0
+        }
+      },
+      {
+        "source": "note_day-D4",
+        "target": "note_hello-C4",
+        "type": "note_transition",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0
+        }
+      },
+      {
+        "source": "note_world-G4",
+        "target": "note_singing-A4",
+        "type": "note_transition",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0
+        }
+      },
+      {
+        "source": "note_singing-A4",
+        "target": "note_songs-A4",
+        "type": "note_transition",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0
+        }
+      },
+      {
+        "source": "note_songs-A4",
+        "target": "note_all-G4",
+        "type": "note_transition",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0
+        }
+      },
+      {
+        "source": "note_all-G4",
+        "target": "note_day-F4",
+        "type": "note_transition",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0
+        }
+      },
+      {
+        "source": "note_day-F4",
+        "target": "note_long-F4",
+        "type": "note_transition",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0
+        }
+      },
+      {
+        "source": "note_long-F4",
+        "target": "note_making-E4",
+        "type": "note_transition",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0
+        }
+      },
+      {
+        "source": "note_making-E4",
+        "target": "note_music-D4",
+        "type": "note_transition",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0
+        }
+      },
+      {
+        "source": "note_music-D4",
+        "target": "note_in-D4",
+        "type": "note_transition",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0
+        }
+      },
+      {
+        "source": "note_in-D4",
+        "target": "note_my-C4",
+        "type": "note_transition",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0
+        }
+      },
+      {
+        "source": "note_my-C4",
+        "target": "note_way-C4",
+        "type": "note_transition",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0
+        }
+      }
+    ]
+  }
+}
