@@ -17,14 +17,17 @@ By representing text as graphs, we can apply powerful systems analysis tools to 
 
 ## NEW: Music Analysis Support
 
-**Wordplay now extends to music!** MIDI files can be analyzed using the same graph-based techniques:
-- **Notes as tokens**: Treat musical notes (C4, D#5, etc.) as words
-- **Melodies as sentences**: Analyze note sequences and patterns
-- **Musical communities**: Discover note clusters and phrases
-- **Comparative analysis**: Compare different songs and styles
-- **Hybrid graphs**: Combine lyrics and melodies into unified multimodal graphs
+**Wordplay now extends to music!** Analyze everything from simple melodies to complex multi-track compositions:
+- **Monophonic**: Single melody lines (notes as tokens)
+- **Polyphonic**: Multi-track music with chords, bass, drums
+- **Hybrid graphs**: Combine lyrics and melodies
+- **Harmonic analysis**: Chord progressions using music theory
+- **Multi-layer graphs**: Each instrument as a separate graph layer
 
-See [MIDI_SUPPORT.md](MIDI_SUPPORT.md) for music analysis and [HYBRID_GRAPHS.md](HYBRID_GRAPHS.md) for combining lyrics with melodies.
+**Documentation:**
+- [MIDI_SUPPORT.md](MIDI_SUPPORT.md) - Basic music analysis
+- [HYBRID_GRAPHS.md](HYBRID_GRAPHS.md) - Lyrics + melody integration
+- [POLYPHONIC_MUSIC.md](POLYPHONIC_MUSIC.md) - Multi-track polyphonic analysis
 
 **Quick example:**
 ```bash
