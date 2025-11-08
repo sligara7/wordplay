@@ -1,0 +1,1016 @@
+{
+  "metadata": {
+    "generated": "2025-11-08T02:23:00.849192",
+    "framework": "Language Flow",
+    "framework_id": "language_flow",
+    "component_term": "word",
+    "connection_term": "transition",
+    "num_nodes": 31,
+    "num_edges": 32,
+    "tool_version": "1.0.0",
+    "book_title": "Nature Song - Lyrics",
+    "total_tokens": 33,
+    "unique_words": 31,
+    "total_transitions": 32
+  },
+  "graph": {
+    "directed": true,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+      {
+        "id": "word_above",
+        "name": "above",
+        "type": "word",
+        "raw": {
+          "word": "above",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-ABOVE-01",
+            "function_name": "Token: above",
+            "description": "Represents the word 'above' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_all",
+        "name": "all",
+        "type": "word",
+        "raw": {
+          "word": "all",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-ALL-01",
+            "function_name": "Token: all",
+            "description": "Represents the word 'all' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_and",
+        "name": "and",
+        "type": "word",
+        "raw": {
+          "word": "and",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-AND-01",
+            "function_name": "Token: and",
+            "description": "Represents the word 'and' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_believe",
+        "name": "believe",
+        "type": "word",
+        "raw": {
+          "word": "believe",
+          "frequency": 1,
+          "outgoing_transitions": 0,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-BELIEVE-01",
+            "function_name": "Token: believe",
+            "description": "Represents the word 'believe' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_birds",
+        "name": "birds",
+        "type": "word",
+        "raw": {
+          "word": "birds",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-BIRDS-01",
+            "function_name": "Token: birds",
+            "description": "Represents the word 'birds' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_blows",
+        "name": "blows",
+        "type": "word",
+        "raw": {
+          "word": "blows",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-BLOWS-01",
+            "function_name": "Token: blows",
+            "description": "Represents the word 'blows' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_clouds",
+        "name": "clouds",
+        "type": "word",
+        "raw": {
+          "word": "clouds",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-CLOUDS-01",
+            "function_name": "Token: clouds",
+            "description": "Represents the word 'clouds' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_deep",
+        "name": "deep",
+        "type": "word",
+        "raw": {
+          "word": "deep",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-DEEP-01",
+            "function_name": "Token: deep",
+            "description": "Represents the word 'deep' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_dig",
+        "name": "dig",
+        "type": "word",
+        "raw": {
+          "word": "dig",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-DIG-01",
+            "function_name": "Token: dig",
+            "description": "Represents the word 'dig' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_fly",
+        "name": "fly",
+        "type": "word",
+        "raw": {
+          "word": "fly",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-FLY-01",
+            "function_name": "Token: fly",
+            "description": "Represents the word 'fly' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_ground",
+        "name": "ground",
+        "type": "word",
+        "raw": {
+          "word": "ground",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-GROUND-01",
+            "function_name": "Token: ground",
+            "description": "Represents the word 'ground' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_grow",
+        "name": "grow",
+        "type": "word",
+        "raw": {
+          "word": "grow",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-GROW-01",
+            "function_name": "Token: grow",
+            "description": "Represents the word 'grow' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_high",
+        "name": "high",
+        "type": "word",
+        "raw": {
+          "word": "high",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-HIGH-01",
+            "function_name": "Token: high",
+            "description": "Represents the word 'high' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_in",
+        "name": "in",
+        "type": "word",
+        "raw": {
+          "word": "in",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-IN-01",
+            "function_name": "Token: in",
+            "description": "Represents the word 'in' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_leaves",
+        "name": "leaves",
+        "type": "word",
+        "raw": {
+          "word": "leaves",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-LEAVES-01",
+            "function_name": "Token: leaves",
+            "description": "Represents the word 'leaves' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_love",
+        "name": "love",
+        "type": "word",
+        "raw": {
+          "word": "love",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-LOVE-01",
+            "function_name": "Token: love",
+            "description": "Represents the word 'love' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_melodies",
+        "name": "melodies",
+        "type": "word",
+        "raw": {
+          "word": "melodies",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-MELODIES-01",
+            "function_name": "Token: melodies",
+            "description": "Represents the word 'melodies' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_nature",
+        "name": "nature",
+        "type": "word",
+        "raw": {
+          "word": "nature",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-NATURE-01",
+            "function_name": "Token: nature",
+            "description": "Represents the word 'nature' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_of",
+        "name": "of",
+        "type": "word",
+        "raw": {
+          "word": "of",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-OF-01",
+            "function_name": "Token: of",
+            "description": "Represents the word 'of' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_roots",
+        "name": "roots",
+        "type": "word",
+        "raw": {
+          "word": "roots",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-ROOTS-01",
+            "function_name": "Token: roots",
+            "description": "Represents the word 'roots' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_singing",
+        "name": "singing",
+        "type": "word",
+        "raw": {
+          "word": "singing",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-SINGING-01",
+            "function_name": "Token: singing",
+            "description": "Represents the word 'singing' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_soft",
+        "name": "soft",
+        "type": "word",
+        "raw": {
+          "word": "soft",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-SOFT-01",
+            "function_name": "Token: soft",
+            "description": "Represents the word 'soft' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_speaks",
+        "name": "speaks",
+        "type": "word",
+        "raw": {
+          "word": "speaks",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-SPEAKS-01",
+            "function_name": "Token: speaks",
+            "description": "Represents the word 'speaks' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_strong",
+        "name": "strong",
+        "type": "word",
+        "raw": {
+          "word": "strong",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-STRONG-01",
+            "function_name": "Token: strong",
+            "description": "Represents the word 'strong' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_tall",
+        "name": "tall",
+        "type": "word",
+        "raw": {
+          "word": "tall",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-TALL-01",
+            "function_name": "Token: tall",
+            "description": "Represents the word 'tall' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_the",
+        "name": "the",
+        "type": "word",
+        "raw": {
+          "word": "the",
+          "frequency": 3,
+          "outgoing_transitions": 3,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-THE-01",
+            "function_name": "Token: the",
+            "description": "Represents the word 'the' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_through",
+        "name": "through",
+        "type": "word",
+        "raw": {
+          "word": "through",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-THROUGH-01",
+            "function_name": "Token: through",
+            "description": "Represents the word 'through' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_to",
+        "name": "to",
+        "type": "word",
+        "raw": {
+          "word": "to",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-TO-01",
+            "function_name": "Token: to",
+            "description": "Represents the word 'to' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_trees",
+        "name": "trees",
+        "type": "word",
+        "raw": {
+          "word": "trees",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-TREES-01",
+            "function_name": "Token: trees",
+            "description": "Represents the word 'trees' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_who",
+        "name": "who",
+        "type": "word",
+        "raw": {
+          "word": "who",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-WHO-01",
+            "function_name": "Token: who",
+            "description": "Represents the word 'who' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_wind",
+        "name": "wind",
+        "type": "word",
+        "raw": {
+          "word": "wind",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-WIND-01",
+            "function_name": "Token: wind",
+            "description": "Represents the word 'wind' in the text flow"
+          }
+        ]
+      }
+    ],
+    "links": [
+      {
+        "source": "word_trees",
+        "target": "word_grow",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "trees",
+          "target_word": "grow"
+        }
+      },
+      {
+        "source": "word_grow",
+        "target": "word_tall",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "grow",
+          "target_word": "tall"
+        }
+      },
+      {
+        "source": "word_tall",
+        "target": "word_and",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "tall",
+          "target_word": "and"
+        }
+      },
+      {
+        "source": "word_and",
+        "target": "word_strong",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "and",
+          "target_word": "strong"
+        }
+      },
+      {
+        "source": "word_strong",
+        "target": "word_roots",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "strong",
+          "target_word": "roots"
+        }
+      },
+      {
+        "source": "word_roots",
+        "target": "word_dig",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "roots",
+          "target_word": "dig"
+        }
+      },
+      {
+        "source": "word_dig",
+        "target": "word_deep",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "dig",
+          "target_word": "deep"
+        }
+      },
+      {
+        "source": "word_deep",
+        "target": "word_in",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "deep",
+          "target_word": "in"
+        }
+      },
+      {
+        "source": "word_in",
+        "target": "word_the",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "in",
+          "target_word": "the"
+        }
+      },
+      {
+        "source": "word_the",
+        "target": "word_ground",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 0.3333333333333333,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 0.3333333333333333,
+          "source_word": "the",
+          "target_word": "ground"
+        }
+      },
+      {
+        "source": "word_the",
+        "target": "word_clouds",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 0.3333333333333333,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 0.3333333333333333,
+          "source_word": "the",
+          "target_word": "clouds"
+        }
+      },
+      {
+        "source": "word_the",
+        "target": "word_leaves",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 0.3333333333333333,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 0.3333333333333333,
+          "source_word": "the",
+          "target_word": "leaves"
+        }
+      },
+      {
+        "source": "word_ground",
+        "target": "word_birds",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "ground",
+          "target_word": "birds"
+        }
+      },
+      {
+        "source": "word_birds",
+        "target": "word_fly",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "birds",
+          "target_word": "fly"
+        }
+      },
+      {
+        "source": "word_fly",
+        "target": "word_high",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "fly",
+          "target_word": "high"
+        }
+      },
+      {
+        "source": "word_high",
+        "target": "word_above",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "high",
+          "target_word": "above"
+        }
+      },
+      {
+        "source": "word_above",
+        "target": "word_the",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "above",
+          "target_word": "the"
+        }
+      },
+      {
+        "source": "word_clouds",
+        "target": "word_singing",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "clouds",
+          "target_word": "singing"
+        }
+      },
+      {
+        "source": "word_singing",
+        "target": "word_melodies",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "singing",
+          "target_word": "melodies"
+        }
+      },
+      {
+        "source": "word_melodies",
+        "target": "word_of",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "melodies",
+          "target_word": "of"
+        }
+      },
+      {
+        "source": "word_of",
+        "target": "word_love",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "of",
+          "target_word": "love"
+        }
+      },
+      {
+        "source": "word_love",
+        "target": "word_wind",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "love",
+          "target_word": "wind"
+        }
+      },
+      {
+        "source": "word_wind",
+        "target": "word_blows",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "wind",
+          "target_word": "blows"
+        }
+      },
+      {
+        "source": "word_blows",
+        "target": "word_soft",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "blows",
+          "target_word": "soft"
+        }
+      },
+      {
+        "source": "word_soft",
+        "target": "word_through",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "soft",
+          "target_word": "through"
+        }
+      },
+      {
+        "source": "word_through",
+        "target": "word_the",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "through",
+          "target_word": "the"
+        }
+      },
+      {
+        "source": "word_leaves",
+        "target": "word_nature",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "leaves",
+          "target_word": "nature"
+        }
+      },
+      {
+        "source": "word_nature",
+        "target": "word_speaks",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "nature",
+          "target_word": "speaks"
+        }
+      },
+      {
+        "source": "word_speaks",
+        "target": "word_to",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "speaks",
+          "target_word": "to"
+        }
+      },
+      {
+        "source": "word_to",
+        "target": "word_all",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "to",
+          "target_word": "all"
+        }
+      },
+      {
+        "source": "word_all",
+        "target": "word_who",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "all",
+          "target_word": "who"
+        }
+      },
+      {
+        "source": "word_who",
+        "target": "word_believe",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "who",
+          "target_word": "believe"
+        }
+      }
+    ]
+  },
+  "architectural_issues": {
+    "circular_dependencies": [],
+    "orphaned_nodes": [],
+    "dead_ends": [
+      "believe"
+    ],
+    "unreachable_words": [
+      "trees"
+    ]
+  },
+  "architectural_issues_summary": {
+    "total_issues": 2,
+    "by_type": {
+      "dead_ends": 1,
+      "unreachable_words": 1
+    }
+  }
+}

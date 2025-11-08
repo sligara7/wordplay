@@ -1,0 +1,1214 @@
+{
+  "metadata": {
+    "generated": "2025-11-08T02:23:35.141102",
+    "framework": "Language Flow (Merged)",
+    "framework_id": "language_flow",
+    "component_term": "word",
+    "connection_term": "transition",
+    "num_nodes": 56,
+    "num_edges": 0,
+    "tool_version": "1.0.0",
+    "merge_strategy": "union",
+    "source_books": [
+      "Book 0",
+      "Book 1"
+    ],
+    "num_source_books": 2
+  },
+  "graph": {
+    "directed": true,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+      {
+        "id": "word_above-A4",
+        "name": "above-A4",
+        "type": "word",
+        "raw": {
+          "word": "above-A4",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Book 1"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-ABOVE-A4-01",
+            "function_name": "Token: above-A4",
+            "description": "Word 'above-A4' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_all-F4",
+        "name": "all-F4",
+        "type": "word",
+        "raw": {
+          "word": "all-F4",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Book 1"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-ALL-F4-01",
+            "function_name": "Token: all-F4",
+            "description": "Word 'all-F4' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_all-G4",
+        "name": "all-G4",
+        "type": "word",
+        "raw": {
+          "word": "all-G4",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Book 0"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-ALL-G4-01",
+            "function_name": "Token: all-G4",
+            "description": "Word 'all-G4' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_and-F4",
+        "name": "and-F4",
+        "type": "word",
+        "raw": {
+          "word": "and-F4",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Book 1"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-AND-F4-01",
+            "function_name": "Token: and-F4",
+            "description": "Word 'and-F4' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_are-G4",
+        "name": "are-G4",
+        "type": "word",
+        "raw": {
+          "word": "are-G4",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Book 0"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-ARE-G4-01",
+            "function_name": "Token: are-G4",
+            "description": "Word 'are-G4' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_believe-F4",
+        "name": "believe-F4",
+        "type": "word",
+        "raw": {
+          "word": "believe-F4",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Book 1"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-BELIEVE-F4-01",
+            "function_name": "Token: believe-F4",
+            "description": "Word 'believe-F4' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_birds-E4",
+        "name": "birds-E4",
+        "type": "word",
+        "raw": {
+          "word": "birds-E4",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Book 1"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-BIRDS-E4-01",
+            "function_name": "Token: birds-E4",
+            "description": "Word 'birds-E4' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_blows-F4",
+        "name": "blows-F4",
+        "type": "word",
+        "raw": {
+          "word": "blows-F4",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Book 1"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-BLOWS-F4-01",
+            "function_name": "Token: blows-F4",
+            "description": "Word 'blows-F4' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_clouds-F4",
+        "name": "clouds-F4",
+        "type": "word",
+        "raw": {
+          "word": "clouds-F4",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Book 1"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-CLOUDS-F4-01",
+            "function_name": "Token: clouds-F4",
+            "description": "Word 'clouds-F4' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_day-D4",
+        "name": "day-D4",
+        "type": "word",
+        "raw": {
+          "word": "day-D4",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Book 0"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-DAY-D4-01",
+            "function_name": "Token: day-D4",
+            "description": "Word 'day-D4' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_day-F4",
+        "name": "day-F4",
+        "type": "word",
+        "raw": {
+          "word": "day-F4",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Book 0"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-DAY-F4-01",
+            "function_name": "Token: day-F4",
+            "description": "Word 'day-F4' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_deep-E4",
+        "name": "deep-E4",
+        "type": "word",
+        "raw": {
+          "word": "deep-E4",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Book 1"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-DEEP-E4-01",
+            "function_name": "Token: deep-E4",
+            "description": "Word 'deep-E4' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_dig-F4",
+        "name": "dig-F4",
+        "type": "word",
+        "raw": {
+          "word": "dig-F4",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Book 1"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-DIG-F4-01",
+            "function_name": "Token: dig-F4",
+            "description": "Word 'dig-F4' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_every-E4",
+        "name": "every-E4",
+        "type": "word",
+        "raw": {
+          "word": "every-E4",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Book 0"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-EVERY-E4-01",
+            "function_name": "Token: every-E4",
+            "description": "Word 'every-E4' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_feeling-F4",
+        "name": "feeling-F4",
+        "type": "word",
+        "raw": {
+          "word": "feeling-F4",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Book 0"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-FEELING-F4-01",
+            "function_name": "Token: feeling-F4",
+            "description": "Word 'feeling-F4' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_feeling-G4",
+        "name": "feeling-G4",
+        "type": "word",
+        "raw": {
+          "word": "feeling-G4",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Book 0"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-FEELING-G4-01",
+            "function_name": "Token: feeling-G4",
+            "description": "Word 'feeling-G4' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_fly-F4",
+        "name": "fly-F4",
+        "type": "word",
+        "raw": {
+          "word": "fly-F4",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Book 1"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-FLY-F4-01",
+            "function_name": "Token: fly-F4",
+            "description": "Word 'fly-F4' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_good-F4",
+        "name": "good-F4",
+        "type": "word",
+        "raw": {
+          "word": "good-F4",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Book 0"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-GOOD-F4-01",
+            "function_name": "Token: good-F4",
+            "description": "Word 'good-F4' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_great-E4",
+        "name": "great-E4",
+        "type": "word",
+        "raw": {
+          "word": "great-E4",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Book 0"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-GREAT-E4-01",
+            "function_name": "Token: great-E4",
+            "description": "Word 'great-E4' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_ground-D4",
+        "name": "ground-D4",
+        "type": "word",
+        "raw": {
+          "word": "ground-D4",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Book 1"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-GROUND-D4-01",
+            "function_name": "Token: ground-D4",
+            "description": "Word 'ground-D4' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_grow-D4",
+        "name": "grow-D4",
+        "type": "word",
+        "raw": {
+          "word": "grow-D4",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Book 1"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-GROW-D4-01",
+            "function_name": "Token: grow-D4",
+            "description": "Word 'grow-D4' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_hello-C4",
+        "name": "hello-C4",
+        "type": "word",
+        "raw": {
+          "word": "hello-C4",
+          "total_frequency": 2,
+          "appears_in_books": [
+            "Book 0"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-HELLO-C4-01",
+            "function_name": "Token: hello-C4",
+            "description": "Word 'hello-C4' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_high-G4",
+        "name": "high-G4",
+        "type": "word",
+        "raw": {
+          "word": "high-G4",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Book 1"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-HIGH-G4-01",
+            "function_name": "Token: high-G4",
+            "description": "Word 'high-G4' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_how-G4",
+        "name": "how-G4",
+        "type": "word",
+        "raw": {
+          "word": "how-G4",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Book 0"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-HOW-G4-01",
+            "function_name": "Token: how-G4",
+            "description": "Word 'how-G4' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_in-D4",
+        "name": "in-D4",
+        "type": "word",
+        "raw": {
+          "word": "in-D4",
+          "total_frequency": 2,
+          "appears_in_books": [
+            "Book 0",
+            "Book 1"
+          ],
+          "num_books": 2,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-IN-D4-01",
+            "function_name": "Token: in-D4",
+            "description": "Word 'in-D4' appears in 2 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_leaves-D4",
+        "name": "leaves-D4",
+        "type": "word",
+        "raw": {
+          "word": "leaves-D4",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Book 1"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-LEAVES-D4-01",
+            "function_name": "Token: leaves-D4",
+            "description": "Word 'leaves-D4' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_long-F4",
+        "name": "long-F4",
+        "type": "word",
+        "raw": {
+          "word": "long-F4",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Book 0"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-LONG-F4-01",
+            "function_name": "Token: long-F4",
+            "description": "Word 'long-F4' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_love-D4",
+        "name": "love-D4",
+        "type": "word",
+        "raw": {
+          "word": "love-D4",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Book 1"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-LOVE-D4-01",
+            "function_name": "Token: love-D4",
+            "description": "Word 'love-D4' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_making-E4",
+        "name": "making-E4",
+        "type": "word",
+        "raw": {
+          "word": "making-E4",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Book 0"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-MAKING-E4-01",
+            "function_name": "Token: making-E4",
+            "description": "Word 'making-E4' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_melodies-D4",
+        "name": "melodies-D4",
+        "type": "word",
+        "raw": {
+          "word": "melodies-D4",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Book 1"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-MELODIES-D4-01",
+            "function_name": "Token: melodies-D4",
+            "description": "Word 'melodies-D4' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_music-D4",
+        "name": "music-D4",
+        "type": "word",
+        "raw": {
+          "word": "music-D4",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Book 0"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-MUSIC-D4-01",
+            "function_name": "Token: music-D4",
+            "description": "Word 'music-D4' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_my-C4",
+        "name": "my-C4",
+        "type": "word",
+        "raw": {
+          "word": "my-C4",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Book 0"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-MY-C4-01",
+            "function_name": "Token: my-C4",
+            "description": "Word 'my-C4' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_nature-C4",
+        "name": "nature-C4",
+        "type": "word",
+        "raw": {
+          "word": "nature-C4",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Book 1"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-NATURE-C4-01",
+            "function_name": "Token: nature-C4",
+            "description": "Word 'nature-C4' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_of-C4",
+        "name": "of-C4",
+        "type": "word",
+        "raw": {
+          "word": "of-C4",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Book 1"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-OF-C4-01",
+            "function_name": "Token: of-C4",
+            "description": "Word 'of-C4' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_roots-G4",
+        "name": "roots-G4",
+        "type": "word",
+        "raw": {
+          "word": "roots-G4",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Book 1"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-ROOTS-G4-01",
+            "function_name": "Token: roots-G4",
+            "description": "Word 'roots-G4' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_singing-A4",
+        "name": "singing-A4",
+        "type": "word",
+        "raw": {
+          "word": "singing-A4",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Book 0"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-SINGING-A4-01",
+            "function_name": "Token: singing-A4",
+            "description": "Word 'singing-A4' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_singing-E4",
+        "name": "singing-E4",
+        "type": "word",
+        "raw": {
+          "word": "singing-E4",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Book 1"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-SINGING-E4-01",
+            "function_name": "Token: singing-E4",
+            "description": "Word 'singing-E4' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_single-D4",
+        "name": "single-D4",
+        "type": "word",
+        "raw": {
+          "word": "single-D4",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Book 0"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-SINGLE-D4-01",
+            "function_name": "Token: single-D4",
+            "description": "Word 'single-D4' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_soft-G4",
+        "name": "soft-G4",
+        "type": "word",
+        "raw": {
+          "word": "soft-G4",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Book 1"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-SOFT-G4-01",
+            "function_name": "Token: soft-G4",
+            "description": "Word 'soft-G4' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_songs-A4",
+        "name": "songs-A4",
+        "type": "word",
+        "raw": {
+          "word": "songs-A4",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Book 0"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-SONGS-A4-01",
+            "function_name": "Token: songs-A4",
+            "description": "Word 'songs-A4' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_speaks-D4",
+        "name": "speaks-D4",
+        "type": "word",
+        "raw": {
+          "word": "speaks-D4",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Book 1"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-SPEAKS-D4-01",
+            "function_name": "Token: speaks-D4",
+            "description": "Word 'speaks-D4' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_strong-G4",
+        "name": "strong-G4",
+        "type": "word",
+        "raw": {
+          "word": "strong-G4",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Book 1"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-STRONG-G4-01",
+            "function_name": "Token: strong-G4",
+            "description": "Word 'strong-G4' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_tall-E4",
+        "name": "tall-E4",
+        "type": "word",
+        "raw": {
+          "word": "tall-E4",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Book 1"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-TALL-E4-01",
+            "function_name": "Token: tall-E4",
+            "description": "Word 'tall-E4' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_the-C4",
+        "name": "the-C4",
+        "type": "word",
+        "raw": {
+          "word": "the-C4",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Book 1"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-THE-C4-01",
+            "function_name": "Token: the-C4",
+            "description": "Word 'the-C4' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_the-E4",
+        "name": "the-E4",
+        "type": "word",
+        "raw": {
+          "word": "the-E4",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Book 1"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-THE-E4-01",
+            "function_name": "Token: the-E4",
+            "description": "Word 'the-E4' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_the-G4",
+        "name": "the-G4",
+        "type": "word",
+        "raw": {
+          "word": "the-G4",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Book 1"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-THE-G4-01",
+            "function_name": "Token: the-G4",
+            "description": "Word 'the-G4' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_through-F4",
+        "name": "through-F4",
+        "type": "word",
+        "raw": {
+          "word": "through-F4",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Book 1"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-THROUGH-F4-01",
+            "function_name": "Token: through-F4",
+            "description": "Word 'through-F4' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_to-E4",
+        "name": "to-E4",
+        "type": "word",
+        "raw": {
+          "word": "to-E4",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Book 1"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-TO-E4-01",
+            "function_name": "Token: to-E4",
+            "description": "Word 'to-E4' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_today-A4",
+        "name": "today-A4",
+        "type": "word",
+        "raw": {
+          "word": "today-A4",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Book 0"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-TODAY-A4-01",
+            "function_name": "Token: today-A4",
+            "description": "Word 'today-A4' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_trees-C4",
+        "name": "trees-C4",
+        "type": "word",
+        "raw": {
+          "word": "trees-C4",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Book 1"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-TREES-C4-01",
+            "function_name": "Token: trees-C4",
+            "description": "Word 'trees-C4' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_way-C4",
+        "name": "way-C4",
+        "type": "word",
+        "raw": {
+          "word": "way-C4",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Book 0"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-WAY-C4-01",
+            "function_name": "Token: way-C4",
+            "description": "Word 'way-C4' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_who-G4",
+        "name": "who-G4",
+        "type": "word",
+        "raw": {
+          "word": "who-G4",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Book 1"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-WHO-G4-01",
+            "function_name": "Token: who-G4",
+            "description": "Word 'who-G4' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_wind-E4",
+        "name": "wind-E4",
+        "type": "word",
+        "raw": {
+          "word": "wind-E4",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Book 1"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-WIND-E4-01",
+            "function_name": "Token: wind-E4",
+            "description": "Word 'wind-E4' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_world-C4",
+        "name": "world-C4",
+        "type": "word",
+        "raw": {
+          "word": "world-C4",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Book 0"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-WORLD-C4-01",
+            "function_name": "Token: world-C4",
+            "description": "Word 'world-C4' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_world-G4",
+        "name": "world-G4",
+        "type": "word",
+        "raw": {
+          "word": "world-G4",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Book 0"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-WORLD-G4-01",
+            "function_name": "Token: world-G4",
+            "description": "Word 'world-G4' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_you-A4",
+        "name": "you-A4",
+        "type": "word",
+        "raw": {
+          "word": "you-A4",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Book 0"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-YOU-A4-01",
+            "function_name": "Token: you-A4",
+            "description": "Word 'you-A4' appears in 1 book(s)"
+          }
+        ]
+      }
+    ],
+    "links": []
+  },
+  "architectural_issues": {
+    "circular_dependencies": [],
+    "orphaned_nodes": [],
+    "dead_ends": [],
+    "unreachable_words": []
+  },
+  "merge_analysis": {
+    "common_words_count": 1,
+    "unique_words_count": 55,
+    "shared_transitions_count": 0
+  }
+}

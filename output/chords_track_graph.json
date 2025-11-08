@@ -1,0 +1,69 @@
+{
+  "metadata": {
+    "framework": "Musical Flow",
+    "num_nodes": 3,
+    "num_edges": 2,
+    "unique_tokens": 3,
+    "total_tokens": 3,
+    "title": "Chord Progression",
+    "dead_ends": 1,
+    "unreachable": 0
+  },
+  "graph": {
+    "directed": true,
+    "nodes": [
+      {
+        "id": "note_Bchord",
+        "name": "Bchord",
+        "type": "note",
+        "raw": {
+          "token": "Bchord",
+          "frequency": 1,
+          "outgoing_transitions": 1
+        }
+      },
+      {
+        "id": "note_Cmaj",
+        "name": "Cmaj",
+        "type": "note",
+        "raw": {
+          "token": "Cmaj",
+          "frequency": 1,
+          "outgoing_transitions": 0
+        }
+      },
+      {
+        "id": "note_Fmaj",
+        "name": "Fmaj",
+        "type": "note",
+        "raw": {
+          "token": "Fmaj",
+          "frequency": 1,
+          "outgoing_transitions": 1
+        }
+      }
+    ],
+    "links": [
+      {
+        "source": "note_Fmaj",
+        "target": "note_Bchord",
+        "type": "note_transition",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0
+        }
+      },
+      {
+        "source": "note_Bchord",
+        "target": "note_Cmaj",
+        "type": "note_transition",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0
+        }
+      }
+    ]
+  }
+}

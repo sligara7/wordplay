@@ -1,0 +1,69 @@
+{
+  "metadata": {
+    "framework": "Musical Flow",
+    "num_nodes": 3,
+    "num_edges": 2,
+    "unique_tokens": 3,
+    "total_tokens": 3,
+    "title": "Bass Line",
+    "dead_ends": 1,
+    "unreachable": 0
+  },
+  "graph": {
+    "directed": true,
+    "nodes": [
+      {
+        "id": "note_C2",
+        "name": "C2",
+        "type": "note",
+        "raw": {
+          "token": "C2",
+          "frequency": 1,
+          "outgoing_transitions": 0
+        }
+      },
+      {
+        "id": "note_F2",
+        "name": "F2",
+        "type": "note",
+        "raw": {
+          "token": "F2",
+          "frequency": 1,
+          "outgoing_transitions": 1
+        }
+      },
+      {
+        "id": "note_G2",
+        "name": "G2",
+        "type": "note",
+        "raw": {
+          "token": "G2",
+          "frequency": 1,
+          "outgoing_transitions": 1
+        }
+      }
+    ],
+    "links": [
+      {
+        "source": "note_F2",
+        "target": "note_G2",
+        "type": "note_transition",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0
+        }
+      },
+      {
+        "source": "note_G2",
+        "target": "note_C2",
+        "type": "note_transition",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0
+        }
+      }
+    ]
+  }
+}

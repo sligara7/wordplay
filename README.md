@@ -15,6 +15,34 @@ By representing text as graphs, we can apply powerful systems analysis tools to 
 - **Information flow**: Bottlenecks and pathways through vocabulary
 - **Efficiency**: Are there more optimal language structures?
 
+## NEW: Music Analysis Support
+
+**Wordplay now extends to music!** Analyze everything from simple melodies to complex multi-track compositions:
+- **Monophonic**: Single melody lines (notes as tokens)
+- **Polyphonic**: Multi-track music with chords, bass, drums
+- **Hybrid graphs**: Combine lyrics and melodies
+- **Harmonic analysis**: Chord progressions using music theory
+- **Multi-layer graphs**: Each instrument as a separate graph layer
+- **Temporal analysis**: Rhythm, tempo, duration (NEW!)
+- **Batch processing**: Merge multiple graphs to find patterns (NEW!)
+
+**Documentation:**
+- [MIDI_SUPPORT.md](MIDI_SUPPORT.md) - Basic music analysis
+- [HYBRID_GRAPHS.md](HYBRID_GRAPHS.md) - Lyrics + melody integration
+- [POLYPHONIC_MUSIC.md](POLYPHONIC_MUSIC.md) - Multi-track polyphonic analysis
+- [TEMPORAL_ANALYSIS.md](TEMPORAL_ANALYSIS.md) - Rhythm, cadence, and batch processing (NEW!)
+
+**Quick example:**
+```bash
+# Create a sample MIDI file
+python3 src/create_sample_midi.py twinkle
+
+# Tokenize → Build Graph → Analyze
+python3 src/midi_tokenizer.py music/twinkle.mid -o music/twinkle_tokens.txt
+python3 src/midi_graph_builder.py music/twinkle_tokens.txt -o output/twinkle_graph.json
+python3 src/analyze_word_graph.py output/twinkle_graph.json
+```
+
 ## Key Features
 
 ### 1. Word Graph Generation

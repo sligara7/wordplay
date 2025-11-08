@@ -1,0 +1,1391 @@
+{
+  "metadata": {
+    "generated": "2025-11-08T02:23:08.264452",
+    "framework": "Language Flow (Merged)",
+    "framework_id": "language_flow",
+    "component_term": "word",
+    "connection_term": "transition",
+    "num_nodes": 37,
+    "num_edges": 32,
+    "tool_version": "1.0.0",
+    "merge_strategy": "union",
+    "source_books": [
+      "Nature Song - Lyrics",
+      "Book 1"
+    ],
+    "num_source_books": 2
+  },
+  "graph": {
+    "directed": true,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+      {
+        "id": "word_A4",
+        "name": "A4",
+        "type": "word",
+        "raw": {
+          "word": "A4",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Book 1"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-A4-01",
+            "function_name": "Token: A4",
+            "description": "Word 'A4' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_C4",
+        "name": "C4",
+        "type": "word",
+        "raw": {
+          "word": "C4",
+          "total_frequency": 4,
+          "appears_in_books": [
+            "Book 1"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-C4-01",
+            "function_name": "Token: C4",
+            "description": "Word 'C4' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_D4",
+        "name": "D4",
+        "type": "word",
+        "raw": {
+          "word": "D4",
+          "total_frequency": 7,
+          "appears_in_books": [
+            "Book 1"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-D4-01",
+            "function_name": "Token: D4",
+            "description": "Word 'D4' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_E4",
+        "name": "E4",
+        "type": "word",
+        "raw": {
+          "word": "E4",
+          "total_frequency": 7,
+          "appears_in_books": [
+            "Book 1"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-E4-01",
+            "function_name": "Token: E4",
+            "description": "Word 'E4' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_F4",
+        "name": "F4",
+        "type": "word",
+        "raw": {
+          "word": "F4",
+          "total_frequency": 8,
+          "appears_in_books": [
+            "Book 1"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-F4-01",
+            "function_name": "Token: F4",
+            "description": "Word 'F4' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_G4",
+        "name": "G4",
+        "type": "word",
+        "raw": {
+          "word": "G4",
+          "total_frequency": 6,
+          "appears_in_books": [
+            "Book 1"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-G4-01",
+            "function_name": "Token: G4",
+            "description": "Word 'G4' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_above",
+        "name": "above",
+        "type": "word",
+        "raw": {
+          "word": "above",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Nature Song - Lyrics"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-ABOVE-01",
+            "function_name": "Token: above",
+            "description": "Word 'above' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_all",
+        "name": "all",
+        "type": "word",
+        "raw": {
+          "word": "all",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Nature Song - Lyrics"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-ALL-01",
+            "function_name": "Token: all",
+            "description": "Word 'all' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_and",
+        "name": "and",
+        "type": "word",
+        "raw": {
+          "word": "and",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Nature Song - Lyrics"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-AND-01",
+            "function_name": "Token: and",
+            "description": "Word 'and' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_believe",
+        "name": "believe",
+        "type": "word",
+        "raw": {
+          "word": "believe",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Nature Song - Lyrics"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-BELIEVE-01",
+            "function_name": "Token: believe",
+            "description": "Word 'believe' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_birds",
+        "name": "birds",
+        "type": "word",
+        "raw": {
+          "word": "birds",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Nature Song - Lyrics"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-BIRDS-01",
+            "function_name": "Token: birds",
+            "description": "Word 'birds' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_blows",
+        "name": "blows",
+        "type": "word",
+        "raw": {
+          "word": "blows",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Nature Song - Lyrics"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-BLOWS-01",
+            "function_name": "Token: blows",
+            "description": "Word 'blows' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_clouds",
+        "name": "clouds",
+        "type": "word",
+        "raw": {
+          "word": "clouds",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Nature Song - Lyrics"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-CLOUDS-01",
+            "function_name": "Token: clouds",
+            "description": "Word 'clouds' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_deep",
+        "name": "deep",
+        "type": "word",
+        "raw": {
+          "word": "deep",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Nature Song - Lyrics"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-DEEP-01",
+            "function_name": "Token: deep",
+            "description": "Word 'deep' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_dig",
+        "name": "dig",
+        "type": "word",
+        "raw": {
+          "word": "dig",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Nature Song - Lyrics"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-DIG-01",
+            "function_name": "Token: dig",
+            "description": "Word 'dig' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_fly",
+        "name": "fly",
+        "type": "word",
+        "raw": {
+          "word": "fly",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Nature Song - Lyrics"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-FLY-01",
+            "function_name": "Token: fly",
+            "description": "Word 'fly' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_ground",
+        "name": "ground",
+        "type": "word",
+        "raw": {
+          "word": "ground",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Nature Song - Lyrics"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-GROUND-01",
+            "function_name": "Token: ground",
+            "description": "Word 'ground' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_grow",
+        "name": "grow",
+        "type": "word",
+        "raw": {
+          "word": "grow",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Nature Song - Lyrics"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-GROW-01",
+            "function_name": "Token: grow",
+            "description": "Word 'grow' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_high",
+        "name": "high",
+        "type": "word",
+        "raw": {
+          "word": "high",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Nature Song - Lyrics"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-HIGH-01",
+            "function_name": "Token: high",
+            "description": "Word 'high' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_in",
+        "name": "in",
+        "type": "word",
+        "raw": {
+          "word": "in",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Nature Song - Lyrics"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-IN-01",
+            "function_name": "Token: in",
+            "description": "Word 'in' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_leaves",
+        "name": "leaves",
+        "type": "word",
+        "raw": {
+          "word": "leaves",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Nature Song - Lyrics"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-LEAVES-01",
+            "function_name": "Token: leaves",
+            "description": "Word 'leaves' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_love",
+        "name": "love",
+        "type": "word",
+        "raw": {
+          "word": "love",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Nature Song - Lyrics"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-LOVE-01",
+            "function_name": "Token: love",
+            "description": "Word 'love' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_melodies",
+        "name": "melodies",
+        "type": "word",
+        "raw": {
+          "word": "melodies",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Nature Song - Lyrics"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-MELODIES-01",
+            "function_name": "Token: melodies",
+            "description": "Word 'melodies' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_nature",
+        "name": "nature",
+        "type": "word",
+        "raw": {
+          "word": "nature",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Nature Song - Lyrics"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-NATURE-01",
+            "function_name": "Token: nature",
+            "description": "Word 'nature' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_of",
+        "name": "of",
+        "type": "word",
+        "raw": {
+          "word": "of",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Nature Song - Lyrics"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-OF-01",
+            "function_name": "Token: of",
+            "description": "Word 'of' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_roots",
+        "name": "roots",
+        "type": "word",
+        "raw": {
+          "word": "roots",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Nature Song - Lyrics"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-ROOTS-01",
+            "function_name": "Token: roots",
+            "description": "Word 'roots' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_singing",
+        "name": "singing",
+        "type": "word",
+        "raw": {
+          "word": "singing",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Nature Song - Lyrics"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-SINGING-01",
+            "function_name": "Token: singing",
+            "description": "Word 'singing' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_soft",
+        "name": "soft",
+        "type": "word",
+        "raw": {
+          "word": "soft",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Nature Song - Lyrics"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-SOFT-01",
+            "function_name": "Token: soft",
+            "description": "Word 'soft' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_speaks",
+        "name": "speaks",
+        "type": "word",
+        "raw": {
+          "word": "speaks",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Nature Song - Lyrics"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-SPEAKS-01",
+            "function_name": "Token: speaks",
+            "description": "Word 'speaks' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_strong",
+        "name": "strong",
+        "type": "word",
+        "raw": {
+          "word": "strong",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Nature Song - Lyrics"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-STRONG-01",
+            "function_name": "Token: strong",
+            "description": "Word 'strong' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_tall",
+        "name": "tall",
+        "type": "word",
+        "raw": {
+          "word": "tall",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Nature Song - Lyrics"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-TALL-01",
+            "function_name": "Token: tall",
+            "description": "Word 'tall' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_the",
+        "name": "the",
+        "type": "word",
+        "raw": {
+          "word": "the",
+          "total_frequency": 3,
+          "appears_in_books": [
+            "Nature Song - Lyrics"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-THE-01",
+            "function_name": "Token: the",
+            "description": "Word 'the' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_through",
+        "name": "through",
+        "type": "word",
+        "raw": {
+          "word": "through",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Nature Song - Lyrics"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-THROUGH-01",
+            "function_name": "Token: through",
+            "description": "Word 'through' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_to",
+        "name": "to",
+        "type": "word",
+        "raw": {
+          "word": "to",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Nature Song - Lyrics"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-TO-01",
+            "function_name": "Token: to",
+            "description": "Word 'to' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_trees",
+        "name": "trees",
+        "type": "word",
+        "raw": {
+          "word": "trees",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Nature Song - Lyrics"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-TREES-01",
+            "function_name": "Token: trees",
+            "description": "Word 'trees' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_who",
+        "name": "who",
+        "type": "word",
+        "raw": {
+          "word": "who",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Nature Song - Lyrics"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-WHO-01",
+            "function_name": "Token: who",
+            "description": "Word 'who' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_wind",
+        "name": "wind",
+        "type": "word",
+        "raw": {
+          "word": "wind",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "Nature Song - Lyrics"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-WIND-01",
+            "function_name": "Token: wind",
+            "description": "Word 'wind' appears in 1 book(s)"
+          }
+        ]
+      }
+    ],
+    "links": [
+      {
+        "source": "word_trees",
+        "target": "word_grow",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "Nature Song - Lyrics"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "Nature Song - Lyrics": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_grow",
+        "target": "word_tall",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "Nature Song - Lyrics"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "Nature Song - Lyrics": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_tall",
+        "target": "word_and",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "Nature Song - Lyrics"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "Nature Song - Lyrics": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_and",
+        "target": "word_strong",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "Nature Song - Lyrics"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "Nature Song - Lyrics": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_strong",
+        "target": "word_roots",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "Nature Song - Lyrics"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "Nature Song - Lyrics": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_roots",
+        "target": "word_dig",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "Nature Song - Lyrics"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "Nature Song - Lyrics": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_dig",
+        "target": "word_deep",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "Nature Song - Lyrics"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "Nature Song - Lyrics": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_deep",
+        "target": "word_in",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "Nature Song - Lyrics"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "Nature Song - Lyrics": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_in",
+        "target": "word_the",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "Nature Song - Lyrics"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "Nature Song - Lyrics": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_the",
+        "target": "word_ground",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 0.3333333333333333,
+        "raw": {
+          "merged_from": [
+            "Nature Song - Lyrics"
+          ],
+          "num_books": 1,
+          "average_probability": 0.3333333333333333,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "Nature Song - Lyrics": 0.3333333333333333
+          }
+        }
+      },
+      {
+        "source": "word_the",
+        "target": "word_clouds",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 0.3333333333333333,
+        "raw": {
+          "merged_from": [
+            "Nature Song - Lyrics"
+          ],
+          "num_books": 1,
+          "average_probability": 0.3333333333333333,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "Nature Song - Lyrics": 0.3333333333333333
+          }
+        }
+      },
+      {
+        "source": "word_the",
+        "target": "word_leaves",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 0.3333333333333333,
+        "raw": {
+          "merged_from": [
+            "Nature Song - Lyrics"
+          ],
+          "num_books": 1,
+          "average_probability": 0.3333333333333333,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "Nature Song - Lyrics": 0.3333333333333333
+          }
+        }
+      },
+      {
+        "source": "word_ground",
+        "target": "word_birds",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "Nature Song - Lyrics"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "Nature Song - Lyrics": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_birds",
+        "target": "word_fly",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "Nature Song - Lyrics"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "Nature Song - Lyrics": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_fly",
+        "target": "word_high",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "Nature Song - Lyrics"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "Nature Song - Lyrics": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_high",
+        "target": "word_above",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "Nature Song - Lyrics"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "Nature Song - Lyrics": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_above",
+        "target": "word_the",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "Nature Song - Lyrics"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "Nature Song - Lyrics": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_clouds",
+        "target": "word_singing",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "Nature Song - Lyrics"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "Nature Song - Lyrics": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_singing",
+        "target": "word_melodies",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "Nature Song - Lyrics"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "Nature Song - Lyrics": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_melodies",
+        "target": "word_of",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "Nature Song - Lyrics"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "Nature Song - Lyrics": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_of",
+        "target": "word_love",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "Nature Song - Lyrics"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "Nature Song - Lyrics": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_love",
+        "target": "word_wind",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "Nature Song - Lyrics"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "Nature Song - Lyrics": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_wind",
+        "target": "word_blows",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "Nature Song - Lyrics"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "Nature Song - Lyrics": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_blows",
+        "target": "word_soft",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "Nature Song - Lyrics"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "Nature Song - Lyrics": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_soft",
+        "target": "word_through",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "Nature Song - Lyrics"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "Nature Song - Lyrics": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_through",
+        "target": "word_the",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "Nature Song - Lyrics"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "Nature Song - Lyrics": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_leaves",
+        "target": "word_nature",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "Nature Song - Lyrics"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "Nature Song - Lyrics": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_nature",
+        "target": "word_speaks",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "Nature Song - Lyrics"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "Nature Song - Lyrics": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_speaks",
+        "target": "word_to",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "Nature Song - Lyrics"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "Nature Song - Lyrics": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_to",
+        "target": "word_all",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "Nature Song - Lyrics"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "Nature Song - Lyrics": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_all",
+        "target": "word_who",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "Nature Song - Lyrics"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "Nature Song - Lyrics": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_who",
+        "target": "word_believe",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "Nature Song - Lyrics"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "Nature Song - Lyrics": 1.0
+          }
+        }
+      }
+    ]
+  },
+  "architectural_issues": {
+    "circular_dependencies": [],
+    "orphaned_nodes": [],
+    "dead_ends": [],
+    "unreachable_words": []
+  },
+  "merge_analysis": {
+    "common_words_count": 0,
+    "unique_words_count": 37,
+    "shared_transitions_count": 0
+  }
+}

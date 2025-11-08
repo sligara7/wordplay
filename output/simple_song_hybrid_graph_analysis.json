@@ -1,0 +1,307 @@
+{
+  "metadata": {
+    "framework": "Musical Flow",
+    "num_nodes": 24,
+    "num_edges": 24,
+    "unique_tokens": 24,
+    "total_tokens": 25,
+    "title": "Simple Song (Hybrid)",
+    "dead_ends": 1,
+    "unreachable": 0,
+    "analysis_timestamp": "1762567870.9026136"
+  },
+  "basic_statistics": {
+    "num_nodes": 24,
+    "num_edges": 24,
+    "density": 0.043478260869565216,
+    "average_in_degree": 1.0,
+    "average_out_degree": 1.0
+  },
+  "analyses": {
+    "centrality": {
+      "analysis_type": "centrality",
+      "top_by_degree": [
+        {
+          "word": "note_hello-C4",
+          "score": 0.13043478260869565
+        },
+        {
+          "word": "note_all-G4",
+          "score": 0.08695652173913043
+        },
+        {
+          "word": "note_are-G4",
+          "score": 0.08695652173913043
+        },
+        {
+          "word": "note_day-D4",
+          "score": 0.08695652173913043
+        },
+        {
+          "word": "note_day-F4",
+          "score": 0.08695652173913043
+        },
+        {
+          "word": "note_every-E4",
+          "score": 0.08695652173913043
+        },
+        {
+          "word": "note_feeling-F4",
+          "score": 0.08695652173913043
+        },
+        {
+          "word": "note_feeling-G4",
+          "score": 0.08695652173913043
+        },
+        {
+          "word": "note_good-F4",
+          "score": 0.08695652173913043
+        },
+        {
+          "word": "note_great-E4",
+          "score": 0.08695652173913043
+        }
+      ],
+      "top_by_betweenness": [
+        {
+          "word": "note_hello-C4",
+          "score": 0.3913043478260869
+        },
+        {
+          "word": "note_day-D4",
+          "score": 0.3695652173913043
+        },
+        {
+          "word": "note_single-D4",
+          "score": 0.34782608695652173
+        },
+        {
+          "word": "note_every-E4",
+          "score": 0.32608695652173914
+        },
+        {
+          "word": "note_great-E4",
+          "score": 0.3043478260869565
+        },
+        {
+          "word": "note_feeling-F4",
+          "score": 0.2826086956521739
+        },
+        {
+          "word": "note_good-F4",
+          "score": 0.2608695652173913
+        },
+        {
+          "word": "note_world-G4",
+          "score": 0.2569169960474308
+        },
+        {
+          "word": "note_singing-A4",
+          "score": 0.24901185770750986
+        },
+        {
+          "word": "note_feeling-G4",
+          "score": 0.23913043478260868
+        }
+      ],
+      "top_by_closeness": [
+        {
+          "word": "note_way-C4",
+          "score": 0.08333333333333333
+        },
+        {
+          "word": "note_my-C4",
+          "score": 0.0831758034026465
+        },
+        {
+          "word": "note_in-D4",
+          "score": 0.08300395256916995
+        },
+        {
+          "word": "note_music-D4",
+          "score": 0.08281573498964803
+        },
+        {
+          "word": "note_making-E4",
+          "score": 0.08260869565217392
+        },
+        {
+          "word": "note_long-F4",
+          "score": 0.08237986270022883
+        },
+        {
+          "word": "note_day-F4",
+          "score": 0.08212560386473429
+        },
+        {
+          "word": "note_all-G4",
+          "score": 0.08184143222506393
+        },
+        {
+          "word": "note_songs-A4",
+          "score": 0.08152173913043478
+        },
+        {
+          "word": "note_singing-A4",
+          "score": 0.08115942028985508
+        }
+      ],
+      "interpretation": {
+        "degree": "Words with most direct connections (most versatile words)",
+        "betweenness": "Bridge words that connect different parts of text",
+        "closeness": "Words closest to all other words (central to vocabulary)"
+      }
+    },
+    "communities": {
+      "analysis_type": "communities",
+      "num_communities": 6,
+      "communities": [
+        {
+          "community_id": 0,
+          "size": 5,
+          "words": [
+            "note_are-G4",
+            "note_feeling-G4",
+            "note_how-G4",
+            "note_today-A4",
+            "note_you-A4"
+          ]
+        },
+        {
+          "community_id": 1,
+          "size": 4,
+          "words": [
+            "note_every-E4",
+            "note_feeling-F4",
+            "note_good-F4",
+            "note_great-E4"
+          ]
+        },
+        {
+          "community_id": 2,
+          "size": 4,
+          "words": [
+            "note_all-G4",
+            "note_day-F4",
+            "note_long-F4",
+            "note_making-E4"
+          ]
+        },
+        {
+          "community_id": 3,
+          "size": 4,
+          "words": [
+            "note_in-D4",
+            "note_music-D4",
+            "note_my-C4",
+            "note_way-C4"
+          ]
+        },
+        {
+          "community_id": 4,
+          "size": 4,
+          "words": [
+            "note_day-D4",
+            "note_hello-C4",
+            "note_single-D4",
+            "note_world-C4"
+          ]
+        },
+        {
+          "community_id": 5,
+          "size": 3,
+          "words": [
+            "note_singing-A4",
+            "note_songs-A4",
+            "note_world-G4"
+          ]
+        }
+      ],
+      "interpretation": "Groups of words that frequently occur together"
+    },
+    "dag": {
+      "analysis_type": "dag",
+      "is_dag": false,
+      "num_cycles": 1,
+      "example_cycles": [
+        {
+          "length": 13,
+          "words": [
+            "note_day-D4",
+            "note_hello-C4",
+            "note_world-C4",
+            "note_how-G4",
+            "note_are-G4",
+            "note_you-A4",
+            "note_today-A4",
+            "note_feeling-G4",
+            "note_good-F4",
+            "note_feeling-F4",
+            "note_great-E4",
+            "note_every-E4",
+            "note_single-D4"
+          ]
+        }
+      ],
+      "interpretation": "Cycles indicate words that loop back to each other in the text"
+    },
+    "structural_issues": {
+      "analysis_type": "structural_issues",
+      "orphaned_nodes": {
+        "count": 0,
+        "words": [],
+        "interpretation": "Words that appear isolated (no connections)"
+      },
+      "dead_ends": {
+        "count": 1,
+        "words": [
+          "note_way-C4"
+        ],
+        "interpretation": "Words that end sentences/phrases (no words follow them)"
+      },
+      "unreachable": {
+        "count": 0,
+        "words": [],
+        "interpretation": "Words that start sentences/phrases (no words lead to them)"
+      },
+      "bottlenecks": {
+        "words": [
+          {
+            "word": "note_hello-C4",
+            "score": 0.3913043478260869
+          },
+          {
+            "word": "note_day-D4",
+            "score": 0.3695652173913043
+          },
+          {
+            "word": "note_single-D4",
+            "score": 0.34782608695652173
+          },
+          {
+            "word": "note_every-E4",
+            "score": 0.32608695652173914
+          },
+          {
+            "word": "note_great-E4",
+            "score": 0.3043478260869565
+          }
+        ],
+        "interpretation": "Words that must be passed through to connect different parts of text"
+      }
+    },
+    "connectivity": {
+      "analysis_type": "connectivity",
+      "is_weakly_connected": true,
+      "is_strongly_connected": false,
+      "num_strongly_connected_components": 12,
+      "largest_scc_size": 13,
+      "largest_scc_percentage": 54.166666666666664,
+      "interpretation": {
+        "weakly_connected": "All words reachable ignoring edge direction",
+        "strongly_connected": "Every word can reach every other word following edges",
+        "sccs": "Groups of words that form circular paths"
+      }
+    }
+  }
+}

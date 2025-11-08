@@ -1,0 +1,145 @@
+{
+  "metadata": {
+    "framework": "Musical Flow",
+    "num_nodes": 3,
+    "num_edges": 2,
+    "unique_tokens": 3,
+    "total_tokens": 3,
+    "title": "Chord Progression",
+    "dead_ends": 1,
+    "unreachable": 0,
+    "analysis_timestamp": "1762567870.9026136"
+  },
+  "basic_statistics": {
+    "num_nodes": 3,
+    "num_edges": 2,
+    "density": 0.3333333333333333,
+    "average_in_degree": 0.6666666666666666,
+    "average_out_degree": 0.6666666666666666
+  },
+  "analyses": {
+    "centrality": {
+      "analysis_type": "centrality",
+      "top_by_degree": [
+        {
+          "word": "note_Bchord",
+          "score": 1.0
+        },
+        {
+          "word": "note_Cmaj",
+          "score": 0.5
+        },
+        {
+          "word": "note_Fmaj",
+          "score": 0.5
+        }
+      ],
+      "top_by_betweenness": [
+        {
+          "word": "note_Bchord",
+          "score": 0.5
+        },
+        {
+          "word": "note_Cmaj",
+          "score": 0.0
+        },
+        {
+          "word": "note_Fmaj",
+          "score": 0.0
+        }
+      ],
+      "top_by_closeness": [
+        {
+          "word": "note_Cmaj",
+          "score": 0.6666666666666666
+        },
+        {
+          "word": "note_Bchord",
+          "score": 0.5
+        },
+        {
+          "word": "note_Fmaj",
+          "score": 0.0
+        }
+      ],
+      "interpretation": {
+        "degree": "Words with most direct connections (most versatile words)",
+        "betweenness": "Bridge words that connect different parts of text",
+        "closeness": "Words closest to all other words (central to vocabulary)"
+      }
+    },
+    "communities": {
+      "analysis_type": "communities",
+      "num_communities": 1,
+      "communities": [
+        {
+          "community_id": 0,
+          "size": 3,
+          "words": [
+            "note_Bchord",
+            "note_Cmaj",
+            "note_Fmaj"
+          ]
+        }
+      ],
+      "interpretation": "Groups of words that frequently occur together"
+    },
+    "dag": {
+      "analysis_type": "dag",
+      "is_dag": true,
+      "interpretation": "Perfect DAG - no cycles in word transitions"
+    },
+    "structural_issues": {
+      "analysis_type": "structural_issues",
+      "orphaned_nodes": {
+        "count": 0,
+        "words": [],
+        "interpretation": "Words that appear isolated (no connections)"
+      },
+      "dead_ends": {
+        "count": 1,
+        "words": [
+          "note_Cmaj"
+        ],
+        "interpretation": "Words that end sentences/phrases (no words follow them)"
+      },
+      "unreachable": {
+        "count": 1,
+        "words": [
+          "note_Fmaj"
+        ],
+        "interpretation": "Words that start sentences/phrases (no words lead to them)"
+      },
+      "bottlenecks": {
+        "words": [
+          {
+            "word": "note_Bchord",
+            "score": 0.5
+          },
+          {
+            "word": "note_Cmaj",
+            "score": 0.0
+          },
+          {
+            "word": "note_Fmaj",
+            "score": 0.0
+          }
+        ],
+        "interpretation": "Words that must be passed through to connect different parts of text"
+      }
+    },
+    "connectivity": {
+      "analysis_type": "connectivity",
+      "is_weakly_connected": true,
+      "is_strongly_connected": false,
+      "num_strongly_connected_components": 3,
+      "largest_scc_size": 1,
+      "largest_scc_percentage": 33.33333333333333,
+      "interpretation": {
+        "weakly_connected": "All words reachable ignoring edge direction",
+        "strongly_connected": "Every word can reach every other word following edges",
+        "sccs": "Groups of words that form circular paths"
+      }
+    }
+  }
+}
