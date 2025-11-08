@@ -1,0 +1,312 @@
+{
+  "metadata": {
+    "generated": "2025-11-08T01:13:35.759173",
+    "framework": "Language Flow",
+    "framework_id": "language_flow",
+    "component_term": "word",
+    "connection_term": "transition",
+    "num_nodes": 19,
+    "num_edges": 28,
+    "tool_version": "1.0.0",
+    "book_title": "Sample Text",
+    "total_tokens": 34,
+    "unique_words": 19,
+    "total_transitions": 33,
+    "analysis_timestamp": "1762564520.0669694"
+  },
+  "basic_statistics": {
+    "num_nodes": 19,
+    "num_edges": 28,
+    "density": 0.08187134502923976,
+    "average_in_degree": 1.4736842105263157,
+    "average_out_degree": 1.4736842105263157
+  },
+  "analyses": {
+    "centrality": {
+      "analysis_type": "centrality",
+      "top_by_degree": [
+        {
+          "word": "the",
+          "score": 0.8888888888888888
+        },
+        {
+          "word": "cat",
+          "score": 0.2222222222222222
+        },
+        {
+          "word": "dog",
+          "score": 0.2222222222222222
+        },
+        {
+          "word": "ball",
+          "score": 0.16666666666666666
+        },
+        {
+          "word": "down",
+          "score": 0.1111111111111111
+        },
+        {
+          "word": "happy",
+          "score": 0.1111111111111111
+        },
+        {
+          "word": "hill",
+          "score": 0.1111111111111111
+        },
+        {
+          "word": "mat",
+          "score": 0.1111111111111111
+        },
+        {
+          "word": "on",
+          "score": 0.1111111111111111
+        },
+        {
+          "word": "park",
+          "score": 0.1111111111111111
+        }
+      ],
+      "top_by_betweenness": [
+        {
+          "word": "the",
+          "score": 0.888888888888889
+        },
+        {
+          "word": "dog",
+          "score": 0.2581699346405229
+        },
+        {
+          "word": "cat",
+          "score": 0.2549019607843137
+        },
+        {
+          "word": "ball",
+          "score": 0.10130718954248366
+        },
+        {
+          "word": "to",
+          "score": 0.07679738562091504
+        },
+        {
+          "word": "with",
+          "score": 0.07679738562091504
+        },
+        {
+          "word": "played",
+          "score": 0.07352941176470588
+        },
+        {
+          "word": "ran",
+          "score": 0.07352941176470588
+        },
+        {
+          "word": "down",
+          "score": 0.05555555555555556
+        },
+        {
+          "word": "happy",
+          "score": 0.05555555555555556
+        }
+      ],
+      "top_by_closeness": [
+        {
+          "word": "the",
+          "score": 0.6422222222222222
+        },
+        {
+          "word": "dog",
+          "score": 0.4116809116809117
+        },
+        {
+          "word": "cat",
+          "score": 0.40138888888888885
+        },
+        {
+          "word": "ball",
+          "score": 0.39159891598915986
+        },
+        {
+          "word": "hill",
+          "score": 0.39159891598915986
+        },
+        {
+          "word": "mat",
+          "score": 0.39159891598915986
+        },
+        {
+          "word": "park",
+          "score": 0.39159891598915986
+        },
+        {
+          "word": "play",
+          "score": 0.3157894736842105
+        },
+        {
+          "word": "played",
+          "score": 0.30293501048218024
+        },
+        {
+          "word": "ran",
+          "score": 0.30293501048218024
+        }
+      ],
+      "interpretation": {
+        "degree": "Words with most direct connections (most versatile words)",
+        "betweenness": "Bridge words that connect different parts of text",
+        "closeness": "Words closest to all other words (central to vocabulary)"
+      }
+    },
+    "communities": {
+      "analysis_type": "communities",
+      "num_communities": 3,
+      "communities": [
+        {
+          "community_id": 0,
+          "size": 7,
+          "words": [
+            "ball",
+            "down",
+            "hill",
+            "mat",
+            "park",
+            "rolled",
+            "the"
+          ]
+        },
+        {
+          "community_id": 1,
+          "size": 6,
+          "words": [
+            "cat",
+            "happy",
+            "on",
+            "sat",
+            "was",
+            "watched"
+          ]
+        },
+        {
+          "community_id": 2,
+          "size": 6,
+          "words": [
+            "dog",
+            "play",
+            "played",
+            "ran",
+            "to",
+            "with"
+          ]
+        }
+      ],
+      "interpretation": "Groups of words that frequently occur together"
+    },
+    "dag": {
+      "analysis_type": "dag",
+      "is_dag": false,
+      "num_cycles": 10,
+      "example_cycles": [
+        {
+          "length": 4,
+          "words": [
+            "the",
+            "cat",
+            "sat",
+            "on"
+          ]
+        },
+        {
+          "length": 4,
+          "words": [
+            "the",
+            "cat",
+            "was",
+            "happy"
+          ]
+        },
+        {
+          "length": 3,
+          "words": [
+            "the",
+            "cat",
+            "watched"
+          ]
+        },
+        {
+          "length": 2,
+          "words": [
+            "the",
+            "mat"
+          ]
+        },
+        {
+          "length": 4,
+          "words": [
+            "the",
+            "dog",
+            "ran",
+            "to"
+          ]
+        }
+      ],
+      "interpretation": "Cycles indicate words that loop back to each other in the text"
+    },
+    "structural_issues": {
+      "analysis_type": "structural_issues",
+      "orphaned_nodes": {
+        "count": 0,
+        "words": [],
+        "interpretation": "Words that appear isolated (no connections)"
+      },
+      "dead_ends": {
+        "count": 1,
+        "words": [
+          "play"
+        ],
+        "interpretation": "Words that end sentences/phrases (no words follow them)"
+      },
+      "unreachable": {
+        "count": 0,
+        "words": [],
+        "interpretation": "Words that start sentences/phrases (no words lead to them)"
+      },
+      "bottlenecks": {
+        "words": [
+          {
+            "word": "the",
+            "score": 0.888888888888889
+          },
+          {
+            "word": "dog",
+            "score": 0.2581699346405229
+          },
+          {
+            "word": "cat",
+            "score": 0.2549019607843137
+          },
+          {
+            "word": "ball",
+            "score": 0.10130718954248366
+          },
+          {
+            "word": "to",
+            "score": 0.07679738562091504
+          }
+        ],
+        "interpretation": "Words that must be passed through to connect different parts of text"
+      }
+    },
+    "connectivity": {
+      "analysis_type": "connectivity",
+      "is_weakly_connected": true,
+      "is_strongly_connected": false,
+      "num_strongly_connected_components": 2,
+      "largest_scc_size": 18,
+      "largest_scc_percentage": 94.73684210526315,
+      "interpretation": {
+        "weakly_connected": "All words reachable ignoring edge direction",
+        "strongly_connected": "Every word can reach every other word following edges",
+        "sccs": "Groups of words that form circular paths"
+      }
+    }
+  }
+}

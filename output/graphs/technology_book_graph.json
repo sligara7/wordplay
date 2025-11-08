@@ -1,0 +1,2626 @@
+{
+  "metadata": {
+    "generated": "2025-11-08T01:16:53.308973",
+    "framework": "Language Flow",
+    "framework_id": "language_flow",
+    "component_term": "word",
+    "connection_term": "transition",
+    "num_nodes": 80,
+    "num_edges": 88,
+    "tool_version": "1.0.0",
+    "book_title": "technology_book",
+    "total_tokens": 89,
+    "unique_words": 80,
+    "total_transitions": 88
+  },
+  "graph": {
+    "directed": true,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+      {
+        "id": "word_across",
+        "name": "across",
+        "type": "word",
+        "raw": {
+          "word": "across",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-ACROSS-01",
+            "function_name": "Token: across",
+            "description": "Represents the word 'across' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_advanced",
+        "name": "advanced",
+        "type": "word",
+        "raw": {
+          "word": "advanced",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-ADVANCED-01",
+            "function_name": "Token: advanced",
+            "description": "Represents the word 'advanced' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_algorithms",
+        "name": "algorithms",
+        "type": "word",
+        "raw": {
+          "word": "algorithms",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-ALGORITHMS-01",
+            "function_name": "Token: algorithms",
+            "description": "Represents the word 'algorithms' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_apis",
+        "name": "apis",
+        "type": "word",
+        "raw": {
+          "word": "apis",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-APIS-01",
+            "function_name": "Token: apis",
+            "description": "Represents the word 'apis' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_applications",
+        "name": "applications",
+        "type": "word",
+        "raw": {
+          "word": "applications",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-APPLICATIONS-01",
+            "function_name": "Token: applications",
+            "description": "Represents the word 'applications' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_automatically",
+        "name": "automatically",
+        "type": "word",
+        "raw": {
+          "word": "automatically",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-AUTOMATICALLY-01",
+            "function_name": "Token: automatically",
+            "description": "Represents the word 'automatically' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_bandwidth",
+        "name": "bandwidth",
+        "type": "word",
+        "raw": {
+          "word": "bandwidth",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-BANDWIDTH-01",
+            "function_name": "Token: bandwidth",
+            "description": "Represents the word 'bandwidth' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_calculated",
+        "name": "calculated",
+        "type": "word",
+        "raw": {
+          "word": "calculated",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-CALCULATED-01",
+            "function_name": "Token: calculated",
+            "description": "Represents the word 'calculated' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_clearly",
+        "name": "clearly",
+        "type": "word",
+        "raw": {
+          "word": "clearly",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-CLEARLY-01",
+            "function_name": "Token: clearly",
+            "description": "Represents the word 'clearly' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_cloud",
+        "name": "cloud",
+        "type": "word",
+        "raw": {
+          "word": "cloud",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-CLOUD-01",
+            "function_name": "Token: cloud",
+            "description": "Represents the word 'cloud' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_code",
+        "name": "code",
+        "type": "word",
+        "raw": {
+          "word": "code",
+          "frequency": 2,
+          "outgoing_transitions": 2,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-CODE-01",
+            "function_name": "Token: code",
+            "description": "Represents the word 'code' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_complex",
+        "name": "complex",
+        "type": "word",
+        "raw": {
+          "word": "complex",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-COMPLEX-01",
+            "function_name": "Token: complex",
+            "description": "Represents the word 'complex' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_computer",
+        "name": "computer",
+        "type": "word",
+        "raw": {
+          "word": "computer",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-COMPUTER-01",
+            "function_name": "Token: computer",
+            "description": "Represents the word 'computer' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_connected",
+        "name": "connected",
+        "type": "word",
+        "raw": {
+          "word": "connected",
+          "frequency": 2,
+          "outgoing_transitions": 2,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-CONNECTED-01",
+            "function_name": "Token: connected",
+            "description": "Represents the word 'connected' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_continents",
+        "name": "continents",
+        "type": "word",
+        "raw": {
+          "word": "continents",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-CONTINENTS-01",
+            "function_name": "Token: continents",
+            "description": "Represents the word 'continents' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_dashboard",
+        "name": "dashboard",
+        "type": "word",
+        "raw": {
+          "word": "dashboard",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-DASHBOARD-01",
+            "function_name": "Token: dashboard",
+            "description": "Represents the word 'dashboard' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_data",
+        "name": "data",
+        "type": "word",
+        "raw": {
+          "word": "data",
+          "frequency": 2,
+          "outgoing_transitions": 2,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-DATA-01",
+            "function_name": "Token: data",
+            "description": "Represents the word 'data' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_databases",
+        "name": "databases",
+        "type": "word",
+        "raw": {
+          "word": "databases",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-DATABASES-01",
+            "function_name": "Token: databases",
+            "description": "Represents the word 'databases' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_debugged",
+        "name": "debugged",
+        "type": "word",
+        "raw": {
+          "word": "debugged",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-DEBUGGED-01",
+            "function_name": "Token: debugged",
+            "description": "Represents the word 'debugged' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_determined",
+        "name": "determined",
+        "type": "word",
+        "raw": {
+          "word": "determined",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-DETERMINED-01",
+            "function_name": "Token: determined",
+            "description": "Represents the word 'determined' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_development",
+        "name": "development",
+        "type": "word",
+        "raw": {
+          "word": "development",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-DEVELOPMENT-01",
+            "function_name": "Token: development",
+            "description": "Represents the word 'development' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_devices",
+        "name": "devices",
+        "type": "word",
+        "raw": {
+          "word": "devices",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-DEVICES-01",
+            "function_name": "Token: devices",
+            "description": "Represents the word 'devices' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_different",
+        "name": "different",
+        "type": "word",
+        "raw": {
+          "word": "different",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-DIFFERENT-01",
+            "function_name": "Token: different",
+            "description": "Represents the word 'different' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_displayed",
+        "name": "displayed",
+        "type": "word",
+        "raw": {
+          "word": "displayed",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-DISPLAYED-01",
+            "function_name": "Token: displayed",
+            "description": "Represents the word 'displayed' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_download",
+        "name": "download",
+        "type": "word",
+        "raw": {
+          "word": "download",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-DOWNLOAD-01",
+            "function_name": "Token: download",
+            "description": "Represents the word 'download' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_each",
+        "name": "each",
+        "type": "word",
+        "raw": {
+          "word": "each",
+          "frequency": 1,
+          "outgoing_transitions": 0,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-EACH-01",
+            "function_name": "Token: each",
+            "description": "Represents the word 'each' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_efficiently",
+        "name": "efficiently",
+        "type": "word",
+        "raw": {
+          "word": "efficiently",
+          "frequency": 2,
+          "outgoing_transitions": 2,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-EFFICIENTLY-01",
+            "function_name": "Token: efficiently",
+            "description": "Represents the word 'efficiently' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_enabled",
+        "name": "enabled",
+        "type": "word",
+        "raw": {
+          "word": "enabled",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-ENABLED-01",
+            "function_name": "Token: enabled",
+            "description": "Represents the word 'enabled' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_encryption",
+        "name": "encryption",
+        "type": "word",
+        "raw": {
+          "word": "encryption",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-ENCRYPTION-01",
+            "function_name": "Token: encryption",
+            "description": "Represents the word 'encryption' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_engineers",
+        "name": "engineers",
+        "type": "word",
+        "raw": {
+          "word": "engineers",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-ENGINEERS-01",
+            "function_name": "Token: engineers",
+            "description": "Represents the word 'engineers' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_executed",
+        "name": "executed",
+        "type": "word",
+        "raw": {
+          "word": "executed",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-EXECUTED-01",
+            "function_name": "Token: executed",
+            "description": "Represents the word 'executed' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_handle",
+        "name": "handle",
+        "type": "word",
+        "raw": {
+          "word": "handle",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-HANDLE-01",
+            "function_name": "Token: handle",
+            "description": "Represents the word 'handle' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_increased",
+        "name": "increased",
+        "type": "word",
+        "raw": {
+          "word": "increased",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-INCREASED-01",
+            "function_name": "Token: increased",
+            "description": "Represents the word 'increased' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_information",
+        "name": "information",
+        "type": "word",
+        "raw": {
+          "word": "information",
+          "frequency": 2,
+          "outgoing_transitions": 2,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-INFORMATION-01",
+            "function_name": "Token: information",
+            "description": "Represents the word 'information' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_infrastructure",
+        "name": "infrastructure",
+        "type": "word",
+        "raw": {
+          "word": "infrastructure",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-INFRASTRUCTURE-01",
+            "function_name": "Token: infrastructure",
+            "description": "Represents the word 'infrastructure' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_intelligently",
+        "name": "intelligently",
+        "type": "word",
+        "raw": {
+          "word": "intelligently",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-INTELLIGENTLY-01",
+            "function_name": "Token: intelligently",
+            "description": "Represents the word 'intelligently' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_interface",
+        "name": "interface",
+        "type": "word",
+        "raw": {
+          "word": "interface",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-INTERFACE-01",
+            "function_name": "Token: interface",
+            "description": "Represents the word 'interface' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_languages",
+        "name": "languages",
+        "type": "word",
+        "raw": {
+          "word": "languages",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-LANGUAGES-01",
+            "function_name": "Token: languages",
+            "description": "Represents the word 'languages' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_load",
+        "name": "load",
+        "type": "word",
+        "raw": {
+          "word": "load",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-LOAD-01",
+            "function_name": "Token: load",
+            "description": "Represents the word 'load' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_logged",
+        "name": "logged",
+        "type": "word",
+        "raw": {
+          "word": "logged",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-LOGGED-01",
+            "function_name": "Token: logged",
+            "description": "Represents the word 'logged' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_maintained",
+        "name": "maintained",
+        "type": "word",
+        "raw": {
+          "word": "maintained",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-MAINTAINED-01",
+            "function_name": "Token: maintained",
+            "description": "Represents the word 'maintained' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_memory",
+        "name": "memory",
+        "type": "word",
+        "raw": {
+          "word": "memory",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-MEMORY-01",
+            "function_name": "Token: memory",
+            "description": "Represents the word 'memory' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_millions",
+        "name": "millions",
+        "type": "word",
+        "raw": {
+          "word": "millions",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-MILLIONS-01",
+            "function_name": "Token: millions",
+            "description": "Represents the word 'millions' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_network",
+        "name": "network",
+        "type": "word",
+        "raw": {
+          "word": "network",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-NETWORK-01",
+            "function_name": "Token: network",
+            "description": "Represents the word 'network' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_networks",
+        "name": "networks",
+        "type": "word",
+        "raw": {
+          "word": "networks",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-NETWORKS-01",
+            "function_name": "Token: networks",
+            "description": "Represents the word 'networks' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_operations",
+        "name": "operations",
+        "type": "word",
+        "raw": {
+          "word": "operations",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-OPERATIONS-01",
+            "function_name": "Token: operations",
+            "description": "Represents the word 'operations' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_overnight",
+        "name": "overnight",
+        "type": "word",
+        "raw": {
+          "word": "overnight",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-OVERNIGHT-01",
+            "function_name": "Token: overnight",
+            "description": "Represents the word 'overnight' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_packets",
+        "name": "packets",
+        "type": "word",
+        "raw": {
+          "word": "packets",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-PACKETS-01",
+            "function_name": "Token: packets",
+            "description": "Represents the word 'packets' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_persistent",
+        "name": "persistent",
+        "type": "word",
+        "raw": {
+          "word": "persistent",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-PERSISTENT-01",
+            "function_name": "Token: persistent",
+            "description": "Represents the word 'persistent' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_platforms",
+        "name": "platforms",
+        "type": "word",
+        "raw": {
+          "word": "platforms",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-PLATFORMS-01",
+            "function_name": "Token: platforms",
+            "description": "Represents the word 'platforms' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_problems",
+        "name": "problems",
+        "type": "word",
+        "raw": {
+          "word": "problems",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-PROBLEMS-01",
+            "function_name": "Token: problems",
+            "description": "Represents the word 'problems' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_processed",
+        "name": "processed",
+        "type": "word",
+        "raw": {
+          "word": "processed",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-PROCESSED-01",
+            "function_name": "Token: processed",
+            "description": "Represents the word 'processed' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_processors",
+        "name": "processors",
+        "type": "word",
+        "raw": {
+          "word": "processors",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-PROCESSORS-01",
+            "function_name": "Token: processors",
+            "description": "Represents the word 'processors' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_programming",
+        "name": "programming",
+        "type": "word",
+        "raw": {
+          "word": "programming",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-PROGRAMMING-01",
+            "function_name": "Token: programming",
+            "description": "Represents the word 'programming' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_protected",
+        "name": "protected",
+        "type": "word",
+        "raw": {
+          "word": "protected",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-PROTECTED-01",
+            "function_name": "Token: protected",
+            "description": "Represents the word 'protected' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_quickly",
+        "name": "quickly",
+        "type": "word",
+        "raw": {
+          "word": "quickly",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-QUICKLY-01",
+            "function_name": "Token: quickly",
+            "description": "Represents the word 'quickly' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_ran",
+        "name": "ran",
+        "type": "word",
+        "raw": {
+          "word": "ran",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-RAN-01",
+            "function_name": "Token: ran",
+            "description": "Represents the word 'ran' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_rapidly",
+        "name": "rapidly",
+        "type": "word",
+        "raw": {
+          "word": "rapidly",
+          "frequency": 2,
+          "outgoing_transitions": 2,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-RAPIDLY-01",
+            "function_name": "Token: rapidly",
+            "description": "Represents the word 'rapidly' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_records",
+        "name": "records",
+        "type": "word",
+        "raw": {
+          "word": "records",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-RECORDS-01",
+            "function_name": "Token: records",
+            "description": "Represents the word 'records' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_reliably",
+        "name": "reliably",
+        "type": "word",
+        "raw": {
+          "word": "reliably",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-RELIABLY-01",
+            "function_name": "Token: reliably",
+            "description": "Represents the word 'reliably' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_requests",
+        "name": "requests",
+        "type": "word",
+        "raw": {
+          "word": "requests",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-REQUESTS-01",
+            "function_name": "Token: requests",
+            "description": "Represents the word 'requests' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_responded",
+        "name": "responded",
+        "type": "word",
+        "raw": {
+          "word": "responded",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-RESPONDED-01",
+            "function_name": "Token: responded",
+            "description": "Represents the word 'responded' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_routed",
+        "name": "routed",
+        "type": "word",
+        "raw": {
+          "word": "routed",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-ROUTED-01",
+            "function_name": "Token: routed",
+            "description": "Represents the word 'routed' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_scaled",
+        "name": "scaled",
+        "type": "word",
+        "raw": {
+          "word": "scaled",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-SCALED-01",
+            "function_name": "Token: scaled",
+            "description": "Represents the word 'scaled' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_seamlessly",
+        "name": "seamlessly",
+        "type": "word",
+        "raw": {
+          "word": "seamlessly",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-SEAMLESSLY-01",
+            "function_name": "Token: seamlessly",
+            "description": "Represents the word 'seamlessly' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_securely",
+        "name": "securely",
+        "type": "word",
+        "raw": {
+          "word": "securely",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-SECURELY-01",
+            "function_name": "Token: securely",
+            "description": "Represents the word 'securely' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_sensitive",
+        "name": "sensitive",
+        "type": "word",
+        "raw": {
+          "word": "sensitive",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-SENSITIVE-01",
+            "function_name": "Token: sensitive",
+            "description": "Represents the word 'sensitive' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_server",
+        "name": "server",
+        "type": "word",
+        "raw": {
+          "word": "server",
+          "frequency": 2,
+          "outgoing_transitions": 2,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-SERVER-01",
+            "function_name": "Token: server",
+            "description": "Represents the word 'server' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_services",
+        "name": "services",
+        "type": "word",
+        "raw": {
+          "word": "services",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-SERVICES-01",
+            "function_name": "Token: services",
+            "description": "Represents the word 'services' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_significantly",
+        "name": "significantly",
+        "type": "word",
+        "raw": {
+          "word": "significantly",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-SIGNIFICANTLY-01",
+            "function_name": "Token: significantly",
+            "description": "Represents the word 'significantly' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_software",
+        "name": "software",
+        "type": "word",
+        "raw": {
+          "word": "software",
+          "frequency": 2,
+          "outgoing_transitions": 2,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-SOFTWARE-01",
+            "function_name": "Token: software",
+            "description": "Represents the word 'software' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_solved",
+        "name": "solved",
+        "type": "word",
+        "raw": {
+          "word": "solved",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-SOLVED-01",
+            "function_name": "Token: solved",
+            "description": "Represents the word 'solved' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_speeds",
+        "name": "speeds",
+        "type": "word",
+        "raw": {
+          "word": "speeds",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-SPEEDS-01",
+            "function_name": "Token: speeds",
+            "description": "Represents the word 'speeds' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_stored",
+        "name": "stored",
+        "type": "word",
+        "raw": {
+          "word": "stored",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-STORED-01",
+            "function_name": "Token: stored",
+            "description": "Represents the word 'stored' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_system",
+        "name": "system",
+        "type": "word",
+        "raw": {
+          "word": "system",
+          "frequency": 2,
+          "outgoing_transitions": 2,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-SYSTEM-01",
+            "function_name": "Token: system",
+            "description": "Represents the word 'system' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_systematically",
+        "name": "systematically",
+        "type": "word",
+        "raw": {
+          "word": "systematically",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-SYSTEMATICALLY-01",
+            "function_name": "Token: systematically",
+            "description": "Represents the word 'systematically' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_technology",
+        "name": "technology",
+        "type": "word",
+        "raw": {
+          "word": "technology",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-TECHNOLOGY-01",
+            "function_name": "Token: technology",
+            "description": "Represents the word 'technology' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_temporary",
+        "name": "temporary",
+        "type": "word",
+        "raw": {
+          "word": "temporary",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-TEMPORARY-01",
+            "function_name": "Token: temporary",
+            "description": "Represents the word 'temporary' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_updated",
+        "name": "updated",
+        "type": "word",
+        "raw": {
+          "word": "updated",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-UPDATED-01",
+            "function_name": "Token: updated",
+            "description": "Represents the word 'updated' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_users",
+        "name": "users",
+        "type": "word",
+        "raw": {
+          "word": "users",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-USERS-01",
+            "function_name": "Token: users",
+            "description": "Represents the word 'users' in the text flow"
+          }
+        ]
+      }
+    ],
+    "links": [
+      {
+        "source": "word_computer",
+        "target": "word_processed",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "computer",
+          "target_word": "processed"
+        }
+      },
+      {
+        "source": "word_processed",
+        "target": "word_data",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "processed",
+          "target_word": "data"
+        }
+      },
+      {
+        "source": "word_data",
+        "target": "word_rapidly",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 0.5,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 0.5,
+          "source_word": "data",
+          "target_word": "rapidly"
+        }
+      },
+      {
+        "source": "word_data",
+        "target": "word_efficiently",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 0.5,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 0.5,
+          "source_word": "data",
+          "target_word": "efficiently"
+        }
+      },
+      {
+        "source": "word_rapidly",
+        "target": "word_algorithms",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 0.5,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 0.5,
+          "source_word": "rapidly",
+          "target_word": "algorithms"
+        }
+      },
+      {
+        "source": "word_rapidly",
+        "target": "word_each",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 0.5,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 0.5,
+          "source_word": "rapidly",
+          "target_word": "each"
+        }
+      },
+      {
+        "source": "word_algorithms",
+        "target": "word_solved",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "algorithms",
+          "target_word": "solved"
+        }
+      },
+      {
+        "source": "word_solved",
+        "target": "word_complex",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "solved",
+          "target_word": "complex"
+        }
+      },
+      {
+        "source": "word_complex",
+        "target": "word_problems",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "complex",
+          "target_word": "problems"
+        }
+      },
+      {
+        "source": "word_problems",
+        "target": "word_efficiently",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "problems",
+          "target_word": "efficiently"
+        }
+      },
+      {
+        "source": "word_efficiently",
+        "target": "word_code",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 0.5,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 0.5,
+          "source_word": "efficiently",
+          "target_word": "code"
+        }
+      },
+      {
+        "source": "word_efficiently",
+        "target": "word_databases",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 0.5,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 0.5,
+          "source_word": "efficiently",
+          "target_word": "databases"
+        }
+      },
+      {
+        "source": "word_code",
+        "target": "word_executed",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 0.5,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 0.5,
+          "source_word": "code",
+          "target_word": "executed"
+        }
+      },
+      {
+        "source": "word_code",
+        "target": "word_systematically",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 0.5,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 0.5,
+          "source_word": "code",
+          "target_word": "systematically"
+        }
+      },
+      {
+        "source": "word_executed",
+        "target": "word_server",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "executed",
+          "target_word": "server"
+        }
+      },
+      {
+        "source": "word_server",
+        "target": "word_infrastructure",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 0.5,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 0.5,
+          "source_word": "server",
+          "target_word": "infrastructure"
+        }
+      },
+      {
+        "source": "word_server",
+        "target": "word_responded",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 0.5,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 0.5,
+          "source_word": "server",
+          "target_word": "responded"
+        }
+      },
+      {
+        "source": "word_infrastructure",
+        "target": "word_networks",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "infrastructure",
+          "target_word": "networks"
+        }
+      },
+      {
+        "source": "word_networks",
+        "target": "word_connected",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "networks",
+          "target_word": "connected"
+        }
+      },
+      {
+        "source": "word_connected",
+        "target": "word_devices",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 0.5,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 0.5,
+          "source_word": "connected",
+          "target_word": "devices"
+        }
+      },
+      {
+        "source": "word_connected",
+        "target": "word_different",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 0.5,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 0.5,
+          "source_word": "connected",
+          "target_word": "different"
+        }
+      },
+      {
+        "source": "word_devices",
+        "target": "word_across",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "devices",
+          "target_word": "across"
+        }
+      },
+      {
+        "source": "word_across",
+        "target": "word_continents",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "across",
+          "target_word": "continents"
+        }
+      },
+      {
+        "source": "word_continents",
+        "target": "word_software",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "continents",
+          "target_word": "software"
+        }
+      },
+      {
+        "source": "word_software",
+        "target": "word_updated",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 0.5,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 0.5,
+          "source_word": "software",
+          "target_word": "updated"
+        }
+      },
+      {
+        "source": "word_software",
+        "target": "word_development",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 0.5,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 0.5,
+          "source_word": "software",
+          "target_word": "development"
+        }
+      },
+      {
+        "source": "word_updated",
+        "target": "word_automatically",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "updated",
+          "target_word": "automatically"
+        }
+      },
+      {
+        "source": "word_automatically",
+        "target": "word_overnight",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "automatically",
+          "target_word": "overnight"
+        }
+      },
+      {
+        "source": "word_overnight",
+        "target": "word_users",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "overnight",
+          "target_word": "users"
+        }
+      },
+      {
+        "source": "word_users",
+        "target": "word_logged",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "users",
+          "target_word": "logged"
+        }
+      },
+      {
+        "source": "word_logged",
+        "target": "word_system",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "logged",
+          "target_word": "system"
+        }
+      },
+      {
+        "source": "word_system",
+        "target": "word_dashboard",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 0.5,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 0.5,
+          "source_word": "system",
+          "target_word": "dashboard"
+        }
+      },
+      {
+        "source": "word_system",
+        "target": "word_scaled",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 0.5,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 0.5,
+          "source_word": "system",
+          "target_word": "scaled"
+        }
+      },
+      {
+        "source": "word_dashboard",
+        "target": "word_interface",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "dashboard",
+          "target_word": "interface"
+        }
+      },
+      {
+        "source": "word_interface",
+        "target": "word_displayed",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "interface",
+          "target_word": "displayed"
+        }
+      },
+      {
+        "source": "word_displayed",
+        "target": "word_information",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "displayed",
+          "target_word": "information"
+        }
+      },
+      {
+        "source": "word_information",
+        "target": "word_clearly",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 0.5,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 0.5,
+          "source_word": "information",
+          "target_word": "clearly"
+        }
+      },
+      {
+        "source": "word_information",
+        "target": "word_securely",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 0.5,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 0.5,
+          "source_word": "information",
+          "target_word": "securely"
+        }
+      },
+      {
+        "source": "word_clearly",
+        "target": "word_processors",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "clearly",
+          "target_word": "processors"
+        }
+      },
+      {
+        "source": "word_processors",
+        "target": "word_calculated",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "processors",
+          "target_word": "calculated"
+        }
+      },
+      {
+        "source": "word_calculated",
+        "target": "word_millions",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "calculated",
+          "target_word": "millions"
+        }
+      },
+      {
+        "source": "word_millions",
+        "target": "word_operations",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "millions",
+          "target_word": "operations"
+        }
+      },
+      {
+        "source": "word_operations",
+        "target": "word_memory",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "operations",
+          "target_word": "memory"
+        }
+      },
+      {
+        "source": "word_memory",
+        "target": "word_stored",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "memory",
+          "target_word": "stored"
+        }
+      },
+      {
+        "source": "word_stored",
+        "target": "word_temporary",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "stored",
+          "target_word": "temporary"
+        }
+      },
+      {
+        "source": "word_temporary",
+        "target": "word_data",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "temporary",
+          "target_word": "data"
+        }
+      },
+      {
+        "source": "word_databases",
+        "target": "word_maintained",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "databases",
+          "target_word": "maintained"
+        }
+      },
+      {
+        "source": "word_maintained",
+        "target": "word_persistent",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "maintained",
+          "target_word": "persistent"
+        }
+      },
+      {
+        "source": "word_persistent",
+        "target": "word_records",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "persistent",
+          "target_word": "records"
+        }
+      },
+      {
+        "source": "word_records",
+        "target": "word_reliably",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "records",
+          "target_word": "reliably"
+        }
+      },
+      {
+        "source": "word_reliably",
+        "target": "word_applications",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "reliably",
+          "target_word": "applications"
+        }
+      },
+      {
+        "source": "word_applications",
+        "target": "word_ran",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "applications",
+          "target_word": "ran"
+        }
+      },
+      {
+        "source": "word_ran",
+        "target": "word_cloud",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "ran",
+          "target_word": "cloud"
+        }
+      },
+      {
+        "source": "word_cloud",
+        "target": "word_platforms",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "cloud",
+          "target_word": "platforms"
+        }
+      },
+      {
+        "source": "word_platforms",
+        "target": "word_engineers",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "platforms",
+          "target_word": "engineers"
+        }
+      },
+      {
+        "source": "word_engineers",
+        "target": "word_debugged",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "engineers",
+          "target_word": "debugged"
+        }
+      },
+      {
+        "source": "word_debugged",
+        "target": "word_code",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "debugged",
+          "target_word": "code"
+        }
+      },
+      {
+        "source": "word_systematically",
+        "target": "word_system",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "systematically",
+          "target_word": "system"
+        }
+      },
+      {
+        "source": "word_scaled",
+        "target": "word_handle",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "scaled",
+          "target_word": "handle"
+        }
+      },
+      {
+        "source": "word_handle",
+        "target": "word_increased",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "handle",
+          "target_word": "increased"
+        }
+      },
+      {
+        "source": "word_increased",
+        "target": "word_load",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "increased",
+          "target_word": "load"
+        }
+      },
+      {
+        "source": "word_load",
+        "target": "word_encryption",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "load",
+          "target_word": "encryption"
+        }
+      },
+      {
+        "source": "word_encryption",
+        "target": "word_protected",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "encryption",
+          "target_word": "protected"
+        }
+      },
+      {
+        "source": "word_protected",
+        "target": "word_sensitive",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "protected",
+          "target_word": "sensitive"
+        }
+      },
+      {
+        "source": "word_sensitive",
+        "target": "word_information",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "sensitive",
+          "target_word": "information"
+        }
+      },
+      {
+        "source": "word_securely",
+        "target": "word_bandwidth",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "securely",
+          "target_word": "bandwidth"
+        }
+      },
+      {
+        "source": "word_bandwidth",
+        "target": "word_determined",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "bandwidth",
+          "target_word": "determined"
+        }
+      },
+      {
+        "source": "word_determined",
+        "target": "word_download",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "determined",
+          "target_word": "download"
+        }
+      },
+      {
+        "source": "word_download",
+        "target": "word_speeds",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "download",
+          "target_word": "speeds"
+        }
+      },
+      {
+        "source": "word_speeds",
+        "target": "word_significantly",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "speeds",
+          "target_word": "significantly"
+        }
+      },
+      {
+        "source": "word_significantly",
+        "target": "word_server",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "significantly",
+          "target_word": "server"
+        }
+      },
+      {
+        "source": "word_responded",
+        "target": "word_requests",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "responded",
+          "target_word": "requests"
+        }
+      },
+      {
+        "source": "word_requests",
+        "target": "word_quickly",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "requests",
+          "target_word": "quickly"
+        }
+      },
+      {
+        "source": "word_quickly",
+        "target": "word_programming",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "quickly",
+          "target_word": "programming"
+        }
+      },
+      {
+        "source": "word_programming",
+        "target": "word_languages",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "programming",
+          "target_word": "languages"
+        }
+      },
+      {
+        "source": "word_languages",
+        "target": "word_enabled",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "languages",
+          "target_word": "enabled"
+        }
+      },
+      {
+        "source": "word_enabled",
+        "target": "word_software",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "enabled",
+          "target_word": "software"
+        }
+      },
+      {
+        "source": "word_development",
+        "target": "word_apis",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "development",
+          "target_word": "apis"
+        }
+      },
+      {
+        "source": "word_apis",
+        "target": "word_connected",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "apis",
+          "target_word": "connected"
+        }
+      },
+      {
+        "source": "word_different",
+        "target": "word_services",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "different",
+          "target_word": "services"
+        }
+      },
+      {
+        "source": "word_services",
+        "target": "word_seamlessly",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "services",
+          "target_word": "seamlessly"
+        }
+      },
+      {
+        "source": "word_seamlessly",
+        "target": "word_network",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "seamlessly",
+          "target_word": "network"
+        }
+      },
+      {
+        "source": "word_network",
+        "target": "word_routed",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "network",
+          "target_word": "routed"
+        }
+      },
+      {
+        "source": "word_routed",
+        "target": "word_packets",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "routed",
+          "target_word": "packets"
+        }
+      },
+      {
+        "source": "word_packets",
+        "target": "word_intelligently",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "packets",
+          "target_word": "intelligently"
+        }
+      },
+      {
+        "source": "word_intelligently",
+        "target": "word_technology",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "intelligently",
+          "target_word": "technology"
+        }
+      },
+      {
+        "source": "word_technology",
+        "target": "word_advanced",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "technology",
+          "target_word": "advanced"
+        }
+      },
+      {
+        "source": "word_advanced",
+        "target": "word_rapidly",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "advanced",
+          "target_word": "rapidly"
+        }
+      }
+    ]
+  },
+  "architectural_issues": {
+    "circular_dependencies": [],
+    "orphaned_nodes": [],
+    "dead_ends": [
+      "each"
+    ],
+    "unreachable_words": [
+      "computer"
+    ]
+  },
+  "architectural_issues_summary": {
+    "total_issues": 2,
+    "by_type": {
+      "dead_ends": 1,
+      "unreachable_words": 1
+    }
+  }
+}

@@ -1,0 +1,702 @@
+{
+  "metadata": {
+    "generated": "2025-11-08T01:16:58.334871",
+    "framework": "Language Flow (Merged)",
+    "framework_id": "language_flow",
+    "component_term": "word",
+    "connection_term": "transition",
+    "num_nodes": 161,
+    "num_edges": 174,
+    "tool_version": "1.0.0",
+    "merge_strategy": "union",
+    "source_books": [
+      "nature_book",
+      "technology_book"
+    ],
+    "num_source_books": 2,
+    "analysis_timestamp": "1762564520.0669694"
+  },
+  "basic_statistics": {
+    "num_nodes": 161,
+    "num_edges": 174,
+    "density": 0.006754658385093168,
+    "average_in_degree": 1.0807453416149069,
+    "average_out_degree": 1.0807453416149069
+  },
+  "analyses": {
+    "centrality": {
+      "analysis_type": "centrality",
+      "top_by_degree": [
+        {
+          "word": "through",
+          "score": 0.037500000000000006
+        },
+        {
+          "word": "forest",
+          "score": 0.03125
+        },
+        {
+          "word": "code",
+          "score": 0.025
+        },
+        {
+          "word": "connected",
+          "score": 0.025
+        },
+        {
+          "word": "data",
+          "score": 0.025
+        },
+        {
+          "word": "efficiently",
+          "score": 0.025
+        },
+        {
+          "word": "information",
+          "score": 0.025
+        },
+        {
+          "word": "protected",
+          "score": 0.025
+        },
+        {
+          "word": "rapidly",
+          "score": 0.025
+        },
+        {
+          "word": "server",
+          "score": 0.025
+        }
+      ],
+      "top_by_betweenness": [
+        {
+          "word": "through",
+          "score": 0.5095911949685534
+        },
+        {
+          "word": "forest",
+          "score": 0.48172169811320753
+        },
+        {
+          "word": "information",
+          "score": 0.43486635220125786
+        },
+        {
+          "word": "leaves",
+          "score": 0.40420597484276727
+        },
+        {
+          "word": "rain",
+          "score": 0.4041666666666667
+        },
+        {
+          "word": "fell",
+          "score": 0.404127358490566
+        },
+        {
+          "word": "softly",
+          "score": 0.4040880503144654
+        },
+        {
+          "word": "rapidly",
+          "score": 0.3722877358490566
+        },
+        {
+          "word": "each",
+          "score": 0.36163522012578614
+        },
+        {
+          "word": "morning",
+          "score": 0.3615959119496855
+        }
+      ],
+      "top_by_closeness": [
+        {
+          "word": "each",
+          "score": 0.06196323529411765
+        },
+        {
+          "word": "morning",
+          "score": 0.05873838289962825
+        },
+        {
+          "word": "flowers",
+          "score": 0.05583259717314488
+        },
+        {
+          "word": "bloomed",
+          "score": 0.053200757575757575
+        },
+        {
+          "word": "spring",
+          "score": 0.05080586816720257
+        },
+        {
+          "word": "season",
+          "score": 0.048617307692307696
+        },
+        {
+          "word": "information",
+          "score": 0.04775045330915685
+        },
+        {
+          "word": "protected",
+          "score": 0.04694184491978609
+        },
+        {
+          "word": "bees",
+          "score": 0.04660951327433628
+        },
+        {
+          "word": "securely",
+          "score": 0.04586538461538462
+        }
+      ],
+      "interpretation": {
+        "degree": "Words with most direct connections (most versatile words)",
+        "betweenness": "Bridge words that connect different parts of text",
+        "closeness": "Words closest to all other words (central to vocabulary)"
+      }
+    },
+    "communities": {
+      "analysis_type": "communities",
+      "num_communities": 12,
+      "communities": [
+        {
+          "community_id": 0,
+          "size": 22,
+          "words": [
+            "ancient",
+            "covered",
+            "dense",
+            "floor",
+            "forest",
+            "gathered",
+            "grew",
+            "hooted",
+            "illuminated",
+            "moon",
+            "moss",
+            "night",
+            "nuts",
+            "owls",
+            "softly",
+            "squirrels",
+            "stones",
+            "storage",
+            "stretched",
+            "tall"
+          ]
+        },
+        {
+          "community_id": 1,
+          "size": 19,
+          "words": [
+            "across",
+            "apis",
+            "connected",
+            "continents",
+            "development",
+            "devices",
+            "download",
+            "enabled",
+            "infrastructure",
+            "languages",
+            "networks",
+            "programming",
+            "quickly",
+            "requests",
+            "responded",
+            "server",
+            "significantly",
+            "software",
+            "speeds"
+          ]
+        },
+        {
+          "community_id": 2,
+          "size": 17,
+          "words": [
+            "bubbled",
+            "butterflies",
+            "creek",
+            "croaked",
+            "danced",
+            "edge",
+            "frogs",
+            "high",
+            "near",
+            "peaceful",
+            "perches",
+            "pond",
+            "remained",
+            "rocks",
+            "smooth",
+            "sunlight",
+            "wilderness"
+          ]
+        },
+        {
+          "community_id": 3,
+          "size": 14,
+          "words": [
+            "applications",
+            "cloud",
+            "code",
+            "databases",
+            "debugged",
+            "efficiently",
+            "engineers",
+            "executed",
+            "maintained",
+            "persistent",
+            "platforms",
+            "ran",
+            "records",
+            "reliably"
+          ]
+        },
+        {
+          "community_id": 4,
+          "size": 14,
+          "words": [
+            "automatically",
+            "bandwidth",
+            "dashboard",
+            "determined",
+            "displayed",
+            "information",
+            "interface",
+            "logged",
+            "overnight",
+            "securely",
+            "system",
+            "systematically",
+            "updated",
+            "users"
+          ]
+        },
+        {
+          "community_id": 5,
+          "size": 12,
+          "words": [
+            "algorithms",
+            "complex",
+            "each",
+            "earth",
+            "meadow",
+            "morning",
+            "problems",
+            "quietly",
+            "rapidly",
+            "solved",
+            "sun",
+            "warmed"
+          ]
+        },
+        {
+          "community_id": 6,
+          "size": 12,
+          "words": [
+            "below",
+            "clear",
+            "deer",
+            "fell",
+            "fish",
+            "leaves",
+            "rain",
+            "swam",
+            "through",
+            "valley",
+            "walked",
+            "water"
+          ]
+        },
+        {
+          "community_id": 7,
+          "size": 12,
+          "words": [
+            "among",
+            "bees",
+            "bloomed",
+            "blossoms",
+            "buzzed",
+            "collecting",
+            "flowers",
+            "nectar",
+            "season",
+            "spring",
+            "whispered",
+            "wind"
+          ]
+        },
+        {
+          "community_id": 8,
+          "size": 11,
+          "words": [
+            "encryption",
+            "flourished",
+            "handle",
+            "increased",
+            "load",
+            "nature",
+            "protected",
+            "sanctuary",
+            "scaled",
+            "sensitive",
+            "serene"
+          ]
+        },
+        {
+          "community_id": 9,
+          "size": 11,
+          "words": [
+            "calculated",
+            "clearly",
+            "computer",
+            "data",
+            "memory",
+            "millions",
+            "operations",
+            "processed",
+            "processors",
+            "stored",
+            "temporary"
+          ]
+        }
+      ],
+      "interpretation": "Groups of words that frequently occur together"
+    },
+    "dag": {
+      "analysis_type": "dag",
+      "is_dag": false,
+      "num_cycles": 52,
+      "example_cycles": [
+        {
+          "length": 14,
+          "words": [
+            "moon",
+            "illuminated",
+            "night",
+            "forest",
+            "floor",
+            "moss",
+            "covered",
+            "ancient",
+            "stones",
+            "squirrels",
+            "gathered",
+            "nuts",
+            "winter",
+            "storage"
+          ]
+        },
+        {
+          "length": 20,
+          "words": [
+            "bloomed",
+            "spring",
+            "season",
+            "bees",
+            "buzzed",
+            "among",
+            "blossoms",
+            "collecting",
+            "nectar",
+            "wind",
+            "whispered",
+            "through",
+            "meadow",
+            "quietly",
+            "sun",
+            "warmed",
+            "earth",
+            "each",
+            "morning",
+            "flowers"
+          ]
+        },
+        {
+          "length": 55,
+          "words": [
+            "bloomed",
+            "spring",
+            "season",
+            "bees",
+            "buzzed",
+            "among",
+            "blossoms",
+            "collecting",
+            "nectar",
+            "wind",
+            "whispered",
+            "through",
+            "leaves",
+            "rain",
+            "fell",
+            "softly",
+            "forest",
+            "owls",
+            "hooted",
+            "perches",
+            "high",
+            "creek",
+            "bubbled",
+            "smooth",
+            "rocks",
+            "frogs",
+            "croaked",
+            "near",
+            "pond",
+            "edge",
+            "butterflies",
+            "danced",
+            "sunlight",
+            "wilderness",
+            "remained",
+            "peaceful",
+            "serene",
+            "nature",
+            "flourished",
+            "protected",
+            "sensitive",
+            "information",
+            "clearly",
+            "processors",
+            "calculated",
+            "millions",
+            "operations",
+            "memory",
+            "stored",
+            "temporary",
+            "data",
+            "rapidly",
+            "each",
+            "morning",
+            "flowers"
+          ]
+        },
+        {
+          "length": 71,
+          "words": [
+            "bloomed",
+            "spring",
+            "season",
+            "bees",
+            "buzzed",
+            "among",
+            "blossoms",
+            "collecting",
+            "nectar",
+            "wind",
+            "whispered",
+            "through",
+            "leaves",
+            "rain",
+            "fell",
+            "softly",
+            "forest",
+            "owls",
+            "hooted",
+            "perches",
+            "high",
+            "creek",
+            "bubbled",
+            "smooth",
+            "rocks",
+            "frogs",
+            "croaked",
+            "near",
+            "pond",
+            "edge",
+            "butterflies",
+            "danced",
+            "sunlight",
+            "wilderness",
+            "remained",
+            "peaceful",
+            "serene",
+            "nature",
+            "flourished",
+            "protected",
+            "sensitive",
+            "information",
+            "clearly",
+            "processors",
+            "calculated",
+            "millions",
+            "operations",
+            "memory",
+            "stored",
+            "temporary",
+            "data",
+            "efficiently",
+            "code",
+            "executed",
+            "server",
+            "infrastructure",
+            "networks",
+            "connected",
+            "different",
+            "services",
+            "seamlessly",
+            "network",
+            "routed",
+            "packets",
+            "intelligently",
+            "technology",
+            "advanced",
+            "rapidly",
+            "each",
+            "morning",
+            "flowers"
+          ]
+        },
+        {
+          "length": 78,
+          "words": [
+            "bloomed",
+            "spring",
+            "season",
+            "bees",
+            "buzzed",
+            "among",
+            "blossoms",
+            "collecting",
+            "nectar",
+            "wind",
+            "whispered",
+            "through",
+            "leaves",
+            "rain",
+            "fell",
+            "softly",
+            "forest",
+            "owls",
+            "hooted",
+            "perches",
+            "high",
+            "creek",
+            "bubbled",
+            "smooth",
+            "rocks",
+            "frogs",
+            "croaked",
+            "near",
+            "pond",
+            "edge",
+            "butterflies",
+            "danced",
+            "sunlight",
+            "wilderness",
+            "remained",
+            "peaceful",
+            "serene",
+            "nature",
+            "flourished",
+            "protected",
+            "sensitive",
+            "information",
+            "clearly",
+            "processors",
+            "calculated",
+            "millions",
+            "operations",
+            "memory",
+            "stored",
+            "temporary",
+            "data",
+            "efficiently",
+            "code",
+            "executed",
+            "server",
+            "responded",
+            "requests",
+            "quickly",
+            "programming",
+            "languages",
+            "enabled",
+            "software",
+            "development",
+            "apis",
+            "connected",
+            "different",
+            "services",
+            "seamlessly",
+            "network",
+            "routed",
+            "packets",
+            "intelligently",
+            "technology",
+            "advanced",
+            "rapidly",
+            "each",
+            "morning",
+            "flowers"
+          ]
+        }
+      ],
+      "interpretation": "Cycles indicate words that loop back to each other in the text"
+    },
+    "structural_issues": {
+      "analysis_type": "structural_issues",
+      "orphaned_nodes": {
+        "count": 0,
+        "words": [],
+        "interpretation": "Words that appear isolated (no connections)"
+      },
+      "dead_ends": {
+        "count": 1,
+        "words": [
+          "sanctuary"
+        ],
+        "interpretation": "Words that end sentences/phrases (no words follow them)"
+      },
+      "unreachable": {
+        "count": 1,
+        "words": [
+          "computer"
+        ],
+        "interpretation": "Words that start sentences/phrases (no words lead to them)"
+      },
+      "bottlenecks": {
+        "words": [
+          {
+            "word": "through",
+            "score": 0.5095911949685534
+          },
+          {
+            "word": "forest",
+            "score": 0.48172169811320753
+          },
+          {
+            "word": "information",
+            "score": 0.43486635220125786
+          },
+          {
+            "word": "leaves",
+            "score": 0.40420597484276727
+          },
+          {
+            "word": "rain",
+            "score": 0.4041666666666667
+          }
+        ],
+        "interpretation": "Words that must be passed through to connect different parts of text"
+      }
+    },
+    "connectivity": {
+      "analysis_type": "connectivity",
+      "is_weakly_connected": true,
+      "is_strongly_connected": false,
+      "num_strongly_connected_components": 4,
+      "largest_scc_size": 158,
+      "largest_scc_percentage": 98.13664596273291,
+      "interpretation": {
+        "weakly_connected": "All words reachable ignoring edge direction",
+        "strongly_connected": "Every word can reach every other word following edges",
+        "sccs": "Groups of words that form circular paths"
+      }
+    }
+  }
+}

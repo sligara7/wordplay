@@ -1,0 +1,6553 @@
+{
+  "metadata": {
+    "generated": "2025-11-08T01:16:58.334871",
+    "framework": "Language Flow (Merged)",
+    "framework_id": "language_flow",
+    "component_term": "word",
+    "connection_term": "transition",
+    "num_nodes": 161,
+    "num_edges": 174,
+    "tool_version": "1.0.0",
+    "merge_strategy": "union",
+    "source_books": [
+      "nature_book",
+      "technology_book"
+    ],
+    "num_source_books": 2
+  },
+  "graph": {
+    "directed": true,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+      {
+        "id": "word_above",
+        "name": "above",
+        "type": "word",
+        "raw": {
+          "word": "above",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-ABOVE-01",
+            "function_name": "Token: above",
+            "description": "Word 'above' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_across",
+        "name": "across",
+        "type": "word",
+        "raw": {
+          "word": "across",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-ACROSS-01",
+            "function_name": "Token: across",
+            "description": "Word 'across' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_advanced",
+        "name": "advanced",
+        "type": "word",
+        "raw": {
+          "word": "advanced",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-ADVANCED-01",
+            "function_name": "Token: advanced",
+            "description": "Word 'advanced' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_algorithms",
+        "name": "algorithms",
+        "type": "word",
+        "raw": {
+          "word": "algorithms",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-ALGORITHMS-01",
+            "function_name": "Token: algorithms",
+            "description": "Word 'algorithms' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_among",
+        "name": "among",
+        "type": "word",
+        "raw": {
+          "word": "among",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-AMONG-01",
+            "function_name": "Token: among",
+            "description": "Word 'among' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_ancient",
+        "name": "ancient",
+        "type": "word",
+        "raw": {
+          "word": "ancient",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-ANCIENT-01",
+            "function_name": "Token: ancient",
+            "description": "Word 'ancient' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_apis",
+        "name": "apis",
+        "type": "word",
+        "raw": {
+          "word": "apis",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-APIS-01",
+            "function_name": "Token: apis",
+            "description": "Word 'apis' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_applications",
+        "name": "applications",
+        "type": "word",
+        "raw": {
+          "word": "applications",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-APPLICATIONS-01",
+            "function_name": "Token: applications",
+            "description": "Word 'applications' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_automatically",
+        "name": "automatically",
+        "type": "word",
+        "raw": {
+          "word": "automatically",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-AUTOMATICALLY-01",
+            "function_name": "Token: automatically",
+            "description": "Word 'automatically' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_bandwidth",
+        "name": "bandwidth",
+        "type": "word",
+        "raw": {
+          "word": "bandwidth",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-BANDWIDTH-01",
+            "function_name": "Token: bandwidth",
+            "description": "Word 'bandwidth' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_bees",
+        "name": "bees",
+        "type": "word",
+        "raw": {
+          "word": "bees",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-BEES-01",
+            "function_name": "Token: bees",
+            "description": "Word 'bees' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_below",
+        "name": "below",
+        "type": "word",
+        "raw": {
+          "word": "below",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-BELOW-01",
+            "function_name": "Token: below",
+            "description": "Word 'below' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_birds",
+        "name": "birds",
+        "type": "word",
+        "raw": {
+          "word": "birds",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-BIRDS-01",
+            "function_name": "Token: birds",
+            "description": "Word 'birds' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_bloomed",
+        "name": "bloomed",
+        "type": "word",
+        "raw": {
+          "word": "bloomed",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-BLOOMED-01",
+            "function_name": "Token: bloomed",
+            "description": "Word 'bloomed' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_blossoms",
+        "name": "blossoms",
+        "type": "word",
+        "raw": {
+          "word": "blossoms",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-BLOSSOMS-01",
+            "function_name": "Token: blossoms",
+            "description": "Word 'blossoms' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_branches",
+        "name": "branches",
+        "type": "word",
+        "raw": {
+          "word": "branches",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-BRANCHES-01",
+            "function_name": "Token: branches",
+            "description": "Word 'branches' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_bubbled",
+        "name": "bubbled",
+        "type": "word",
+        "raw": {
+          "word": "bubbled",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-BUBBLED-01",
+            "function_name": "Token: bubbled",
+            "description": "Word 'bubbled' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_butterflies",
+        "name": "butterflies",
+        "type": "word",
+        "raw": {
+          "word": "butterflies",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-BUTTERFLIES-01",
+            "function_name": "Token: butterflies",
+            "description": "Word 'butterflies' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_buzzed",
+        "name": "buzzed",
+        "type": "word",
+        "raw": {
+          "word": "buzzed",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-BUZZED-01",
+            "function_name": "Token: buzzed",
+            "description": "Word 'buzzed' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_calculated",
+        "name": "calculated",
+        "type": "word",
+        "raw": {
+          "word": "calculated",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-CALCULATED-01",
+            "function_name": "Token: calculated",
+            "description": "Word 'calculated' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_clear",
+        "name": "clear",
+        "type": "word",
+        "raw": {
+          "word": "clear",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-CLEAR-01",
+            "function_name": "Token: clear",
+            "description": "Word 'clear' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_clearly",
+        "name": "clearly",
+        "type": "word",
+        "raw": {
+          "word": "clearly",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-CLEARLY-01",
+            "function_name": "Token: clearly",
+            "description": "Word 'clearly' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_cloud",
+        "name": "cloud",
+        "type": "word",
+        "raw": {
+          "word": "cloud",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-CLOUD-01",
+            "function_name": "Token: cloud",
+            "description": "Word 'cloud' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_code",
+        "name": "code",
+        "type": "word",
+        "raw": {
+          "word": "code",
+          "total_frequency": 2,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-CODE-01",
+            "function_name": "Token: code",
+            "description": "Word 'code' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_collecting",
+        "name": "collecting",
+        "type": "word",
+        "raw": {
+          "word": "collecting",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-COLLECTING-01",
+            "function_name": "Token: collecting",
+            "description": "Word 'collecting' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_complex",
+        "name": "complex",
+        "type": "word",
+        "raw": {
+          "word": "complex",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-COMPLEX-01",
+            "function_name": "Token: complex",
+            "description": "Word 'complex' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_computer",
+        "name": "computer",
+        "type": "word",
+        "raw": {
+          "word": "computer",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-COMPUTER-01",
+            "function_name": "Token: computer",
+            "description": "Word 'computer' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_connected",
+        "name": "connected",
+        "type": "word",
+        "raw": {
+          "word": "connected",
+          "total_frequency": 2,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-CONNECTED-01",
+            "function_name": "Token: connected",
+            "description": "Word 'connected' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_continents",
+        "name": "continents",
+        "type": "word",
+        "raw": {
+          "word": "continents",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-CONTINENTS-01",
+            "function_name": "Token: continents",
+            "description": "Word 'continents' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_covered",
+        "name": "covered",
+        "type": "word",
+        "raw": {
+          "word": "covered",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-COVERED-01",
+            "function_name": "Token: covered",
+            "description": "Word 'covered' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_creek",
+        "name": "creek",
+        "type": "word",
+        "raw": {
+          "word": "creek",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-CREEK-01",
+            "function_name": "Token: creek",
+            "description": "Word 'creek' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_croaked",
+        "name": "croaked",
+        "type": "word",
+        "raw": {
+          "word": "croaked",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-CROAKED-01",
+            "function_name": "Token: croaked",
+            "description": "Word 'croaked' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_danced",
+        "name": "danced",
+        "type": "word",
+        "raw": {
+          "word": "danced",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-DANCED-01",
+            "function_name": "Token: danced",
+            "description": "Word 'danced' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_dashboard",
+        "name": "dashboard",
+        "type": "word",
+        "raw": {
+          "word": "dashboard",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-DASHBOARD-01",
+            "function_name": "Token: dashboard",
+            "description": "Word 'dashboard' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_data",
+        "name": "data",
+        "type": "word",
+        "raw": {
+          "word": "data",
+          "total_frequency": 2,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-DATA-01",
+            "function_name": "Token: data",
+            "description": "Word 'data' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_databases",
+        "name": "databases",
+        "type": "word",
+        "raw": {
+          "word": "databases",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-DATABASES-01",
+            "function_name": "Token: databases",
+            "description": "Word 'databases' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_debugged",
+        "name": "debugged",
+        "type": "word",
+        "raw": {
+          "word": "debugged",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-DEBUGGED-01",
+            "function_name": "Token: debugged",
+            "description": "Word 'debugged' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_deer",
+        "name": "deer",
+        "type": "word",
+        "raw": {
+          "word": "deer",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-DEER-01",
+            "function_name": "Token: deer",
+            "description": "Word 'deer' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_dense",
+        "name": "dense",
+        "type": "word",
+        "raw": {
+          "word": "dense",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-DENSE-01",
+            "function_name": "Token: dense",
+            "description": "Word 'dense' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_determined",
+        "name": "determined",
+        "type": "word",
+        "raw": {
+          "word": "determined",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-DETERMINED-01",
+            "function_name": "Token: determined",
+            "description": "Word 'determined' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_development",
+        "name": "development",
+        "type": "word",
+        "raw": {
+          "word": "development",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-DEVELOPMENT-01",
+            "function_name": "Token: development",
+            "description": "Word 'development' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_devices",
+        "name": "devices",
+        "type": "word",
+        "raw": {
+          "word": "devices",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-DEVICES-01",
+            "function_name": "Token: devices",
+            "description": "Word 'devices' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_different",
+        "name": "different",
+        "type": "word",
+        "raw": {
+          "word": "different",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-DIFFERENT-01",
+            "function_name": "Token: different",
+            "description": "Word 'different' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_displayed",
+        "name": "displayed",
+        "type": "word",
+        "raw": {
+          "word": "displayed",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-DISPLAYED-01",
+            "function_name": "Token: displayed",
+            "description": "Word 'displayed' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_download",
+        "name": "download",
+        "type": "word",
+        "raw": {
+          "word": "download",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-DOWNLOAD-01",
+            "function_name": "Token: download",
+            "description": "Word 'download' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_each",
+        "name": "each",
+        "type": "word",
+        "raw": {
+          "word": "each",
+          "total_frequency": 2,
+          "appears_in_books": [
+            "nature_book",
+            "technology_book"
+          ],
+          "num_books": 2,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-EACH-01",
+            "function_name": "Token: each",
+            "description": "Word 'each' appears in 2 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_earth",
+        "name": "earth",
+        "type": "word",
+        "raw": {
+          "word": "earth",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-EARTH-01",
+            "function_name": "Token: earth",
+            "description": "Word 'earth' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_edge",
+        "name": "edge",
+        "type": "word",
+        "raw": {
+          "word": "edge",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-EDGE-01",
+            "function_name": "Token: edge",
+            "description": "Word 'edge' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_efficiently",
+        "name": "efficiently",
+        "type": "word",
+        "raw": {
+          "word": "efficiently",
+          "total_frequency": 2,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-EFFICIENTLY-01",
+            "function_name": "Token: efficiently",
+            "description": "Word 'efficiently' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_enabled",
+        "name": "enabled",
+        "type": "word",
+        "raw": {
+          "word": "enabled",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-ENABLED-01",
+            "function_name": "Token: enabled",
+            "description": "Word 'enabled' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_encryption",
+        "name": "encryption",
+        "type": "word",
+        "raw": {
+          "word": "encryption",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-ENCRYPTION-01",
+            "function_name": "Token: encryption",
+            "description": "Word 'encryption' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_engineers",
+        "name": "engineers",
+        "type": "word",
+        "raw": {
+          "word": "engineers",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-ENGINEERS-01",
+            "function_name": "Token: engineers",
+            "description": "Word 'engineers' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_executed",
+        "name": "executed",
+        "type": "word",
+        "raw": {
+          "word": "executed",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-EXECUTED-01",
+            "function_name": "Token: executed",
+            "description": "Word 'executed' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_fell",
+        "name": "fell",
+        "type": "word",
+        "raw": {
+          "word": "fell",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-FELL-01",
+            "function_name": "Token: fell",
+            "description": "Word 'fell' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_fish",
+        "name": "fish",
+        "type": "word",
+        "raw": {
+          "word": "fish",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-FISH-01",
+            "function_name": "Token: fish",
+            "description": "Word 'fish' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_floor",
+        "name": "floor",
+        "type": "word",
+        "raw": {
+          "word": "floor",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-FLOOR-01",
+            "function_name": "Token: floor",
+            "description": "Word 'floor' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_flourished",
+        "name": "flourished",
+        "type": "word",
+        "raw": {
+          "word": "flourished",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-FLOURISHED-01",
+            "function_name": "Token: flourished",
+            "description": "Word 'flourished' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_flowed",
+        "name": "flowed",
+        "type": "word",
+        "raw": {
+          "word": "flowed",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-FLOWED-01",
+            "function_name": "Token: flowed",
+            "description": "Word 'flowed' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_flowers",
+        "name": "flowers",
+        "type": "word",
+        "raw": {
+          "word": "flowers",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-FLOWERS-01",
+            "function_name": "Token: flowers",
+            "description": "Word 'flowers' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_forest",
+        "name": "forest",
+        "type": "word",
+        "raw": {
+          "word": "forest",
+          "total_frequency": 3,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-FOREST-01",
+            "function_name": "Token: forest",
+            "description": "Word 'forest' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_frogs",
+        "name": "frogs",
+        "type": "word",
+        "raw": {
+          "word": "frogs",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-FROGS-01",
+            "function_name": "Token: frogs",
+            "description": "Word 'frogs' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_gathered",
+        "name": "gathered",
+        "type": "word",
+        "raw": {
+          "word": "gathered",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-GATHERED-01",
+            "function_name": "Token: gathered",
+            "description": "Word 'gathered' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_grew",
+        "name": "grew",
+        "type": "word",
+        "raw": {
+          "word": "grew",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-GREW-01",
+            "function_name": "Token: grew",
+            "description": "Word 'grew' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_handle",
+        "name": "handle",
+        "type": "word",
+        "raw": {
+          "word": "handle",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-HANDLE-01",
+            "function_name": "Token: handle",
+            "description": "Word 'handle' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_high",
+        "name": "high",
+        "type": "word",
+        "raw": {
+          "word": "high",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-HIGH-01",
+            "function_name": "Token: high",
+            "description": "Word 'high' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_hooted",
+        "name": "hooted",
+        "type": "word",
+        "raw": {
+          "word": "hooted",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-HOOTED-01",
+            "function_name": "Token: hooted",
+            "description": "Word 'hooted' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_illuminated",
+        "name": "illuminated",
+        "type": "word",
+        "raw": {
+          "word": "illuminated",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-ILLUMINATED-01",
+            "function_name": "Token: illuminated",
+            "description": "Word 'illuminated' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_increased",
+        "name": "increased",
+        "type": "word",
+        "raw": {
+          "word": "increased",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-INCREASED-01",
+            "function_name": "Token: increased",
+            "description": "Word 'increased' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_information",
+        "name": "information",
+        "type": "word",
+        "raw": {
+          "word": "information",
+          "total_frequency": 2,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-INFORMATION-01",
+            "function_name": "Token: information",
+            "description": "Word 'information' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_infrastructure",
+        "name": "infrastructure",
+        "type": "word",
+        "raw": {
+          "word": "infrastructure",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-INFRASTRUCTURE-01",
+            "function_name": "Token: infrastructure",
+            "description": "Word 'infrastructure' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_intelligently",
+        "name": "intelligently",
+        "type": "word",
+        "raw": {
+          "word": "intelligently",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-INTELLIGENTLY-01",
+            "function_name": "Token: intelligently",
+            "description": "Word 'intelligently' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_interface",
+        "name": "interface",
+        "type": "word",
+        "raw": {
+          "word": "interface",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-INTERFACE-01",
+            "function_name": "Token: interface",
+            "description": "Word 'interface' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_languages",
+        "name": "languages",
+        "type": "word",
+        "raw": {
+          "word": "languages",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-LANGUAGES-01",
+            "function_name": "Token: languages",
+            "description": "Word 'languages' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_leaves",
+        "name": "leaves",
+        "type": "word",
+        "raw": {
+          "word": "leaves",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-LEAVES-01",
+            "function_name": "Token: leaves",
+            "description": "Word 'leaves' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_load",
+        "name": "load",
+        "type": "word",
+        "raw": {
+          "word": "load",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-LOAD-01",
+            "function_name": "Token: load",
+            "description": "Word 'load' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_logged",
+        "name": "logged",
+        "type": "word",
+        "raw": {
+          "word": "logged",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-LOGGED-01",
+            "function_name": "Token: logged",
+            "description": "Word 'logged' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_maintained",
+        "name": "maintained",
+        "type": "word",
+        "raw": {
+          "word": "maintained",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-MAINTAINED-01",
+            "function_name": "Token: maintained",
+            "description": "Word 'maintained' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_meadow",
+        "name": "meadow",
+        "type": "word",
+        "raw": {
+          "word": "meadow",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-MEADOW-01",
+            "function_name": "Token: meadow",
+            "description": "Word 'meadow' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_memory",
+        "name": "memory",
+        "type": "word",
+        "raw": {
+          "word": "memory",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-MEMORY-01",
+            "function_name": "Token: memory",
+            "description": "Word 'memory' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_millions",
+        "name": "millions",
+        "type": "word",
+        "raw": {
+          "word": "millions",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-MILLIONS-01",
+            "function_name": "Token: millions",
+            "description": "Word 'millions' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_moon",
+        "name": "moon",
+        "type": "word",
+        "raw": {
+          "word": "moon",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-MOON-01",
+            "function_name": "Token: moon",
+            "description": "Word 'moon' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_morning",
+        "name": "morning",
+        "type": "word",
+        "raw": {
+          "word": "morning",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-MORNING-01",
+            "function_name": "Token: morning",
+            "description": "Word 'morning' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_moss",
+        "name": "moss",
+        "type": "word",
+        "raw": {
+          "word": "moss",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-MOSS-01",
+            "function_name": "Token: moss",
+            "description": "Word 'moss' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_nature",
+        "name": "nature",
+        "type": "word",
+        "raw": {
+          "word": "nature",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-NATURE-01",
+            "function_name": "Token: nature",
+            "description": "Word 'nature' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_near",
+        "name": "near",
+        "type": "word",
+        "raw": {
+          "word": "near",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-NEAR-01",
+            "function_name": "Token: near",
+            "description": "Word 'near' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_nectar",
+        "name": "nectar",
+        "type": "word",
+        "raw": {
+          "word": "nectar",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-NECTAR-01",
+            "function_name": "Token: nectar",
+            "description": "Word 'nectar' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_network",
+        "name": "network",
+        "type": "word",
+        "raw": {
+          "word": "network",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-NETWORK-01",
+            "function_name": "Token: network",
+            "description": "Word 'network' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_networks",
+        "name": "networks",
+        "type": "word",
+        "raw": {
+          "word": "networks",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-NETWORKS-01",
+            "function_name": "Token: networks",
+            "description": "Word 'networks' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_night",
+        "name": "night",
+        "type": "word",
+        "raw": {
+          "word": "night",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-NIGHT-01",
+            "function_name": "Token: night",
+            "description": "Word 'night' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_nuts",
+        "name": "nuts",
+        "type": "word",
+        "raw": {
+          "word": "nuts",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-NUTS-01",
+            "function_name": "Token: nuts",
+            "description": "Word 'nuts' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_operations",
+        "name": "operations",
+        "type": "word",
+        "raw": {
+          "word": "operations",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-OPERATIONS-01",
+            "function_name": "Token: operations",
+            "description": "Word 'operations' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_overnight",
+        "name": "overnight",
+        "type": "word",
+        "raw": {
+          "word": "overnight",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-OVERNIGHT-01",
+            "function_name": "Token: overnight",
+            "description": "Word 'overnight' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_owls",
+        "name": "owls",
+        "type": "word",
+        "raw": {
+          "word": "owls",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-OWLS-01",
+            "function_name": "Token: owls",
+            "description": "Word 'owls' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_packets",
+        "name": "packets",
+        "type": "word",
+        "raw": {
+          "word": "packets",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-PACKETS-01",
+            "function_name": "Token: packets",
+            "description": "Word 'packets' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_peaceful",
+        "name": "peaceful",
+        "type": "word",
+        "raw": {
+          "word": "peaceful",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-PEACEFUL-01",
+            "function_name": "Token: peaceful",
+            "description": "Word 'peaceful' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_perches",
+        "name": "perches",
+        "type": "word",
+        "raw": {
+          "word": "perches",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-PERCHES-01",
+            "function_name": "Token: perches",
+            "description": "Word 'perches' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_persistent",
+        "name": "persistent",
+        "type": "word",
+        "raw": {
+          "word": "persistent",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-PERSISTENT-01",
+            "function_name": "Token: persistent",
+            "description": "Word 'persistent' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_platforms",
+        "name": "platforms",
+        "type": "word",
+        "raw": {
+          "word": "platforms",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-PLATFORMS-01",
+            "function_name": "Token: platforms",
+            "description": "Word 'platforms' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_pond",
+        "name": "pond",
+        "type": "word",
+        "raw": {
+          "word": "pond",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-POND-01",
+            "function_name": "Token: pond",
+            "description": "Word 'pond' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_problems",
+        "name": "problems",
+        "type": "word",
+        "raw": {
+          "word": "problems",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-PROBLEMS-01",
+            "function_name": "Token: problems",
+            "description": "Word 'problems' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_processed",
+        "name": "processed",
+        "type": "word",
+        "raw": {
+          "word": "processed",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-PROCESSED-01",
+            "function_name": "Token: processed",
+            "description": "Word 'processed' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_processors",
+        "name": "processors",
+        "type": "word",
+        "raw": {
+          "word": "processors",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-PROCESSORS-01",
+            "function_name": "Token: processors",
+            "description": "Word 'processors' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_programming",
+        "name": "programming",
+        "type": "word",
+        "raw": {
+          "word": "programming",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-PROGRAMMING-01",
+            "function_name": "Token: programming",
+            "description": "Word 'programming' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_protected",
+        "name": "protected",
+        "type": "word",
+        "raw": {
+          "word": "protected",
+          "total_frequency": 2,
+          "appears_in_books": [
+            "nature_book",
+            "technology_book"
+          ],
+          "num_books": 2,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-PROTECTED-01",
+            "function_name": "Token: protected",
+            "description": "Word 'protected' appears in 2 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_quickly",
+        "name": "quickly",
+        "type": "word",
+        "raw": {
+          "word": "quickly",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-QUICKLY-01",
+            "function_name": "Token: quickly",
+            "description": "Word 'quickly' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_quietly",
+        "name": "quietly",
+        "type": "word",
+        "raw": {
+          "word": "quietly",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-QUIETLY-01",
+            "function_name": "Token: quietly",
+            "description": "Word 'quietly' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_rain",
+        "name": "rain",
+        "type": "word",
+        "raw": {
+          "word": "rain",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-RAIN-01",
+            "function_name": "Token: rain",
+            "description": "Word 'rain' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_ran",
+        "name": "ran",
+        "type": "word",
+        "raw": {
+          "word": "ran",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-RAN-01",
+            "function_name": "Token: ran",
+            "description": "Word 'ran' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_rapidly",
+        "name": "rapidly",
+        "type": "word",
+        "raw": {
+          "word": "rapidly",
+          "total_frequency": 2,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-RAPIDLY-01",
+            "function_name": "Token: rapidly",
+            "description": "Word 'rapidly' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_records",
+        "name": "records",
+        "type": "word",
+        "raw": {
+          "word": "records",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-RECORDS-01",
+            "function_name": "Token: records",
+            "description": "Word 'records' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_reliably",
+        "name": "reliably",
+        "type": "word",
+        "raw": {
+          "word": "reliably",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-RELIABLY-01",
+            "function_name": "Token: reliably",
+            "description": "Word 'reliably' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_remained",
+        "name": "remained",
+        "type": "word",
+        "raw": {
+          "word": "remained",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-REMAINED-01",
+            "function_name": "Token: remained",
+            "description": "Word 'remained' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_requests",
+        "name": "requests",
+        "type": "word",
+        "raw": {
+          "word": "requests",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-REQUESTS-01",
+            "function_name": "Token: requests",
+            "description": "Word 'requests' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_responded",
+        "name": "responded",
+        "type": "word",
+        "raw": {
+          "word": "responded",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-RESPONDED-01",
+            "function_name": "Token: responded",
+            "description": "Word 'responded' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_river",
+        "name": "river",
+        "type": "word",
+        "raw": {
+          "word": "river",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-RIVER-01",
+            "function_name": "Token: river",
+            "description": "Word 'river' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_rocks",
+        "name": "rocks",
+        "type": "word",
+        "raw": {
+          "word": "rocks",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-ROCKS-01",
+            "function_name": "Token: rocks",
+            "description": "Word 'rocks' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_routed",
+        "name": "routed",
+        "type": "word",
+        "raw": {
+          "word": "routed",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-ROUTED-01",
+            "function_name": "Token: routed",
+            "description": "Word 'routed' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_sanctuary",
+        "name": "sanctuary",
+        "type": "word",
+        "raw": {
+          "word": "sanctuary",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-SANCTUARY-01",
+            "function_name": "Token: sanctuary",
+            "description": "Word 'sanctuary' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_sang",
+        "name": "sang",
+        "type": "word",
+        "raw": {
+          "word": "sang",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-SANG-01",
+            "function_name": "Token: sang",
+            "description": "Word 'sang' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_scaled",
+        "name": "scaled",
+        "type": "word",
+        "raw": {
+          "word": "scaled",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-SCALED-01",
+            "function_name": "Token: scaled",
+            "description": "Word 'scaled' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_seamlessly",
+        "name": "seamlessly",
+        "type": "word",
+        "raw": {
+          "word": "seamlessly",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-SEAMLESSLY-01",
+            "function_name": "Token: seamlessly",
+            "description": "Word 'seamlessly' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_season",
+        "name": "season",
+        "type": "word",
+        "raw": {
+          "word": "season",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-SEASON-01",
+            "function_name": "Token: season",
+            "description": "Word 'season' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_securely",
+        "name": "securely",
+        "type": "word",
+        "raw": {
+          "word": "securely",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-SECURELY-01",
+            "function_name": "Token: securely",
+            "description": "Word 'securely' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_sensitive",
+        "name": "sensitive",
+        "type": "word",
+        "raw": {
+          "word": "sensitive",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-SENSITIVE-01",
+            "function_name": "Token: sensitive",
+            "description": "Word 'sensitive' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_serene",
+        "name": "serene",
+        "type": "word",
+        "raw": {
+          "word": "serene",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-SERENE-01",
+            "function_name": "Token: serene",
+            "description": "Word 'serene' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_server",
+        "name": "server",
+        "type": "word",
+        "raw": {
+          "word": "server",
+          "total_frequency": 2,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-SERVER-01",
+            "function_name": "Token: server",
+            "description": "Word 'server' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_services",
+        "name": "services",
+        "type": "word",
+        "raw": {
+          "word": "services",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-SERVICES-01",
+            "function_name": "Token: services",
+            "description": "Word 'services' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_significantly",
+        "name": "significantly",
+        "type": "word",
+        "raw": {
+          "word": "significantly",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-SIGNIFICANTLY-01",
+            "function_name": "Token: significantly",
+            "description": "Word 'significantly' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_sky",
+        "name": "sky",
+        "type": "word",
+        "raw": {
+          "word": "sky",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-SKY-01",
+            "function_name": "Token: sky",
+            "description": "Word 'sky' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_smooth",
+        "name": "smooth",
+        "type": "word",
+        "raw": {
+          "word": "smooth",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-SMOOTH-01",
+            "function_name": "Token: smooth",
+            "description": "Word 'smooth' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_softly",
+        "name": "softly",
+        "type": "word",
+        "raw": {
+          "word": "softly",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-SOFTLY-01",
+            "function_name": "Token: softly",
+            "description": "Word 'softly' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_software",
+        "name": "software",
+        "type": "word",
+        "raw": {
+          "word": "software",
+          "total_frequency": 2,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-SOFTWARE-01",
+            "function_name": "Token: software",
+            "description": "Word 'software' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_solved",
+        "name": "solved",
+        "type": "word",
+        "raw": {
+          "word": "solved",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-SOLVED-01",
+            "function_name": "Token: solved",
+            "description": "Word 'solved' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_speeds",
+        "name": "speeds",
+        "type": "word",
+        "raw": {
+          "word": "speeds",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-SPEEDS-01",
+            "function_name": "Token: speeds",
+            "description": "Word 'speeds' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_spring",
+        "name": "spring",
+        "type": "word",
+        "raw": {
+          "word": "spring",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-SPRING-01",
+            "function_name": "Token: spring",
+            "description": "Word 'spring' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_squirrels",
+        "name": "squirrels",
+        "type": "word",
+        "raw": {
+          "word": "squirrels",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-SQUIRRELS-01",
+            "function_name": "Token: squirrels",
+            "description": "Word 'squirrels' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_stones",
+        "name": "stones",
+        "type": "word",
+        "raw": {
+          "word": "stones",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-STONES-01",
+            "function_name": "Token: stones",
+            "description": "Word 'stones' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_storage",
+        "name": "storage",
+        "type": "word",
+        "raw": {
+          "word": "storage",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-STORAGE-01",
+            "function_name": "Token: storage",
+            "description": "Word 'storage' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_stored",
+        "name": "stored",
+        "type": "word",
+        "raw": {
+          "word": "stored",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-STORED-01",
+            "function_name": "Token: stored",
+            "description": "Word 'stored' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_stretched",
+        "name": "stretched",
+        "type": "word",
+        "raw": {
+          "word": "stretched",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-STRETCHED-01",
+            "function_name": "Token: stretched",
+            "description": "Word 'stretched' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_sun",
+        "name": "sun",
+        "type": "word",
+        "raw": {
+          "word": "sun",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-SUN-01",
+            "function_name": "Token: sun",
+            "description": "Word 'sun' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_sunlight",
+        "name": "sunlight",
+        "type": "word",
+        "raw": {
+          "word": "sunlight",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-SUNLIGHT-01",
+            "function_name": "Token: sunlight",
+            "description": "Word 'sunlight' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_swam",
+        "name": "swam",
+        "type": "word",
+        "raw": {
+          "word": "swam",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-SWAM-01",
+            "function_name": "Token: swam",
+            "description": "Word 'swam' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_system",
+        "name": "system",
+        "type": "word",
+        "raw": {
+          "word": "system",
+          "total_frequency": 2,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-SYSTEM-01",
+            "function_name": "Token: system",
+            "description": "Word 'system' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_systematically",
+        "name": "systematically",
+        "type": "word",
+        "raw": {
+          "word": "systematically",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-SYSTEMATICALLY-01",
+            "function_name": "Token: systematically",
+            "description": "Word 'systematically' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_tall",
+        "name": "tall",
+        "type": "word",
+        "raw": {
+          "word": "tall",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-TALL-01",
+            "function_name": "Token: tall",
+            "description": "Word 'tall' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_technology",
+        "name": "technology",
+        "type": "word",
+        "raw": {
+          "word": "technology",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-TECHNOLOGY-01",
+            "function_name": "Token: technology",
+            "description": "Word 'technology' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_temporary",
+        "name": "temporary",
+        "type": "word",
+        "raw": {
+          "word": "temporary",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-TEMPORARY-01",
+            "function_name": "Token: temporary",
+            "description": "Word 'temporary' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_through",
+        "name": "through",
+        "type": "word",
+        "raw": {
+          "word": "through",
+          "total_frequency": 3,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-THROUGH-01",
+            "function_name": "Token: through",
+            "description": "Word 'through' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_toward",
+        "name": "toward",
+        "type": "word",
+        "raw": {
+          "word": "toward",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-TOWARD-01",
+            "function_name": "Token: toward",
+            "description": "Word 'toward' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_trees",
+        "name": "trees",
+        "type": "word",
+        "raw": {
+          "word": "trees",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-TREES-01",
+            "function_name": "Token: trees",
+            "description": "Word 'trees' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_updated",
+        "name": "updated",
+        "type": "word",
+        "raw": {
+          "word": "updated",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-UPDATED-01",
+            "function_name": "Token: updated",
+            "description": "Word 'updated' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_users",
+        "name": "users",
+        "type": "word",
+        "raw": {
+          "word": "users",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-USERS-01",
+            "function_name": "Token: users",
+            "description": "Word 'users' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_valley",
+        "name": "valley",
+        "type": "word",
+        "raw": {
+          "word": "valley",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-VALLEY-01",
+            "function_name": "Token: valley",
+            "description": "Word 'valley' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_walked",
+        "name": "walked",
+        "type": "word",
+        "raw": {
+          "word": "walked",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-WALKED-01",
+            "function_name": "Token: walked",
+            "description": "Word 'walked' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_warmed",
+        "name": "warmed",
+        "type": "word",
+        "raw": {
+          "word": "warmed",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-WARMED-01",
+            "function_name": "Token: warmed",
+            "description": "Word 'warmed' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_water",
+        "name": "water",
+        "type": "word",
+        "raw": {
+          "word": "water",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-WATER-01",
+            "function_name": "Token: water",
+            "description": "Word 'water' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_whispered",
+        "name": "whispered",
+        "type": "word",
+        "raw": {
+          "word": "whispered",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-WHISPERED-01",
+            "function_name": "Token: whispered",
+            "description": "Word 'whispered' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_wilderness",
+        "name": "wilderness",
+        "type": "word",
+        "raw": {
+          "word": "wilderness",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-WILDERNESS-01",
+            "function_name": "Token: wilderness",
+            "description": "Word 'wilderness' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_wind",
+        "name": "wind",
+        "type": "word",
+        "raw": {
+          "word": "wind",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-WIND-01",
+            "function_name": "Token: wind",
+            "description": "Word 'wind' appears in 1 book(s)"
+          }
+        ]
+      },
+      {
+        "id": "word_winter",
+        "name": "winter",
+        "type": "word",
+        "raw": {
+          "word": "winter",
+          "total_frequency": 1,
+          "appears_in_books": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-WINTER-01",
+            "function_name": "Token: winter",
+            "description": "Word 'winter' appears in 1 book(s)"
+          }
+        ]
+      }
+    ],
+    "links": [
+      {
+        "source": "word_forest",
+        "target": "word_grew",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 0.3333333333333333,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 0.3333333333333333,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 0.3333333333333333
+          }
+        }
+      },
+      {
+        "source": "word_forest",
+        "target": "word_floor",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 0.3333333333333333,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 0.3333333333333333,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 0.3333333333333333
+          }
+        }
+      },
+      {
+        "source": "word_forest",
+        "target": "word_owls",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 0.3333333333333333,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 0.3333333333333333,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 0.3333333333333333
+          }
+        }
+      },
+      {
+        "source": "word_grew",
+        "target": "word_tall",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_tall",
+        "target": "word_dense",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_dense",
+        "target": "word_trees",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_trees",
+        "target": "word_stretched",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_stretched",
+        "target": "word_toward",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_toward",
+        "target": "word_sky",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_sky",
+        "target": "word_birds",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_birds",
+        "target": "word_sang",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_sang",
+        "target": "word_branches",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_branches",
+        "target": "word_above",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_above",
+        "target": "word_river",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_river",
+        "target": "word_flowed",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_flowed",
+        "target": "word_through",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_through",
+        "target": "word_valley",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 0.3333333333333333,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 0.3333333333333333,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 0.3333333333333333
+          }
+        }
+      },
+      {
+        "source": "word_through",
+        "target": "word_meadow",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 0.3333333333333333,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 0.3333333333333333,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 0.3333333333333333
+          }
+        }
+      },
+      {
+        "source": "word_through",
+        "target": "word_leaves",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 0.3333333333333333,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 0.3333333333333333,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 0.3333333333333333
+          }
+        }
+      },
+      {
+        "source": "word_valley",
+        "target": "word_below",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_below",
+        "target": "word_fish",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_fish",
+        "target": "word_swam",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_swam",
+        "target": "word_clear",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_clear",
+        "target": "word_water",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_water",
+        "target": "word_deer",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_deer",
+        "target": "word_walked",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_walked",
+        "target": "word_through",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_meadow",
+        "target": "word_quietly",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_quietly",
+        "target": "word_sun",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_sun",
+        "target": "word_warmed",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_warmed",
+        "target": "word_earth",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_earth",
+        "target": "word_each",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_each",
+        "target": "word_morning",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_morning",
+        "target": "word_flowers",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_flowers",
+        "target": "word_bloomed",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_bloomed",
+        "target": "word_spring",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_spring",
+        "target": "word_season",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_season",
+        "target": "word_bees",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_bees",
+        "target": "word_buzzed",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_buzzed",
+        "target": "word_among",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_among",
+        "target": "word_blossoms",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_blossoms",
+        "target": "word_collecting",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_collecting",
+        "target": "word_nectar",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_nectar",
+        "target": "word_wind",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_wind",
+        "target": "word_whispered",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_whispered",
+        "target": "word_through",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_leaves",
+        "target": "word_rain",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_rain",
+        "target": "word_fell",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_fell",
+        "target": "word_softly",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_softly",
+        "target": "word_forest",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_floor",
+        "target": "word_moss",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_moss",
+        "target": "word_covered",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_covered",
+        "target": "word_ancient",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_ancient",
+        "target": "word_stones",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_stones",
+        "target": "word_squirrels",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_squirrels",
+        "target": "word_gathered",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_gathered",
+        "target": "word_nuts",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_nuts",
+        "target": "word_winter",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_winter",
+        "target": "word_storage",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_storage",
+        "target": "word_moon",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_moon",
+        "target": "word_illuminated",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_illuminated",
+        "target": "word_night",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_night",
+        "target": "word_forest",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_owls",
+        "target": "word_hooted",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_hooted",
+        "target": "word_perches",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_perches",
+        "target": "word_high",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_high",
+        "target": "word_creek",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_creek",
+        "target": "word_bubbled",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_bubbled",
+        "target": "word_smooth",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_smooth",
+        "target": "word_rocks",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_rocks",
+        "target": "word_frogs",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_frogs",
+        "target": "word_croaked",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_croaked",
+        "target": "word_near",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_near",
+        "target": "word_pond",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_pond",
+        "target": "word_edge",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_edge",
+        "target": "word_butterflies",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_butterflies",
+        "target": "word_danced",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_danced",
+        "target": "word_sunlight",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_sunlight",
+        "target": "word_wilderness",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_wilderness",
+        "target": "word_remained",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_remained",
+        "target": "word_peaceful",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_peaceful",
+        "target": "word_serene",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_serene",
+        "target": "word_nature",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_nature",
+        "target": "word_flourished",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_flourished",
+        "target": "word_protected",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_protected",
+        "target": "word_sanctuary",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "nature_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "nature_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_protected",
+        "target": "word_sensitive",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_computer",
+        "target": "word_processed",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_processed",
+        "target": "word_data",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_data",
+        "target": "word_rapidly",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 0.5,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 0.5,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 0.5
+          }
+        }
+      },
+      {
+        "source": "word_data",
+        "target": "word_efficiently",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 0.5,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 0.5,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 0.5
+          }
+        }
+      },
+      {
+        "source": "word_rapidly",
+        "target": "word_algorithms",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 0.5,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 0.5,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 0.5
+          }
+        }
+      },
+      {
+        "source": "word_rapidly",
+        "target": "word_each",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 0.5,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 0.5,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 0.5
+          }
+        }
+      },
+      {
+        "source": "word_algorithms",
+        "target": "word_solved",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_solved",
+        "target": "word_complex",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_complex",
+        "target": "word_problems",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_problems",
+        "target": "word_efficiently",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_efficiently",
+        "target": "word_code",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 0.5,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 0.5,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 0.5
+          }
+        }
+      },
+      {
+        "source": "word_efficiently",
+        "target": "word_databases",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 0.5,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 0.5,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 0.5
+          }
+        }
+      },
+      {
+        "source": "word_code",
+        "target": "word_executed",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 0.5,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 0.5,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 0.5
+          }
+        }
+      },
+      {
+        "source": "word_code",
+        "target": "word_systematically",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 0.5,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 0.5,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 0.5
+          }
+        }
+      },
+      {
+        "source": "word_executed",
+        "target": "word_server",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_server",
+        "target": "word_infrastructure",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 0.5,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 0.5,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 0.5
+          }
+        }
+      },
+      {
+        "source": "word_server",
+        "target": "word_responded",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 0.5,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 0.5,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 0.5
+          }
+        }
+      },
+      {
+        "source": "word_infrastructure",
+        "target": "word_networks",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_networks",
+        "target": "word_connected",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_connected",
+        "target": "word_devices",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 0.5,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 0.5,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 0.5
+          }
+        }
+      },
+      {
+        "source": "word_connected",
+        "target": "word_different",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 0.5,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 0.5,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 0.5
+          }
+        }
+      },
+      {
+        "source": "word_devices",
+        "target": "word_across",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_across",
+        "target": "word_continents",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_continents",
+        "target": "word_software",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_software",
+        "target": "word_updated",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 0.5,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 0.5,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 0.5
+          }
+        }
+      },
+      {
+        "source": "word_software",
+        "target": "word_development",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 0.5,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 0.5,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 0.5
+          }
+        }
+      },
+      {
+        "source": "word_updated",
+        "target": "word_automatically",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_automatically",
+        "target": "word_overnight",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_overnight",
+        "target": "word_users",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_users",
+        "target": "word_logged",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_logged",
+        "target": "word_system",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_system",
+        "target": "word_dashboard",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 0.5,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 0.5,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 0.5
+          }
+        }
+      },
+      {
+        "source": "word_system",
+        "target": "word_scaled",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 0.5,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 0.5,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 0.5
+          }
+        }
+      },
+      {
+        "source": "word_dashboard",
+        "target": "word_interface",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_interface",
+        "target": "word_displayed",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_displayed",
+        "target": "word_information",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_information",
+        "target": "word_clearly",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 0.5,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 0.5,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 0.5
+          }
+        }
+      },
+      {
+        "source": "word_information",
+        "target": "word_securely",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 0.5,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 0.5,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 0.5
+          }
+        }
+      },
+      {
+        "source": "word_clearly",
+        "target": "word_processors",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_processors",
+        "target": "word_calculated",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_calculated",
+        "target": "word_millions",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_millions",
+        "target": "word_operations",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_operations",
+        "target": "word_memory",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_memory",
+        "target": "word_stored",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_stored",
+        "target": "word_temporary",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_temporary",
+        "target": "word_data",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_databases",
+        "target": "word_maintained",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_maintained",
+        "target": "word_persistent",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_persistent",
+        "target": "word_records",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_records",
+        "target": "word_reliably",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_reliably",
+        "target": "word_applications",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_applications",
+        "target": "word_ran",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_ran",
+        "target": "word_cloud",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_cloud",
+        "target": "word_platforms",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_platforms",
+        "target": "word_engineers",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_engineers",
+        "target": "word_debugged",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_debugged",
+        "target": "word_code",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_systematically",
+        "target": "word_system",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_scaled",
+        "target": "word_handle",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_handle",
+        "target": "word_increased",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_increased",
+        "target": "word_load",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_load",
+        "target": "word_encryption",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_encryption",
+        "target": "word_protected",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_sensitive",
+        "target": "word_information",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_securely",
+        "target": "word_bandwidth",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_bandwidth",
+        "target": "word_determined",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_determined",
+        "target": "word_download",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_download",
+        "target": "word_speeds",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_speeds",
+        "target": "word_significantly",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_significantly",
+        "target": "word_server",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_responded",
+        "target": "word_requests",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_requests",
+        "target": "word_quickly",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_quickly",
+        "target": "word_programming",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_programming",
+        "target": "word_languages",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_languages",
+        "target": "word_enabled",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_enabled",
+        "target": "word_software",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_development",
+        "target": "word_apis",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_apis",
+        "target": "word_connected",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_different",
+        "target": "word_services",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_services",
+        "target": "word_seamlessly",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_seamlessly",
+        "target": "word_network",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_network",
+        "target": "word_routed",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_routed",
+        "target": "word_packets",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_packets",
+        "target": "word_intelligently",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_intelligently",
+        "target": "word_technology",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_technology",
+        "target": "word_advanced",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      },
+      {
+        "source": "word_advanced",
+        "target": "word_rapidly",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "merged_from": [
+            "technology_book"
+          ],
+          "num_books": 1,
+          "average_probability": 1.0,
+          "total_transition_count": 1,
+          "probabilities_by_book": {
+            "technology_book": 1.0
+          }
+        }
+      }
+    ]
+  },
+  "architectural_issues": {
+    "circular_dependencies": [],
+    "orphaned_nodes": [],
+    "dead_ends": [],
+    "unreachable_words": []
+  },
+  "merge_analysis": {
+    "common_words_count": 2,
+    "unique_words_count": 159,
+    "shared_transitions_count": 0
+  }
+}

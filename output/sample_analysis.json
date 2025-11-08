@@ -1,0 +1,85 @@
+{
+  "metadata": {
+    "generated": "2025-11-07T20:14:13.622276",
+    "framework": "UAF 1.2",
+    "framework_id": "uaf",
+    "component_term": "service",
+    "connection_term": "interface",
+    "num_nodes": 0,
+    "num_edges": 0,
+    "tool_version": "2.0"
+  },
+  "graph": {
+    "directed": true,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [],
+    "links": []
+  },
+  "knowledge_gaps": {
+    "orphaned_interfaces": [],
+    "unmet_dependencies": [],
+    "implied_mediators": [],
+    "structural_holes": [],
+    "unexplained_outputs": [],
+    "missing_bidirectional": []
+  },
+  "knowledge_gaps_summary": {
+    "total_gaps": 0,
+    "by_type": {
+      "orphaned_interfaces": 0,
+      "unmet_dependencies": 0,
+      "implied_mediators": 0,
+      "structural_holes": 0,
+      "unexplained_outputs": 0,
+      "missing_bidirectional": 0
+    }
+  },
+  "graph_analysis": {
+    "centrality": {
+      "degree_centrality": {},
+      "betweenness_centrality": {},
+      "closeness_centrality": {},
+      "eigenvector_centrality": "Error computing eigenvector centrality (may not converge)",
+      "pagerank": "Error computing PageRank",
+      "top_nodes": {
+        "degree_centrality": [],
+        "betweenness_centrality": [],
+        "closeness_centrality": [],
+        "top_nodes": [
+          [
+            "degree_centrality",
+            []
+          ],
+          [
+            "betweenness_centrality",
+            []
+          ],
+          [
+            "closeness_centrality",
+            []
+          ]
+        ]
+      }
+    },
+    "dag": {
+      "is_dag": true,
+      "topological_sort": [],
+      "num_nodes_sorted": 0,
+      "longest_path": {
+        "path": [],
+        "length": -1,
+        "weighted_length": 0
+      },
+      "topological_levels": {
+        "num_levels": 0,
+        "nodes_per_level": [],
+        "levels": []
+      },
+      "antichains": {
+        "count": 1,
+        "note": "Sets of nodes with no ordering relationship"
+      }
+    }
+  }
+}

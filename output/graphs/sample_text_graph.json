@@ -1,0 +1,526 @@
+{
+  "metadata": {
+    "generated": "2025-11-08T01:16:53.307657",
+    "framework": "Language Flow",
+    "framework_id": "language_flow",
+    "component_term": "word",
+    "connection_term": "transition",
+    "num_nodes": 14,
+    "num_edges": 18,
+    "tool_version": "1.0.0",
+    "book_title": "sample_text",
+    "total_tokens": 19,
+    "unique_words": 14,
+    "total_transitions": 18
+  },
+  "graph": {
+    "directed": true,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+      {
+        "id": "word_ball",
+        "name": "ball",
+        "type": "word",
+        "raw": {
+          "word": "ball",
+          "frequency": 2,
+          "outgoing_transitions": 2,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-BALL-01",
+            "function_name": "Token: ball",
+            "description": "Represents the word 'ball' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_cat",
+        "name": "cat",
+        "type": "word",
+        "raw": {
+          "word": "cat",
+          "frequency": 3,
+          "outgoing_transitions": 3,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-CAT-01",
+            "function_name": "Token: cat",
+            "description": "Represents the word 'cat' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_dog",
+        "name": "dog",
+        "type": "word",
+        "raw": {
+          "word": "dog",
+          "frequency": 3,
+          "outgoing_transitions": 3,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-DOG-01",
+            "function_name": "Token: dog",
+            "description": "Represents the word 'dog' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_down",
+        "name": "down",
+        "type": "word",
+        "raw": {
+          "word": "down",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-DOWN-01",
+            "function_name": "Token: down",
+            "description": "Represents the word 'down' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_happy",
+        "name": "happy",
+        "type": "word",
+        "raw": {
+          "word": "happy",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-HAPPY-01",
+            "function_name": "Token: happy",
+            "description": "Represents the word 'happy' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_hill",
+        "name": "hill",
+        "type": "word",
+        "raw": {
+          "word": "hill",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-HILL-01",
+            "function_name": "Token: hill",
+            "description": "Represents the word 'hill' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_mat",
+        "name": "mat",
+        "type": "word",
+        "raw": {
+          "word": "mat",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-MAT-01",
+            "function_name": "Token: mat",
+            "description": "Represents the word 'mat' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_park",
+        "name": "park",
+        "type": "word",
+        "raw": {
+          "word": "park",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-PARK-01",
+            "function_name": "Token: park",
+            "description": "Represents the word 'park' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_play",
+        "name": "play",
+        "type": "word",
+        "raw": {
+          "word": "play",
+          "frequency": 1,
+          "outgoing_transitions": 0,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-PLAY-01",
+            "function_name": "Token: play",
+            "description": "Represents the word 'play' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_played",
+        "name": "played",
+        "type": "word",
+        "raw": {
+          "word": "played",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-PLAYED-01",
+            "function_name": "Token: played",
+            "description": "Represents the word 'played' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_ran",
+        "name": "ran",
+        "type": "word",
+        "raw": {
+          "word": "ran",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-RAN-01",
+            "function_name": "Token: ran",
+            "description": "Represents the word 'ran' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_rolled",
+        "name": "rolled",
+        "type": "word",
+        "raw": {
+          "word": "rolled",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-ROLLED-01",
+            "function_name": "Token: rolled",
+            "description": "Represents the word 'rolled' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_sat",
+        "name": "sat",
+        "type": "word",
+        "raw": {
+          "word": "sat",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-SAT-01",
+            "function_name": "Token: sat",
+            "description": "Represents the word 'sat' in the text flow"
+          }
+        ]
+      },
+      {
+        "id": "word_watched",
+        "name": "watched",
+        "type": "word",
+        "raw": {
+          "word": "watched",
+          "frequency": 1,
+          "outgoing_transitions": 1,
+          "framework": "language_flow"
+        },
+        "functions": [
+          {
+            "function_id": "F-WATCHED-01",
+            "function_name": "Token: watched",
+            "description": "Represents the word 'watched' in the text flow"
+          }
+        ]
+      }
+    ],
+    "links": [
+      {
+        "source": "word_cat",
+        "target": "word_sat",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 0.3333333333333333,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 0.3333333333333333,
+          "source_word": "cat",
+          "target_word": "sat"
+        }
+      },
+      {
+        "source": "word_cat",
+        "target": "word_happy",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 0.3333333333333333,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 0.3333333333333333,
+          "source_word": "cat",
+          "target_word": "happy"
+        }
+      },
+      {
+        "source": "word_cat",
+        "target": "word_watched",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 0.3333333333333333,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 0.3333333333333333,
+          "source_word": "cat",
+          "target_word": "watched"
+        }
+      },
+      {
+        "source": "word_sat",
+        "target": "word_mat",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "sat",
+          "target_word": "mat"
+        }
+      },
+      {
+        "source": "word_mat",
+        "target": "word_cat",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "mat",
+          "target_word": "cat"
+        }
+      },
+      {
+        "source": "word_happy",
+        "target": "word_dog",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "happy",
+          "target_word": "dog"
+        }
+      },
+      {
+        "source": "word_dog",
+        "target": "word_ran",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 0.3333333333333333,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 0.3333333333333333,
+          "source_word": "dog",
+          "target_word": "ran"
+        }
+      },
+      {
+        "source": "word_dog",
+        "target": "word_played",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 0.3333333333333333,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 0.3333333333333333,
+          "source_word": "dog",
+          "target_word": "played"
+        }
+      },
+      {
+        "source": "word_dog",
+        "target": "word_play",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 0.3333333333333333,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 0.3333333333333333,
+          "source_word": "dog",
+          "target_word": "play"
+        }
+      },
+      {
+        "source": "word_ran",
+        "target": "word_park",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "ran",
+          "target_word": "park"
+        }
+      },
+      {
+        "source": "word_park",
+        "target": "word_dog",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "park",
+          "target_word": "dog"
+        }
+      },
+      {
+        "source": "word_played",
+        "target": "word_ball",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "played",
+          "target_word": "ball"
+        }
+      },
+      {
+        "source": "word_ball",
+        "target": "word_ball",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 0.5,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 0.5,
+          "source_word": "ball",
+          "target_word": "ball"
+        }
+      },
+      {
+        "source": "word_ball",
+        "target": "word_rolled",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 0.5,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 0.5,
+          "source_word": "ball",
+          "target_word": "rolled"
+        }
+      },
+      {
+        "source": "word_rolled",
+        "target": "word_down",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "rolled",
+          "target_word": "down"
+        }
+      },
+      {
+        "source": "word_down",
+        "target": "word_hill",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "down",
+          "target_word": "hill"
+        }
+      },
+      {
+        "source": "word_hill",
+        "target": "word_cat",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "hill",
+          "target_word": "cat"
+        }
+      },
+      {
+        "source": "word_watched",
+        "target": "word_dog",
+        "type": "word_transition",
+        "interaction_type": "follows",
+        "weight": 1.0,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 1.0,
+          "source_word": "watched",
+          "target_word": "dog"
+        }
+      }
+    ]
+  },
+  "architectural_issues": {
+    "circular_dependencies": [],
+    "orphaned_nodes": [],
+    "dead_ends": [
+      "play"
+    ],
+    "unreachable_words": []
+  },
+  "architectural_issues_summary": {
+    "total_issues": 1,
+    "by_type": {
+      "dead_ends": 1,
+      "unreachable_words": 0
+    }
+  }
+}
