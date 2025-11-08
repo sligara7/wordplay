@@ -23,11 +23,14 @@ By representing text as graphs, we can apply powerful systems analysis tools to 
 - **Hybrid graphs**: Combine lyrics and melodies
 - **Harmonic analysis**: Chord progressions using music theory
 - **Multi-layer graphs**: Each instrument as a separate graph layer
+- **Temporal analysis**: Rhythm, tempo, duration (NEW!)
+- **Batch processing**: Merge multiple graphs to find patterns (NEW!)
 
 **Documentation:**
 - [MIDI_SUPPORT.md](MIDI_SUPPORT.md) - Basic music analysis
 - [HYBRID_GRAPHS.md](HYBRID_GRAPHS.md) - Lyrics + melody integration
 - [POLYPHONIC_MUSIC.md](POLYPHONIC_MUSIC.md) - Multi-track polyphonic analysis
+- [TEMPORAL_ANALYSIS.md](TEMPORAL_ANALYSIS.md) - Rhythm, cadence, and batch processing (NEW!)
 
 **Quick example:**
 ```bash
