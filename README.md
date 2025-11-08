@@ -22,8 +22,9 @@ By representing text as graphs, we can apply powerful systems analysis tools to 
 - **Melodies as sentences**: Analyze note sequences and patterns
 - **Musical communities**: Discover note clusters and phrases
 - **Comparative analysis**: Compare different songs and styles
+- **Hybrid graphs**: Combine lyrics and melodies into unified multimodal graphs
 
-See [MIDI_SUPPORT.md](MIDI_SUPPORT.md) for complete documentation.
+See [MIDI_SUPPORT.md](MIDI_SUPPORT.md) for music analysis and [HYBRID_GRAPHS.md](HYBRID_GRAPHS.md) for combining lyrics with melodies.
 
 **Quick example:**
 ```bash

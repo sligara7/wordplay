@@ -1,0 +1,29 @@
+# Simple example song with aligned lyrics and melody
+# Format: word note
+# Each line represents one syllable sung on one note
+
+hello C4
+world C4
+how G4
+are G4
+you A4
+today A4
+feeling G4
+good F4
+feeling F4
+great E4
+every E4
+single D4
+day D4
+hello C4
+world G4
+singing A4
+songs A4
+all G4
+day F4
+long F4
+making E4
+music D4
+in D4
+my C4
+way C4

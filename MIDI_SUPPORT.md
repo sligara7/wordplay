@@ -4,6 +4,8 @@
 
 Wordplay now extends beyond text analysis to music! MIDI files can be treated as "musical sentences" where notes are "words" and melodies are "phrases". This allows you to apply the same graph-based analysis techniques to music.
 
+**NEW: Hybrid Graphs!** Combine lyrics and melodies into unified graphs. See [HYBRID_GRAPHS.md](HYBRID_GRAPHS.md) for complete documentation on analyzing songs with both words and music together.
+
 ## Conceptual Mapping
 
 | Text Domain | MIDI Domain | Example |
