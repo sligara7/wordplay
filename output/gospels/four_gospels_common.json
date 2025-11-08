@@ -1,0 +1,5622 @@
+{
+  "metadata": {
+    "framework": "Representative Graph",
+    "num_source_graphs": 4,
+    "min_frequency": 4,
+    "num_nodes": 623,
+    "num_edges": 0
+  },
+  "graph": {
+    "directed": true,
+    "nodes": [
+      {
+        "id": "seeking",
+        "name": "seeking",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "end",
+        "name": "end",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "every",
+        "name": "every",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "leave",
+        "name": "leave",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "long",
+        "name": "long",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "loud",
+        "name": "loud",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "glorified",
+        "name": "glorified",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "pence",
+        "name": "pence",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "understand",
+        "name": "understand",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "darkness",
+        "name": "darkness",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "high",
+        "name": "high",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "asked",
+        "name": "asked",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "brought",
+        "name": "brought",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "while",
+        "name": "while",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "four",
+        "name": "four",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "aside",
+        "name": "aside",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "departed",
+        "name": "departed",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "daughter",
+        "name": "daughter",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "canst",
+        "name": "canst",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "world",
+        "name": "world",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "standing",
+        "name": "standing",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "stand",
+        "name": "stand",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "committeth",
+        "name": "committeth",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "upon",
+        "name": "upon",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "flee",
+        "name": "flee",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "walk",
+        "name": "walk",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "healed",
+        "name": "healed",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "nevertheless",
+        "name": "nevertheless",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "book",
+        "name": "book",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "wash",
+        "name": "wash",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "nigh",
+        "name": "nigh",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "maketh",
+        "name": "maketh",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "dead",
+        "name": "dead",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "whole",
+        "name": "whole",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "die",
+        "name": "die",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "troubled",
+        "name": "troubled",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "servant",
+        "name": "servant",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "sleep",
+        "name": "sleep",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "release",
+        "name": "release",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "knew",
+        "name": "knew",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "place",
+        "name": "place",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "against",
+        "name": "against",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "prayed",
+        "name": "prayed",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "lose",
+        "name": "lose",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "desired",
+        "name": "desired",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "sheep",
+        "name": "sheep",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "surely",
+        "name": "surely",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "truly",
+        "name": "truly",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "knowing",
+        "name": "knowing",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "testimony",
+        "name": "testimony",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "ye",
+        "name": "ye",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "damnation",
+        "name": "damnation",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "judaea",
+        "name": "judaea",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "believed",
+        "name": "believed",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "follow",
+        "name": "follow",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "sayest",
+        "name": "sayest",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "bear",
+        "name": "bear",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "taketh",
+        "name": "taketh",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "hall",
+        "name": "hall",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "vinegar",
+        "name": "vinegar",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "beginning",
+        "name": "beginning",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "far",
+        "name": "far",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "perish",
+        "name": "perish",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "thousand",
+        "name": "thousand",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "belly",
+        "name": "belly",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "perceived",
+        "name": "perceived",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "lawful",
+        "name": "lawful",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "received",
+        "name": "received",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "sit",
+        "name": "sit",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "else",
+        "name": "else",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "become",
+        "name": "become",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "third",
+        "name": "third",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "years",
+        "name": "years",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "custom",
+        "name": "custom",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "fig",
+        "name": "fig",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "tabernacles",
+        "name": "tabernacles",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "joseph",
+        "name": "joseph",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "commandment",
+        "name": "commandment",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "told",
+        "name": "told",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "answered",
+        "name": "answered",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "harvest",
+        "name": "harvest",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "kept",
+        "name": "kept",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "adultery",
+        "name": "adultery",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "eat",
+        "name": "eat",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "thine",
+        "name": "thine",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "quickly",
+        "name": "quickly",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "broken",
+        "name": "broken",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "cause",
+        "name": "cause",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "child",
+        "name": "child",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "palace",
+        "name": "palace",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "straight",
+        "name": "straight",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "crying",
+        "name": "crying",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "satan",
+        "name": "satan",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "taking",
+        "name": "taking",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "delivered",
+        "name": "delivered",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "passover",
+        "name": "passover",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "save",
+        "name": "save",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "whom",
+        "name": "whom",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "night",
+        "name": "night",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "zebedee",
+        "name": "zebedee",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "jews",
+        "name": "jews",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "man",
+        "name": "man",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "evening",
+        "name": "evening",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "prophesied",
+        "name": "prophesied",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "commandments",
+        "name": "commandments",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "gone",
+        "name": "gone",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "such",
+        "name": "such",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "devil",
+        "name": "devil",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "crew",
+        "name": "crew",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "evil",
+        "name": "evil",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "rather",
+        "name": "rather",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "risen",
+        "name": "risen",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "thorns",
+        "name": "thorns",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "followed",
+        "name": "followed",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "shouldest",
+        "name": "shouldest",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "thirty",
+        "name": "thirty",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "toward",
+        "name": "toward",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "israel",
+        "name": "israel",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "hundred",
+        "name": "hundred",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "stretch",
+        "name": "stretch",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "wilt",
+        "name": "wilt",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "gathered",
+        "name": "gathered",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "holy",
+        "name": "holy",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "sabbath",
+        "name": "sabbath",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "receiveth",
+        "name": "receiveth",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "hereafter",
+        "name": "hereafter",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "stood",
+        "name": "stood",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "angels",
+        "name": "angels",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "jesus",
+        "name": "jesus",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "bethsaida",
+        "name": "bethsaida",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "herself",
+        "name": "herself",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "land",
+        "name": "land",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "ship",
+        "name": "ship",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "answer",
+        "name": "answer",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "let",
+        "name": "let",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "spirit",
+        "name": "spirit",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "whether",
+        "name": "whether",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "neither",
+        "name": "neither",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "except",
+        "name": "except",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "woman",
+        "name": "woman",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "mount",
+        "name": "mount",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "temple",
+        "name": "temple",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "glad",
+        "name": "glad",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "counsel",
+        "name": "counsel",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "last",
+        "name": "last",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "rest",
+        "name": "rest",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "john",
+        "name": "john",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "fall",
+        "name": "fall",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "bethany",
+        "name": "bethany",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "sea",
+        "name": "sea",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "whence",
+        "name": "whence",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "afterward",
+        "name": "afterward",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "sleepeth",
+        "name": "sleepeth",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "wind",
+        "name": "wind",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "sent",
+        "name": "sent",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "twelve",
+        "name": "twelve",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "nothing",
+        "name": "nothing",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "synagogues",
+        "name": "synagogues",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "accusation",
+        "name": "accusation",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "alone",
+        "name": "alone",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "being",
+        "name": "being",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "david",
+        "name": "david",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "doubt",
+        "name": "doubt",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "master",
+        "name": "master",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "blood",
+        "name": "blood",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "coming",
+        "name": "coming",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "given",
+        "name": "given",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "taught",
+        "name": "taught",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "feared",
+        "name": "feared",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "barabbas",
+        "name": "barabbas",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "followeth",
+        "name": "followeth",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "shall",
+        "name": "shall",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "trees",
+        "name": "trees",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "season",
+        "name": "season",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "bridegroom",
+        "name": "bridegroom",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "entereth",
+        "name": "entereth",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "marvelled",
+        "name": "marvelled",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "philip",
+        "name": "philip",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "sought",
+        "name": "sought",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "born",
+        "name": "born",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "again",
+        "name": "again",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "down",
+        "name": "down",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "yourselves",
+        "name": "yourselves",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "saying",
+        "name": "saying",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "fulfilled",
+        "name": "fulfilled",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "marriage",
+        "name": "marriage",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "priests",
+        "name": "priests",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "where",
+        "name": "where",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "magdalene",
+        "name": "magdalene",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "heal",
+        "name": "heal",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "thanks",
+        "name": "thanks",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "word",
+        "name": "word",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "scribes",
+        "name": "scribes",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "called",
+        "name": "called",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "treasury",
+        "name": "treasury",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "bed",
+        "name": "bed",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "fruit",
+        "name": "fruit",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "durst",
+        "name": "durst",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "early",
+        "name": "early",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "shew",
+        "name": "shew",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "understood",
+        "name": "understood",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "ask",
+        "name": "ask",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "made",
+        "name": "made",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "thus",
+        "name": "thus",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "feet",
+        "name": "feet",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "turned",
+        "name": "turned",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "another",
+        "name": "another",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "glory",
+        "name": "glory",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "gave",
+        "name": "gave",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "old",
+        "name": "old",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "lying",
+        "name": "lying",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "light",
+        "name": "light",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "soldiers",
+        "name": "soldiers",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "doctrine",
+        "name": "doctrine",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "capernaum",
+        "name": "capernaum",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "yet",
+        "name": "yet",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "straightway",
+        "name": "straightway",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "colt",
+        "name": "colt",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "accuse",
+        "name": "accuse",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "certain",
+        "name": "certain",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "cast",
+        "name": "cast",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "pass",
+        "name": "pass",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "simon",
+        "name": "simon",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "signs",
+        "name": "signs",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "known",
+        "name": "known",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "wept",
+        "name": "wept",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "died",
+        "name": "died",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "caesar",
+        "name": "caesar",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "sins",
+        "name": "sins",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "steal",
+        "name": "steal",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "seed",
+        "name": "seed",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "sepulchre",
+        "name": "sepulchre",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "walking",
+        "name": "walking",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "mary",
+        "name": "mary",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "others",
+        "name": "others",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "second",
+        "name": "second",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "young",
+        "name": "young",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "fault",
+        "name": "fault",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "thyself",
+        "name": "thyself",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "call",
+        "name": "call",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "abide",
+        "name": "abide",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "filled",
+        "name": "filled",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "themselves",
+        "name": "themselves",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "things",
+        "name": "things",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "cried",
+        "name": "cried",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "parts",
+        "name": "parts",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "sorrowful",
+        "name": "sorrowful",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "trust",
+        "name": "trust",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "already",
+        "name": "already",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "hand",
+        "name": "hand",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "nation",
+        "name": "nation",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "hands",
+        "name": "hands",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "keep",
+        "name": "keep",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "calleth",
+        "name": "calleth",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "bound",
+        "name": "bound",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "water",
+        "name": "water",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "hath",
+        "name": "hath",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "righteous",
+        "name": "righteous",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "offended",
+        "name": "offended",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "cometh",
+        "name": "cometh",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "left",
+        "name": "left",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "right",
+        "name": "right",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "saw",
+        "name": "saw",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "able",
+        "name": "able",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "betray",
+        "name": "betray",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "ear",
+        "name": "ear",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "wherein",
+        "name": "wherein",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "son",
+        "name": "son",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "reason",
+        "name": "reason",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "together",
+        "name": "together",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "bread",
+        "name": "bread",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "led",
+        "name": "led",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "besought",
+        "name": "besought",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "scourge",
+        "name": "scourge",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "thought",
+        "name": "thought",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "eaten",
+        "name": "eaten",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "ran",
+        "name": "ran",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "needs",
+        "name": "needs",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "thrice",
+        "name": "thrice",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "shalt",
+        "name": "shalt",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "arose",
+        "name": "arose",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "vine",
+        "name": "vine",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "secret",
+        "name": "secret",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "enter",
+        "name": "enter",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "own",
+        "name": "own",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "afraid",
+        "name": "afraid",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "behold",
+        "name": "behold",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "forth",
+        "name": "forth",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "hair",
+        "name": "hair",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "wilderness",
+        "name": "wilderness",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "linen",
+        "name": "linen",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "through",
+        "name": "through",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "thing",
+        "name": "thing",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "doest",
+        "name": "doest",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "honour",
+        "name": "honour",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "parable",
+        "name": "parable",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "three",
+        "name": "three",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "thy",
+        "name": "thy",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "lest",
+        "name": "lest",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "goeth",
+        "name": "goeth",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "money",
+        "name": "money",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "fragments",
+        "name": "fragments",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "lo",
+        "name": "lo",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "smote",
+        "name": "smote",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "putteth",
+        "name": "putteth",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "baptized",
+        "name": "baptized",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "words",
+        "name": "words",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "denied",
+        "name": "denied",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "servants",
+        "name": "servants",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "cut",
+        "name": "cut",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "gather",
+        "name": "gather",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "judas",
+        "name": "judas",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "concerning",
+        "name": "concerning",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "heard",
+        "name": "heard",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "kingdom",
+        "name": "kingdom",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "taken",
+        "name": "taken",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "met",
+        "name": "met",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "arise",
+        "name": "arise",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "fire",
+        "name": "fire",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "touch",
+        "name": "touch",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "until",
+        "name": "until",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "eternal",
+        "name": "eternal",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "those",
+        "name": "those",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "heart",
+        "name": "heart",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "itself",
+        "name": "itself",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "spake",
+        "name": "spake",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "brother",
+        "name": "brother",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "written",
+        "name": "written",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "thee",
+        "name": "thee",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "immediately",
+        "name": "immediately",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "ruler",
+        "name": "ruler",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "sinners",
+        "name": "sinners",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "thence",
+        "name": "thence",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "destroy",
+        "name": "destroy",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "looking",
+        "name": "looking",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "without",
+        "name": "without",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "mountain",
+        "name": "mountain",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "foot",
+        "name": "foot",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "bringeth",
+        "name": "bringeth",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "ever",
+        "name": "ever",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "named",
+        "name": "named",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "baskets",
+        "name": "baskets",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "speak",
+        "name": "speak",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "fell",
+        "name": "fell",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "both",
+        "name": "both",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "name",
+        "name": "name",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "face",
+        "name": "face",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "offend",
+        "name": "offend",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "grass",
+        "name": "grass",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "here",
+        "name": "here",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "iscariot",
+        "name": "iscariot",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "hear",
+        "name": "hear",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "morning",
+        "name": "morning",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "sake",
+        "name": "sake",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "remember",
+        "name": "remember",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "thou",
+        "name": "thou",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "jerusalem",
+        "name": "jerusalem",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "synagogue",
+        "name": "synagogue",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "lay",
+        "name": "lay",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "himself",
+        "name": "himself",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "meet",
+        "name": "meet",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "whosoever",
+        "name": "whosoever",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "galilee",
+        "name": "galilee",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "children",
+        "name": "children",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "abroad",
+        "name": "abroad",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "likewise",
+        "name": "likewise",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "since",
+        "name": "since",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "five",
+        "name": "five",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "round",
+        "name": "round",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "mother",
+        "name": "mother",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "heaven",
+        "name": "heaven",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "always",
+        "name": "always",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "lifted",
+        "name": "lifted",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "white",
+        "name": "white",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "according",
+        "name": "according",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "elias",
+        "name": "elias",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "eyes",
+        "name": "eyes",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "home",
+        "name": "home",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "none",
+        "name": "none",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "findeth",
+        "name": "findeth",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "clean",
+        "name": "clean",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "near",
+        "name": "near",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "halt",
+        "name": "halt",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "faithless",
+        "name": "faithless",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "midst",
+        "name": "midst",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "whomsoever",
+        "name": "whomsoever",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "wherewith",
+        "name": "wherewith",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "command",
+        "name": "command",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "branches",
+        "name": "branches",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "must",
+        "name": "must",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "city",
+        "name": "city",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "began",
+        "name": "began",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "garments",
+        "name": "garments",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "might",
+        "name": "might",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "raiment",
+        "name": "raiment",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "power",
+        "name": "power",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "hither",
+        "name": "hither",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "perceive",
+        "name": "perceive",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "dove",
+        "name": "dove",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "living",
+        "name": "living",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "art",
+        "name": "art",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "hated",
+        "name": "hated",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "measure",
+        "name": "measure",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "went",
+        "name": "went",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "greater",
+        "name": "greater",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "willing",
+        "name": "willing",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "nazareth",
+        "name": "nazareth",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "god",
+        "name": "god",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "mine",
+        "name": "mine",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "loose",
+        "name": "loose",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "soul",
+        "name": "soul",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "depart",
+        "name": "depart",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "condemn",
+        "name": "condemn",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "life",
+        "name": "life",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "withered",
+        "name": "withered",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "amen",
+        "name": "amen",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "receive",
+        "name": "receive",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "ready",
+        "name": "ready",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "whatsoever",
+        "name": "whatsoever",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "drew",
+        "name": "drew",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "door",
+        "name": "door",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "husband",
+        "name": "husband",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "thereon",
+        "name": "thereon",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "preparation",
+        "name": "preparation",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "country",
+        "name": "country",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "disciples",
+        "name": "disciples",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "cannot",
+        "name": "cannot",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "truth",
+        "name": "truth",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "pray",
+        "name": "pray",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "commit",
+        "name": "commit",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "next",
+        "name": "next",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "andrew",
+        "name": "andrew",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "comfort",
+        "name": "comfort",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "blessed",
+        "name": "blessed",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "priest",
+        "name": "priest",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "believe",
+        "name": "believe",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "cock",
+        "name": "cock",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "buy",
+        "name": "buy",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "entered",
+        "name": "entered",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "flesh",
+        "name": "flesh",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "crucified",
+        "name": "crucified",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "manner",
+        "name": "manner",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "week",
+        "name": "week",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "lost",
+        "name": "lost",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "rise",
+        "name": "rise",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "parents",
+        "name": "parents",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "voice",
+        "name": "voice",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "seen",
+        "name": "seen",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "six",
+        "name": "six",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "cross",
+        "name": "cross",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "still",
+        "name": "still",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "ointment",
+        "name": "ointment",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "teach",
+        "name": "teach",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "wrapped",
+        "name": "wrapped",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "thieves",
+        "name": "thieves",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "off",
+        "name": "off",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "tell",
+        "name": "tell",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "need",
+        "name": "need",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "house",
+        "name": "house",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "brake",
+        "name": "brake",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "poor",
+        "name": "poor",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "worship",
+        "name": "worship",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "meat",
+        "name": "meat",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "forty",
+        "name": "forty",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "among",
+        "name": "among",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "stones",
+        "name": "stones",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "therefore",
+        "name": "therefore",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "judgment",
+        "name": "judgment",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "sister",
+        "name": "sister",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "stone",
+        "name": "stone",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "talked",
+        "name": "talked",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "moses",
+        "name": "moses",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "days",
+        "name": "days",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "olives",
+        "name": "olives",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "doth",
+        "name": "doth",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "prepare",
+        "name": "prepare",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "thereof",
+        "name": "thereof",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "much",
+        "name": "much",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "live",
+        "name": "live",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "hid",
+        "name": "hid",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "very",
+        "name": "very",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "sword",
+        "name": "sword",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "father",
+        "name": "father",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "wine",
+        "name": "wine",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "put",
+        "name": "put",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "earth",
+        "name": "earth",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "lord",
+        "name": "lord",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "death",
+        "name": "death",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "scattered",
+        "name": "scattered",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "loaves",
+        "name": "loaves",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "great",
+        "name": "great",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "under",
+        "name": "under",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "laid",
+        "name": "laid",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "multitude",
+        "name": "multitude",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "witness",
+        "name": "witness",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "done",
+        "name": "done",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "therein",
+        "name": "therein",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "opened",
+        "name": "opened",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "within",
+        "name": "within",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "ghost",
+        "name": "ghost",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "hail",
+        "name": "hail",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "journey",
+        "name": "journey",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "verily",
+        "name": "verily",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "sold",
+        "name": "sold",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "wife",
+        "name": "wife",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "authority",
+        "name": "authority",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "chosen",
+        "name": "chosen",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "raise",
+        "name": "raise",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "prophet",
+        "name": "prophet",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "sick",
+        "name": "sick",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "borne",
+        "name": "borne",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "unto",
+        "name": "unto",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "seeing",
+        "name": "seeing",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "saith",
+        "name": "saith",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "question",
+        "name": "question",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "net",
+        "name": "net",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "found",
+        "name": "found",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "away",
+        "name": "away",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "sat",
+        "name": "sat",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "drink",
+        "name": "drink",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "thief",
+        "name": "thief",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "wise",
+        "name": "wise",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "lots",
+        "name": "lots",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "arimathaea",
+        "name": "arimathaea",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "caught",
+        "name": "caught",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "commanded",
+        "name": "commanded",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "ought",
+        "name": "ought",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "pilate",
+        "name": "pilate",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "works",
+        "name": "works",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "sixth",
+        "name": "sixth",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "desert",
+        "name": "desert",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "why",
+        "name": "why",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "seeth",
+        "name": "seeth",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "worse",
+        "name": "worse",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "prophets",
+        "name": "prophets",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "tarry",
+        "name": "tarry",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "head",
+        "name": "head",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "bare",
+        "name": "bare",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "christ",
+        "name": "christ",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "whose",
+        "name": "whose",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "hast",
+        "name": "hast",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "find",
+        "name": "find",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "fishes",
+        "name": "fishes",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "hour",
+        "name": "hour",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "send",
+        "name": "send",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "clothes",
+        "name": "clothes",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "true",
+        "name": "true",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "scriptures",
+        "name": "scriptures",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "committed",
+        "name": "committed",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "soon",
+        "name": "soon",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "town",
+        "name": "town",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "full",
+        "name": "full",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "jacob",
+        "name": "jacob",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "sitting",
+        "name": "sitting",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "never",
+        "name": "never",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "bring",
+        "name": "bring",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "peace",
+        "name": "peace",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "king",
+        "name": "king",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "more",
+        "name": "more",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "came",
+        "name": "came",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "murmured",
+        "name": "murmured",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "little",
+        "name": "little",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "kill",
+        "name": "kill",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "indeed",
+        "name": "indeed",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "passed",
+        "name": "passed",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "throughout",
+        "name": "throughout",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "council",
+        "name": "council",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "knowest",
+        "name": "knowest",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "love",
+        "name": "love",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "beheld",
+        "name": "beheld",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "table",
+        "name": "table",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "eateth",
+        "name": "eateth",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "sight",
+        "name": "sight",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "feast",
+        "name": "feast",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "sign",
+        "name": "sign",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "body",
+        "name": "body",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "took",
+        "name": "took",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "worshipped",
+        "name": "worshipped",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "converted",
+        "name": "converted",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "read",
+        "name": "read",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "ground",
+        "name": "ground",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "set",
+        "name": "set",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "cup",
+        "name": "cup",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "saved",
+        "name": "saved",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "brethren",
+        "name": "brethren",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "tempting",
+        "name": "tempting",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "many",
+        "name": "many",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "spoken",
+        "name": "spoken",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "seek",
+        "name": "seek",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "thither",
+        "name": "thither",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "men",
+        "name": "men",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "tree",
+        "name": "tree",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "nor",
+        "name": "nor",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "condemned",
+        "name": "condemned",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "blind",
+        "name": "blind",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "betrayed",
+        "name": "betrayed",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "same",
+        "name": "same",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "baptize",
+        "name": "baptize",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "sons",
+        "name": "sons",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "taste",
+        "name": "taste",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "side",
+        "name": "side",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "abraham",
+        "name": "abraham",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "thomas",
+        "name": "thomas",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "pharisees",
+        "name": "pharisees",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "going",
+        "name": "going",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "knoweth",
+        "name": "knoweth",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "sisters",
+        "name": "sisters",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "corn",
+        "name": "corn",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "worthy",
+        "name": "worthy",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "esaias",
+        "name": "esaias",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "peter",
+        "name": "peter",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "crucify",
+        "name": "crucify",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "till",
+        "name": "till",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "crow",
+        "name": "crow",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "before",
+        "name": "before",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "parted",
+        "name": "parted",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "gentiles",
+        "name": "gentiles",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "resurrection",
+        "name": "resurrection",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "fever",
+        "name": "fever",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "jordan",
+        "name": "jordan",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "chief",
+        "name": "chief",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "prison",
+        "name": "prison",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      },
+      {
+        "id": "ways",
+        "name": "ways",
+        "type": "common",
+        "raw": {
+          "frequency_across_graphs": 4,
+          "appears_in": "4/4 graphs"
+        }
+      }
+    ],
+    "links": []
+  }
+}
