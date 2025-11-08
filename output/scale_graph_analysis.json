@@ -1,0 +1,258 @@
+{
+  "metadata": {
+    "framework": "Musical Flow",
+    "num_nodes": 8,
+    "num_edges": 14,
+    "unique_tokens": 8,
+    "total_tokens": 15,
+    "title": "C Major Scale",
+    "dead_ends": 0,
+    "unreachable": 0,
+    "analysis_timestamp": "1762567870.9026136"
+  },
+  "basic_statistics": {
+    "num_nodes": 8,
+    "num_edges": 14,
+    "density": 0.25,
+    "average_in_degree": 1.75,
+    "average_out_degree": 1.75
+  },
+  "analyses": {
+    "centrality": {
+      "analysis_type": "centrality",
+      "top_by_degree": [
+        {
+          "word": "note_A4",
+          "score": 0.5714285714285714
+        },
+        {
+          "word": "note_B4",
+          "score": 0.5714285714285714
+        },
+        {
+          "word": "note_D4",
+          "score": 0.5714285714285714
+        },
+        {
+          "word": "note_E4",
+          "score": 0.5714285714285714
+        },
+        {
+          "word": "note_F4",
+          "score": 0.5714285714285714
+        },
+        {
+          "word": "note_G4",
+          "score": 0.5714285714285714
+        },
+        {
+          "word": "note_C4",
+          "score": 0.2857142857142857
+        },
+        {
+          "word": "note_C5",
+          "score": 0.2857142857142857
+        }
+      ],
+      "top_by_betweenness": [
+        {
+          "word": "note_F4",
+          "score": 0.5714285714285714
+        },
+        {
+          "word": "note_G4",
+          "score": 0.5714285714285714
+        },
+        {
+          "word": "note_A4",
+          "score": 0.47619047619047616
+        },
+        {
+          "word": "note_E4",
+          "score": 0.47619047619047616
+        },
+        {
+          "word": "note_B4",
+          "score": 0.2857142857142857
+        },
+        {
+          "word": "note_D4",
+          "score": 0.2857142857142857
+        },
+        {
+          "word": "note_C4",
+          "score": 0.0
+        },
+        {
+          "word": "note_C5",
+          "score": 0.0
+        }
+      ],
+      "top_by_closeness": [
+        {
+          "word": "note_F4",
+          "score": 0.4375
+        },
+        {
+          "word": "note_G4",
+          "score": 0.4375
+        },
+        {
+          "word": "note_A4",
+          "score": 0.3888888888888889
+        },
+        {
+          "word": "note_E4",
+          "score": 0.3888888888888889
+        },
+        {
+          "word": "note_B4",
+          "score": 0.3181818181818182
+        },
+        {
+          "word": "note_D4",
+          "score": 0.3181818181818182
+        },
+        {
+          "word": "note_C4",
+          "score": 0.25
+        },
+        {
+          "word": "note_C5",
+          "score": 0.25
+        }
+      ],
+      "interpretation": {
+        "degree": "Words with most direct connections (most versatile words)",
+        "betweenness": "Bridge words that connect different parts of text",
+        "closeness": "Words closest to all other words (central to vocabulary)"
+      }
+    },
+    "communities": {
+      "analysis_type": "communities",
+      "num_communities": 2,
+      "communities": [
+        {
+          "community_id": 0,
+          "size": 4,
+          "words": [
+            "note_C4",
+            "note_D4",
+            "note_E4",
+            "note_F4"
+          ]
+        },
+        {
+          "community_id": 1,
+          "size": 4,
+          "words": [
+            "note_A4",
+            "note_B4",
+            "note_C5",
+            "note_G4"
+          ]
+        }
+      ],
+      "interpretation": "Groups of words that frequently occur together"
+    },
+    "dag": {
+      "analysis_type": "dag",
+      "is_dag": false,
+      "num_cycles": 7,
+      "example_cycles": [
+        {
+          "length": 2,
+          "words": [
+            "note_B4",
+            "note_C5"
+          ]
+        },
+        {
+          "length": 2,
+          "words": [
+            "note_B4",
+            "note_A4"
+          ]
+        },
+        {
+          "length": 2,
+          "words": [
+            "note_D4",
+            "note_E4"
+          ]
+        },
+        {
+          "length": 2,
+          "words": [
+            "note_D4",
+            "note_C4"
+          ]
+        },
+        {
+          "length": 2,
+          "words": [
+            "note_F4",
+            "note_G4"
+          ]
+        }
+      ],
+      "interpretation": "Cycles indicate words that loop back to each other in the text"
+    },
+    "structural_issues": {
+      "analysis_type": "structural_issues",
+      "orphaned_nodes": {
+        "count": 0,
+        "words": [],
+        "interpretation": "Words that appear isolated (no connections)"
+      },
+      "dead_ends": {
+        "count": 0,
+        "words": [],
+        "interpretation": "Words that end sentences/phrases (no words follow them)"
+      },
+      "unreachable": {
+        "count": 0,
+        "words": [],
+        "interpretation": "Words that start sentences/phrases (no words lead to them)"
+      },
+      "bottlenecks": {
+        "words": [
+          {
+            "word": "note_F4",
+            "score": 0.5714285714285714
+          },
+          {
+            "word": "note_G4",
+            "score": 0.5714285714285714
+          },
+          {
+            "word": "note_A4",
+            "score": 0.47619047619047616
+          },
+          {
+            "word": "note_E4",
+            "score": 0.47619047619047616
+          },
+          {
+            "word": "note_B4",
+            "score": 0.2857142857142857
+          }
+        ],
+        "interpretation": "Words that must be passed through to connect different parts of text"
+      }
+    },
+    "connectivity": {
+      "analysis_type": "connectivity",
+      "is_weakly_connected": true,
+      "is_strongly_connected": true,
+      "num_strongly_connected_components": 1,
+      "largest_scc_size": 8,
+      "largest_scc_percentage": 100.0,
+      "interpretation": {
+        "weakly_connected": "All words reachable ignoring edge direction",
+        "strongly_connected": "Every word can reach every other word following edges",
+        "sccs": "Groups of words that form circular paths"
+      }
+    }
+  }
+}
