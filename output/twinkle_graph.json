@@ -1,0 +1,219 @@
+{
+  "metadata": {
+    "framework": "Musical Flow",
+    "num_nodes": 6,
+    "num_edges": 14,
+    "unique_tokens": 6,
+    "total_tokens": 42,
+    "title": "Twinkle Twinkle Little Star",
+    "dead_ends": 0,
+    "unreachable": 0
+  },
+  "graph": {
+    "directed": true,
+    "nodes": [
+      {
+        "id": "note_A4",
+        "name": "A4",
+        "type": "note",
+        "raw": {
+          "token": "A4",
+          "frequency": 4,
+          "outgoing_transitions": 2
+        }
+      },
+      {
+        "id": "note_C4",
+        "name": "C4",
+        "type": "note",
+        "raw": {
+          "token": "C4",
+          "frequency": 6,
+          "outgoing_transitions": 2
+        }
+      },
+      {
+        "id": "note_D4",
+        "name": "D4",
+        "type": "note",
+        "raw": {
+          "token": "D4",
+          "frequency": 6,
+          "outgoing_transitions": 3
+        }
+      },
+      {
+        "id": "note_E4",
+        "name": "E4",
+        "type": "note",
+        "raw": {
+          "token": "E4",
+          "frequency": 8,
+          "outgoing_transitions": 2
+        }
+      },
+      {
+        "id": "note_F4",
+        "name": "F4",
+        "type": "note",
+        "raw": {
+          "token": "F4",
+          "frequency": 8,
+          "outgoing_transitions": 2
+        }
+      },
+      {
+        "id": "note_G4",
+        "name": "G4",
+        "type": "note",
+        "raw": {
+          "token": "G4",
+          "frequency": 10,
+          "outgoing_transitions": 3
+        }
+      }
+    ],
+    "links": [
+      {
+        "source": "note_C4",
+        "target": "note_C4",
+        "type": "note_transition",
+        "weight": 0.4,
+        "raw": {
+          "transition_count": 2,
+          "transition_probability": 0.4
+        }
+      },
+      {
+        "source": "note_C4",
+        "target": "note_G4",
+        "type": "note_transition",
+        "weight": 0.6,
+        "raw": {
+          "transition_count": 3,
+          "transition_probability": 0.6
+        }
+      },
+      {
+        "source": "note_G4",
+        "target": "note_G4",
+        "type": "note_transition",
+        "weight": 0.4,
+        "raw": {
+          "transition_count": 4,
+          "transition_probability": 0.4
+        }
+      },
+      {
+        "source": "note_G4",
+        "target": "note_A4",
+        "type": "note_transition",
+        "weight": 0.2,
+        "raw": {
+          "transition_count": 2,
+          "transition_probability": 0.2
+        }
+      },
+      {
+        "source": "note_G4",
+        "target": "note_F4",
+        "type": "note_transition",
+        "weight": 0.4,
+        "raw": {
+          "transition_count": 4,
+          "transition_probability": 0.4
+        }
+      },
+      {
+        "source": "note_A4",
+        "target": "note_A4",
+        "type": "note_transition",
+        "weight": 0.5,
+        "raw": {
+          "transition_count": 2,
+          "transition_probability": 0.5
+        }
+      },
+      {
+        "source": "note_A4",
+        "target": "note_G4",
+        "type": "note_transition",
+        "weight": 0.5,
+        "raw": {
+          "transition_count": 2,
+          "transition_probability": 0.5
+        }
+      },
+      {
+        "source": "note_F4",
+        "target": "note_F4",
+        "type": "note_transition",
+        "weight": 0.5,
+        "raw": {
+          "transition_count": 4,
+          "transition_probability": 0.5
+        }
+      },
+      {
+        "source": "note_F4",
+        "target": "note_E4",
+        "type": "note_transition",
+        "weight": 0.5,
+        "raw": {
+          "transition_count": 4,
+          "transition_probability": 0.5
+        }
+      },
+      {
+        "source": "note_E4",
+        "target": "note_E4",
+        "type": "note_transition",
+        "weight": 0.5,
+        "raw": {
+          "transition_count": 4,
+          "transition_probability": 0.5
+        }
+      },
+      {
+        "source": "note_E4",
+        "target": "note_D4",
+        "type": "note_transition",
+        "weight": 0.5,
+        "raw": {
+          "transition_count": 4,
+          "transition_probability": 0.5
+        }
+      },
+      {
+        "source": "note_D4",
+        "target": "note_D4",
+        "type": "note_transition",
+        "weight": 0.3333,
+        "raw": {
+          "transition_count": 2,
+          "transition_probability": 0.3333
+        }
+      },
+      {
+        "source": "note_D4",
+        "target": "note_C4",
+        "type": "note_transition",
+        "weight": 0.5,
+        "raw": {
+          "transition_count": 3,
+          "transition_probability": 0.5
+        }
+      },
+      {
+        "source": "note_D4",
+        "target": "note_G4",
+        "type": "note_transition",
+        "weight": 0.1667,
+        "raw": {
+          "transition_count": 1,
+          "transition_probability": 0.1667
+        }
+      }
+    ]
+  }
+}

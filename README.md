@@ -15,6 +15,27 @@ By representing text as graphs, we can apply powerful systems analysis tools to 
 - **Information flow**: Bottlenecks and pathways through vocabulary
 - **Efficiency**: Are there more optimal language structures?
 
+## NEW: Music Analysis Support
+
+**Wordplay now extends to music!** MIDI files can be analyzed using the same graph-based techniques:
+- **Notes as tokens**: Treat musical notes (C4, D#5, etc.) as words
+- **Melodies as sentences**: Analyze note sequences and patterns
+- **Musical communities**: Discover note clusters and phrases
+- **Comparative analysis**: Compare different songs and styles
+
+See [MIDI_SUPPORT.md](MIDI_SUPPORT.md) for complete documentation.
+
+**Quick example:**
+```bash
+# Create a sample MIDI file
+python3 src/create_sample_midi.py twinkle
+
+# Tokenize → Build Graph → Analyze
+python3 src/midi_tokenizer.py music/twinkle.mid -o music/twinkle_tokens.txt
+python3 src/midi_graph_builder.py music/twinkle_tokens.txt -o output/twinkle_graph.json
+python3 src/analyze_word_graph.py output/twinkle_graph.json
+```
+
 ## Key Features
 
 ### 1. Word Graph Generation
