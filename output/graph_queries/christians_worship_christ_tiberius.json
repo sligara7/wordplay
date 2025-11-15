@@ -1,0 +1,558 @@
+{
+  "graph_source": "data/kjv_context_merged.json",
+  "question": "Christians worship Christ Tiberius",
+  "query_words": [
+    "christians",
+    "worship",
+    "christ",
+    "tiberius"
+  ],
+  "matches": {
+    "christians": [
+      "merged_christians"
+    ],
+    "worship": [
+      "merged_worship"
+    ],
+    "christ": [
+      "merged_christ"
+    ],
+    "tiberius": [
+      "merged_tiberius"
+    ]
+  },
+  "path_info": {
+    "num_paths": 6,
+    "paths": [
+      {
+        "source": "merged_christians",
+        "target": "merged_worship",
+        "path": [
+          "merged_christians",
+          "merged_by",
+          "merged_jerusalem",
+          "merged_worship"
+        ],
+        "length": 3,
+        "path_text": "christians → by → jerusalem → worship"
+      },
+      {
+        "source": "merged_christians",
+        "target": "merged_christ",
+        "path": [
+          "merged_christians",
+          "merged_by",
+          "merged_the",
+          "merged_christ"
+        ],
+        "length": 3,
+        "path_text": "christians → by → the → christ"
+      },
+      {
+        "source": "merged_christians",
+        "target": "merged_tiberius",
+        "path": [
+          "merged_christians",
+          "merged_by",
+          "merged_jesus",
+          "merged_of",
+          "merged_tiberius"
+        ],
+        "length": 4,
+        "path_text": "christians → by → jesus → of → tiberius"
+      },
+      {
+        "source": "merged_worship",
+        "target": "merged_christ",
+        "path": [
+          "merged_worship",
+          "merged_the",
+          "merged_christ"
+        ],
+        "length": 2,
+        "path_text": "worship → the → christ"
+      },
+      {
+        "source": "merged_worship",
+        "target": "merged_tiberius",
+        "path": [
+          "merged_worship",
+          "merged_jesus",
+          "merged_of",
+          "merged_tiberius"
+        ],
+        "length": 3,
+        "path_text": "worship → jesus → of → tiberius"
+      },
+      {
+        "source": "merged_christ",
+        "target": "merged_tiberius",
+        "path": [
+          "merged_christ",
+          "merged_of",
+          "merged_tiberius"
+        ],
+        "length": 2,
+        "path_text": "christ → of → tiberius"
+      }
+    ],
+    "query_nodes": [
+      "merged_worship",
+      "merged_christ",
+      "merged_tiberius",
+      "merged_christians"
+    ],
+    "bridge_nodes": [
+      "merged_jerusalem",
+      "merged_the",
+      "merged_by",
+      "merged_jesus",
+      "merged_of"
+    ],
+    "subgraph_size": {
+      "nodes": 9,
+      "edges": 11
+    }
+  },
+  "context_analysis": {
+    "node_degrees": {
+      "jerusalem": {
+        "in": 1,
+        "out": 1,
+        "total": 2
+      },
+      "the": {
+        "in": 2,
+        "out": 1,
+        "total": 3
+      },
+      "by": {
+        "in": 1,
+        "out": 3,
+        "total": 4
+      },
+      "worship": {
+        "in": 1,
+        "out": 2,
+        "total": 3
+      },
+      "christians": {
+        "in": 0,
+        "out": 1,
+        "total": 1
+      },
+      "jesus": {
+        "in": 2,
+        "out": 1,
+        "total": 3
+      },
+      "of": {
+        "in": 2,
+        "out": 1,
+        "total": 3
+      },
+      "tiberius": {
+        "in": 1,
+        "out": 0,
+        "total": 1
+      },
+      "christ": {
+        "in": 1,
+        "out": 1,
+        "total": 2
+      }
+    },
+    "most_connected": [
+      [
+        "by",
+        {
+          "in": 1,
+          "out": 3,
+          "total": 4
+        }
+      ],
+      [
+        "the",
+        {
+          "in": 2,
+          "out": 1,
+          "total": 3
+        }
+      ],
+      [
+        "worship",
+        {
+          "in": 1,
+          "out": 2,
+          "total": 3
+        }
+      ],
+      [
+        "jesus",
+        {
+          "in": 2,
+          "out": 1,
+          "total": 3
+        }
+      ],
+      [
+        "of",
+        {
+          "in": 2,
+          "out": 1,
+          "total": 3
+        }
+      ]
+    ],
+    "edge_weights": [
+      {
+        "from": "christians",
+        "to": "by",
+        "probability": 0.5
+      },
+      {
+        "from": "by",
+        "to": "the",
+        "probability": 0.3162393162393162
+      },
+      {
+        "from": "worship",
+        "to": "the",
+        "probability": 0.2222222222222222
+      },
+      {
+        "from": "worship",
+        "to": "jesus",
+        "probability": 0.05555555555555555
+      },
+      {
+        "from": "jesus",
+        "to": "of",
+        "probability": 0.0224
+      },
+      {
+        "from": "christ",
+        "to": "of",
+        "probability": 0.016666666666666666
+      },
+      {
+        "from": "jerusalem",
+        "to": "worship",
+        "probability": 0.014285714285714285
+      },
+      {
+        "from": "of",
+        "to": "tiberius",
+        "probability": 0.01303603006189213
+      },
+      {
+        "from": "the",
+        "to": "christ",
+        "probability": 0.00985663082437276
+      },
+      {
+        "from": "by",
+        "to": "jerusalem",
+        "probability": 0.004273504273504274
+      },
+      {
+        "from": "by",
+        "to": "jesus",
+        "probability": 0.004273504273504274
+      }
+    ],
+    "narrative_fragments": [
+      "christians by jerusalem worship",
+      "christians by the christ",
+      "christians by jesus of tiberius",
+      "worship the christ",
+      "worship jesus of tiberius",
+      "christ of tiberius"
+    ]
+  },
+  "subgraph": {
+    "nodes": [
+      {
+        "id": "merged_jerusalem",
+        "name": "jerusalem",
+        "attributes": {
+          "name": "jerusalem",
+          "word": "jerusalem",
+          "total_frequency": 71,
+          "sources": [
+            "kjv",
+            "context"
+          ],
+          "is_touchpoint": true
+        }
+      },
+      {
+        "id": "merged_the",
+        "name": "the",
+        "attributes": {
+          "name": "the",
+          "word": "the",
+          "total_frequency": 4805,
+          "sources": [
+            "kjv",
+            "context"
+          ],
+          "is_touchpoint": true
+        }
+      },
+      {
+        "id": "merged_by",
+        "name": "by",
+        "attributes": {
+          "name": "by",
+          "word": "by",
+          "total_frequency": 237,
+          "sources": [
+            "kjv",
+            "context"
+          ],
+          "is_touchpoint": true
+        }
+      },
+      {
+        "id": "merged_worship",
+        "name": "worship",
+        "attributes": {
+          "name": "worship",
+          "word": "worship",
+          "total_frequency": 18,
+          "sources": [
+            "kjv"
+          ],
+          "is_touchpoint": false
+        }
+      },
+      {
+        "id": "merged_christians",
+        "name": "christians",
+        "attributes": {
+          "name": "christians",
+          "word": "christians",
+          "total_frequency": 2,
+          "sources": [
+            "context"
+          ],
+          "is_touchpoint": false
+        }
+      },
+      {
+        "id": "merged_jesus",
+        "name": "jesus",
+        "attributes": {
+          "name": "jesus",
+          "word": "jesus",
+          "total_frequency": 628,
+          "sources": [
+            "kjv",
+            "context"
+          ],
+          "is_touchpoint": true
+        }
+      },
+      {
+        "id": "merged_of",
+        "name": "of",
+        "attributes": {
+          "name": "of",
+          "word": "of",
+          "total_frequency": 2359,
+          "sources": [
+            "kjv",
+            "context"
+          ],
+          "is_touchpoint": true
+        }
+      },
+      {
+        "id": "merged_tiberius",
+        "name": "tiberius",
+        "attributes": {
+          "name": "tiberius",
+          "word": "tiberius",
+          "total_frequency": 3,
+          "sources": [
+            "kjv",
+            "context"
+          ],
+          "is_touchpoint": true
+        }
+      },
+      {
+        "id": "merged_christ",
+        "name": "christ",
+        "attributes": {
+          "name": "christ",
+          "word": "christ",
+          "total_frequency": 63,
+          "sources": [
+            "kjv",
+            "context"
+          ],
+          "is_touchpoint": true
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source": "merged_jerusalem",
+        "target": "merged_worship",
+        "attributes": {
+          "weight": 0.014285714285714285,
+          "sources": [
+            {
+              "name": "kjv",
+              "weight": 0.014285714285714285
+            }
+          ]
+        }
+      },
+      {
+        "source": "merged_the",
+        "target": "merged_christ",
+        "attributes": {
+          "weight": 0.00985663082437276,
+          "sources": [
+            {
+              "name": "kjv",
+              "weight": 0.0035842293906810036
+            },
+            {
+              "name": "context",
+              "weight": 0.016129032258064516
+            }
+          ]
+        }
+      },
+      {
+        "source": "merged_by",
+        "target": "merged_jerusalem",
+        "attributes": {
+          "weight": 0.004273504273504274,
+          "sources": [
+            {
+              "name": "kjv",
+              "weight": 0.004273504273504274
+            }
+          ]
+        }
+      },
+      {
+        "source": "merged_by",
+        "target": "merged_jesus",
+        "attributes": {
+          "weight": 0.004273504273504274,
+          "sources": [
+            {
+              "name": "kjv",
+              "weight": 0.004273504273504274
+            }
+          ]
+        }
+      },
+      {
+        "source": "merged_by",
+        "target": "merged_the",
+        "attributes": {
+          "weight": 0.3162393162393162,
+          "sources": [
+            {
+              "name": "kjv",
+              "weight": 0.29914529914529914
+            },
+            {
+              "name": "context",
+              "weight": 0.3333333333333333
+            }
+          ]
+        }
+      },
+      {
+        "source": "merged_worship",
+        "target": "merged_jesus",
+        "attributes": {
+          "weight": 0.05555555555555555,
+          "sources": [
+            {
+              "name": "kjv",
+              "weight": 0.05555555555555555
+            }
+          ]
+        }
+      },
+      {
+        "source": "merged_worship",
+        "target": "merged_the",
+        "attributes": {
+          "weight": 0.2222222222222222,
+          "sources": [
+            {
+              "name": "kjv",
+              "weight": 0.2222222222222222
+            }
+          ]
+        }
+      },
+      {
+        "source": "merged_christians",
+        "target": "merged_by",
+        "attributes": {
+          "weight": 0.5,
+          "sources": [
+            {
+              "name": "context",
+              "weight": 0.5
+            }
+          ]
+        }
+      },
+      {
+        "source": "merged_jesus",
+        "target": "merged_of",
+        "attributes": {
+          "weight": 0.0224,
+          "sources": [
+            {
+              "name": "kjv",
+              "weight": 0.0224
+            }
+          ]
+        }
+      },
+      {
+        "source": "merged_of",
+        "target": "merged_tiberius",
+        "attributes": {
+          "weight": 0.01303603006189213,
+          "sources": [
+            {
+              "name": "kjv",
+              "weight": 0.0004310344827586207
+            },
+            {
+              "name": "context",
+              "weight": 0.02564102564102564
+            }
+          ]
+        }
+      },
+      {
+        "source": "merged_christ",
+        "target": "merged_of",
+        "attributes": {
+          "weight": 0.016666666666666666,
+          "sources": [
+            {
+              "name": "kjv",
+              "weight": 0.016666666666666666
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
