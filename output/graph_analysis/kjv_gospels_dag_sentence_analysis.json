@@ -1,0 +1,1374 @@
+{
+  "graph_source": "data/kjv_gospels_dag.json",
+  "metadata": {
+    "generated": "2025-11-15T04:39:41.043465",
+    "framework": "KJV Text Flow",
+    "framework_id": "kjv_english_flow",
+    "component_term": "english_word",
+    "connection_term": "transition",
+    "num_nodes": 3447,
+    "num_edges": 27284,
+    "tool_version": "1.0.0",
+    "source": "King James Version (KJV) Bible",
+    "source_repository": "https://github.com/aruljohn/Bible-kjv",
+    "gospels_included": [
+      "Matthew",
+      "Mark",
+      "Luke",
+      "John"
+    ],
+    "gospel_stats": {
+      "Matthew": {
+        "word_count": 23203,
+        "unique_words": 2095
+      },
+      "Mark": {
+        "word_count": 14917,
+        "unique_words": 1659
+      },
+      "Luke": {
+        "word_count": 25378,
+        "unique_words": 2367
+      },
+      "John": {
+        "word_count": 18506,
+        "unique_words": 1376
+      }
+    },
+    "total_tokens": 82004,
+    "unique_words": 3447,
+    "total_transitions": 82000
+  },
+  "graph_stats": {
+    "num_nodes": 3447,
+    "num_edges": 27284
+  },
+  "sentences": [
+    {
+      "start_node": "kjv_selleth",
+      "sentence": "kjv_selleth kjv_all kjv_the kjv_son kjv_of [kjv_the]",
+      "path": [
+        "kjv_selleth",
+        "kjv_all",
+        "kjv_the",
+        "kjv_son",
+        "kjv_of",
+        "[kjv_the]"
+      ],
+      "cycle_detected": true,
+      "length": 6
+    },
+    {
+      "start_node": "kjv_carpenter",
+      "sentence": "kjv_carpenter kjv_son kjv_of kjv_the [kjv_son]",
+      "path": [
+        "kjv_carpenter",
+        "kjv_son",
+        "kjv_of",
+        "kjv_the",
+        "[kjv_son]"
+      ],
+      "cycle_detected": true,
+      "length": 5
+    },
+    {
+      "start_node": "kjv_amon",
+      "sentence": "kjv_amon kjv_and kjv_he kjv_said kjv_unto kjv_him [kjv_and]",
+      "path": [
+        "kjv_amon",
+        "kjv_and",
+        "kjv_he",
+        "kjv_said",
+        "kjv_unto",
+        "kjv_him",
+        "[kjv_and]"
+      ],
+      "cycle_detected": true,
+      "length": 7
+    },
+    {
+      "start_node": "kjv_thorns",
+      "sentence": "kjv_thorns kjv_and kjv_he kjv_said kjv_unto kjv_him [kjv_and]",
+      "path": [
+        "kjv_thorns",
+        "kjv_and",
+        "kjv_he",
+        "kjv_said",
+        "kjv_unto",
+        "kjv_him",
+        "[kjv_and]"
+      ],
+      "cycle_detected": true,
+      "length": 7
+    },
+    {
+      "start_node": "kjv_fleeth",
+      "sentence": "kjv_fleeth kjv_and kjv_he kjv_said kjv_unto kjv_him [kjv_and]",
+      "path": [
+        "kjv_fleeth",
+        "kjv_and",
+        "kjv_he",
+        "kjv_said",
+        "kjv_unto",
+        "kjv_him",
+        "[kjv_and]"
+      ],
+      "cycle_detected": true,
+      "length": 7
+    },
+    {
+      "start_node": "kjv_except",
+      "sentence": "kjv_except kjv_ye kjv_shall kjv_be kjv_fulfilled kjv_which kjv_was kjv_the kjv_son kjv_of [kjv_the]",
+      "path": [
+        "kjv_except",
+        "kjv_ye",
+        "kjv_shall",
+        "kjv_be",
+        "kjv_fulfilled",
+        "kjv_which",
+        "kjv_was",
+        "kjv_the",
+        "kjv_son",
+        "kjv_of",
+        "[kjv_the]"
+      ],
+      "cycle_detected": true,
+      "length": 11
+    },
+    {
+      "start_node": "kjv_eateth",
+      "sentence": "kjv_eateth kjv_with kjv_him kjv_and kjv_he kjv_said kjv_unto [kjv_him]",
+      "path": [
+        "kjv_eateth",
+        "kjv_with",
+        "kjv_him",
+        "kjv_and",
+        "kjv_he",
+        "kjv_said",
+        "kjv_unto",
+        "[kjv_him]"
+      ],
+      "cycle_detected": true,
+      "length": 8
+    },
+    {
+      "start_node": "kjv_company",
+      "sentence": "kjv_company kjv_of kjv_the kjv_son [kjv_of]",
+      "path": [
+        "kjv_company",
+        "kjv_of",
+        "kjv_the",
+        "kjv_son",
+        "[kjv_of]"
+      ],
+      "cycle_detected": true,
+      "length": 5
+    },
+    {
+      "start_node": "kjv_thereon",
+      "sentence": "kjv_thereon kjv_and kjv_he kjv_said kjv_unto kjv_him [kjv_and]",
+      "path": [
+        "kjv_thereon",
+        "kjv_and",
+        "kjv_he",
+        "kjv_said",
+        "kjv_unto",
+        "kjv_him",
+        "[kjv_and]"
+      ],
+      "cycle_detected": true,
+      "length": 7
+    },
+    {
+      "start_node": "kjv_buyeth",
+      "sentence": "kjv_buyeth kjv_that kjv_he kjv_said kjv_unto kjv_him kjv_and [kjv_he]",
+      "path": [
+        "kjv_buyeth",
+        "kjv_that",
+        "kjv_he",
+        "kjv_said",
+        "kjv_unto",
+        "kjv_him",
+        "kjv_and",
+        "[kjv_he]"
+      ],
+      "cycle_detected": true,
+      "length": 8
+    },
+    {
+      "start_node": "kjv_sorrowful",
+      "sentence": "kjv_sorrowful kjv_and kjv_he kjv_said kjv_unto kjv_him [kjv_and]",
+      "path": [
+        "kjv_sorrowful",
+        "kjv_and",
+        "kjv_he",
+        "kjv_said",
+        "kjv_unto",
+        "kjv_him",
+        "[kjv_and]"
+      ],
+      "cycle_detected": true,
+      "length": 7
+    },
+    {
+      "start_node": "kjv_this",
+      "sentence": "kjv_this kjv_is kjv_the kjv_son kjv_of [kjv_the]",
+      "path": [
+        "kjv_this",
+        "kjv_is",
+        "kjv_the",
+        "kjv_son",
+        "kjv_of",
+        "[kjv_the]"
+      ],
+      "cycle_detected": true,
+      "length": 6
+    },
+    {
+      "start_node": "kjv_praetorium",
+      "sentence": "kjv_praetorium kjv_and kjv_he kjv_said kjv_unto kjv_him [kjv_and]",
+      "path": [
+        "kjv_praetorium",
+        "kjv_and",
+        "kjv_he",
+        "kjv_said",
+        "kjv_unto",
+        "kjv_him",
+        "[kjv_and]"
+      ],
+      "cycle_detected": true,
+      "length": 7
+    },
+    {
+      "start_node": "kjv_bound",
+      "sentence": "kjv_bound kjv_him kjv_and kjv_he kjv_said kjv_unto [kjv_him]",
+      "path": [
+        "kjv_bound",
+        "kjv_him",
+        "kjv_and",
+        "kjv_he",
+        "kjv_said",
+        "kjv_unto",
+        "[kjv_him]"
+      ],
+      "cycle_detected": true,
+      "length": 7
+    },
+    {
+      "start_node": "kjv_remembrance",
+      "sentence": "kjv_remembrance kjv_of kjv_the kjv_son [kjv_of]",
+      "path": [
+        "kjv_remembrance",
+        "kjv_of",
+        "kjv_the",
+        "kjv_son",
+        "[kjv_of]"
+      ],
+      "cycle_detected": true,
+      "length": 5
+    },
+    {
+      "start_node": "kjv_like",
+      "sentence": "kjv_like kjv_unto kjv_him kjv_and kjv_he kjv_said [kjv_unto]",
+      "path": [
+        "kjv_like",
+        "kjv_unto",
+        "kjv_him",
+        "kjv_and",
+        "kjv_he",
+        "kjv_said",
+        "[kjv_unto]"
+      ],
+      "cycle_detected": true,
+      "length": 7
+    },
+    {
+      "start_node": "kjv_apparelled",
+      "sentence": "kjv_apparelled kjv_and kjv_he kjv_said kjv_unto kjv_him [kjv_and]",
+      "path": [
+        "kjv_apparelled",
+        "kjv_and",
+        "kjv_he",
+        "kjv_said",
+        "kjv_unto",
+        "kjv_him",
+        "[kjv_and]"
+      ],
+      "cycle_detected": true,
+      "length": 7
+    },
+    {
+      "start_node": "kjv_answerest",
+      "sentence": "kjv_answerest kjv_thou kjv_hast [kjv_thou]",
+      "path": [
+        "kjv_answerest",
+        "kjv_thou",
+        "kjv_hast",
+        "[kjv_thou]"
+      ],
+      "cycle_detected": true,
+      "length": 4
+    },
+    {
+      "start_node": "kjv_broiled",
+      "sentence": "kjv_broiled kjv_fish kjv_will kjv_not kjv_the kjv_son kjv_of [kjv_the]",
+      "path": [
+        "kjv_broiled",
+        "kjv_fish",
+        "kjv_will",
+        "kjv_not",
+        "kjv_the",
+        "kjv_son",
+        "kjv_of",
+        "[kjv_the]"
+      ],
+      "cycle_detected": true,
+      "length": 8
+    },
+    {
+      "start_node": "kjv_dwelling",
+      "sentence": "kjv_dwelling kjv_among kjv_the kjv_son kjv_of [kjv_the]",
+      "path": [
+        "kjv_dwelling",
+        "kjv_among",
+        "kjv_the",
+        "kjv_son",
+        "kjv_of",
+        "[kjv_the]"
+      ],
+      "cycle_detected": true,
+      "length": 6
+    },
+    {
+      "start_node": "kjv_enmity",
+      "sentence": "kjv_enmity kjv_between kjv_the kjv_son kjv_of [kjv_the]",
+      "path": [
+        "kjv_enmity",
+        "kjv_between",
+        "kjv_the",
+        "kjv_son",
+        "kjv_of",
+        "[kjv_the]"
+      ],
+      "cycle_detected": true,
+      "length": 6
+    },
+    {
+      "start_node": "kjv_other",
+      "sentence": "kjv_other kjv_side kjv_and kjv_he kjv_said kjv_unto kjv_him [kjv_and]",
+      "path": [
+        "kjv_other",
+        "kjv_side",
+        "kjv_and",
+        "kjv_he",
+        "kjv_said",
+        "kjv_unto",
+        "kjv_him",
+        "[kjv_and]"
+      ],
+      "cycle_detected": true,
+      "length": 8
+    },
+    {
+      "start_node": "kjv_rhesa",
+      "sentence": "kjv_rhesa kjv_which kjv_was kjv_the kjv_son kjv_of [kjv_the]",
+      "path": [
+        "kjv_rhesa",
+        "kjv_which",
+        "kjv_was",
+        "kjv_the",
+        "kjv_son",
+        "kjv_of",
+        "[kjv_the]"
+      ],
+      "cycle_detected": true,
+      "length": 7
+    },
+    {
+      "start_node": "kjv_angel",
+      "sentence": "kjv_angel kjv_of kjv_the kjv_son [kjv_of]",
+      "path": [
+        "kjv_angel",
+        "kjv_of",
+        "kjv_the",
+        "kjv_son",
+        "[kjv_of]"
+      ],
+      "cycle_detected": true,
+      "length": 5
+    },
+    {
+      "start_node": "kjv_prove",
+      "sentence": "kjv_prove kjv_them kjv_and kjv_he kjv_said kjv_unto kjv_him [kjv_and]",
+      "path": [
+        "kjv_prove",
+        "kjv_them",
+        "kjv_and",
+        "kjv_he",
+        "kjv_said",
+        "kjv_unto",
+        "kjv_him",
+        "[kjv_and]"
+      ],
+      "cycle_detected": true,
+      "length": 8
+    },
+    {
+      "start_node": "kjv_disciple",
+      "sentence": "kjv_disciple kjv_which kjv_was kjv_the kjv_son kjv_of [kjv_the]",
+      "path": [
+        "kjv_disciple",
+        "kjv_which",
+        "kjv_was",
+        "kjv_the",
+        "kjv_son",
+        "kjv_of",
+        "[kjv_the]"
+      ],
+      "cycle_detected": true,
+      "length": 7
+    },
+    {
+      "start_node": "kjv_synagogues",
+      "sentence": "kjv_synagogues kjv_and kjv_he kjv_said kjv_unto kjv_him [kjv_and]",
+      "path": [
+        "kjv_synagogues",
+        "kjv_and",
+        "kjv_he",
+        "kjv_said",
+        "kjv_unto",
+        "kjv_him",
+        "[kjv_and]"
+      ],
+      "cycle_detected": true,
+      "length": 7
+    },
+    {
+      "start_node": "kjv_sheep",
+      "sentence": "kjv_sheep kjv_and kjv_he kjv_said kjv_unto kjv_him [kjv_and]",
+      "path": [
+        "kjv_sheep",
+        "kjv_and",
+        "kjv_he",
+        "kjv_said",
+        "kjv_unto",
+        "kjv_him",
+        "[kjv_and]"
+      ],
+      "cycle_detected": true,
+      "length": 7
+    },
+    {
+      "start_node": "kjv_stricken",
+      "sentence": "kjv_stricken kjv_in kjv_the kjv_son kjv_of [kjv_the]",
+      "path": [
+        "kjv_stricken",
+        "kjv_in",
+        "kjv_the",
+        "kjv_son",
+        "kjv_of",
+        "[kjv_the]"
+      ],
+      "cycle_detected": true,
+      "length": 6
+    },
+    {
+      "start_node": "kjv_powers",
+      "sentence": "kjv_powers kjv_of kjv_the kjv_son [kjv_of]",
+      "path": [
+        "kjv_powers",
+        "kjv_of",
+        "kjv_the",
+        "kjv_son",
+        "[kjv_of]"
+      ],
+      "cycle_detected": true,
+      "length": 5
+    },
+    {
+      "start_node": "kjv_lifted",
+      "sentence": "kjv_lifted kjv_up kjv_and kjv_he kjv_said kjv_unto kjv_him [kjv_and]",
+      "path": [
+        "kjv_lifted",
+        "kjv_up",
+        "kjv_and",
+        "kjv_he",
+        "kjv_said",
+        "kjv_unto",
+        "kjv_him",
+        "[kjv_and]"
+      ],
+      "cycle_detected": true,
+      "length": 8
+    },
+    {
+      "start_node": "kjv_earnestly",
+      "sentence": "kjv_earnestly kjv_and kjv_he kjv_said kjv_unto kjv_him [kjv_and]",
+      "path": [
+        "kjv_earnestly",
+        "kjv_and",
+        "kjv_he",
+        "kjv_said",
+        "kjv_unto",
+        "kjv_him",
+        "[kjv_and]"
+      ],
+      "cycle_detected": true,
+      "length": 7
+    },
+    {
+      "start_node": "kjv_matters",
+      "sentence": "kjv_matters kjv_of kjv_the kjv_son [kjv_of]",
+      "path": [
+        "kjv_matters",
+        "kjv_of",
+        "kjv_the",
+        "kjv_son",
+        "[kjv_of]"
+      ],
+      "cycle_detected": true,
+      "length": 5
+    },
+    {
+      "start_node": "kjv_remaining",
+      "sentence": "kjv_remaining kjv_on kjv_the kjv_son kjv_of [kjv_the]",
+      "path": [
+        "kjv_remaining",
+        "kjv_on",
+        "kjv_the",
+        "kjv_son",
+        "kjv_of",
+        "[kjv_the]"
+      ],
+      "cycle_detected": true,
+      "length": 6
+    },
+    {
+      "start_node": "kjv_folk",
+      "sentence": "kjv_folk kjv_and kjv_he kjv_said kjv_unto kjv_him [kjv_and]",
+      "path": [
+        "kjv_folk",
+        "kjv_and",
+        "kjv_he",
+        "kjv_said",
+        "kjv_unto",
+        "kjv_him",
+        "[kjv_and]"
+      ],
+      "cycle_detected": true,
+      "length": 7
+    },
+    {
+      "start_node": "kjv_whereon",
+      "sentence": "kjv_whereon kjv_never kjv_man kjv_is kjv_the kjv_son kjv_of [kjv_the]",
+      "path": [
+        "kjv_whereon",
+        "kjv_never",
+        "kjv_man",
+        "kjv_is",
+        "kjv_the",
+        "kjv_son",
+        "kjv_of",
+        "[kjv_the]"
+      ],
+      "cycle_detected": true,
+      "length": 8
+    },
+    {
+      "start_node": "kjv_accomplish",
+      "sentence": "kjv_accomplish kjv_at kjv_the kjv_son kjv_of [kjv_the]",
+      "path": [
+        "kjv_accomplish",
+        "kjv_at",
+        "kjv_the",
+        "kjv_son",
+        "kjv_of",
+        "[kjv_the]"
+      ],
+      "cycle_detected": true,
+      "length": 6
+    },
+    {
+      "start_node": "kjv_towns",
+      "sentence": "kjv_towns kjv_that kjv_he kjv_said kjv_unto kjv_him kjv_and [kjv_he]",
+      "path": [
+        "kjv_towns",
+        "kjv_that",
+        "kjv_he",
+        "kjv_said",
+        "kjv_unto",
+        "kjv_him",
+        "kjv_and",
+        "[kjv_he]"
+      ],
+      "cycle_detected": true,
+      "length": 8
+    },
+    {
+      "start_node": "kjv_west",
+      "sentence": "kjv_west kjv_and kjv_he kjv_said kjv_unto kjv_him [kjv_and]",
+      "path": [
+        "kjv_west",
+        "kjv_and",
+        "kjv_he",
+        "kjv_said",
+        "kjv_unto",
+        "kjv_him",
+        "[kjv_and]"
+      ],
+      "cycle_detected": true,
+      "length": 7
+    },
+    {
+      "start_node": "kjv_covetousness",
+      "sentence": "kjv_covetousness kjv_wickedness kjv_and kjv_he kjv_said kjv_unto kjv_him [kjv_and]",
+      "path": [
+        "kjv_covetousness",
+        "kjv_wickedness",
+        "kjv_and",
+        "kjv_he",
+        "kjv_said",
+        "kjv_unto",
+        "kjv_him",
+        "[kjv_and]"
+      ],
+      "cycle_detected": true,
+      "length": 8
+    },
+    {
+      "start_node": "kjv_straitened",
+      "sentence": "kjv_straitened kjv_till kjv_the kjv_son kjv_of [kjv_the]",
+      "path": [
+        "kjv_straitened",
+        "kjv_till",
+        "kjv_the",
+        "kjv_son",
+        "kjv_of",
+        "[kjv_the]"
+      ],
+      "cycle_detected": true,
+      "length": 6
+    },
+    {
+      "start_node": "kjv_likewise",
+      "sentence": "kjv_likewise kjv_also kjv_the kjv_son kjv_of [kjv_the]",
+      "path": [
+        "kjv_likewise",
+        "kjv_also",
+        "kjv_the",
+        "kjv_son",
+        "kjv_of",
+        "[kjv_the]"
+      ],
+      "cycle_detected": true,
+      "length": 6
+    },
+    {
+      "start_node": "kjv_heli",
+      "sentence": "kjv_heli kjv_which kjv_was kjv_the kjv_son kjv_of [kjv_the]",
+      "path": [
+        "kjv_heli",
+        "kjv_which",
+        "kjv_was",
+        "kjv_the",
+        "kjv_son",
+        "kjv_of",
+        "[kjv_the]"
+      ],
+      "cycle_detected": true,
+      "length": 7
+    },
+    {
+      "start_node": "kjv_fold",
+      "sentence": "kjv_fold kjv_them kjv_and kjv_he kjv_said kjv_unto kjv_him [kjv_and]",
+      "path": [
+        "kjv_fold",
+        "kjv_them",
+        "kjv_and",
+        "kjv_he",
+        "kjv_said",
+        "kjv_unto",
+        "kjv_him",
+        "[kjv_and]"
+      ],
+      "cycle_detected": true,
+      "length": 8
+    },
+    {
+      "start_node": "kjv_counsel",
+      "sentence": "kjv_counsel kjv_and kjv_he kjv_said kjv_unto kjv_him [kjv_and]",
+      "path": [
+        "kjv_counsel",
+        "kjv_and",
+        "kjv_he",
+        "kjv_said",
+        "kjv_unto",
+        "kjv_him",
+        "[kjv_and]"
+      ],
+      "cycle_detected": true,
+      "length": 7
+    },
+    {
+      "start_node": "kjv_drunkenness",
+      "sentence": "kjv_drunkenness kjv_and kjv_he kjv_said kjv_unto kjv_him [kjv_and]",
+      "path": [
+        "kjv_drunkenness",
+        "kjv_and",
+        "kjv_he",
+        "kjv_said",
+        "kjv_unto",
+        "kjv_him",
+        "[kjv_and]"
+      ],
+      "cycle_detected": true,
+      "length": 7
+    },
+    {
+      "start_node": "kjv_trembled",
+      "sentence": "kjv_trembled kjv_and kjv_he kjv_said kjv_unto kjv_him [kjv_and]",
+      "path": [
+        "kjv_trembled",
+        "kjv_and",
+        "kjv_he",
+        "kjv_said",
+        "kjv_unto",
+        "kjv_him",
+        "[kjv_and]"
+      ],
+      "cycle_detected": true,
+      "length": 7
+    },
+    {
+      "start_node": "kjv_heat",
+      "sentence": "kjv_heat kjv_of kjv_the kjv_son [kjv_of]",
+      "path": [
+        "kjv_heat",
+        "kjv_of",
+        "kjv_the",
+        "kjv_son",
+        "[kjv_of]"
+      ],
+      "cycle_detected": true,
+      "length": 5
+    },
+    {
+      "start_node": "kjv_buy",
+      "sentence": "kjv_buy kjv_themselves kjv_saying kjv_lord kjv_and kjv_he kjv_said kjv_unto kjv_him [kjv_and]",
+      "path": [
+        "kjv_buy",
+        "kjv_themselves",
+        "kjv_saying",
+        "kjv_lord",
+        "kjv_and",
+        "kjv_he",
+        "kjv_said",
+        "kjv_unto",
+        "kjv_him",
+        "[kjv_and]"
+      ],
+      "cycle_detected": true,
+      "length": 10
+    },
+    {
+      "start_node": "kjv_bring",
+      "sentence": "kjv_bring kjv_forth kjv_and kjv_he kjv_said kjv_unto kjv_him [kjv_and]",
+      "path": [
+        "kjv_bring",
+        "kjv_forth",
+        "kjv_and",
+        "kjv_he",
+        "kjv_said",
+        "kjv_unto",
+        "kjv_him",
+        "[kjv_and]"
+      ],
+      "cycle_detected": true,
+      "length": 8
+    }
+  ],
+  "analysis": {
+    "total_sentences": 50,
+    "sentences_with_cycles": 50,
+    "cycle_percentage": 100.0,
+    "average_length": 6.84,
+    "top_patterns": {
+      "2-grams": [
+        [
+          [
+            "kjv_he",
+            "kjv_said"
+          ],
+          27
+        ],
+        [
+          [
+            "kjv_said",
+            "kjv_unto"
+          ],
+          26
+        ],
+        [
+          [
+            "kjv_and",
+            "kjv_he"
+          ],
+          25
+        ],
+        [
+          [
+            "kjv_unto",
+            "kjv_him"
+          ],
+          25
+        ],
+        [
+          [
+            "kjv_the",
+            "kjv_son"
+          ],
+          21
+        ],
+        [
+          [
+            "kjv_son",
+            "kjv_of"
+          ],
+          16
+        ],
+        [
+          [
+            "kjv_of",
+            "kjv_the"
+          ],
+          7
+        ],
+        [
+          [
+            "kjv_him",
+            "kjv_and"
+          ],
+          5
+        ],
+        [
+          [
+            "kjv_which",
+            "kjv_was"
+          ],
+          4
+        ],
+        [
+          [
+            "kjv_was",
+            "kjv_the"
+          ],
+          4
+        ]
+      ],
+      "3-grams": [
+        [
+          [
+            "kjv_he",
+            "kjv_said",
+            "kjv_unto"
+          ],
+          26
+        ],
+        [
+          [
+            "kjv_and",
+            "kjv_he",
+            "kjv_said"
+          ],
+          25
+        ],
+        [
+          [
+            "kjv_said",
+            "kjv_unto",
+            "kjv_him"
+          ],
+          24
+        ],
+        [
+          [
+            "kjv_the",
+            "kjv_son",
+            "kjv_of"
+          ],
+          15
+        ],
+        [
+          [
+            "kjv_of",
+            "kjv_the",
+            "kjv_son"
+          ],
+          6
+        ],
+        [
+          [
+            "kjv_which",
+            "kjv_was",
+            "kjv_the"
+          ],
+          4
+        ],
+        [
+          [
+            "kjv_was",
+            "kjv_the",
+            "kjv_son"
+          ],
+          4
+        ],
+        [
+          [
+            "kjv_him",
+            "kjv_and",
+            "kjv_he"
+          ],
+          3
+        ],
+        [
+          [
+            "kjv_unto",
+            "kjv_him",
+            "kjv_and"
+          ],
+          3
+        ],
+        [
+          [
+            "kjv_that",
+            "kjv_he",
+            "kjv_said"
+          ],
+          2
+        ]
+      ],
+      "4-grams": [
+        [
+          [
+            "kjv_and",
+            "kjv_he",
+            "kjv_said",
+            "kjv_unto"
+          ],
+          24
+        ],
+        [
+          [
+            "kjv_he",
+            "kjv_said",
+            "kjv_unto",
+            "kjv_him"
+          ],
+          24
+        ],
+        [
+          [
+            "kjv_which",
+            "kjv_was",
+            "kjv_the",
+            "kjv_son"
+          ],
+          4
+        ],
+        [
+          [
+            "kjv_was",
+            "kjv_the",
+            "kjv_son",
+            "kjv_of"
+          ],
+          4
+        ],
+        [
+          [
+            "kjv_him",
+            "kjv_and",
+            "kjv_he",
+            "kjv_said"
+          ],
+          3
+        ],
+        [
+          [
+            "kjv_that",
+            "kjv_he",
+            "kjv_said",
+            "kjv_unto"
+          ],
+          2
+        ],
+        [
+          [
+            "kjv_said",
+            "kjv_unto",
+            "kjv_him",
+            "kjv_and"
+          ],
+          2
+        ],
+        [
+          [
+            "kjv_is",
+            "kjv_the",
+            "kjv_son",
+            "kjv_of"
+          ],
+          2
+        ],
+        [
+          [
+            "kjv_them",
+            "kjv_and",
+            "kjv_he",
+            "kjv_said"
+          ],
+          2
+        ],
+        [
+          [
+            "kjv_selleth",
+            "kjv_all",
+            "kjv_the",
+            "kjv_son"
+          ],
+          1
+        ]
+      ],
+      "5-grams": [
+        [
+          [
+            "kjv_and",
+            "kjv_he",
+            "kjv_said",
+            "kjv_unto",
+            "kjv_him"
+          ],
+          22
+        ],
+        [
+          [
+            "kjv_which",
+            "kjv_was",
+            "kjv_the",
+            "kjv_son",
+            "kjv_of"
+          ],
+          4
+        ],
+        [
+          [
+            "kjv_him",
+            "kjv_and",
+            "kjv_he",
+            "kjv_said",
+            "kjv_unto"
+          ],
+          2
+        ],
+        [
+          [
+            "kjv_that",
+            "kjv_he",
+            "kjv_said",
+            "kjv_unto",
+            "kjv_him"
+          ],
+          2
+        ],
+        [
+          [
+            "kjv_he",
+            "kjv_said",
+            "kjv_unto",
+            "kjv_him",
+            "kjv_and"
+          ],
+          2
+        ],
+        [
+          [
+            "kjv_them",
+            "kjv_and",
+            "kjv_he",
+            "kjv_said",
+            "kjv_unto"
+          ],
+          2
+        ],
+        [
+          [
+            "kjv_selleth",
+            "kjv_all",
+            "kjv_the",
+            "kjv_son",
+            "kjv_of"
+          ],
+          1
+        ],
+        [
+          [
+            "kjv_amon",
+            "kjv_and",
+            "kjv_he",
+            "kjv_said",
+            "kjv_unto"
+          ],
+          1
+        ],
+        [
+          [
+            "kjv_thorns",
+            "kjv_and",
+            "kjv_he",
+            "kjv_said",
+            "kjv_unto"
+          ],
+          1
+        ],
+        [
+          [
+            "kjv_fleeth",
+            "kjv_and",
+            "kjv_he",
+            "kjv_said",
+            "kjv_unto"
+          ],
+          1
+        ]
+      ]
+    },
+    "top_endpoints": [],
+    "unique_ngrams_by_size": {
+      "2": 89,
+      "3": 88,
+      "4": 84,
+      "5": 65
+    },
+    "attractors": {
+      "total_walks": 100,
+      "top_attractors": [
+        {
+          "node": "kjv_and",
+          "appearances": 56,
+          "convergence_rate": 0.56,
+          "in_degree": 1345,
+          "out_degree": 879,
+          "is_cycle_point": true,
+          "cycle_entries": 41
+        },
+        {
+          "node": "kjv_he",
+          "appearances": 56,
+          "convergence_rate": 0.56,
+          "in_degree": 333,
+          "out_degree": 283,
+          "is_cycle_point": true,
+          "cycle_entries": 5
+        },
+        {
+          "node": "kjv_said",
+          "appearances": 56,
+          "convergence_rate": 0.56,
+          "in_degree": 100,
+          "out_degree": 128,
+          "is_cycle_point": false,
+          "cycle_entries": 0
+        },
+        {
+          "node": "kjv_unto",
+          "appearances": 56,
+          "convergence_rate": 0.56,
+          "in_degree": 232,
+          "out_degree": 80,
+          "is_cycle_point": true,
+          "cycle_entries": 4
+        },
+        {
+          "node": "kjv_him",
+          "appearances": 56,
+          "convergence_rate": 0.56,
+          "in_degree": 264,
+          "out_degree": 294,
+          "is_cycle_point": true,
+          "cycle_entries": 6
+        },
+        {
+          "node": "kjv_the",
+          "appearances": 41,
+          "convergence_rate": 0.41,
+          "in_degree": 531,
+          "out_degree": 757,
+          "is_cycle_point": true,
+          "cycle_entries": 31
+        },
+        {
+          "node": "kjv_son",
+          "appearances": 41,
+          "convergence_rate": 0.41,
+          "in_degree": 30,
+          "out_degree": 45,
+          "is_cycle_point": true,
+          "cycle_entries": 1
+        },
+        {
+          "node": "kjv_of",
+          "appearances": 41,
+          "convergence_rate": 0.41,
+          "in_degree": 577,
+          "out_degree": 355,
+          "is_cycle_point": true,
+          "cycle_entries": 9
+        },
+        {
+          "node": "kjv_which",
+          "appearances": 10,
+          "convergence_rate": 0.1,
+          "in_degree": 281,
+          "out_degree": 135,
+          "is_cycle_point": false,
+          "cycle_entries": 0
+        },
+        {
+          "node": "kjv_was",
+          "appearances": 10,
+          "convergence_rate": 0.1,
+          "in_degree": 153,
+          "out_degree": 252,
+          "is_cycle_point": false,
+          "cycle_entries": 0
+        },
+        {
+          "node": "kjv_fulfilled",
+          "appearances": 4,
+          "convergence_rate": 0.04,
+          "in_degree": 6,
+          "out_degree": 12,
+          "is_cycle_point": false,
+          "cycle_entries": 0
+        },
+        {
+          "node": "kjv_be",
+          "appearances": 3,
+          "convergence_rate": 0.03,
+          "in_degree": 101,
+          "out_degree": 224,
+          "is_cycle_point": false,
+          "cycle_entries": 0
+        },
+        {
+          "node": "kjv_is",
+          "appearances": 3,
+          "convergence_rate": 0.03,
+          "in_degree": 194,
+          "out_degree": 220,
+          "is_cycle_point": false,
+          "cycle_entries": 0
+        },
+        {
+          "node": "kjv_thou",
+          "appearances": 3,
+          "convergence_rate": 0.03,
+          "in_degree": 144,
+          "out_degree": 153,
+          "is_cycle_point": true,
+          "cycle_entries": 3
+        },
+        {
+          "node": "kjv_hast",
+          "appearances": 3,
+          "convergence_rate": 0.03,
+          "in_degree": 7,
+          "out_degree": 41,
+          "is_cycle_point": false,
+          "cycle_entries": 0
+        },
+        {
+          "node": "kjv_not",
+          "appearances": 3,
+          "convergence_rate": 0.03,
+          "in_degree": 190,
+          "out_degree": 279,
+          "is_cycle_point": false,
+          "cycle_entries": 0
+        },
+        {
+          "node": "kjv_shall",
+          "appearances": 2,
+          "convergence_rate": 0.02,
+          "in_degree": 194,
+          "out_degree": 163,
+          "is_cycle_point": false,
+          "cycle_entries": 0
+        },
+        {
+          "node": "kjv_that",
+          "appearances": 2,
+          "convergence_rate": 0.02,
+          "in_degree": 370,
+          "out_degree": 314,
+          "is_cycle_point": false,
+          "cycle_entries": 0
+        },
+        {
+          "node": "kjv_them",
+          "appearances": 2,
+          "convergence_rate": 0.02,
+          "in_degree": 168,
+          "out_degree": 208,
+          "is_cycle_point": false,
+          "cycle_entries": 0
+        },
+        {
+          "node": "kjv_in",
+          "appearances": 2,
+          "convergence_rate": 0.02,
+          "in_degree": 400,
+          "out_degree": 189,
+          "is_cycle_point": false,
+          "cycle_entries": 0
+        }
+      ],
+      "cycle_entry_points": [
+        [
+          "kjv_and",
+          41
+        ],
+        [
+          "kjv_the",
+          31
+        ],
+        [
+          "kjv_of",
+          9
+        ],
+        [
+          "kjv_him",
+          6
+        ],
+        [
+          "kjv_he",
+          5
+        ],
+        [
+          "kjv_unto",
+          4
+        ],
+        [
+          "kjv_thou",
+          3
+        ],
+        [
+          "kjv_son",
+          1
+        ]
+      ]
+    },
+    "longest_acyclic_paths": []
+  },
+  "generated": "kjv_gospels_dag_sentence_analysis"
+}
