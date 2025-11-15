@@ -31,3 +31,6 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.bak
+
+# Byzantine text cache (downloaded on demand)
+data/byzantine/

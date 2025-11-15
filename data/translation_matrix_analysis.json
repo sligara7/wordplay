@@ -1,0 +1,648 @@
+{
+  "metadata": {
+    "generated": "2025-11-15T04:48:49.928217",
+    "method": "SVD-based translation matrix",
+    "greek_words": 9674,
+    "english_words": 3447,
+    "framework": "Translation Matrix Gap Analysis"
+  },
+  "systems": {
+    "A_greek": {
+      "size": 9674,
+      "rank": 3684,
+      "density": 0.00039716293444564456,
+      "top_words": [
+        {
+          "word": "καὶ",
+          "weighted_degree": 871.3815847352994,
+          "out_degree": 1499,
+          "in_degree": 1715
+        },
+        {
+          "word": "δὲ",
+          "weighted_degree": 273.5606538094527,
+          "out_degree": 518,
+          "in_degree": 445
+        },
+        {
+          "word": "Καὶ",
+          "weighted_degree": 241.75508162235332,
+          "out_degree": 456,
+          "in_degree": 641
+        },
+        {
+          "word": "ἐν",
+          "weighted_degree": 196.69922235056154,
+          "out_degree": 148,
+          "in_degree": 502
+        },
+        {
+          "word": "εἰς",
+          "weighted_degree": 188.67580197801666,
+          "out_degree": 129,
+          "in_degree": 421
+        },
+        {
+          "word": "τοῦ",
+          "weighted_degree": 188.59100430847835,
+          "out_degree": 291,
+          "in_degree": 404
+        },
+        {
+          "word": "αὐτοῦ",
+          "weighted_degree": 175.8458090290493,
+          "out_degree": 409,
+          "in_degree": 336
+        },
+        {
+          "word": "τὸν",
+          "weighted_degree": 165.0174594080851,
+          "out_degree": 234,
+          "in_degree": 358
+        },
+        {
+          "word": "ὁ",
+          "weighted_degree": 145.4941563483787,
+          "out_degree": 281,
+          "in_degree": 452
+        },
+        {
+          "word": "αὐτῷ",
+          "weighted_degree": 127.86746261789506,
+          "out_degree": 287,
+          "in_degree": 210
+        },
+        {
+          "word": "αὐτόν",
+          "weighted_degree": 124.77749950355272,
+          "out_degree": 128,
+          "in_degree": 191
+        },
+        {
+          "word": "αὐτὸν",
+          "weighted_degree": 112.54390861306548,
+          "out_degree": 185,
+          "in_degree": 225
+        },
+        {
+          "word": "τὸ",
+          "weighted_degree": 109.00885513220464,
+          "out_degree": 240,
+          "in_degree": 299
+        },
+        {
+          "word": "ὅτι",
+          "weighted_degree": 107.61370286758708,
+          "out_degree": 347,
+          "in_degree": 313
+        },
+        {
+          "word": "τὴν",
+          "weighted_degree": 98.24673750631204,
+          "out_degree": 197,
+          "in_degree": 234
+        },
+        {
+          "word": "σου",
+          "weighted_degree": 81.57989116252625,
+          "out_degree": 144,
+          "in_degree": 142
+        },
+        {
+          "word": "μου",
+          "weighted_degree": 81.38446350388624,
+          "out_degree": 166,
+          "in_degree": 150
+        },
+        {
+          "word": "με",
+          "weighted_degree": 79.47801156077453,
+          "out_degree": 122,
+          "in_degree": 108
+        },
+        {
+          "word": "ἐπὶ",
+          "weighted_degree": 78.20234125953827,
+          "out_degree": 73,
+          "in_degree": 202
+        },
+        {
+          "word": "τοὺς",
+          "weighted_degree": 77.7688797126799,
+          "out_degree": 127,
+          "in_degree": 166
+        },
+        {
+          "word": "ἐστιν",
+          "weighted_degree": 77.13361119015775,
+          "out_degree": 129,
+          "in_degree": 125
+        },
+        {
+          "word": "τῆς",
+          "weighted_degree": 73.43871023816541,
+          "out_degree": 134,
+          "in_degree": 166
+        },
+        {
+          "word": "τὰ",
+          "weighted_degree": 73.34064301176817,
+          "out_degree": 131,
+          "in_degree": 176
+        },
+        {
+          "word": "αὐτῶν",
+          "weighted_degree": 70.28150693557758,
+          "out_degree": 151,
+          "in_degree": 151
+        },
+        {
+          "word": "τῶν",
+          "weighted_degree": 67.65271708591372,
+          "out_degree": 190,
+          "in_degree": 183
+        },
+        {
+          "word": "Ὁ",
+          "weighted_degree": 64.73200411196896,
+          "out_degree": 60,
+          "in_degree": 218
+        },
+        {
+          "word": "τῷ",
+          "weighted_degree": 63.87489632802525,
+          "out_degree": 197,
+          "in_degree": 178
+        },
+        {
+          "word": "οὖν",
+          "weighted_degree": 63.365659471322196,
+          "out_degree": 158,
+          "in_degree": 136
+        },
+        {
+          "word": "αὐτοῖς",
+          "weighted_degree": 62.481369176862124,
+          "out_degree": 187,
+          "in_degree": 129
+        },
+        {
+          "word": "οἱ",
+          "weighted_degree": 60.59765629114466,
+          "out_degree": 170,
+          "in_degree": 195
+        },
+        {
+          "word": "ἡ",
+          "weighted_degree": 59.84636175405536,
+          "out_degree": 139,
+          "in_degree": 173
+        },
+        {
+          "word": "πρὸς",
+          "weighted_degree": 58.3579871175778,
+          "out_degree": 55,
+          "in_degree": 179
+        },
+        {
+          "word": "ἐκ",
+          "weighted_degree": 55.39639647863802,
+          "out_degree": 33,
+          "in_degree": 175
+        },
+        {
+          "word": "μοι",
+          "weighted_degree": 53.123693623161714,
+          "out_degree": 69,
+          "in_degree": 66
+        },
+        {
+          "word": "ἀπὸ",
+          "weighted_degree": 52.07184565015289,
+          "out_degree": 53,
+          "in_degree": 159
+        },
+        {
+          "word": "γὰρ",
+          "weighted_degree": 52.05000764153899,
+          "out_degree": 175,
+          "in_degree": 156
+        },
+        {
+          "word": "ὑμῖν",
+          "weighted_degree": 50.40555214330838,
+          "out_degree": 149,
+          "in_degree": 111
+        },
+        {
+          "word": "ὑμῶν",
+          "weighted_degree": 49.153413334407986,
+          "out_degree": 140,
+          "in_degree": 122
+        },
+        {
+          "word": "ἵνα",
+          "weighted_degree": 48.54615611155547,
+          "out_degree": 160,
+          "in_degree": 188
+        },
+        {
+          "word": "τοῖς",
+          "weighted_degree": 45.44290074680659,
+          "out_degree": 125,
+          "in_degree": 122
+        },
+        {
+          "word": "ὑμᾶς",
+          "weighted_degree": 44.17870672624543,
+          "out_degree": 82,
+          "in_degree": 78
+        },
+        {
+          "word": "σε",
+          "weighted_degree": 43.312505938937,
+          "out_degree": 68,
+          "in_degree": 63
+        },
+        {
+          "word": "οὐ",
+          "weighted_degree": 42.400315374907095,
+          "out_degree": 129,
+          "in_degree": 148
+        },
+        {
+          "word": "οὐκ",
+          "weighted_degree": 40.65239560882336,
+          "out_degree": 164,
+          "in_degree": 165
+        },
+        {
+          "word": "σοι",
+          "weighted_degree": 39.10280759545022,
+          "out_degree": 76,
+          "in_degree": 71
+        },
+        {
+          "word": "ἢ",
+          "weighted_degree": 37.35628182450904,
+          "out_degree": 85,
+          "in_degree": 101
+        },
+        {
+          "word": "περὶ",
+          "weighted_degree": 37.25755194904869,
+          "out_degree": 50,
+          "in_degree": 106
+        },
+        {
+          "word": "τὰς",
+          "weighted_degree": 34.03258349610267,
+          "out_degree": 62,
+          "in_degree": 75
+        },
+        {
+          "word": "ἦν",
+          "weighted_degree": 29.65061560711456,
+          "out_degree": 99,
+          "in_degree": 108
+        },
+        {
+          "word": "ὑπὸ",
+          "weighted_degree": 29.615298471808746,
+          "out_degree": 22,
+          "in_degree": 46
+        }
+      ]
+    },
+    "C_english": {
+      "size": 3447,
+      "rank": 1235,
+      "density": 0.0022962833353069386,
+      "top_words": [
+        {
+          "word": "and",
+          "weighted_degree": 552.2057084410868,
+          "out_degree": 879,
+          "in_degree": 1345
+        },
+        {
+          "word": "of",
+          "weighted_degree": 214.7335406255148,
+          "out_degree": 355,
+          "in_degree": 577
+        },
+        {
+          "word": "the",
+          "weighted_degree": 129.95928629978863,
+          "out_degree": 757,
+          "in_degree": 531
+        },
+        {
+          "word": "him",
+          "weighted_degree": 91.85379425832264,
+          "out_degree": 294,
+          "in_degree": 264
+        },
+        {
+          "word": "which",
+          "weighted_degree": 90.82562405785751,
+          "out_degree": 135,
+          "in_degree": 281
+        },
+        {
+          "word": "to",
+          "weighted_degree": 89.77426153399573,
+          "out_degree": 271,
+          "in_degree": 383
+        },
+        {
+          "word": "in",
+          "weighted_degree": 82.6866197300615,
+          "out_degree": 189,
+          "in_degree": 400
+        },
+        {
+          "word": "but",
+          "weighted_degree": 75.32480422421055,
+          "out_degree": 161,
+          "in_degree": 336
+        },
+        {
+          "word": "for",
+          "weighted_degree": 74.66809763147421,
+          "out_degree": 160,
+          "in_degree": 377
+        },
+        {
+          "word": "that",
+          "weighted_degree": 67.51066122308153,
+          "out_degree": 314,
+          "in_degree": 370
+        },
+        {
+          "word": "with",
+          "weighted_degree": 58.53573056216757,
+          "out_degree": 117,
+          "in_degree": 259
+        },
+        {
+          "word": "unto",
+          "weighted_degree": 51.14287738265938,
+          "out_degree": 80,
+          "in_degree": 232
+        },
+        {
+          "word": "he",
+          "weighted_degree": 47.21260424318845,
+          "out_degree": 283,
+          "in_degree": 333
+        },
+        {
+          "word": "not",
+          "weighted_degree": 43.68188653014141,
+          "out_degree": 279,
+          "in_degree": 190
+        },
+        {
+          "word": "thou",
+          "weighted_degree": 42.79810456383594,
+          "out_degree": 153,
+          "in_degree": 144
+        },
+        {
+          "word": "it",
+          "weighted_degree": 39.40348480061071,
+          "out_degree": 137,
+          "in_degree": 214
+        },
+        {
+          "word": "them",
+          "weighted_degree": 38.05595806683322,
+          "out_degree": 208,
+          "in_degree": 168
+        },
+        {
+          "word": "shall",
+          "weighted_degree": 35.295789024447,
+          "out_degree": 163,
+          "in_degree": 194
+        },
+        {
+          "word": "is",
+          "weighted_degree": 31.04350311305531,
+          "out_degree": 220,
+          "in_degree": 194
+        },
+        {
+          "word": "his",
+          "weighted_degree": 29.543484539186604,
+          "out_degree": 196,
+          "in_degree": 207
+        },
+        {
+          "word": "on",
+          "weighted_degree": 28.390303665265698,
+          "out_degree": 49,
+          "in_degree": 131
+        },
+        {
+          "word": "ye",
+          "weighted_degree": 27.983930183541965,
+          "out_degree": 190,
+          "in_degree": 202
+        },
+        {
+          "word": "me",
+          "weighted_degree": 25.18886867577018,
+          "out_degree": 139,
+          "in_degree": 120
+        },
+        {
+          "word": "they",
+          "weighted_degree": 24.694476438493037,
+          "out_degree": 244,
+          "in_degree": 211
+        },
+        {
+          "word": "then",
+          "weighted_degree": 23.548852190749386,
+          "out_degree": 101,
+          "in_degree": 199
+        },
+        {
+          "word": "up",
+          "weighted_degree": 23.109104103678114,
+          "out_degree": 60,
+          "in_degree": 75
+        },
+        {
+          "word": "from",
+          "weighted_degree": 22.772295291795743,
+          "out_degree": 60,
+          "in_degree": 133
+        },
+        {
+          "word": "you",
+          "weighted_degree": 22.136747538597774,
+          "out_degree": 155,
+          "in_degree": 89
+        },
+        {
+          "word": "was",
+          "weighted_degree": 21.937581683837198,
+          "out_degree": 252,
+          "in_degree": 153
+        },
+        {
+          "word": "thee",
+          "weighted_degree": 20.73505602686622,
+          "out_degree": 114,
+          "in_degree": 97
+        },
+        {
+          "word": "all",
+          "weighted_degree": 19.81932310603777,
+          "out_degree": 101,
+          "in_degree": 129
+        },
+        {
+          "word": "among",
+          "weighted_degree": 17.67295850622646,
+          "out_degree": 21,
+          "in_degree": 65
+        },
+        {
+          "word": "as",
+          "weighted_degree": 17.33029046828307,
+          "out_degree": 75,
+          "in_degree": 127
+        },
+        {
+          "word": "out",
+          "weighted_degree": 16.969831118317234,
+          "out_degree": 50,
+          "in_degree": 91
+        },
+        {
+          "word": "into",
+          "weighted_degree": 16.854724538500015,
+          "out_degree": 63,
+          "in_degree": 114
+        },
+        {
+          "word": "at",
+          "weighted_degree": 16.241248253117348,
+          "out_degree": 37,
+          "in_degree": 100
+        },
+        {
+          "word": "saying",
+          "weighted_degree": 15.784530768535067,
+          "out_degree": 107,
+          "in_degree": 114
+        },
+        {
+          "word": "or",
+          "weighted_degree": 15.585393805876746,
+          "out_degree": 70,
+          "in_degree": 88
+        },
+        {
+          "word": "begat",
+          "weighted_degree": 15.29989517018929,
+          "out_degree": 38,
+          "in_degree": 38
+        },
+        {
+          "word": "by",
+          "weighted_degree": 15.080688494888777,
+          "out_degree": 75,
+          "in_degree": 105
+        },
+        {
+          "word": "be",
+          "weighted_degree": 14.682332014143165,
+          "out_degree": 224,
+          "in_degree": 101
+        },
+        {
+          "word": "himself",
+          "weighted_degree": 14.635001677161776,
+          "out_degree": 57,
+          "in_degree": 56
+        },
+        {
+          "word": "because",
+          "weighted_degree": 14.394990798132328,
+          "out_degree": 32,
+          "in_degree": 95
+        },
+        {
+          "word": "man",
+          "weighted_degree": 14.231695655423511,
+          "out_degree": 173,
+          "in_degree": 80
+        },
+        {
+          "word": "jesus",
+          "weighted_degree": 13.980547213326584,
+          "out_degree": 135,
+          "in_degree": 166
+        },
+        {
+          "word": "down",
+          "weighted_degree": 13.532263059861945,
+          "out_degree": 38,
+          "in_degree": 39
+        },
+        {
+          "word": "there",
+          "weighted_degree": 12.983294796917816,
+          "out_degree": 70,
+          "in_degree": 121
+        },
+        {
+          "word": "their",
+          "weighted_degree": 12.94517418403758,
+          "out_degree": 95,
+          "in_degree": 75
+        },
+        {
+          "word": "when",
+          "weighted_degree": 12.819966891013088,
+          "out_degree": 53,
+          "in_degree": 140
+        },
+        {
+          "word": "so",
+          "weighted_degree": 12.00833496910594,
+          "out_degree": 60,
+          "in_degree": 86
+        }
+      ]
+    },
+    "B_translation": {
+      "shape": [
+        3447,
+        9674
+      ],
+      "description": "Transformation matrix from Greek word space to English word space"
+    }
+  },
+  "translation_insights": {
+    "dimensionality": {
+      "greek_effective_rank": 3684,
+      "english_effective_rank": 1235,
+      "description": "Effective rank indicates the intrinsic dimensionality of each language space"
+    },
+    "compression": {
+      "greek_to_english_ratio": 2.8064984044096315,
+      "description": "Greek uses 9674 words vs English 3447 words"
+    },
+    "structural_differences": {
+      "greek_density": 0.00039716293444564456,
+      "english_density": 0.0022962833353069386,
+      "description": "Matrix density indicates word transition complexity"
+    }
+  }
+}
