@@ -1,0 +1,324 @@
+{
+  "graph_source": "data/byzantine_gospels_dag.json",
+  "question": "Ἰησοῦς μαθηταὶ βασιλεία",
+  "query_words": [
+    "ἰησοῦς",
+    "μαθηταὶ",
+    "βασιλεία"
+  ],
+  "matches": {
+    "ἰησοῦς": [
+      "greek_Ἰησοῦς"
+    ],
+    "μαθηταὶ": [
+      "greek_μαθηταὶ"
+    ],
+    "βασιλεία": [
+      "greek_βασιλεία"
+    ]
+  },
+  "path_info": {
+    "num_paths": 3,
+    "paths": [
+      {
+        "source": "greek_Ἰησοῦς",
+        "target": "greek_μαθηταὶ",
+        "path": [
+          "greek_Ἰησοῦς",
+          "greek_δὲ",
+          "greek_μαθηταὶ"
+        ],
+        "length": 2,
+        "path_text": "Ἰησοῦς → δὲ → μαθηταὶ"
+      },
+      {
+        "source": "greek_Ἰησοῦς",
+        "target": "greek_βασιλεία",
+        "path": [
+          "greek_Ἰησοῦς",
+          "greek_καὶ",
+          "greek_βασιλεία"
+        ],
+        "length": 2,
+        "path_text": "Ἰησοῦς → καὶ → βασιλεία"
+      },
+      {
+        "source": "greek_μαθηταὶ",
+        "target": "greek_βασιλεία",
+        "path": [
+          "greek_μαθηταὶ",
+          "greek_αὐτοῦ",
+          "greek_καὶ",
+          "greek_βασιλεία"
+        ],
+        "length": 3,
+        "path_text": "μαθηταὶ → αὐτοῦ → καὶ → βασιλεία"
+      }
+    ],
+    "query_nodes": [
+      "greek_βασιλεία",
+      "greek_Ἰησοῦς",
+      "greek_μαθηταὶ"
+    ],
+    "bridge_nodes": [
+      "greek_αὐτοῦ",
+      "greek_δὲ",
+      "greek_καὶ"
+    ],
+    "subgraph_size": {
+      "nodes": 6,
+      "edges": 6
+    }
+  },
+  "context_analysis": {
+    "node_degrees": {
+      "δὲ": {
+        "in": 1,
+        "out": 1,
+        "total": 2
+      },
+      "βασιλεία": {
+        "in": 1,
+        "out": 0,
+        "total": 1
+      },
+      "αὐτοῦ": {
+        "in": 1,
+        "out": 1,
+        "total": 2
+      },
+      "Ἰησοῦς": {
+        "in": 0,
+        "out": 2,
+        "total": 2
+      },
+      "μαθηταὶ": {
+        "in": 1,
+        "out": 1,
+        "total": 2
+      },
+      "καὶ": {
+        "in": 2,
+        "out": 1,
+        "total": 3
+      }
+    },
+    "most_connected": [
+      [
+        "καὶ",
+        {
+          "in": 2,
+          "out": 1,
+          "total": 3
+        }
+      ],
+      [
+        "δὲ",
+        {
+          "in": 1,
+          "out": 1,
+          "total": 2
+        }
+      ],
+      [
+        "αὐτοῦ",
+        {
+          "in": 1,
+          "out": 1,
+          "total": 2
+        }
+      ],
+      [
+        "Ἰησοῦς",
+        {
+          "in": 0,
+          "out": 2,
+          "total": 2
+        }
+      ],
+      [
+        "μαθηταὶ",
+        {
+          "in": 1,
+          "out": 1,
+          "total": 2
+        }
+      ]
+    ],
+    "edge_weights": [
+      {
+        "from": "μαθηταὶ",
+        "to": "αὐτοῦ",
+        "probability": 0.6373626373626373
+      },
+      {
+        "from": "αὐτοῦ",
+        "to": "καὶ",
+        "probability": 0.15604395604395604
+      },
+      {
+        "from": "Ἰησοῦς",
+        "to": "καὶ",
+        "probability": 0.09071729957805907
+      },
+      {
+        "from": "Ἰησοῦς",
+        "to": "δὲ",
+        "probability": 0.008438818565400843
+      },
+      {
+        "from": "δὲ",
+        "to": "μαθηταὶ",
+        "probability": 0.005035971223021582
+      },
+      {
+        "from": "καὶ",
+        "to": "βασιλεία",
+        "probability": 0.0008419870895312938
+      }
+    ],
+    "narrative_fragments": [
+      "Ἰησοῦς δὲ μαθηταὶ",
+      "Ἰησοῦς καὶ βασιλεία",
+      "μαθηταὶ αὐτοῦ καὶ βασιλεία"
+    ]
+  },
+  "subgraph": {
+    "nodes": [
+      {
+        "id": "greek_δὲ",
+        "name": "δὲ",
+        "attributes": {
+          "name": "δὲ",
+          "word": "δὲ",
+          "frequency": 1390,
+          "outgoing_transitions": 518,
+          "framework": "byzantine_text_flow"
+        }
+      },
+      {
+        "id": "greek_βασιλεία",
+        "name": "βασιλεία",
+        "attributes": {
+          "name": "βασιλεία",
+          "word": "βασιλεία",
+          "frequency": 51,
+          "outgoing_transitions": 11,
+          "framework": "byzantine_text_flow"
+        }
+      },
+      {
+        "id": "greek_αὐτοῦ",
+        "name": "αὐτοῦ",
+        "attributes": {
+          "name": "αὐτοῦ",
+          "word": "αὐτοῦ",
+          "frequency": 910,
+          "outgoing_transitions": 409,
+          "framework": "byzantine_text_flow"
+        }
+      },
+      {
+        "id": "greek_Ἰησοῦς",
+        "name": "Ἰησοῦς",
+        "attributes": {
+          "name": "Ἰησοῦς",
+          "word": "Ἰησοῦς",
+          "frequency": 474,
+          "outgoing_transitions": 190,
+          "framework": "byzantine_text_flow"
+        }
+      },
+      {
+        "id": "greek_μαθηταὶ",
+        "name": "μαθηταὶ",
+        "attributes": {
+          "name": "μαθηταὶ",
+          "word": "μαθηταὶ",
+          "frequency": 91,
+          "outgoing_transitions": 23,
+          "framework": "byzantine_text_flow"
+        }
+      },
+      {
+        "id": "greek_καὶ",
+        "name": "καὶ",
+        "attributes": {
+          "name": "καὶ",
+          "word": "καὶ",
+          "frequency": 3563,
+          "outgoing_transitions": 1499,
+          "framework": "byzantine_text_flow"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source": "greek_δὲ",
+        "target": "greek_μαθηταὶ",
+        "attributes": {
+          "weight": 0.005035971223021582,
+          "transition_count": 7,
+          "transition_probability": 0.005035971223021582,
+          "source_word": "δὲ",
+          "target_word": "μαθηταὶ"
+        }
+      },
+      {
+        "source": "greek_αὐτοῦ",
+        "target": "greek_καὶ",
+        "attributes": {
+          "weight": 0.15604395604395604,
+          "transition_count": 142,
+          "transition_probability": 0.15604395604395604,
+          "source_word": "αὐτοῦ",
+          "target_word": "καὶ"
+        }
+      },
+      {
+        "source": "greek_Ἰησοῦς",
+        "target": "greek_δὲ",
+        "attributes": {
+          "weight": 0.008438818565400843,
+          "transition_count": 4,
+          "transition_probability": 0.008438818565400843,
+          "source_word": "Ἰησοῦς",
+          "target_word": "δὲ"
+        }
+      },
+      {
+        "source": "greek_Ἰησοῦς",
+        "target": "greek_καὶ",
+        "attributes": {
+          "weight": 0.09071729957805907,
+          "transition_count": 43,
+          "transition_probability": 0.09071729957805907,
+          "source_word": "Ἰησοῦς",
+          "target_word": "καὶ"
+        }
+      },
+      {
+        "source": "greek_μαθηταὶ",
+        "target": "greek_αὐτοῦ",
+        "attributes": {
+          "weight": 0.6373626373626373,
+          "transition_count": 58,
+          "transition_probability": 0.6373626373626373,
+          "source_word": "μαθηταὶ",
+          "target_word": "αὐτοῦ"
+        }
+      },
+      {
+        "source": "greek_καὶ",
+        "target": "greek_βασιλεία",
+        "attributes": {
+          "weight": 0.0008419870895312938,
+          "transition_count": 3,
+          "transition_probability": 0.0008419870895312938,
+          "source_word": "καὶ",
+          "target_word": "βασιλεία"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,290 @@
+{
+  "graph_source": "data/kjv_gospels_dag.json",
+  "question": "Did Jesus walk on water?",
+  "query_words": [
+    "jesus",
+    "walk",
+    "water"
+  ],
+  "matches": {
+    "jesus": [
+      "kjv_jesus"
+    ],
+    "walk": [
+      "kjv_walk"
+    ],
+    "water": [
+      "kjv_water"
+    ]
+  },
+  "path_info": {
+    "num_paths": 3,
+    "paths": [
+      {
+        "source": "kjv_jesus",
+        "target": "kjv_walk",
+        "path": [
+          "kjv_jesus",
+          "kjv_and",
+          "kjv_walk"
+        ],
+        "length": 2,
+        "path_text": "jesus → and → walk"
+      },
+      {
+        "source": "kjv_jesus",
+        "target": "kjv_water",
+        "path": [
+          "kjv_jesus",
+          "kjv_the",
+          "kjv_water"
+        ],
+        "length": 2,
+        "path_text": "jesus → the → water"
+      },
+      {
+        "source": "kjv_walk",
+        "target": "kjv_water",
+        "path": [
+          "kjv_walk",
+          "kjv_the",
+          "kjv_water"
+        ],
+        "length": 2,
+        "path_text": "walk → the → water"
+      }
+    ],
+    "query_nodes": [
+      "kjv_water",
+      "kjv_walk",
+      "kjv_jesus"
+    ],
+    "bridge_nodes": [
+      "kjv_the",
+      "kjv_and"
+    ],
+    "subgraph_size": {
+      "nodes": 5,
+      "edges": 5
+    }
+  },
+  "context_analysis": {
+    "node_degrees": {
+      "water": {
+        "in": 1,
+        "out": 0,
+        "total": 1
+      },
+      "the": {
+        "in": 2,
+        "out": 1,
+        "total": 3
+      },
+      "walk": {
+        "in": 1,
+        "out": 1,
+        "total": 2
+      },
+      "jesus": {
+        "in": 0,
+        "out": 2,
+        "total": 2
+      },
+      "and": {
+        "in": 1,
+        "out": 1,
+        "total": 2
+      }
+    },
+    "most_connected": [
+      [
+        "the",
+        {
+          "in": 2,
+          "out": 1,
+          "total": 3
+        }
+      ],
+      [
+        "walk",
+        {
+          "in": 1,
+          "out": 1,
+          "total": 2
+        }
+      ],
+      [
+        "jesus",
+        {
+          "in": 0,
+          "out": 2,
+          "total": 2
+        }
+      ],
+      [
+        "and",
+        {
+          "in": 1,
+          "out": 1,
+          "total": 2
+        }
+      ],
+      [
+        "water",
+        {
+          "in": 1,
+          "out": 0,
+          "total": 1
+        }
+      ]
+    ],
+    "edge_weights": [
+      {
+        "from": "walk",
+        "to": "the",
+        "probability": 0.10526315789473684
+      },
+      {
+        "from": "jesus",
+        "to": "and",
+        "probability": 0.0656
+      },
+      {
+        "from": "jesus",
+        "to": "the",
+        "probability": 0.0096
+      },
+      {
+        "from": "the",
+        "to": "water",
+        "probability": 0.0031625553447185324
+      },
+      {
+        "from": "and",
+        "to": "walk",
+        "probability": 0.0010583877227024166
+      }
+    ],
+    "narrative_fragments": [
+      "jesus and walk",
+      "jesus the water",
+      "walk the water"
+    ]
+  },
+  "subgraph": {
+    "nodes": [
+      {
+        "id": "kjv_water",
+        "name": "water",
+        "attributes": {
+          "name": "water",
+          "word": "water",
+          "frequency": 42,
+          "outgoing_transitions": 21,
+          "framework": "kjv_text_flow"
+        }
+      },
+      {
+        "id": "kjv_the",
+        "name": "the",
+        "attributes": {
+          "name": "the",
+          "word": "the",
+          "frequency": 4743,
+          "outgoing_transitions": 757,
+          "framework": "kjv_text_flow"
+        }
+      },
+      {
+        "id": "kjv_walk",
+        "name": "walk",
+        "attributes": {
+          "name": "walk",
+          "word": "walk",
+          "frequency": 19,
+          "outgoing_transitions": 9,
+          "framework": "kjv_text_flow"
+        }
+      },
+      {
+        "id": "kjv_jesus",
+        "name": "jesus",
+        "attributes": {
+          "name": "jesus",
+          "word": "jesus",
+          "frequency": 625,
+          "outgoing_transitions": 135,
+          "framework": "kjv_text_flow"
+        }
+      },
+      {
+        "id": "kjv_and",
+        "name": "and",
+        "attributes": {
+          "name": "and",
+          "word": "and",
+          "frequency": 5669,
+          "outgoing_transitions": 879,
+          "framework": "kjv_text_flow"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source": "kjv_the",
+        "target": "kjv_water",
+        "attributes": {
+          "weight": 0.0031625553447185324,
+          "transition_count": 15,
+          "transition_probability": 0.0031625553447185324,
+          "source_word": "the",
+          "target_word": "water"
+        }
+      },
+      {
+        "source": "kjv_walk",
+        "target": "kjv_the",
+        "attributes": {
+          "weight": 0.10526315789473684,
+          "transition_count": 2,
+          "transition_probability": 0.10526315789473684,
+          "source_word": "walk",
+          "target_word": "the"
+        }
+      },
+      {
+        "source": "kjv_jesus",
+        "target": "kjv_the",
+        "attributes": {
+          "weight": 0.0096,
+          "transition_count": 6,
+          "transition_probability": 0.0096,
+          "source_word": "jesus",
+          "target_word": "the"
+        }
+      },
+      {
+        "source": "kjv_jesus",
+        "target": "kjv_and",
+        "attributes": {
+          "weight": 0.0656,
+          "transition_count": 41,
+          "transition_probability": 0.0656,
+          "source_word": "jesus",
+          "target_word": "and"
+        }
+      },
+      {
+        "source": "kjv_and",
+        "target": "kjv_walk",
+        "attributes": {
+          "weight": 0.0010583877227024166,
+          "transition_count": 6,
+          "transition_probability": 0.0010583877227024166,
+          "source_word": "and",
+          "target_word": "walk"
+        }
+      }
+    ]
+  }
+}
