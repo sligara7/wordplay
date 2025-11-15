@@ -1,0 +1,478 @@
+{
+  "graph_source": "data/kjv_context_merged.json",
+  "question": "Jesus brother James stoned",
+  "query_words": [
+    "jesus",
+    "brother",
+    "james",
+    "stoned"
+  ],
+  "matches": {
+    "jesus": [
+      "merged_jesus"
+    ],
+    "brother": [
+      "merged_brother"
+    ],
+    "james": [
+      "merged_james"
+    ],
+    "stoned": [
+      "merged_stoned"
+    ]
+  },
+  "path_info": {
+    "num_paths": 6,
+    "paths": [
+      {
+        "source": "merged_jesus",
+        "target": "merged_brother",
+        "path": [
+          "merged_jesus",
+          "merged_the",
+          "merged_brother"
+        ],
+        "length": 2,
+        "path_text": "jesus → the → brother"
+      },
+      {
+        "source": "merged_jesus",
+        "target": "merged_james",
+        "path": [
+          "merged_jesus",
+          "merged_of",
+          "merged_james"
+        ],
+        "length": 2,
+        "path_text": "jesus → of → james"
+      },
+      {
+        "source": "merged_jesus",
+        "target": "merged_stoned",
+        "path": [
+          "merged_jesus",
+          "merged_and",
+          "merged_stoned"
+        ],
+        "length": 2,
+        "path_text": "jesus → and → stoned"
+      },
+      {
+        "source": "merged_brother",
+        "target": "merged_james",
+        "path": [
+          "merged_brother",
+          "merged_james"
+        ],
+        "length": 1,
+        "path_text": "brother → james"
+      },
+      {
+        "source": "merged_brother",
+        "target": "merged_stoned",
+        "path": [
+          "merged_brother",
+          "merged_and",
+          "merged_stoned"
+        ],
+        "length": 2,
+        "path_text": "brother → and → stoned"
+      },
+      {
+        "source": "merged_james",
+        "target": "merged_stoned",
+        "path": [
+          "merged_james",
+          "merged_and",
+          "merged_stoned"
+        ],
+        "length": 2,
+        "path_text": "james → and → stoned"
+      }
+    ],
+    "query_nodes": [
+      "merged_james",
+      "merged_jesus",
+      "merged_brother",
+      "merged_stoned"
+    ],
+    "bridge_nodes": [
+      "merged_of",
+      "merged_the",
+      "merged_and"
+    ],
+    "subgraph_size": {
+      "nodes": 7,
+      "edges": 9
+    }
+  },
+  "context_analysis": {
+    "node_degrees": {
+      "james": {
+        "in": 2,
+        "out": 1,
+        "total": 3
+      },
+      "brother": {
+        "in": 1,
+        "out": 2,
+        "total": 3
+      },
+      "jesus": {
+        "in": 0,
+        "out": 3,
+        "total": 3
+      },
+      "and": {
+        "in": 3,
+        "out": 1,
+        "total": 4
+      },
+      "of": {
+        "in": 1,
+        "out": 1,
+        "total": 2
+      },
+      "the": {
+        "in": 1,
+        "out": 1,
+        "total": 2
+      },
+      "stoned": {
+        "in": 1,
+        "out": 0,
+        "total": 1
+      }
+    },
+    "most_connected": [
+      [
+        "and",
+        {
+          "in": 3,
+          "out": 1,
+          "total": 4
+        }
+      ],
+      [
+        "james",
+        {
+          "in": 2,
+          "out": 1,
+          "total": 3
+        }
+      ],
+      [
+        "brother",
+        {
+          "in": 1,
+          "out": 2,
+          "total": 3
+        }
+      ],
+      [
+        "jesus",
+        {
+          "in": 0,
+          "out": 3,
+          "total": 3
+        }
+      ],
+      [
+        "of",
+        {
+          "in": 1,
+          "out": 1,
+          "total": 2
+        }
+      ]
+    ],
+    "edge_weights": [
+      {
+        "from": "james",
+        "to": "and",
+        "probability": 0.8620689655172413
+      },
+      {
+        "from": "jesus",
+        "to": "the",
+        "probability": 0.17146666666666666
+      },
+      {
+        "from": "brother",
+        "to": "and",
+        "probability": 0.06779661016949153
+      },
+      {
+        "from": "jesus",
+        "to": "and",
+        "probability": 0.0656
+      },
+      {
+        "from": "brother",
+        "to": "james",
+        "probability": 0.03389830508474576
+      },
+      {
+        "from": "jesus",
+        "to": "of",
+        "probability": 0.0224
+      },
+      {
+        "from": "the",
+        "to": "brother",
+        "probability": 0.0089078642209572
+      },
+      {
+        "from": "of",
+        "to": "james",
+        "probability": 0.0034482758620689655
+      },
+      {
+        "from": "and",
+        "to": "stoned",
+        "probability": 0.0001763979537837361
+      }
+    ],
+    "narrative_fragments": [
+      "jesus the brother",
+      "jesus of james",
+      "jesus and stoned",
+      "brother james",
+      "brother and stoned",
+      "james and stoned"
+    ]
+  },
+  "subgraph": {
+    "nodes": [
+      {
+        "id": "merged_james",
+        "name": "james",
+        "attributes": {
+          "name": "james",
+          "word": "james",
+          "total_frequency": 30,
+          "sources": [
+            "kjv",
+            "context"
+          ],
+          "is_touchpoint": true
+        }
+      },
+      {
+        "id": "merged_brother",
+        "name": "brother",
+        "attributes": {
+          "name": "brother",
+          "word": "brother",
+          "total_frequency": 60,
+          "sources": [
+            "kjv",
+            "context"
+          ],
+          "is_touchpoint": true
+        }
+      },
+      {
+        "id": "merged_jesus",
+        "name": "jesus",
+        "attributes": {
+          "name": "jesus",
+          "word": "jesus",
+          "total_frequency": 628,
+          "sources": [
+            "kjv",
+            "context"
+          ],
+          "is_touchpoint": true
+        }
+      },
+      {
+        "id": "merged_and",
+        "name": "and",
+        "attributes": {
+          "name": "and",
+          "word": "and",
+          "total_frequency": 5694,
+          "sources": [
+            "kjv",
+            "context"
+          ],
+          "is_touchpoint": true
+        }
+      },
+      {
+        "id": "merged_of",
+        "name": "of",
+        "attributes": {
+          "name": "of",
+          "word": "of",
+          "total_frequency": 2359,
+          "sources": [
+            "kjv",
+            "context"
+          ],
+          "is_touchpoint": true
+        }
+      },
+      {
+        "id": "merged_the",
+        "name": "the",
+        "attributes": {
+          "name": "the",
+          "word": "the",
+          "total_frequency": 4805,
+          "sources": [
+            "kjv",
+            "context"
+          ],
+          "is_touchpoint": true
+        }
+      },
+      {
+        "id": "merged_stoned",
+        "name": "stoned",
+        "attributes": {
+          "name": "stoned",
+          "word": "stoned",
+          "total_frequency": 4,
+          "sources": [
+            "kjv",
+            "context"
+          ],
+          "is_touchpoint": true
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source": "merged_james",
+        "target": "merged_and",
+        "attributes": {
+          "weight": 0.8620689655172413,
+          "sources": [
+            {
+              "name": "kjv",
+              "weight": 0.7241379310344828
+            },
+            {
+              "name": "context",
+              "weight": 1.0
+            }
+          ]
+        }
+      },
+      {
+        "source": "merged_brother",
+        "target": "merged_james",
+        "attributes": {
+          "weight": 0.03389830508474576,
+          "sources": [
+            {
+              "name": "kjv",
+              "weight": 0.03389830508474576
+            }
+          ]
+        }
+      },
+      {
+        "source": "merged_brother",
+        "target": "merged_and",
+        "attributes": {
+          "weight": 0.06779661016949153,
+          "sources": [
+            {
+              "name": "kjv",
+              "weight": 0.06779661016949153
+            }
+          ]
+        }
+      },
+      {
+        "source": "merged_jesus",
+        "target": "merged_of",
+        "attributes": {
+          "weight": 0.0224,
+          "sources": [
+            {
+              "name": "kjv",
+              "weight": 0.0224
+            }
+          ]
+        }
+      },
+      {
+        "source": "merged_jesus",
+        "target": "merged_the",
+        "attributes": {
+          "weight": 0.17146666666666666,
+          "sources": [
+            {
+              "name": "kjv",
+              "weight": 0.0096
+            },
+            {
+              "name": "context",
+              "weight": 0.3333333333333333
+            }
+          ]
+        }
+      },
+      {
+        "source": "merged_jesus",
+        "target": "merged_and",
+        "attributes": {
+          "weight": 0.0656,
+          "sources": [
+            {
+              "name": "kjv",
+              "weight": 0.0656
+            }
+          ]
+        }
+      },
+      {
+        "source": "merged_and",
+        "target": "merged_stoned",
+        "attributes": {
+          "weight": 0.0001763979537837361,
+          "sources": [
+            {
+              "name": "kjv",
+              "weight": 0.0001763979537837361
+            }
+          ]
+        }
+      },
+      {
+        "source": "merged_of",
+        "target": "merged_james",
+        "attributes": {
+          "weight": 0.0034482758620689655,
+          "sources": [
+            {
+              "name": "kjv",
+              "weight": 0.0034482758620689655
+            }
+          ]
+        }
+      },
+      {
+        "source": "merged_the",
+        "target": "merged_brother",
+        "attributes": {
+          "weight": 0.0089078642209572,
+          "sources": [
+            {
+              "name": "kjv",
+              "weight": 0.001686696183849884
+            },
+            {
+              "name": "context",
+              "weight": 0.016129032258064516
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

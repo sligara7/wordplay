@@ -1,0 +1,450 @@
+{
+  "graph_source": "data/kjv_context_merged.json",
+  "question": "Pontius Pilate crucifixion",
+  "query_words": [
+    "pontius",
+    "pilate",
+    "crucifixion"
+  ],
+  "matches": {
+    "pontius": [
+      "merged_pontius"
+    ],
+    "pilate": [
+      "merged_pilate"
+    ],
+    "crucifixion": [
+      "merged_if",
+      "merged_on"
+    ]
+  },
+  "path_info": {
+    "num_paths": 6,
+    "paths": [
+      {
+        "source": "merged_pontius",
+        "target": "merged_pilate",
+        "path": [
+          "merged_pontius",
+          "merged_pilate"
+        ],
+        "length": 1,
+        "path_text": "pontius → pilate"
+      },
+      {
+        "source": "merged_pontius",
+        "target": "merged_if",
+        "path": [
+          "merged_pontius",
+          "merged_pilate",
+          "merged_said",
+          "merged_if"
+        ],
+        "length": 3,
+        "path_text": "pontius → pilate → said → if"
+      },
+      {
+        "source": "merged_pontius",
+        "target": "merged_on",
+        "path": [
+          "merged_pontius",
+          "merged_pilate",
+          "merged_and",
+          "merged_on"
+        ],
+        "length": 3,
+        "path_text": "pontius → pilate → and → on"
+      },
+      {
+        "source": "merged_pilate",
+        "target": "merged_if",
+        "path": [
+          "merged_pilate",
+          "merged_and",
+          "merged_if"
+        ],
+        "length": 2,
+        "path_text": "pilate → and → if"
+      },
+      {
+        "source": "merged_pilate",
+        "target": "merged_on",
+        "path": [
+          "merged_pilate",
+          "merged_and",
+          "merged_on"
+        ],
+        "length": 2,
+        "path_text": "pilate → and → on"
+      },
+      {
+        "source": "merged_if",
+        "target": "merged_on",
+        "path": [
+          "merged_if",
+          "merged_that",
+          "merged_on"
+        ],
+        "length": 2,
+        "path_text": "if → that → on"
+      }
+    ],
+    "query_nodes": [
+      "merged_on",
+      "merged_pilate",
+      "merged_pontius",
+      "merged_if"
+    ],
+    "bridge_nodes": [
+      "merged_said",
+      "merged_that",
+      "merged_and"
+    ],
+    "subgraph_size": {
+      "nodes": 7,
+      "edges": 8
+    }
+  },
+  "context_analysis": {
+    "node_degrees": {
+      "that": {
+        "in": 1,
+        "out": 1,
+        "total": 2
+      },
+      "and": {
+        "in": 1,
+        "out": 2,
+        "total": 3
+      },
+      "pontius": {
+        "in": 0,
+        "out": 1,
+        "total": 1
+      },
+      "on": {
+        "in": 2,
+        "out": 0,
+        "total": 2
+      },
+      "pilate": {
+        "in": 1,
+        "out": 2,
+        "total": 3
+      },
+      "said": {
+        "in": 1,
+        "out": 1,
+        "total": 2
+      },
+      "if": {
+        "in": 2,
+        "out": 1,
+        "total": 3
+      }
+    },
+    "most_connected": [
+      [
+        "and",
+        {
+          "in": 1,
+          "out": 2,
+          "total": 3
+        }
+      ],
+      [
+        "pilate",
+        {
+          "in": 1,
+          "out": 2,
+          "total": 3
+        }
+      ],
+      [
+        "if",
+        {
+          "in": 2,
+          "out": 1,
+          "total": 3
+        }
+      ],
+      [
+        "that",
+        {
+          "in": 1,
+          "out": 1,
+          "total": 2
+        }
+      ],
+      [
+        "on",
+        {
+          "in": 2,
+          "out": 0,
+          "total": 2
+        }
+      ]
+    ],
+    "edge_weights": [
+      {
+        "from": "pontius",
+        "to": "pilate",
+        "probability": 0.6666666666666666
+      },
+      {
+        "from": "pilate",
+        "to": "and",
+        "probability": 0.1346153846153846
+      },
+      {
+        "from": "pilate",
+        "to": "said",
+        "probability": 0.057692307692307696
+      },
+      {
+        "from": "and",
+        "to": "if",
+        "probability": 0.008290703827835597
+      },
+      {
+        "from": "if",
+        "to": "that",
+        "probability": 0.008097165991902834
+      },
+      {
+        "from": "said",
+        "to": "if",
+        "probability": 0.004678362573099415
+      },
+      {
+        "from": "that",
+        "to": "on",
+        "probability": 0.0030413625304136255
+      },
+      {
+        "from": "and",
+        "to": "on",
+        "probability": 0.0019403774916210972
+      }
+    ],
+    "narrative_fragments": [
+      "pontius pilate",
+      "pontius pilate said if",
+      "pontius pilate and on",
+      "pilate and if",
+      "pilate and on",
+      "if that on"
+    ]
+  },
+  "subgraph": {
+    "nodes": [
+      {
+        "id": "merged_that",
+        "name": "that",
+        "attributes": {
+          "name": "that",
+          "word": "that",
+          "total_frequency": 1653,
+          "sources": [
+            "kjv",
+            "context"
+          ],
+          "is_touchpoint": true
+        }
+      },
+      {
+        "id": "merged_and",
+        "name": "and",
+        "attributes": {
+          "name": "and",
+          "word": "and",
+          "total_frequency": 5694,
+          "sources": [
+            "kjv",
+            "context"
+          ],
+          "is_touchpoint": true
+        }
+      },
+      {
+        "id": "merged_pontius",
+        "name": "pontius",
+        "attributes": {
+          "name": "pontius",
+          "word": "pontius",
+          "total_frequency": 5,
+          "sources": [
+            "kjv",
+            "context"
+          ],
+          "is_touchpoint": true
+        }
+      },
+      {
+        "id": "merged_on",
+        "name": "on",
+        "attributes": {
+          "name": "on",
+          "word": "on",
+          "total_frequency": 311,
+          "sources": [
+            "kjv",
+            "context"
+          ],
+          "is_touchpoint": true
+        }
+      },
+      {
+        "id": "merged_pilate",
+        "name": "pilate",
+        "attributes": {
+          "name": "pilate",
+          "word": "pilate",
+          "total_frequency": 54,
+          "sources": [
+            "kjv",
+            "context"
+          ],
+          "is_touchpoint": true
+        }
+      },
+      {
+        "id": "merged_said",
+        "name": "said",
+        "attributes": {
+          "name": "said",
+          "word": "said",
+          "total_frequency": 855,
+          "sources": [
+            "kjv"
+          ],
+          "is_touchpoint": false
+        }
+      },
+      {
+        "id": "merged_if",
+        "name": "if",
+        "attributes": {
+          "name": "if",
+          "word": "if",
+          "total_frequency": 249,
+          "sources": [
+            "kjv",
+            "context"
+          ],
+          "is_touchpoint": true
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source": "merged_that",
+        "target": "merged_on",
+        "attributes": {
+          "weight": 0.0030413625304136255,
+          "sources": [
+            {
+              "name": "kjv",
+              "weight": 0.0030413625304136255
+            }
+          ]
+        }
+      },
+      {
+        "source": "merged_and",
+        "target": "merged_on",
+        "attributes": {
+          "weight": 0.0019403774916210972,
+          "sources": [
+            {
+              "name": "kjv",
+              "weight": 0.0019403774916210972
+            }
+          ]
+        }
+      },
+      {
+        "source": "merged_and",
+        "target": "merged_if",
+        "attributes": {
+          "weight": 0.008290703827835597,
+          "sources": [
+            {
+              "name": "kjv",
+              "weight": 0.008290703827835597
+            }
+          ]
+        }
+      },
+      {
+        "source": "merged_pontius",
+        "target": "merged_pilate",
+        "attributes": {
+          "weight": 0.6666666666666666,
+          "sources": [
+            {
+              "name": "kjv",
+              "weight": 1.0
+            },
+            {
+              "name": "context",
+              "weight": 0.3333333333333333
+            }
+          ]
+        }
+      },
+      {
+        "source": "merged_pilate",
+        "target": "merged_said",
+        "attributes": {
+          "weight": 0.057692307692307696,
+          "sources": [
+            {
+              "name": "kjv",
+              "weight": 0.057692307692307696
+            }
+          ]
+        }
+      },
+      {
+        "source": "merged_pilate",
+        "target": "merged_and",
+        "attributes": {
+          "weight": 0.1346153846153846,
+          "sources": [
+            {
+              "name": "kjv",
+              "weight": 0.1346153846153846
+            }
+          ]
+        }
+      },
+      {
+        "source": "merged_said",
+        "target": "merged_if",
+        "attributes": {
+          "weight": 0.004678362573099415,
+          "sources": [
+            {
+              "name": "kjv",
+              "weight": 0.004678362573099415
+            }
+          ]
+        }
+      },
+      {
+        "source": "merged_if",
+        "target": "merged_that",
+        "attributes": {
+          "weight": 0.008097165991902834,
+          "sources": [
+            {
+              "name": "kjv",
+              "weight": 0.008097165991902834
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

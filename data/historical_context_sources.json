@@ -1,0 +1,92 @@
+{
+  "sources": [
+    {
+      "id": "tacitus_annals",
+      "title": "Tacitus - Annals XV.44",
+      "date": "c. 115 AD",
+      "type": "roman_history",
+      "author": "Tacitus",
+      "text": "Nero fastened the guilt and inflicted the most exquisite tortures on a class hated for their abominations, called Christians by the populace. Christus, from whom the name had its origin, suffered the extreme penalty during the reign of Tiberius at the hands of one of our procurators, Pontius Pilatus, and a most mischievous superstition, thus checked for the moment, again broke out not only in Judaea, the first source of the evil, but even in Rome, where all things hideous and shameful from every part of the world find their centre and become popular."
+    },
+    {
+      "id": "pliny_epistles",
+      "title": "Pliny the Younger - Epistles X.96",
+      "date": "c. 112 AD",
+      "type": "roman_correspondence",
+      "author": "Pliny the Younger",
+      "text": "They were in the habit of meeting on a certain fixed day before it was light, when they sang in alternate verses a hymn to Christ, as to a god, and bound themselves by a solemn oath, not to any wicked deeds, but never to commit any fraud, theft or adultery, never to falsify their word, nor deny a trust when they should be called upon to deliver it up; after which it was their custom to separate, and then reassemble to partake of food but food of an ordinary and innocent kind."
+    },
+    {
+      "id": "suetonius_claudius",
+      "title": "Suetonius - The Lives of the Caesars, Claudius 25",
+      "date": "c. 120 AD",
+      "type": "roman_biography",
+      "author": "Suetonius",
+      "text": "Since the Jews constantly made disturbances at the instigation of Chrestus, he expelled them from Rome."
+    },
+    {
+      "id": "josephus_testimonium",
+      "title": "Josephus - Antiquities of the Jews XVIII.3.3",
+      "date": "c. 93-94 AD",
+      "type": "jewish_history",
+      "author": "Flavius Josephus",
+      "text": "Now there was about this time Jesus, a wise man, if it be lawful to call him a man; for he was a doer of wonderful works, a teacher of such men as receive the truth with pleasure. He drew over to him both many of the Jews and many of the Gentiles. He was the Christ. And when Pilate, at the suggestion of the principal men amongst us, had condemned him to the cross, those that loved him at the first did not forsake him; for he appeared to them alive again the third day; as the divine prophets had foretold these and ten thousand other wonderful things concerning him. And the tribe of Christians, so named from him, are not extinct at this day."
+    },
+    {
+      "id": "josephus_james",
+      "title": "Josephus - Antiquities of the Jews XX.9.1",
+      "date": "c. 93-94 AD",
+      "type": "jewish_history",
+      "author": "Flavius Josephus",
+      "text": "Festus was now dead, and Albinus was but upon the road; so he assembled the sanhedrin of judges, and brought before them the brother of Jesus, who was called Christ, whose name was James, and some others; and when he had formed an accusation against them as breakers of the law, he delivered them to be stoned."
+    },
+    {
+      "id": "josephus_john_baptist",
+      "title": "Josephus - Antiquities of the Jews XVIII.5.2",
+      "date": "c. 93-94 AD",
+      "type": "jewish_history",
+      "author": "Flavius Josephus",
+      "text": "Now some of the Jews thought that the destruction of Herod's army came from God, and that very justly, as a punishment of what he did against John, that was called the Baptist: for Herod slew him, who was a good man, and commanded the Jews to exercise virtue, both as to righteousness towards one another, and piety towards God, and so to come to baptism; for that the washing would be acceptable to him, if they made use of it, not in order to the putting away of some sins, but for the purification of the body; supposing still that the soul was thoroughly purified beforehand by righteousness."
+    },
+    {
+      "id": "josephus_pharisees",
+      "title": "Josephus - Antiquities of the Jews XVIII.1.3",
+      "date": "c. 93-94 AD",
+      "type": "jewish_history",
+      "author": "Flavius Josephus",
+      "text": "The Pharisees simplify their standard of living, making no concession to luxury. They follow the guidance of that which their doctrine has selected and transmitted as good, attaching the chief importance to the observance of those commandments which it has seen fit to dictate to them. They show respect and deference to their elders, nor do they rashly presume to contradict their proposals."
+    },
+    {
+      "id": "josephus_sadducees",
+      "title": "Josephus - Antiquities of the Jews XVIII.1.4",
+      "date": "c. 93-94 AD",
+      "type": "jewish_history",
+      "author": "Flavius Josephus",
+      "text": "The Sadducees hold that the soul perishes along with the body. They own no observance of any sort apart from the laws; in fact, they reckon it a virtue to dispute with the teachers of the path of wisdom that they pursue."
+    },
+    {
+      "id": "talmud_yeshu",
+      "title": "Babylonian Talmud - Sanhedrin 43a",
+      "date": "3rd-5th centuries AD (from earlier traditions)",
+      "type": "jewish_religious",
+      "author": "Multiple rabbinic authorities",
+      "text": "On the eve of Passover, Yeshu was hanged. For forty days before the execution took place, a herald went forth and cried, 'He is going forth to be stoned because he has practiced sorcery and enticed Israel to apostasy. Any one who can say anything in his favour, let him come forward and plead on his behalf.' But since nothing was brought forward in his favour he was hanged on the eve of Passover."
+    },
+    {
+      "id": "pilate_stone",
+      "title": "Pilate Stone Inscription",
+      "date": "26-36 AD (discovered 1961)",
+      "type": "archaeological",
+      "author": "Pontius Pilatus",
+      "text": "TIBERIEVM PONTIVS PILATVS PRAEFECTVS IVDAEAE. Translation: To the Divine Augusti, Pontius Pilatus, Prefect of Judaea. This limestone block with Latin inscription confirms Pontius Pilate served as Prefect of Judaea under Emperor Tiberius, validating the Gospel accounts of his role."
+    },
+    {
+      "id": "caiaphas_ossuary",
+      "title": "Caiaphas Ossuary Discovery",
+      "date": "1st century AD (discovered 1990)",
+      "type": "archaeological",
+      "author": "Archaeological evidence",
+      "text": "An ornate limestone bone box discovered in Jerusalem bears the inscription 'Yehosef bar Qafa' - Joseph son of Caiaphas. This ossuary likely contained the remains of the High Priest Caiaphas mentioned in the Gospels who presided over the trial of Jesus. The discovery provides archaeological evidence for the historical existence of Caiaphas and the priestly families described in the New Testament."
+    }
+  ]
+}
