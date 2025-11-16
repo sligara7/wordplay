@@ -28,6 +28,11 @@ Thumbs.db
 # output/
 # *.json
 
+# Image graph builder generated outputs
+*_region_graph.json
+*_segmentation_preview.png
+*_analysis.json
+
 # Temporary files
 *.tmp
 *.bak
