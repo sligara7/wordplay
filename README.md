@@ -30,7 +30,8 @@ By representing text as graphs, we can apply powerful systems analysis tools to 
 - [MIDI_SUPPORT.md](MIDI_SUPPORT.md) - Basic music analysis
 - [HYBRID_GRAPHS.md](HYBRID_GRAPHS.md) - Lyrics + melody integration
 - [POLYPHONIC_MUSIC.md](POLYPHONIC_MUSIC.md) - Multi-track polyphonic analysis
-- [TEMPORAL_ANALYSIS.md](TEMPORAL_ANALYSIS.md) - Rhythm, cadence, and batch processing (NEW!)
+- [TEMPORAL_ANALYSIS.md](TEMPORAL_ANALYSIS.md) - Rhythm, cadence, and batch processing
+- [AUDIO_TRANSCRIPTION.md](AUDIO_TRANSCRIPTION.md) - **Audio-to-MIDI transcription using graph theory (NEW!)**
 
 **Quick example:**
 ```bash
@@ -42,6 +43,89 @@ python3 src/midi_tokenizer.py music/twinkle.mid -o music/twinkle_tokens.txt
 python3 src/midi_graph_builder.py music/twinkle_tokens.txt -o output/twinkle_graph.json
 python3 src/analyze_word_graph.py output/twinkle_graph.json
 ```
+
+## NEW: Audio-to-MIDI Transcription (Experimental)
+
+**Graph-based approach to converting audio files (.wav) to MIDI using network analysis!**
+
+Traditional audio transcription relies on signal processing alone. This experimental feature uses **graph theory** to model the relationships between frequencies, harmonics, and temporal patterns - leveraging NetworkX algorithms to separate root notes from harmonics and detect note onsets.
+
+### Key Innovation: Musical Networks
+
+Instead of processing frequencies in isolation, we model audio as a **multi-layer network**:
+
+- **Nodes**: Each (frequency, time, intensity) point from a specialized Fourier transform
+- **Temporal Edges**: Connect same frequency across time (sustain detection)
+- **Harmonic Edges**: Connect frequencies with harmonic ratios (2f, 3f, 4f...)
+- **Music Theory Edges**: Connect notes in the same scale/chord
+
+### Graph Analysis Methods
+
+1. **Harmonic Filtering** → Community Detection (Louvain algorithm)
+   - Group harmonically-related frequencies into communities
+   - Lowest frequency in each community = fundamental note
+
+2. **Onset Detection** → Temporal Flow Analysis
+   - Model intensity changes as flow through the network
+   - High flow delta = note attack
+
+3. **Music Theory Constraints** → Path Analysis
+   - Detect key signature from note histogram
+   - Filter implausible notes using scale membership
+
+4. **Instrument Separation** → Structural Holes
+   - Use betweenness centrality to identify instrument boundaries
+   - Cluster by spectral range and timbre similarity
+
+### Example Usage
+
+```python
+from audio_graph_analyzer import AudioGraphAnalyzer, specialized_fourier_transform
+
+# Step 1: Apply specialized Fourier transform (user-provided)
+frequency_time_matrix, frequencies, time_samples = specialized_fourier_transform(
+    "song.wav",
+    num_sub_notes=4,          # Sub-note divisions (quarter-note increments)
+    sample_duration_cycles=5   # Time sampling (5 cycles of 27.5 Hz ≈ 182ms)
+)
+
+# Step 2: Create graph analyzer
+analyzer = AudioGraphAnalyzer(
+    frequency_time_matrix=frequency_time_matrix,
+    sample_rate_hz=22050,
+    frequencies=frequencies,
+    time_samples=time_samples
+)
+
+# Step 3: Run analysis
+result = analyzer.analyze()
+
+# Step 4: Export MIDI
+analyzer.export_midi("output.mid", result.notes)
+
+# Step 5: Export graph for further analysis
+analyzer.export_graph_json("audio_graph.json")
+```
+
+### Status: Design Phase
+
+This feature is currently in the **design/documentation phase**. The skeleton implementation is complete with:
+- ✅ Graph construction algorithms
+- ✅ Harmonic filtering via community detection
+- ✅ Onset detection via temporal flow
+- ✅ Music theory integration
+- ✅ MIDI output generation
+- ⏳ **Awaiting**: Specialized Fourier transform implementation
+
+**Placeholder for Fourier Transform**: Users can provide their own specialized Fourier transform that generates the 2D frequency-time-intensity array. See `src/audio_graph_analyzer.py` for the required format.
+
+**Try it:**
+```bash
+# Run example with synthetic test data
+python3 examples/example_audio_transcription.py
+```
+
+See [AUDIO_TRANSCRIPTION.md](AUDIO_TRANSCRIPTION.md) for complete methodology and theoretical background.
 
 ## Key Features
 
