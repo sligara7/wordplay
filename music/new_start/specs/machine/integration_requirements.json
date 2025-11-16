@@ -1,0 +1,295 @@
+{
+  "integration_requirements": {
+    "metadata": {
+      "created_date": "2025-11-16",
+      "system_name": "audio_to_midi_transcription",
+      "version": "1.0.0",
+      "approach": "bottom_up"
+    },
+    "integration_goal": {
+      "primary_goal": "Integrate existing spectral analysis and graph analysis components with new onset detection and MIDI generation components to create an end-to-end audio-to-MIDI transcription pipeline",
+      "scope": "Convert WAV audio files to MIDI format using graph-based analysis of harmonic and temporal relationships",
+      "success_definition": "User can run a single command to transcribe a WAV file to MIDI with reasonable accuracy (>60% note detection for polyphonic music)"
+    },
+    "target_capabilities": {
+      "capability_1": {
+        "id": "audio_input",
+        "name": "Audio File Input Processing",
+        "description": "Accept and process WAV audio files of various formats",
+        "requirements": [
+          "Support 44.1kHz and 48kHz sample rates",
+          "Support mono and stereo channels",
+          "Support 16-bit and 24-bit depth",
+          "Handle files up to 30 minutes duration",
+          "Optionally convert other formats (MP3, FLAC) to WAV"
+        ]
+      },
+      "capability_2": {
+        "id": "spectral_decomposition",
+        "name": "Spectral Decomposition",
+        "description": "Decompose audio into frequency-time-intensity representation",
+        "requirements": [
+          "Perform Fourier-like analysis with musical note resolution",
+          "Support microtonal resolution (subdivisions per semitone)",
+          "Generate 2D matrix: [frequency_index, time_index] = intensity",
+          "Cover ~8 octaves (82 notes minimum)",
+          "Sample at musically meaningful intervals (~182ms per sample)"
+        ]
+      },
+      "capability_3": {
+        "id": "graph_construction",
+        "name": "Audio Graph Construction",
+        "description": "Build NetworkX graph representing audio relationships",
+        "requirements": [
+          "Create nodes for frequency-time-intensity points above threshold",
+          "Add temporal edges (same frequency across time)",
+          "Add harmonic edges (harmonically-related frequencies at same time)",
+          "Calculate meaningful edge weights (correlation, harmonic strength)",
+          "Support graph queries by time and frequency"
+        ]
+      },
+      "capability_4": {
+        "id": "harmonic_separation",
+        "name": "Harmonic Filtering & Fundamental Detection",
+        "description": "Separate fundamental frequencies from harmonics using community detection",
+        "requirements": [
+          "Apply Louvain community detection to harmonic subgraphs",
+          "Identify fundamental frequency in each community",
+          "Calculate confidence scores for fundamentals",
+          "Filter noise based on intensity, confidence, and duration",
+          "Generate timeline of detected fundamental notes"
+        ]
+      },
+      "capability_5": {
+        "id": "onset_detection",
+        "name": "Note Onset Detection",
+        "description": "Identify when notes start vs. when they are sustained",
+        "requirements": [
+          "Calculate intensity derivatives across temporal edges",
+          "Detect sudden intensity increases (attack phase)",
+          "Distinguish onsets from sustained/decaying notes",
+          "Verify onsets across harmonic communities",
+          "Estimate note durations",
+          "Achieve onset timing accuracy within 50ms"
+        ]
+      },
+      "capability_6": {
+        "id": "midi_generation",
+        "name": "MIDI File Generation",
+        "description": "Convert detected notes and timings to standard MIDI format",
+        "requirements": [
+          "Generate valid MIDI Type 0 or Type 1 files",
+          "Add note on/off events with correct timing",
+          "Map intensity to MIDI velocity (0-127)",
+          "Set appropriate tempo (default 120 BPM)",
+          "Include metadata (key signature if detected)",
+          "Support multi-track output (for instrument separation)"
+        ]
+      },
+      "capability_7": {
+        "id": "end_to_end_orchestration",
+        "name": "Pipeline Orchestration",
+        "description": "Provide user-friendly CLI for end-to-end transcription",
+        "requirements": [
+          "Single command execution: transcribe INPUT.wav OUTPUT.mid",
+          "Configurable parameters (thresholds, confidence levels)",
+          "Progress feedback for long files",
+          "Error handling with helpful messages",
+          "Processing time < 3x audio duration",
+          "Memory usage < 500MB for 3-minute files"
+        ]
+      }
+    },
+    "component_capability_mapping": {
+      "audio_input": {
+        "primary_component": "spectral_analyzer",
+        "supporting_component": "audio_converter",
+        "status": "complete"
+      },
+      "spectral_decomposition": {
+        "primary_component": "spectral_analyzer",
+        "status": "complete"
+      },
+      "graph_construction": {
+        "primary_component": "audio_graph_builder",
+        "status": "complete"
+      },
+      "harmonic_separation": {
+        "primary_component": "harmonic_analyzer",
+        "status": "complete"
+      },
+      "onset_detection": {
+        "primary_component": "onset_detector",
+        "status": "not_started",
+        "priority": "critical"
+      },
+      "midi_generation": {
+        "primary_component": "midi_generator",
+        "status": "not_started",
+        "priority": "critical"
+      },
+      "end_to_end_orchestration": {
+        "primary_component": "pipeline_orchestrator",
+        "status": "not_started",
+        "priority": "critical"
+      }
+    },
+    "required_interactions": {
+      "interaction_1": {
+        "from": "spectral_analyzer",
+        "to": "audio_graph_builder",
+        "data_contract": {
+          "input": "2D numpy array [freq_index, time_index] = amplitude",
+          "metadata": "frequencies array, sample_rate, window_length",
+          "format": "numpy.ndarray (float64)"
+        },
+        "interaction_type": "data_flow",
+        "frequency": "once_per_file",
+        "criticality": "critical"
+      },
+      "interaction_2": {
+        "from": "audio_graph_builder",
+        "to": "harmonic_analyzer",
+        "data_contract": {
+          "input": "NetworkX MultiDiGraph with nodes (frequency, time, intensity) and edges (temporal, harmonic)",
+          "format": "networkx.MultiDiGraph"
+        },
+        "interaction_type": "data_flow",
+        "frequency": "once_per_file",
+        "criticality": "critical"
+      },
+      "interaction_3": {
+        "from": "harmonic_analyzer",
+        "to": "onset_detector",
+        "data_contract": {
+          "input": "Timeline of fundamental notes with confidence scores",
+          "format": "List[Dict] with keys: node_id, frequency, note, intensity, time_seconds, confidence"
+        },
+        "interaction_type": "data_flow",
+        "frequency": "once_per_file",
+        "criticality": "critical"
+      },
+      "interaction_4": {
+        "from": "audio_graph_builder",
+        "to": "onset_detector",
+        "data_contract": {
+          "input": "NetworkX MultiDiGraph (for temporal flow analysis)",
+          "format": "networkx.MultiDiGraph"
+        },
+        "interaction_type": "data_flow",
+        "frequency": "once_per_file",
+        "criticality": "critical",
+        "note": "onset_detector needs both fundamentals AND graph for flow analysis"
+      },
+      "interaction_5": {
+        "from": "onset_detector",
+        "to": "midi_generator",
+        "data_contract": {
+          "input": "List of note events with onset times, durations, and velocities",
+          "format": "List[Dict] with keys: note_name, midi_note, onset_time_seconds, duration_seconds, velocity"
+        },
+        "interaction_type": "data_flow",
+        "frequency": "once_per_file",
+        "criticality": "critical"
+      },
+      "interaction_6": {
+        "from": "midi_generator",
+        "to": "user",
+        "data_contract": {
+          "output": "MIDI file written to disk",
+          "format": "Standard MIDI File (.mid)"
+        },
+        "interaction_type": "file_output",
+        "frequency": "once_per_file",
+        "criticality": "critical"
+      },
+      "interaction_7": {
+        "from": "pipeline_orchestrator",
+        "to": "all_components",
+        "data_contract": {
+          "control": "Orchestrates component execution in sequence",
+          "error_handling": "Catches and reports errors from each component",
+          "progress_reporting": "Updates user on processing status"
+        },
+        "interaction_type": "control_flow",
+        "frequency": "continuous",
+        "criticality": "critical"
+      }
+    },
+    "non_functional_requirements": {
+      "performance": {
+        "processing_speed": "< 3x audio duration (e.g., 3-minute file processed in < 9 minutes)",
+        "memory_usage": "< 500MB for 3-minute file, linear scaling with duration",
+        "startup_time": "< 5 seconds to first output",
+        "concurrent_users": "Not applicable (single-user CLI tool)"
+      },
+      "reliability": {
+        "error_handling": "Graceful degradation with helpful error messages",
+        "input_validation": "Validate WAV format before processing",
+        "recovery": "No partial state - either success or clean failure",
+        "robustness": "Handle noisy audio, multiple instruments, variable quality"
+      },
+      "usability": {
+        "cli_simplicity": "Single command with sensible defaults",
+        "documentation": "README with usage examples and parameter descriptions",
+        "feedback": "Progress bar or status updates for files > 1 minute",
+        "error_messages": "Clear, actionable error messages"
+      },
+      "maintainability": {
+        "modularity": "Components are independent and testable",
+        "documentation": "Docstrings for all classes and public methods",
+        "type_hints": "Type annotations for better IDE support",
+        "testing": "Unit tests for core components"
+      },
+      "portability": {
+        "platform": "Cross-platform (Linux, macOS, Windows)",
+        "dependencies": "Pure Python dependencies where possible",
+        "python_version": "Python 3.8+",
+        "installation": "Simple pip install or requirements.txt"
+      }
+    },
+    "success_criteria": {
+      "functional_success": {
+        "criterion_1": "Successfully transcribe single-instrument piano recordings with >80% note accuracy",
+        "criterion_2": "Successfully transcribe polyphonic music (2-3 instruments) with >60% note accuracy",
+        "criterion_3": "Generate valid, playable MIDI files that preserve musical intent",
+        "criterion_4": "Detect note onsets within 50ms of ground truth",
+        "criterion_5": "Complete transcription in < 3x audio duration"
+      },
+      "non_functional_success": {
+        "criterion_1": "User can install and run tool in < 10 minutes",
+        "criterion_2": "Clear error messages help user debug issues",
+        "criterion_3": "Memory usage stays under 500MB for typical files",
+        "criterion_4": "Code is maintainable with > 70% test coverage"
+      },
+      "integration_success": {
+        "criterion_1": "All components can be imported and instantiated without errors",
+        "criterion_2": "Data flows cleanly from component to component",
+        "criterion_3": "No circular dependencies between components",
+        "criterion_4": "Each component can be tested independently",
+        "criterion_5": "Pipeline orchestrator successfully coordinates all components"
+      }
+    },
+    "constraints": {
+      "technical_constraints": {
+        "programming_language": "Python 3.8+",
+        "core_libraries": ["numpy", "networkx", "scipy", "mido"],
+        "graph_library": "NetworkX (already in use)",
+        "midi_library": "mido (standard Python MIDI library)",
+        "no_ml_dependencies": "No TensorFlow, PyTorch, or other ML frameworks (by design)"
+      },
+      "architectural_constraints": {
+        "pipeline_pattern": "Linear data flow: Input → Processing → Analysis → Output",
+        "no_circular_dependencies": "Strict hierarchical component dependencies",
+        "stateless_components": "Components don't maintain state between invocations",
+        "graph_based_analysis": "Core analysis uses NetworkX graph algorithms"
+      },
+      "resource_constraints": {
+        "max_memory": "500MB for 3-minute file (target)",
+        "max_processing_time": "3x audio duration",
+        "disk_space": "Minimal (only MIDI output, no intermediate files)",
+        "cpu_cores": "Single-threaded for MVP (parallel processing future enhancement)"
+      }
+    }
+  }
+}
