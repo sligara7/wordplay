@@ -114,6 +114,28 @@ Track what works well and what doesn't in the reflow workflow to help improve th
 - **Clear output format**: JSON output is well-structured and easy to enhance manually
 - **Resolution roadmap**: Adding a "resolution_roadmap" section helps organize implementation phases
 
+#### BU-04: Component Delta Analysis
+- **Tool exists**: generate_component_deltas.py exists and has clear CLI
+- **Tool limitation**: Tool expects existing components, doesn't handle "new_component" deltas
+  - **Issue**: Tool failed with "Component onset_detector not found in inventory"
+  - **Root cause**: Tool designed for modifications to existing components, not new component creation
+  - **Improvement needed**: Tool should detect components marked "not_started" and generate appropriate "create_new" deltas
+  - **Workaround**: Manually created component delta JSON files for all 3 missing components
+- **Manual delta creation worked well**: Creating detailed delta specifications manually was valuable
+  - Forced thinking through exact class/method signatures
+  - Defined precise logic flows for each method
+  - Specified integration points clearly
+  - Estimated effort at granular level
+- **Delta format**: JSON format for deltas is comprehensive and useful
+  - Includes metadata, file deltas, class deltas, function deltas, dependency deltas, test deltas
+  - Clear structure makes it easy to understand what needs to be implemented
+- **Value of detailed specifications**: The detailed component deltas serve as excellent implementation blueprints
+  - Method signatures defined
+  - Logic flows outlined step-by-step
+  - Inputs/outputs specified
+  - Dependencies identified
+  - Validation criteria established
+
 ---
 
 ## Notes to be Added as Workflow Progresses

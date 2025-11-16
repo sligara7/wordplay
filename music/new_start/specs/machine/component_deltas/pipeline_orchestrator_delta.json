@@ -1,0 +1,251 @@
+{
+  "component_delta": {
+    "metadata": {
+      "component_id": "pipeline_orchestrator",
+      "component_name": "Pipeline Orchestrator",
+      "delta_type": "new_component",
+      "created_date": "2025-11-16",
+      "estimated_effort": "6-8 hours",
+      "priority": 3,
+      "status": "not_started",
+      "addresses_gap": "GAP-003"
+    },
+    "file_deltas": [
+      {
+        "action": "create_new_file",
+        "file_path": "audio_to_midi_pipeline.py",
+        "file_type": "python_module",
+        "description": "Main orchestrator for end-to-end audio-to-MIDI transcription",
+        "estimated_lines": "150-250"
+      }
+    ],
+    "class_deltas": [],
+    "function_deltas": [
+      {
+        "action": "create_new_function",
+        "function_name": "transcribe",
+        "file": "audio_to_midi_pipeline.py",
+        "signature": "transcribe(wav_path: str, output_path: str, intensity_threshold: float = 0.05, confidence_threshold: float = 0.3, min_duration_samples: int = 3, tempo: int = 120) -> str",
+        "description": "Main transcription function coordinating all components",
+        "parameters": [
+          {"name": "wav_path", "type": "str", "description": "Path to input WAV file"},
+          {"name": "output_path", "type": "str", "description": "Path for output MIDI file"},
+          {"name": "intensity_threshold", "type": "float", "description": "Minimum intensity for graph nodes"},
+          {"name": "confidence_threshold", "type": "float", "description": "Minimum confidence for fundamentals"},
+          {"name": "min_duration_samples", "type": "int", "description": "Minimum sustained duration"},
+          {"name": "tempo", "type": "int", "description": "Tempo in BPM for MIDI file"}
+        ],
+        "returns": "Path to created MIDI file",
+        "logic": [
+          "1. Validate input file exists and is WAV format",
+          "2. Load and analyze audio:",
+          "   - Read WAV file using scipy.io.wavfile",
+          "   - Extract left channel if stereo",
+          "   - Create SpectralAnalyzer instance",
+          "   - Run spectral analysis: spectral_data = analyzer.dotop(audio)",
+          "3. Build audio graph:",
+          "   - Create AudioGraphBuilder with spectral data",
+          "   - Set intensity_threshold",
+          "   - Build graph with temporal and harmonic edges",
+          "4. Analyze harmonics:",
+          "   - Create HarmonicAnalyzer with graph",
+          "   - Detect fundamentals: fundamentals = analyzer.analyze_all_time_samples()",
+          "   - Filter noise: filtered = analyzer.filter_noise(confidence_threshold, min_duration_samples)",
+          "5. Detect onsets:",
+          "   - Create OnsetDetector with graph",
+          "   - Detect onsets from fundamentals: note_events = detector.detect_onsets(filtered)",
+          "6. Generate MIDI:",
+          "   - Create MidiGenerator with tempo",
+          "   - Generate MIDI file: midi_path = generator.generate_midi(note_events, output_path)",
+          "7. Return path to created MIDI file",
+          "ERROR HANDLING:",
+          "   - Wrap each step in try-except",
+          "   - Provide helpful error messages for each failure mode",
+          "   - Clean up partial outputs on failure"
+        ],
+        "estimated_lines": "80-120"
+      },
+      {
+        "action": "create_new_function",
+        "function_name": "main",
+        "file": "audio_to_midi_pipeline.py",
+        "signature": "main()",
+        "description": "CLI entry point using argparse",
+        "parameters": [],
+        "returns": "None (exits with status code)",
+        "logic": [
+          "1. Create argument parser",
+          "2. Add required arguments:",
+          "   - input: WAV file path",
+          "   - --output / -o: MIDI output path (default: input.mid)",
+          "3. Add optional arguments:",
+          "   - --intensity-threshold: Graph node threshold (default: 0.05)",
+          "   - --confidence: Fundamental confidence threshold (default: 0.3)",
+          "   - --min-duration: Min sustained samples (default: 3)",
+          "   - --tempo: MIDI tempo in BPM (default: 120)",
+          "   - --verbose / -v: Verbose output",
+          "4. Parse arguments",
+          "5. Print banner with system info if verbose",
+          "6. Call transcribe() with parsed arguments",
+          "7. Print success message with output path",
+          "8. Handle exceptions and print helpful error messages",
+          "9. Exit with appropriate status code (0=success, 1=error)"
+        ],
+        "estimated_lines": "50-70"
+      },
+      {
+        "action": "create_new_function",
+        "function_name": "validate_wav_file",
+        "file": "audio_to_midi_pipeline.py",
+        "signature": "validate_wav_file(file_path: str) -> Tuple[bool, str]",
+        "description": "Validate that input file is a valid WAV file",
+        "parameters": [
+          {"name": "file_path", "type": "str", "description": "Path to file"}
+        ],
+        "returns": "Tuple of (is_valid, error_message)",
+        "logic": [
+          "Check file exists",
+          "Check file has .wav extension",
+          "Try to read with scipy.io.wavfile",
+          "Check sample rate is supported (44.1kHz or 48kHz)",
+          "Return (True, '') if valid, (False, error_message) if invalid"
+        ],
+        "estimated_lines": "20-30"
+      }
+    ],
+    "dependency_deltas": [
+      {
+        "action": "add_import",
+        "module": "spectral_analyzer",
+        "items": ["SpectralAnalyzer"],
+        "reason": "Spectral analysis"
+      },
+      {
+        "action": "add_import",
+        "module": "audio_graph_builder",
+        "items": ["AudioGraphBuilder", "build_audio_graph_from_file"],
+        "reason": "Graph construction"
+      },
+      {
+        "action": "add_import",
+        "module": "harmonic_analyzer",
+        "items": ["HarmonicAnalyzer"],
+        "reason": "Harmonic filtering"
+      },
+      {
+        "action": "add_import",
+        "module": "onset_detector",
+        "items": ["OnsetDetector"],
+        "reason": "Onset detection"
+      },
+      {
+        "action": "add_import",
+        "module": "midi_generator",
+        "items": ["MidiGenerator"],
+        "reason": "MIDI file generation"
+      },
+      {
+        "action": "add_import",
+        "module": "argparse",
+        "reason": "CLI argument parsing"
+      },
+      {
+        "action": "add_import",
+        "module": "scipy.io.wavfile",
+        "items": ["read"],
+        "reason": "WAV file reading"
+      },
+      {
+        "action": "add_import",
+        "module": "pathlib",
+        "items": ["Path"],
+        "reason": "File path handling"
+      },
+      {
+        "action": "add_import",
+        "module": "sys",
+        "reason": "Exit codes"
+      },
+      {
+        "action": "add_import",
+        "module": "typing",
+        "items": ["Tuple", "Optional"],
+        "reason": "Type hints"
+      }
+    ],
+    "test_deltas": [
+      {
+        "action": "create_test_file",
+        "file_path": "tests/test_pipeline.py",
+        "description": "Integration tests for end-to-end pipeline",
+        "test_cases": [
+          "test_validate_wav_file",
+          "test_transcribe_simple_tone",
+          "test_transcribe_chord",
+          "test_transcribe_melody",
+          "test_error_handling_invalid_file",
+          "test_error_handling_corrupted_wav",
+          "test_cli_argument_parsing"
+        ],
+        "estimated_lines": "150-200"
+      }
+    ],
+    "cli_deltas": [
+      {
+        "action": "add_cli_command",
+        "command": "python audio_to_midi_pipeline.py INPUT.wav [OPTIONS]",
+        "description": "Main CLI interface",
+        "examples": [
+          "python audio_to_midi_pipeline.py input.wav",
+          "python audio_to_midi_pipeline.py input.wav --output output.mid",
+          "python audio_to_midi_pipeline.py input.wav --intensity-threshold 0.1 --confidence 0.4",
+          "python audio_to_midi_pipeline.py input.wav --tempo 140 --verbose"
+        ]
+      }
+    ],
+    "documentation_deltas": [
+      {
+        "action": "create_readme_section",
+        "file": "README.md",
+        "section": "Usage",
+        "content_outline": [
+          "Basic usage example",
+          "All command-line options explained",
+          "Parameter tuning guide",
+          "Troubleshooting common errors"
+        ]
+      }
+    ],
+    "integration_points": {
+      "inputs": [
+        {
+          "from_component": "user/filesystem",
+          "data_type": "WAV file",
+          "description": "Audio file to transcribe"
+        }
+      ],
+      "outputs": [
+        {
+          "to_component": "user/filesystem",
+          "data_type": "MIDI file",
+          "description": "Transcribed MIDI file"
+        }
+      ],
+      "coordinates": [
+        {"component": "spectral_analyzer", "purpose": "Audio analysis"},
+        {"component": "audio_graph_builder", "purpose": "Graph construction"},
+        {"component": "harmonic_analyzer", "purpose": "Fundamental detection"},
+        {"component": "onset_detector", "purpose": "Onset timing"},
+        {"component": "midi_generator", "purpose": "MIDI output"}
+      ]
+    },
+    "validation_criteria": [
+      "Single command successfully transcribes WAV to MIDI",
+      "Helpful error messages for all failure modes",
+      "Progress feedback for files > 1 minute",
+      "CLI arguments work as documented",
+      "Processing time < 3x audio duration",
+      "Memory usage < 500MB for 3-minute files"
+    ]
+  }
+}

@@ -1,0 +1,256 @@
+{
+  "component_delta": {
+    "metadata": {
+      "component_id": "onset_detector",
+      "component_name": "Onset Detector",
+      "delta_type": "new_component",
+      "created_date": "2025-11-16",
+      "estimated_effort": "12-16 hours",
+      "priority": 1,
+      "status": "not_started",
+      "addresses_gap": "GAP-001"
+    },
+    "file_deltas": [
+      {
+        "action": "create_new_file",
+        "file_path": "onset_detector.py",
+        "file_type": "python_module",
+        "description": "New module for detecting note onsets using temporal flow analysis",
+        "estimated_lines": "300-400"
+      }
+    ],
+    "class_deltas": [
+      {
+        "action": "create_new_class",
+        "class_name": "OnsetDetector",
+        "file": "onset_detector.py",
+        "description": "Main class for onset detection using graph temporal flow analysis",
+        "base_classes": [],
+        "responsibilities": [
+          "Detect note onsets from temporal intensity changes",
+          "Distinguish attack vs sustain vs decay phases",
+          "Estimate note durations",
+          "Calculate velocity from onset intensity",
+          "Verify onsets across harmonic communities"
+        ],
+        "attributes": [
+          {
+            "name": "graph",
+            "type": "nx.MultiDiGraph",
+            "description": "Audio graph from AudioGraphBuilder"
+          },
+          {
+            "name": "onset_threshold",
+            "type": "float",
+            "default": 0.3,
+            "description": "Minimum intensity increase to qualify as onset"
+          },
+          {
+            "name": "min_onset_gap_seconds",
+            "type": "float",
+            "default": 0.05,
+            "description": "Minimum time between onsets (50ms)"
+          }
+        ],
+        "methods": [
+          {
+            "name": "__init__",
+            "signature": "__init__(self, graph: nx.MultiDiGraph, onset_threshold: float = 0.3, min_onset_gap_seconds: float = 0.05)",
+            "description": "Initialize onset detector with audio graph",
+            "parameters": [
+              {"name": "graph", "type": "nx.MultiDiGraph", "description": "Audio graph with temporal edges"},
+              {"name": "onset_threshold", "type": "float", "description": "Minimum intensity increase for onset"},
+              {"name": "min_onset_gap_seconds", "type": "float", "description": "Minimum gap between onsets"}
+            ],
+            "returns": "None",
+            "estimated_lines": "10-15"
+          },
+          {
+            "name": "calculate_intensity_derivatives",
+            "signature": "calculate_intensity_derivatives(self, freq_idx: int) -> List[Tuple[int, float]]",
+            "description": "Calculate temporal intensity derivatives for a frequency",
+            "parameters": [
+              {"name": "freq_idx", "type": "int", "description": "Frequency index to analyze"}
+            ],
+            "returns": "List of (time_index, derivative) tuples",
+            "logic": [
+              "Extract temporal sequence for this frequency",
+              "Calculate delta_intensity / delta_time for each edge",
+              "Return list of derivatives"
+            ],
+            "estimated_lines": "20-30"
+          },
+          {
+            "name": "detect_onsets_for_frequency",
+            "signature": "detect_onsets_for_frequency(self, freq_idx: int) -> List[Dict]",
+            "description": "Detect all onsets for a specific frequency",
+            "parameters": [
+              {"name": "freq_idx", "type": "int", "description": "Frequency index"}
+            ],
+            "returns": "List of onset dictionaries with time_sample, time_seconds, intensity",
+            "logic": [
+              "Get intensity derivatives",
+              "Find peaks where derivative > onset_threshold",
+              "Filter peaks closer than min_onset_gap",
+              "For each onset, record time and intensity",
+              "Return onset events"
+            ],
+            "estimated_lines": "40-50"
+          },
+          {
+            "name": "estimate_note_duration",
+            "signature": "estimate_note_duration(self, freq_idx: int, onset_time_idx: int) -> float",
+            "description": "Estimate how long a note is held after onset",
+            "parameters": [
+              {"name": "freq_idx", "type": "int", "description": "Frequency index"},
+              {"name": "onset_time_idx", "type": "int", "description": "Time index of onset"}
+            ],
+            "returns": "Duration in seconds",
+            "logic": [
+              "Start from onset time",
+              "Follow temporal edges forward",
+              "Find when intensity drops below threshold (offset)",
+              "Calculate duration = offset_time - onset_time",
+              "Return duration"
+            ],
+            "estimated_lines": "30-40"
+          },
+          {
+            "name": "detect_onsets",
+            "signature": "detect_onsets(self, fundamentals: List[Dict]) -> List[Dict]",
+            "description": "Main method to detect onsets from fundamental notes",
+            "parameters": [
+              {"name": "fundamentals", "type": "List[Dict]", "description": "Fundamental notes from HarmonicAnalyzer"}
+            ],
+            "returns": "List of note events with onset_time_seconds, duration_seconds, velocity, note_name, midi_note",
+            "logic": [
+              "Group fundamentals by frequency (node_id)",
+              "For each unique frequency:",
+              "  - Detect onsets using detect_onsets_for_frequency()",
+              "  - Estimate duration for each onset",
+              "  - Calculate velocity from onset intensity (0-127)",
+              "  - Convert frequency to MIDI note number",
+              "  - Create note event dictionary",
+              "Return all note events sorted by time"
+            ],
+            "estimated_lines": "50-70"
+          },
+          {
+            "name": "intensity_to_velocity",
+            "signature": "intensity_to_velocity(self, intensity: float) -> int",
+            "description": "Convert normalized intensity to MIDI velocity",
+            "parameters": [
+              {"name": "intensity", "type": "float", "description": "Normalized intensity [0, 1]"}
+            ],
+            "returns": "MIDI velocity (0-127)",
+            "logic": [
+              "Scale intensity to 0-127 range",
+              "Apply non-linear curve for musical dynamics",
+              "Clamp to valid MIDI range",
+              "Return integer velocity"
+            ],
+            "estimated_lines": "10-15"
+          },
+          {
+            "name": "get_statistics",
+            "signature": "get_statistics(self) -> Dict",
+            "description": "Get statistics about detected onsets",
+            "returns": "Dictionary with total_onsets, avg_duration, etc.",
+            "estimated_lines": "15-20"
+          }
+        ],
+        "estimated_total_lines": "200-250"
+      }
+    ],
+    "function_deltas": [
+      {
+        "action": "create_new_function",
+        "function_name": "frequency_to_midi_note",
+        "file": "onset_detector.py",
+        "signature": "frequency_to_midi_note(frequency: float) -> int",
+        "description": "Convert frequency in Hz to MIDI note number",
+        "parameters": [
+          {"name": "frequency", "type": "float", "description": "Frequency in Hz"}
+        ],
+        "returns": "MIDI note number (0-127)",
+        "logic": [
+          "Use formula: note = 69 + 12 * log2(frequency / 440)",
+          "Round to nearest integer",
+          "Clamp to 0-127 range",
+          "Return MIDI note number"
+        ],
+        "estimated_lines": "8-10"
+      }
+    ],
+    "dependency_deltas": [
+      {
+        "action": "add_import",
+        "module": "networkx",
+        "alias": "nx",
+        "reason": "Graph analysis for temporal flow"
+      },
+      {
+        "action": "add_import",
+        "module": "numpy",
+        "alias": "np",
+        "reason": "Numerical computing for derivatives and statistics"
+      },
+      {
+        "action": "add_import",
+        "module": "typing",
+        "items": ["Dict", "List", "Tuple"],
+        "reason": "Type hints"
+      },
+      {
+        "action": "add_import",
+        "module": "collections",
+        "items": ["defaultdict"],
+        "reason": "Grouping note events"
+      }
+    ],
+    "test_deltas": [
+      {
+        "action": "create_test_file",
+        "file_path": "tests/test_onset_detector.py",
+        "description": "Unit tests for OnsetDetector",
+        "test_cases": [
+          "test_intensity_derivatives_calculation",
+          "test_onset_detection_single_note",
+          "test_onset_detection_multiple_notes",
+          "test_duration_estimation",
+          "test_velocity_conversion",
+          "test_frequency_to_midi_conversion"
+        ],
+        "estimated_lines": "150-200"
+      }
+    ],
+    "integration_points": {
+      "inputs": [
+        {
+          "from_component": "audio_graph_builder",
+          "data_type": "nx.MultiDiGraph",
+          "description": "Audio graph with temporal edges"
+        },
+        {
+          "from_component": "harmonic_analyzer",
+          "data_type": "List[Dict]",
+          "description": "Fundamental notes with confidence scores"
+        }
+      ],
+      "outputs": [
+        {
+          "to_component": "midi_generator",
+          "data_type": "List[Dict]",
+          "description": "Note events with onset_time_seconds, duration_seconds, velocity, note_name, midi_note"
+        }
+      ]
+    },
+    "validation_criteria": [
+      "Onset timing accuracy within 50ms of ground truth",
+      "Detect ≥90% of true onsets for single-instrument recordings",
+      "False positive rate <10%",
+      "Duration estimates within 100ms for sustained notes",
+      "Velocity mapping produces musically meaningful dynamics"
+    ]
+  }
+}

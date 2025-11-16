@@ -1,0 +1,243 @@
+{
+  "component_delta": {
+    "metadata": {
+      "component_id": "midi_generator",
+      "component_name": "MIDI Generator",
+      "delta_type": "new_component",
+      "created_date": "2025-11-16",
+      "estimated_effort": "8-12 hours",
+      "priority": 2,
+      "status": "not_started",
+      "addresses_gap": "GAP-002"
+    },
+    "file_deltas": [
+      {
+        "action": "create_new_file",
+        "file_path": "midi_generator.py",
+        "file_type": "python_module",
+        "description": "New module for generating MIDI files from detected note events",
+        "estimated_lines": "200-300"
+      }
+    ],
+    "class_deltas": [
+      {
+        "action": "create_new_class",
+        "class_name": "MidiGenerator",
+        "file": "midi_generator.py",
+        "description": "Main class for generating standard MIDI files from note events",
+        "base_classes": [],
+        "responsibilities": [
+          "Create MIDI file structure",
+          "Add note on/off events with timing",
+          "Convert note events to MIDI format",
+          "Set tempo and time signature",
+          "Add metadata (key signature, etc.)",
+          "Support multi-track output"
+        ],
+        "attributes": [
+          {
+            "name": "tempo",
+            "type": "int",
+            "default": 120,
+            "description": "Tempo in BPM (beats per minute)"
+          },
+          {
+            "name": "time_signature",
+            "type": "Tuple[int, int]",
+            "default": "(4, 4)",
+            "description": "Time signature as (numerator, denominator)"
+          },
+          {
+            "name": "ticks_per_beat",
+            "type": "int",
+            "default": 480,
+            "description": "MIDI resolution in ticks per quarter note"
+          }
+        ],
+        "methods": [
+          {
+            "name": "__init__",
+            "signature": "__init__(self, tempo: int = 120, time_signature: Tuple[int, int] = (4, 4), ticks_per_beat: int = 480)",
+            "description": "Initialize MIDI generator with tempo and time signature",
+            "parameters": [
+              {"name": "tempo", "type": "int", "description": "Tempo in BPM"},
+              {"name": "time_signature", "type": "Tuple[int, int]", "description": "Time signature"},
+              {"name": "ticks_per_beat", "type": "int", "description": "MIDI resolution"}
+            ],
+            "returns": "None",
+            "estimated_lines": "8-10"
+          },
+          {
+            "name": "note_name_to_midi_number",
+            "signature": "note_name_to_midi_number(self, note_name: str) -> int",
+            "description": "Convert note name (e.g., 'C4', 'A#3') to MIDI note number",
+            "parameters": [
+              {"name": "note_name", "type": "str", "description": "Note name like 'C4' or 'A#3'"}
+            ],
+            "returns": "MIDI note number (0-127)",
+            "logic": [
+              "Parse note name and octave",
+              "Map note to semitone: C=0, C#=1, D=2, ..., B=11",
+              "Calculate MIDI number: (octave + 1) * 12 + semitone",
+              "Return MIDI number"
+            ],
+            "estimated_lines": "25-35"
+          },
+          {
+            "name": "seconds_to_ticks",
+            "signature": "seconds_to_ticks(self, seconds: float) -> int",
+            "description": "Convert time in seconds to MIDI ticks",
+            "parameters": [
+              {"name": "seconds", "type": "float", "description": "Time in seconds"}
+            ],
+            "returns": "Time in MIDI ticks",
+            "logic": [
+              "Calculate ticks_per_second = (tempo / 60) * ticks_per_beat",
+              "ticks = seconds * ticks_per_second",
+              "Return rounded integer ticks"
+            ],
+            "estimated_lines": "8-10"
+          },
+          {
+            "name": "create_midi_track",
+            "signature": "create_midi_track(self, note_events: List[Dict]) -> mido.MidiTrack",
+            "description": "Create a MIDI track from note events",
+            "parameters": [
+              {"name": "note_events", "type": "List[Dict]", "description": "Note events from OnsetDetector"}
+            ],
+            "returns": "mido.MidiTrack with note on/off events",
+            "logic": [
+              "Create new MidiTrack",
+              "Sort note events by onset time",
+              "For each note event:",
+              "  - Convert note_name to MIDI number (or use midi_note if provided)",
+              "  - Convert onset_time_seconds to ticks",
+              "  - Create note_on message with velocity",
+              "  - Calculate offset time = onset + duration",
+              "  - Create note_off message",
+              "  - Add both to track with delta times",
+              "Return track"
+            ],
+            "estimated_lines": "50-70"
+          },
+          {
+            "name": "add_metadata",
+            "signature": "add_metadata(self, midi_file: mido.MidiFile, key_signature: Optional[str] = None)",
+            "description": "Add metadata to MIDI file (tempo, time signature, key)",
+            "parameters": [
+              {"name": "midi_file", "type": "mido.MidiFile", "description": "MIDI file object"},
+              {"name": "key_signature", "type": "Optional[str]", "description": "Key signature (e.g., 'C major')"}
+            ],
+            "returns": "None (modifies midi_file in place)",
+            "logic": [
+              "Add tempo meta message",
+              "Add time signature meta message",
+              "If key_signature provided, add key signature meta message",
+              "Add track name meta message"
+            ],
+            "estimated_lines": "20-30"
+          },
+          {
+            "name": "generate_midi",
+            "signature": "generate_midi(self, note_events: List[Dict], output_path: str, key_signature: Optional[str] = None) -> str",
+            "description": "Main method to generate MIDI file from note events",
+            "parameters": [
+              {"name": "note_events", "type": "List[Dict]", "description": "Note events from onset detector"},
+              {"name": "output_path", "type": "str", "description": "Path to save MIDI file"},
+              {"name": "key_signature", "type": "Optional[str]", "description": "Optional key signature"}
+            ],
+            "returns": "Path to created MIDI file",
+            "logic": [
+              "Create new MidiFile (type 1, one track)",
+              "Create track from note events",
+              "Add metadata (tempo, time sig, key)",
+              "Add track to MIDI file",
+              "Save to output_path",
+              "Return output_path"
+            ],
+            "estimated_lines": "30-40"
+          },
+          {
+            "name": "validate_note_events",
+            "signature": "validate_note_events(self, note_events: List[Dict]) -> bool",
+            "description": "Validate that note events have required fields",
+            "parameters": [
+              {"name": "note_events", "type": "List[Dict]", "description": "Note events to validate"}
+            ],
+            "returns": "True if valid, raises ValueError if invalid",
+            "logic": [
+              "Check each note event has required fields:",
+              "  - onset_time_seconds (or onset_time)",
+              "  - duration_seconds (or duration)",
+              "  - velocity",
+              "  - note_name or midi_note",
+              "Raise ValueError with helpful message if missing",
+              "Return True if all valid"
+            ],
+            "estimated_lines": "20-30"
+          }
+        ],
+        "estimated_total_lines": "180-240"
+      }
+    ],
+    "function_deltas": [],
+    "dependency_deltas": [
+      {
+        "action": "add_import",
+        "module": "mido",
+        "reason": "MIDI file creation and manipulation"
+      },
+      {
+        "action": "add_import",
+        "module": "typing",
+        "items": ["Dict", "List", "Optional", "Tuple"],
+        "reason": "Type hints"
+      },
+      {
+        "action": "add_import",
+        "module": "pathlib",
+        "items": ["Path"],
+        "reason": "File path handling"
+      }
+    ],
+    "test_deltas": [
+      {
+        "action": "create_test_file",
+        "file_path": "tests/test_midi_generator.py",
+        "description": "Unit tests for MidiGenerator",
+        "test_cases": [
+          "test_note_name_to_midi_number",
+          "test_seconds_to_ticks_conversion",
+          "test_create_midi_track",
+          "test_generate_midi_file",
+          "test_validate_note_events",
+          "test_midi_file_playback"
+        ],
+        "estimated_lines": "100-150"
+      }
+    ],
+    "integration_points": {
+      "inputs": [
+        {
+          "from_component": "onset_detector",
+          "data_type": "List[Dict]",
+          "description": "Note events with onset_time_seconds, duration_seconds, velocity, note_name, midi_note"
+        }
+      ],
+      "outputs": [
+        {
+          "to_component": "user/filesystem",
+          "data_type": "MIDI file (.mid)",
+          "description": "Standard MIDI file that can be imported to DAWs"
+        }
+      ]
+    },
+    "validation_criteria": [
+      "Generated MIDI files are valid (parseable by mido and other MIDI tools)",
+      "MIDI files are playable in standard DAWs (Logic, Ableton, MuseScore)",
+      "Note timing matches input note events within 1ms",
+      "Velocity values correctly mapped to MIDI range (0-127)",
+      "Tempo and time signature correctly set in MIDI file"
+    ]
+  }
+}
