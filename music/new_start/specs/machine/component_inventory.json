@@ -1,0 +1,311 @@
+{
+  "component_inventory": {
+    "metadata": {
+      "created_date": "2025-11-16",
+      "system_name": "audio_to_midi_transcription",
+      "approach": "bottom_up",
+      "total_components": 8,
+      "core_components": 6,
+      "supporting_components": 2
+    },
+    "components": [
+      {
+        "component_id": "spectral_analyzer",
+        "name": "Spectral Analyzer",
+        "type": "service",
+        "tier": "input_processing",
+        "source_location": "spectral_analyzer.py",
+        "description": "Performs Fourier-like spectral analysis on audio signals, decomposing them into frequency components across time",
+        "capabilities": [
+          "Read WAV files (44.1kHz, 48kHz, mono/stereo, 16/24-bit)",
+          "Decompose audio into frequency-time-intensity matrix",
+          "Generate sine/cosine coefficients for musical notes",
+          "Support microtonal resolution (subdivisions per semitone)",
+          "Handle variable cycle lengths for analysis"
+        ],
+        "exposed_interfaces": {
+          "classes": [
+            {
+              "name": "SpectralAnalyzer",
+              "methods": [
+                "__init__(samplefreq, cycles, standard_A4, note_begin, note_end, increments)",
+                "note_freqs(note_idx)",
+                "dotop(signal) -> np.ndarray"
+              ],
+              "outputs": "2D numpy array [frequency_index, time_index] = amplitude"
+            }
+          ],
+          "functions": [
+            "analyze_audio_file(file_path) -> (analyzer, spectrum)"
+          ]
+        },
+        "dependencies": {
+          "internal": [],
+          "external": ["numpy", "matplotlib", "scipy.io.wavfile"]
+        },
+        "integration_readiness": "high",
+        "status": "complete",
+        "notes": "Well-tested, working implementation. Provides the foundation for the entire pipeline."
+      },
+      {
+        "component_id": "audio_graph_builder",
+        "name": "Audio Graph Builder",
+        "type": "service",
+        "tier": "graph_construction",
+        "source_location": "audio_graph_builder.py",
+        "description": "Converts spectral analyzer output into a NetworkX directed graph with temporal, harmonic, and music theory edges",
+        "capabilities": [
+          "Build nodes from frequency-time-intensity points above threshold",
+          "Create temporal edges (same frequency across time)",
+          "Create harmonic edges (harmonically-related frequencies)",
+          "Calculate edge weights (intensity correlation, harmonic strength)",
+          "Generate note names from frequencies",
+          "Filter low-intensity nodes"
+        ],
+        "exposed_interfaces": {
+          "classes": [
+            {
+              "name": "AudioGraphBuilder",
+              "methods": [
+                "__init__(spectral_data, frequencies, sample_rate, window_length, intensity_threshold, harmonic_ratios)",
+                "add_nodes() -> int",
+                "add_temporal_edges() -> int",
+                "add_harmonic_edges() -> int",
+                "build_graph() -> nx.MultiDiGraph",
+                "get_node_data_at_time(time_idx) -> List[Dict]",
+                "get_temporal_sequence(freq_idx) -> List[Tuple]"
+              ]
+            }
+          ],
+          "functions": [
+            "build_audio_graph_from_file(spectral_analyzer, spectral_data, intensity_threshold) -> AudioGraphBuilder"
+          ]
+        },
+        "dependencies": {
+          "internal": ["spectral_analyzer"],
+          "external": ["numpy", "networkx"]
+        },
+        "integration_readiness": "high",
+        "status": "complete",
+        "notes": "Newly created component. Implements core graph construction logic from AUDIO_TRANSCRIPTION.md design."
+      },
+      {
+        "component_id": "harmonic_analyzer",
+        "name": "Harmonic Analyzer",
+        "type": "service",
+        "tier": "analysis",
+        "source_location": "harmonic_analyzer.py",
+        "description": "Uses community detection to identify fundamental frequencies from their harmonics",
+        "capabilities": [
+          "Extract harmonic subgraphs by time sample",
+          "Detect harmonic communities using Louvain algorithm",
+          "Identify fundamental frequency in each community",
+          "Calculate confidence scores for fundamentals",
+          "Filter noise based on intensity, confidence, duration",
+          "Generate timeline of detected notes"
+        ],
+        "exposed_interfaces": {
+          "classes": [
+            {
+              "name": "HarmonicAnalyzer",
+              "methods": [
+                "__init__(audio_graph)",
+                "extract_harmonic_subgraph(time_idx) -> nx.Graph",
+                "detect_harmonic_communities(time_idx) -> List[Set[str]]",
+                "identify_fundamental_in_community(community, subgraph) -> (str, float)",
+                "analyze_all_time_samples() -> Dict[int, List[Dict]]",
+                "get_fundamental_timeline(min_confidence) -> List[Dict]",
+                "filter_noise(min_intensity, min_confidence, min_duration_samples) -> List[Dict]",
+                "get_statistics() -> Dict"
+              ]
+            }
+          ]
+        },
+        "dependencies": {
+          "internal": ["audio_graph_builder"],
+          "external": ["numpy", "networkx", "collections.defaultdict"]
+        },
+        "integration_readiness": "high",
+        "status": "complete",
+        "notes": "Newly created component. Implements harmonic filtering from AUDIO_TRANSCRIPTION.md design."
+      },
+      {
+        "component_id": "onset_detector",
+        "name": "Onset Detector",
+        "type": "service",
+        "tier": "analysis",
+        "source_location": "onset_detector.py",
+        "description": "Detects note onsets using temporal flow analysis on the audio graph",
+        "capabilities": [
+          "Calculate intensity derivatives across temporal edges",
+          "Detect sudden intensity increases (onsets)",
+          "Distinguish onsets from sustained notes",
+          "Use betweenness centrality for transition detection",
+          "Verify onsets across harmonic communities",
+          "Estimate note durations"
+        ],
+        "exposed_interfaces": {
+          "classes": [],
+          "functions": []
+        },
+        "dependencies": {
+          "internal": ["audio_graph_builder", "harmonic_analyzer"],
+          "external": ["numpy", "networkx"]
+        },
+        "integration_readiness": "low",
+        "status": "not_started",
+        "notes": "Needs to be implemented. Design specified in AUDIO_TRANSCRIPTION.md."
+      },
+      {
+        "component_id": "midi_generator",
+        "name": "MIDI Generator",
+        "type": "service",
+        "tier": "output_generation",
+        "source_location": "midi_generator.py",
+        "description": "Converts detected notes and timings to MIDI file format",
+        "capabilities": [
+          "Create MIDI files from note events",
+          "Set tempo and time signature",
+          "Add note on/off events with velocity",
+          "Support multi-track MIDI (for instrument separation)",
+          "Quantize note timings to musical values",
+          "Add metadata (key signature, etc.)"
+        ],
+        "exposed_interfaces": {
+          "classes": [],
+          "functions": []
+        },
+        "dependencies": {
+          "internal": ["harmonic_analyzer", "onset_detector"],
+          "external": ["mido"]
+        },
+        "integration_readiness": "low",
+        "status": "not_started",
+        "notes": "Needs to be implemented. Should use mido library for MIDI file generation."
+      },
+      {
+        "component_id": "pipeline_orchestrator",
+        "name": "Audio-to-MIDI Pipeline",
+        "type": "service",
+        "tier": "orchestration",
+        "source_location": "audio_to_midi_pipeline.py",
+        "description": "Main orchestrator that coordinates all components to transcribe audio to MIDI",
+        "capabilities": [
+          "Accept WAV file input via CLI",
+          "Orchestrate full pipeline: spectral analysis → graph → analysis → MIDI",
+          "Provide progress feedback",
+          "Handle errors and edge cases",
+          "Support configuration options (intensity threshold, confidence, etc.)",
+          "Output MIDI file"
+        ],
+        "exposed_interfaces": {
+          "classes": [],
+          "functions": [
+            "transcribe(wav_path, output_path, **options) -> str"
+          ],
+          "cli": {
+            "command": "python audio_to_midi_pipeline.py INPUT.wav --output OUTPUT.mid",
+            "options": [
+              "--intensity-threshold FLOAT",
+              "--confidence-threshold FLOAT",
+              "--min-duration INT"
+            ]
+          }
+        },
+        "dependencies": {
+          "internal": ["spectral_analyzer", "audio_graph_builder", "harmonic_analyzer", "onset_detector", "midi_generator"],
+          "external": ["argparse"]
+        },
+        "integration_readiness": "low",
+        "status": "not_started",
+        "notes": "Main entry point. Needs to be implemented to tie all components together."
+      },
+      {
+        "component_id": "audio_converter",
+        "name": "Audio Format Converter",
+        "type": "utility",
+        "tier": "supporting",
+        "source_location": "convert_audio.py",
+        "description": "Utility for converting audio files to WAV format for processing",
+        "capabilities": [
+          "Convert between audio formats using ffmpeg",
+          "Resample audio to target sample rate",
+          "Extract audio from SF2 soundfonts"
+        ],
+        "exposed_interfaces": {
+          "functions": [
+            "convert_audio(source_path, target_path, sample_rate, overwrite) -> bool",
+            "extract_sf2_sounds(sf2_path, output_dir) -> bool"
+          ]
+        },
+        "dependencies": {
+          "internal": [],
+          "external": ["subprocess", "pathlib"],
+          "system": ["ffmpeg", "sf2extract"]
+        },
+        "integration_readiness": "high",
+        "status": "complete",
+        "notes": "Optional preprocessing utility. Can convert MP3/FLAC/etc to WAV before analysis."
+      },
+      {
+        "component_id": "midi_parser",
+        "name": "MIDI File Parser",
+        "type": "utility",
+        "tier": "supporting",
+        "source_location": "midi_message_parser.py",
+        "description": "Parses existing MIDI files for validation and comparison",
+        "capabilities": [
+          "Parse MIDI files into structured dictionaries",
+          "Extract note events and program changes",
+          "Handle percussion channels",
+          "Provide timing information"
+        ],
+        "exposed_interfaces": {
+          "classes": [
+            {
+              "name": "MidiMessageParser",
+              "methods": [
+                "__init__(note_offset, perc_chan_0, perc_chan_1)",
+                "init_parse()",
+                "various accessors for parsed data"
+              ]
+            }
+          ]
+        },
+        "dependencies": {
+          "internal": [],
+          "external": ["mido", "typing"]
+        },
+        "integration_readiness": "medium",
+        "status": "complete",
+        "notes": "Could be used to validate generated MIDI by comparing against ground truth."
+      }
+    ],
+    "excluded_components": [
+      {
+        "name": "reco.py",
+        "reason": "Audio synthesis from MIDI (reverse direction from our pipeline). Not needed for audio-to-MIDI transcription."
+      },
+      {
+        "name": "convert_tool.py",
+        "reason": "Appears to be a thin wrapper around convert_audio.py. Redundant."
+      }
+    ],
+    "hierarchical_tiers": {
+      "tier_1_input_processing": ["spectral_analyzer"],
+      "tier_2_graph_construction": ["audio_graph_builder"],
+      "tier_3_analysis": ["harmonic_analyzer", "onset_detector"],
+      "tier_4_output_generation": ["midi_generator"],
+      "tier_5_orchestration": ["pipeline_orchestrator"],
+      "supporting_utilities": ["audio_converter", "midi_parser"]
+    },
+    "integration_summary": {
+      "total_components": 8,
+      "complete_components": 3,
+      "not_started_components": 3,
+      "supporting_components": 2,
+      "critical_path_components": ["spectral_analyzer", "audio_graph_builder", "harmonic_analyzer", "onset_detector", "midi_generator", "pipeline_orchestrator"],
+      "optional_components": ["audio_converter", "midi_parser"]
+    }
+  }
+}

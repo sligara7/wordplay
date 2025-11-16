@@ -1,9 +1,9 @@
 {
   "template_version": "2.0",
   "system_name": "audio_to_midi_transcription",
-  "current_workflow": "00a-basic_setup",
-  "current_step": "S-03",
-  "current_substep": "S-03-A04",
+  "current_workflow": "01b-bottom_up_integration",
+  "current_step": "BU-01",
+  "current_substep": "BU-01-A01",
   "paths": {
     "reflow_root": "/home/ajs7/project/reflow",
     "system_root": "/home/ajs7/project/wordplay/music/new_start",
