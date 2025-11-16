@@ -1,0 +1,166 @@
+{
+  "gaps_metadata": {
+    "created_date": "2025-11-16",
+    "system_name": "audio_to_midi_transcription",
+    "based_on_inventory": "/home/ajs7/project/wordplay/music/new_start/specs/machine/component_inventory.json",
+    "based_on_requirements": "/home/ajs7/project/wordplay/music/new_start/specs/machine/integration_requirements.json",
+    "analysis_tool": "analyze_integration_gaps.py v2.0.0 + manual enhancement",
+    "total_components_analyzed": 8,
+    "total_interactions_analyzed": 7,
+    "note": "Automated tool found 0 gaps in existing components. Manual analysis added 3 critical gaps for missing components."
+  },
+  "gaps": [
+    {
+      "gap_id": "GAP-001",
+      "gap_type": "missing_component",
+      "severity": "critical",
+      "title": "Missing Onset Detector Component",
+      "description": "The onset_detector component is required to detect note onsets from temporal flow analysis but does not exist yet",
+      "affected_capability": "onset_detection",
+      "affected_interactions": ["interaction_3", "interaction_4"],
+      "impact": "Without onset detection, the system cannot determine when notes start vs. when they are sustained, resulting in inaccurate MIDI timing",
+      "solution_type": "new_component",
+      "recommended_solution": {
+        "action": "implement_new_component",
+        "component_name": "onset_detector",
+        "component_location": "onset_detector.py",
+        "key_classes": ["OnsetDetector"],
+        "key_methods": [
+          "detect_onsets(graph, fundamentals) -> List[Dict]",
+          "calculate_intensity_derivatives(temporal_edges)",
+          "identify_attack_phases(intensity_changes)",
+          "estimate_note_durations(onsets, graph)"
+        ],
+        "inputs": [
+          "NetworkX MultiDiGraph (from audio_graph_builder)",
+          "List of fundamental notes (from harmonic_analyzer)"
+        ],
+        "outputs": [
+          "List of note events with onset_time_seconds, duration_seconds, velocity"
+        ],
+        "dependencies": ["networkx", "numpy"],
+        "estimated_effort": "12-16 hours"
+      },
+      "priority": 1,
+      "blocking": true
+    },
+    {
+      "gap_id": "GAP-002",
+      "gap_type": "missing_component",
+      "severity": "critical",
+      "title": "Missing MIDI Generator Component",
+      "description": "The midi_generator component is required to convert detected notes to MIDI file format but does not exist yet",
+      "affected_capability": "midi_generation",
+      "affected_interactions": ["interaction_5", "interaction_6"],
+      "impact": "Without MIDI generation, the system cannot produce the final output file, making the entire pipeline non-functional",
+      "solution_type": "new_component",
+      "recommended_solution": {
+        "action": "implement_new_component",
+        "component_name": "midi_generator",
+        "component_location": "midi_generator.py",
+        "key_classes": ["MidiGenerator"],
+        "key_methods": [
+          "generate_midi(note_events, output_path, tempo, time_signature)",
+          "create_midi_track(note_events)",
+          "note_name_to_midi_number(note_name) -> int",
+          "intensity_to_velocity(intensity) -> int",
+          "add_metadata(midi_file, key_signature)"
+        ],
+        "inputs": [
+          "List of note events from onset_detector"
+        ],
+        "outputs": [
+          "MIDI file (.mid) written to disk"
+        ],
+        "dependencies": ["mido"],
+        "estimated_effort": "8-12 hours"
+      },
+      "priority": 2,
+      "blocking": true
+    },
+    {
+      "gap_id": "GAP-003",
+      "gap_type": "missing_component",
+      "severity": "critical",
+      "title": "Missing Pipeline Orchestrator Component",
+      "description": "The pipeline_orchestrator component is required to coordinate all components and provide CLI interface but does not exist yet",
+      "affected_capability": "end_to_end_orchestration",
+      "affected_interactions": ["interaction_7"],
+      "impact": "Without the orchestrator, users cannot easily run the pipeline. Each component would need to be invoked manually, defeating the purpose of integration",
+      "solution_type": "new_component",
+      "recommended_solution": {
+        "action": "implement_new_component",
+        "component_name": "pipeline_orchestrator",
+        "component_location": "audio_to_midi_pipeline.py",
+        "key_functions": [
+          "transcribe(wav_path, output_path, **options) -> str",
+          "main() - CLI entry point"
+        ],
+        "inputs": [
+          "WAV file path (command line argument)",
+          "Output MIDI path (command line argument)",
+          "Optional parameters (intensity threshold, confidence, etc.)"
+        ],
+        "outputs": [
+          "MIDI file written to specified path",
+          "Status messages to console"
+        ],
+        "dependencies": ["argparse", "all internal components"],
+        "estimated_effort": "6-8 hours"
+      },
+      "priority": 3,
+      "blocking": true
+    }
+  ],
+  "gap_categories": {
+    "by_severity": {
+      "critical": 3,
+      "high": 0,
+      "medium": 0,
+      "low": 0
+    },
+    "by_type": {
+      "missing_component": 3
+    }
+  },
+  "summary": {
+    "total_gaps": 3,
+    "critical_gaps": 3,
+    "high_priority_gaps": 0,
+    "gaps_requiring_new_components": 3,
+    "gaps_requiring_modifications": 0,
+    "estimated_total_effort": "26-36 hours (onset_detector: 12-16h, midi_generator: 8-12h, orchestrator: 6-8h)",
+    "integration_feasibility": "high",
+    "integration_feasibility_rationale": "All gaps are missing components (not integration issues). Existing components integrate well. Clear specifications provided for missing components.",
+    "blocking_gaps": ["GAP-001", "GAP-002", "GAP-003"]
+  },
+  "resolution_roadmap": {
+    "phase_1": {
+      "name": "Core Analysis Components",
+      "gaps": ["GAP-001"],
+      "description": "Implement onset_detector to enable note timing detection",
+      "estimated_effort": "12-16 hours",
+      "dependencies": "None (depends only on existing components)"
+    },
+    "phase_2": {
+      "name": "Output Generation",
+      "gaps": ["GAP-002"],
+      "description": "Implement midi_generator to produce MIDI files",
+      "estimated_effort": "8-12 hours",
+      "dependencies": "Requires GAP-001 (onset_detector) to be complete"
+    },
+    "phase_3": {
+      "name": "User Interface",
+      "gaps": ["GAP-003"],
+      "description": "Implement pipeline_orchestrator for end-to-end CLI",
+      "estimated_effort": "6-8 hours",
+      "dependencies": "Requires GAP-001 and GAP-002 to be complete"
+    }
+  },
+  "next_steps": [
+    "Prioritize gaps by severity and impact",
+    "Assign gaps to resolution phases",
+    "Run generate_component_deltas.py to create exact change specifications",
+    "Review and approve resolution roadmap"
+  ]
+}

@@ -1,0 +1,121 @@
+# Reflow Workflow Observations
+
+**System**: Audio-to-MIDI Transcription
+**Date Started**: 2025-11-16
+**Workflow**: 01b-bottom_up_integration.json
+
+## Purpose
+Track what works well and what doesn't in the reflow workflow to help improve the process.
+
+---
+
+## ✅ What's Working Well
+
+### 00a-basic_setup
+- **Clear path configuration**: Explicit path setup in working_memory.json prevents confusion later
+- **Foundational documents**: SYSTEM_MISSION_STATEMENT.md, USER_SCENARIOS.md, SUCCESS_CRITERIA.md provide excellent grounding
+- **User preference questions**: Asking about stakeholder approval upfront is very helpful
+- **Directory structure validation**: validate_directory_structure.py provides clear feedback
+
+### 01b-bottom_up_integration
+
+#### BU-01: Component Inventory
+- **Clear structure**: The component inventory template is intuitive
+- **Hierarchical tiers**: Organizing components by tier (input → processing → analysis → output → orchestration) makes dependencies obvious
+- **Integration readiness assessment**: Having "high/medium/low" readiness helps prioritize work
+- **Separation of concerns**: Distinguishing "core" vs "supporting" components is useful
+- **Excluded components tracking**: Documenting WHY components are excluded prevents confusion later
+
+#### BU-02: Integration Requirements
+- **Capability-based thinking**: Breaking the system into capabilities (vs just components) clarifies the "what" before the "how"
+- **Data contracts**: Explicitly defining data contracts between components catches integration issues early
+- **Non-functional requirements**: Having performance, reliability, usability, etc. in one place is valuable
+- **Success criteria**: Clear, measurable criteria help validate the architecture later
+
+---
+
+## ⚠️ Challenges & Areas for Improvement
+
+### 00a-basic_setup
+- **RAG setup complexity**: The RAG embeddings setup had a tool error (indentation in generate_rag_embeddings.py). This is optional, so skipping was fine, but the tool should be more robust or the setup should have better error handling.
+- **LLM detection tool**: detect_llm_capabilities.py requires interactive input which doesn't work in this environment. Should support non-interactive mode with CLI arguments.
+- **validate_reflow_setup.py missing**: Workflow references this tool but it doesn't exist in the tools directory.
+
+### 01b-bottom_up_integration
+
+#### BU-01: Component Inventory
+- **No template provided**: Had to infer the structure of component_inventory.json. A template would be helpful.
+- **Capability vs component confusion**: Initially unclear whether to list capabilities or components. The workflow could be clearer that BU-01 is about components and BU-02 is about capabilities.
+
+#### BU-02: Integration Requirements
+- **No template provided**: Had to infer structure of integration_requirements.json. A template would make this faster and more consistent.
+- **Data contract format**: Not clear what level of detail is expected in data contracts. Examples would help.
+
+---
+
+## 🔄 Workflow Flow Observations
+
+### Good Flow
+1. **Progressive refinement**: Each step builds naturally on the previous one
+2. **Clear dependencies**: BU-01 → BU-02 makes sense (know what you have before defining what you need)
+3. **Git commits**: Natural checkpoint at each step completion
+
+### Friction Points
+1. **Template availability**: Many steps reference templates that don't exist or are hard to find
+2. **Tool availability**: Some referenced tools don't exist (validate_reflow_setup.py)
+3. **Template paths**: Not always clear where templates are or what they're called
+
+---
+
+## 💡 Suggestions for Improvement
+
+### Documentation
+1. **Template index**: Create a master list of all templates with their locations and when to use them
+2. **Tool catalog**: Document which tools exist and their current status
+3. **Step-by-step examples**: Show example outputs for each workflow step
+
+### Tooling
+1. **Template generator**: Tool to auto-generate template-compliant JSON files with placeholders
+2. **Non-interactive modes**: All tools should support CLI-only operation for automation
+3. **Tool health check**: Script to verify all referenced tools exist and work
+
+### Workflow Files
+1. **Inline templates**: Include minimal template structure directly in workflow JSON
+2. **Optional vs required**: Clearer marking of which steps/files are optional vs required
+3. **Error recovery guidance**: What to do when a tool fails or doesn't exist
+
+---
+
+## 📊 Current Status
+
+**Completed**:
+- ✅ 00a-basic_setup (S-01, S-02, S-03)
+- ✅ BU-01: Component Inventory
+- ✅ BU-02: Integration Requirements
+
+**In Progress**:
+- 🔄 BU-03: Integration Gap Analysis
+
+**Upcoming**:
+- ⏭️ BU-04: Component Delta Analysis
+- ⏭️ BU-05: Integration Architecture Design
+- ⏭️ BU-06: Validation & Verification
+- ⏭️ SE-02 through SE-06
+
+---
+
+#### BU-03: Integration Gap Analysis
+- **Tool exists and works**: analyze_integration_gaps.py exists and runs successfully
+- **Clear command-line interface**: Tool uses standard CLI args (--inventory, --requirements, --output)
+- **Good automated detection**: Tool detected 0 gaps in existing components, confirming they integrate well
+- **Missing component detection gap**: Tool doesn't detect "missing component" gaps (only interface/protocol mismatches in existing components)
+  - **Improvement needed**: Tool should also analyze component_inventory.json for components marked "not_started" and generate gap entries for them
+  - **Workaround**: Manual enhancement of integration_gaps.json to add missing component gaps
+- **Clear output format**: JSON output is well-structured and easy to enhance manually
+- **Resolution roadmap**: Adding a "resolution_roadmap" section helps organize implementation phases
+
+---
+
+## Notes to be Added as Workflow Progresses
+
+_Will update this file as we encounter more observations..._
