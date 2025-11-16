@@ -1,0 +1,40 @@
+{
+  "workflow_id": "00a-basic_setup",
+  "workflow_name": "Basic Setup Workflow",
+  "steps": {
+    "S-01": {
+      "step_id": "S-01",
+      "name": "Path Configuration",
+      "status": "completed",
+      "started_at": "2025-11-16 17:30:00",
+      "completed_at": "2025-11-16 17:35:00",
+      "actions_completed": ["S-01-A01", "S-01-A02", "S-01-A03"],
+      "notes": "Paths configured and validated"
+    },
+    "S-02": {
+      "step_id": "S-02",
+      "name": "Directory Structure Creation",
+      "status": "completed",
+      "started_at": "2025-11-16 17:35:00",
+      "completed_at": "2025-11-16 17:38:00",
+      "actions_completed": ["S-02-A01", "S-02-A02", "S-02-A03", "S-02-A04", "S-02-A05"],
+      "notes": "All required directories created and validated"
+    },
+    "S-03": {
+      "step_id": "S-03",
+      "name": "Foundational Documents",
+      "status": "in_progress",
+      "started_at": "2025-11-16 17:38:00",
+      "completed_at": null,
+      "actions_completed": ["S-03-A01", "S-03-A02", "S-03-A03", "S-03-A03A", "S-03-A04"],
+      "actions_in_progress": [],
+      "notes": "Created SYSTEM_MISSION_STATEMENT.md, USER_SCENARIOS.md, SUCCESS_CRITERIA.md. User confirmed no stakeholder approval needed. Initialized working_memory.json."
+    }
+  },
+  "overall_progress": {
+    "total_steps": 4,
+    "completed_steps": 2,
+    "current_step": "S-03",
+    "percent_complete": 50
+  }
+}

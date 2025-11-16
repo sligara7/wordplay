@@ -1,0 +1,142 @@
+{
+  "template_version": "2.0",
+  "system_name": "audio_to_midi_transcription",
+  "current_workflow": "00a-basic_setup",
+  "current_step": "S-03",
+  "current_substep": "S-03-A04",
+  "paths": {
+    "reflow_root": "/home/ajs7/project/reflow",
+    "system_root": "/home/ajs7/project/wordplay/music/new_start",
+    "tools_path": "/home/ajs7/project/reflow/tools",
+    "templates_path": "/home/ajs7/project/reflow/templates",
+    "workflow_steps_path": "/home/ajs7/project/reflow/workflow_steps",
+    "definitions_path": "/home/ajs7/project/reflow/definitions",
+    "note": "CRITICAL: These paths MUST be read and used for ALL tool/template/workflow references"
+  },
+  "user_preferences": {
+    "stakeholder_approval_required": false,
+    "stakeholder_approval_rationale": "Personal/experimental project - graph-based audio transcription research",
+    "note": "Stakeholder approval steps will be skipped, direct progression to technical validation"
+  },
+  "framework_configuration": {
+    "framework_id": "uaf",
+    "framework_name": "Unified Architecture Framework 1.2",
+    "component_term": "service",
+    "connection_term": "interface",
+    "architecture_file_type": "service_architecture.json",
+    "selected_framework_rationale": "UAF selected as default for engineered system. Audio transcription pipeline consists of services (spectral analyzer, graph builder, harmonic analyzer, onset detector, MIDI generator) with well-defined interfaces between them.",
+    "user_confirmed": false,
+    "confirmation_timestamp": null,
+    "note": "Will be confirmed in framework selection workflow if needed"
+  },
+  "framework_analysis": {
+    "system_characteristics": {
+      "primary_entities": "Processing services and data transformers",
+      "connections": "Data flow interfaces (WAV → Spectral Data → Graph → Analysis → MIDI)",
+      "has_decision_points": true,
+      "has_conditional_routing": false,
+      "cycles_expected": "NO - Pipeline is directed acyclic graph (DAG)",
+      "needs_flow_analysis": true,
+      "domain": "engineered"
+    },
+    "frameworks_evaluated": [],
+    "recommended_analyses": ["dag", "paths", "flow", "community"],
+    "alternatives_rejected": {},
+    "analysis_timestamp": "2025-11-16 17:45:00",
+    "note": "Initial framework analysis - may be refined in 00b-framework_selection"
+  },
+  "analysis_configuration": {
+    "selected_analyses": {
+      "centrality": true,
+      "paths": true,
+      "connectivity": true,
+      "clustering": false,
+      "properties": true,
+      "community": true,
+      "cycles": true,
+      "scc": false,
+      "dag": true,
+      "flow": true
+    },
+    "analysis_rationale": "Community detection for harmonic analysis, flow for onset detection, DAG for pipeline validation, paths for voice leading",
+    "edge_weights_included": true,
+    "edge_weight_semantic": "Intensity correlation (temporal), harmonic strength (harmonic), scale membership (music theory)",
+    "knowledge_gap_detection_enabled": true,
+    "architectural_issues_detection_enabled": true,
+    "note": "Graph analysis is core to the transcription algorithm"
+  },
+  "context_management": {
+    "operations_since_refresh": 0,
+    "refresh_threshold": 5,
+    "last_refresh_timestamp": "2025-11-16 17:45:00",
+    "total_refreshes_this_workflow": 0,
+    "refresh_triggers": {
+      "threshold_triggered": 0,
+      "degradation_triggered": 0,
+      "manual_triggered": 0,
+      "context_flow_triggered": 0
+    },
+    "degradation_signals_detected": [],
+    "last_degradation_signal": null,
+    "context_health": "HEALTHY",
+    "cumulative_context_tokens": 0,
+    "llm_capabilities": {
+      "model_name": "Claude Sonnet 4.5",
+      "context_window_tokens": 200000,
+      "recommended_threshold": 160000,
+      "safety_margin_percent": 80,
+      "refresh_strategy": "moderate",
+      "auto_detected": false,
+      "detection_timestamp": "2025-11-16 17:45:00",
+      "detection_method": "manual",
+      "note": "Claude Sonnet 4.5 with 200k context window"
+    },
+    "context_flow_analysis": {
+      "enabled": false,
+      "current_step": "S-03",
+      "next_step": "S-04-decision",
+      "predicted_cumulative": 0,
+      "threshold": 160000,
+      "refresh_recommended": false,
+      "refresh_reason": null,
+      "recommended_refresh_before": null
+    }
+  },
+  "hierarchy_level": "LEVEL_0 - Single system with service decomposition",
+  "component_list": [],
+  "external_systems": [],
+  "global_constraints": {
+    "audio_input_format": "WAV files (44.1kHz or 48kHz, 16-bit or 24-bit, mono or stereo)",
+    "output_format": "MIDI Type 0 or Type 1",
+    "processing_mode": "Batch processing (not real-time for MVP)"
+  },
+  "progress_summary": {
+    "completed_steps": ["S-01", "S-02"],
+    "current_focus": "S-03 - Creating foundational documents and initializing context",
+    "next_action": "Complete S-03, then decide on system-of-systems (S-04-decision) or proceed to 01a-approach_detection",
+    "validation_status": "PENDING"
+  },
+  "artifact_status": {
+    "service_architectures_created": 0,
+    "interfaces_deduced": 0,
+    "icds_generated": false,
+    "index_json_updated": false,
+    "interface_registry_created": false,
+    "validation_passed": false
+  },
+  "workflow_metrics": {
+    "workflow_start_time": "2025-11-16 17:30:00",
+    "current_step_start_time": "2025-11-16 17:40:00",
+    "total_operations": 10,
+    "total_tool_invocations": 2,
+    "total_validations": 1,
+    "validation_failures": 0,
+    "rework_cycles": 0
+  },
+  "context_metadata": {
+    "working_directory": "/home/ajs7/project/wordplay/music/new_start",
+    "last_validation_timestamp": null,
+    "pwd_verified_timestamp": "2025-11-16 17:45:00",
+    "pwd_verification_count": 1
+  }
+}

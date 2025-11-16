@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+.venv
+*.egg-info/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets
+.env
+*.pem
+*.key
+credentials.json
+
+# Build artifacts
+dist/
+build/
+*.egg
+
+# Test coverage
+.coverage
+htmlcov/
+
+# RAG embeddings (large files)
+context/embeddings/*.pkl
+
+# Logs
+*.log
+
+# Temporary audio/MIDI files for testing
+*.wav
+*.mid
+*.midi
+
+# Allow specific test files if needed
+!test_files/*.wav
+!test_files/*.mid
