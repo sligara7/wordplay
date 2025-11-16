@@ -1,0 +1,83 @@
+{
+  "template_version": "1.1",
+  "registry_version": "1.0",
+  "system_name": "audio_to_midi_transcription",
+  "creation_date": "2025-11-16",
+  "interfaces": {
+    "audio_to_midi_transcription": {
+      "spectral_to_graph": {
+        "interface_type": "data_contract",
+        "communication_pattern": "synchronous",
+        "auth_required": false,
+        "description": "Spectral analyzer outputs 2D numpy array consumed by graph builder",
+        "provider": "spectral_analyzer",
+        "consumer": "audio_graph_builder",
+        "data_format": "numpy.ndarray [frequency_index, time_index] = amplitude"
+      },
+      "graph_to_harmonic": {
+        "interface_type": "data_contract",
+        "communication_pattern": "synchronous",
+        "auth_required": false,
+        "description": "Graph builder outputs NetworkX graph consumed by harmonic analyzer",
+        "provider": "audio_graph_builder",
+        "consumer": "harmonic_analyzer",
+        "data_format": "networkx.MultiDiGraph with temporal and harmonic edges"
+      },
+      "fundamentals_to_onset": {
+        "interface_type": "data_contract",
+        "communication_pattern": "synchronous",
+        "auth_required": false,
+        "description": "Harmonic analyzer outputs fundamental notes consumed by onset detector",
+        "provider": "harmonic_analyzer",
+        "consumer": "onset_detector",
+        "data_format": "List[Dict] with keys: node_id, frequency, note, intensity, time_seconds, confidence"
+      },
+      "graph_to_onset": {
+        "interface_type": "data_contract",
+        "communication_pattern": "synchronous",
+        "auth_required": false,
+        "description": "Graph builder outputs graph also consumed by onset detector for temporal flow analysis",
+        "provider": "audio_graph_builder",
+        "consumer": "onset_detector",
+        "data_format": "networkx.MultiDiGraph"
+      },
+      "onsets_to_midi": {
+        "interface_type": "data_contract",
+        "communication_pattern": "synchronous",
+        "auth_required": false,
+        "description": "Onset detector outputs note events consumed by MIDI generator",
+        "provider": "onset_detector",
+        "consumer": "midi_generator",
+        "data_format": "List[Dict] with keys: onset_time_seconds, duration_seconds, velocity, note_name, midi_note"
+      },
+      "midi_to_filesystem": {
+        "interface_type": "data_contract",
+        "communication_pattern": "synchronous",
+        "auth_required": false,
+        "description": "MIDI generator writes output file to filesystem",
+        "provider": "midi_generator",
+        "consumer": "filesystem",
+        "data_format": "Standard MIDI File (.mid)"
+      },
+      "orchestrator_coordination": {
+        "interface_type": "service_dependency",
+        "communication_pattern": "synchronous",
+        "auth_required": false,
+        "description": "Pipeline orchestrator coordinates all components in sequence",
+        "provider": "pipeline_orchestrator",
+        "consumer": "all_components",
+        "data_format": "Python function calls"
+      }
+    }
+  },
+  "internal_only_services": {
+    "description": "All services are internal (CLI tool, no external API)",
+    "services": {
+      "audio_to_midi_transcription": {
+        "internal_only": true,
+        "justification": "CLI tool with no network exposure",
+        "security_boundary": "local_filesystem"
+      }
+    }
+  }
+}

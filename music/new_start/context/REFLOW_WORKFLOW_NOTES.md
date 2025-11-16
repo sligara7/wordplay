@@ -136,6 +136,25 @@ Track what works well and what doesn't in the reflow workflow to help improve th
   - Dependencies identified
   - Validation criteria established
 
+#### BU-05: Integration Architecture Design
+- **Template exists**: service_architecture_template.json provides good structure
+- **Template designed for microservices**: Template assumes HTTP endpoints, ports, Docker deployment
+  - Our system is a CLI tool (not web service), so many fields don't apply
+  - Adapted template appropriately for Python module architecture
+- **Interface registry format**: interface_registry.json has specific nested structure
+  - Format: `{"interfaces": {"service_id": {"interface_name": {...}}}}`
+  - NOT an array as one might initially assume
+  - Template documentation at line 69-80 of interface_registry_enhanced_template.json is helpful
+- **Validation tool is excellent**: validate_architecture.py provides clear, actionable feedback
+  - First iteration: "interfaces missing from registry" → created interface_registry.json
+  - Second iteration: "auth_required mismatch" → added auth_required: false to service architecture
+  - Third iteration: ✅ VALIDATION PASSED
+  - Error messages are specific and helpful
+  - Iterative fix loop works well
+- **Value of validation**: Catching interface mismatches at architecture time prevents integration bugs later
+- **Symlink requirement**: Need to create symlink from service_architecture.json to versioned file
+  - This supports versioning and rollback
+
 ---
 
 ## Notes to be Added as Workflow Progresses
