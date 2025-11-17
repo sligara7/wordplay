@@ -190,6 +190,49 @@ Track what works well and what doesn't in the reflow workflow to help improve th
   - Easy to assess compliance
   - Provides good checklist for validation
 
+#### SE-01: Functional Allocation (CONDITIONAL - SKIPPED)
+- **Step is conditional**: Only runs if functional architecture exists from workflow 01d
+  - Checked for `specs/functional/functional_architecture.json` → does not exist
+  - Workflow explicitly states: "Skip this step entirely and proceed to SE-02"
+- **Clear skip condition**: Workflow provides explicit guidance on when to skip
+  - "if_functional_architecture_missing": "Skip this step entirely and proceed to SE-02"
+  - No ambiguity about what to do
+- **Bottom-up vs top-down difference**:
+  - Top-down (01d): Start with functional requirements → functional architecture → allocate to services
+  - Bottom-up (01b): Start with existing components → identify gaps → create architecture
+  - Functional allocation is only relevant when you've done functional analysis first
+- **Documentation is clear**: Workflow metadata explains the conditional nature well
+- **Decision**: Proceeding directly to SE-02 as instructed
+
+#### SE-02: Service Architecture Specification
+- **Significant redundancy with BU-05**: Many SE-02 actions already completed in bottom-up workflow
+  - SE-02-A01 (service_architecture.json) - ✅ Already done in BU-05
+  - SE-02-A03 (interface_registry.json) - ✅ Already done in BU-05
+  - This creates some inefficiency in the workflow
+- **Format validation tool is excellent**: `validate_architecture_format.py`
+  - Clear command-line interface with --mode service flag
+  - Specific error messages pointing to exact issues
+  - Validation passed with 15 non-blocking warnings (interface_id and type fields recommended)
+  - Prevents SE-06 reformatting loops (critical issue mentioned in workflow docs)
+- **Conditional actions are well-documented**: Clear criteria for which actions apply
+  - A04 (port registry): Only for network services → ❌ Skip (CLI tool)
+  - A05 (security): Only for user-facing systems → ❌ Skip (CLI tool)
+  - A06 (deployment): Only for IT systems → ❌ Skip (CLI tool, minimal deployment needs)
+  - A07 (UX/API): Only for user-facing/API systems → ❌ Skip (CLI tool)
+  - A08 (operational environment): For production systems → ⏭️ Could be relevant for testing
+  - A09 (testing objectives): New feature (v3.6.0), applies to all frameworks → ⏭️ Relevant
+  - A10 (risk assessment): New feature (v3.6.0), applies to all frameworks → ⏭️ Relevant
+- **Workflow designed for top-down approach**: SE-02 assumes you're creating architectures from scratch
+  - Bottom-up already created them in BU-05
+  - **Improvement needed**: Workflow should acknowledge that bottom-up users can skip/fast-track SE-02-A01 and A03
+  - Or: BU-05 could skip architecture creation and defer to SE-02
+  - Current state: redundant work between BU-05 and SE-02
+- **Detailed structure requirements prevent issues**: MANDATORY_STRUCTURE_REQUIREMENTS section is comprehensive
+  - Clear examples of correct vs incorrect structure
+  - Pre-creation checklist
+  - Emphasis on validating immediately (not deferring to SE-06)
+  - This level of detail is helpful for preventing common mistakes
+
 ---
 
 ## Notes to be Added as Workflow Progresses

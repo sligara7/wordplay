@@ -110,7 +110,9 @@
   "dependencies": [],
   "interfaces": [
     {
+      "interface_id": "spectral_to_graph",
       "name": "spectral_to_graph",
+      "type": "internal",
       "interface_type": "data_contract",
       "communication_pattern": "synchronous",
       "dependency_type": "direct",
@@ -123,7 +125,9 @@
       "source_verification": "Based on actual source code"
     },
     {
+      "interface_id": "graph_to_harmonic",
       "name": "graph_to_harmonic",
+      "type": "internal",
       "interface_type": "data_contract",
       "communication_pattern": "synchronous",
       "dependency_type": "direct",
@@ -136,7 +140,9 @@
       "source_verification": "Based on actual source code"
     },
     {
+      "interface_id": "fundamentals_to_onset",
       "name": "fundamentals_to_onset",
+      "type": "internal",
       "interface_type": "data_contract",
       "communication_pattern": "synchronous",
       "dependency_type": "direct",
@@ -149,7 +155,9 @@
       "source_verification": "Recommended solution from component delta analysis"
     },
     {
+      "interface_id": "graph_to_onset",
       "name": "graph_to_onset",
+      "type": "internal",
       "interface_type": "data_contract",
       "communication_pattern": "synchronous",
       "dependency_type": "direct",
@@ -162,7 +170,9 @@
       "source_verification": "Recommended solution from component delta analysis"
     },
     {
+      "interface_id": "onsets_to_midi",
       "name": "onsets_to_midi",
+      "type": "internal",
       "interface_type": "data_contract",
       "communication_pattern": "synchronous",
       "dependency_type": "direct",
@@ -175,7 +185,9 @@
       "source_verification": "Recommended solution from component delta analysis"
     },
     {
+      "interface_id": "midi_to_filesystem",
       "name": "midi_to_filesystem",
+      "type": "internal",
       "interface_type": "data_contract",
       "communication_pattern": "synchronous",
       "dependency_type": "direct",
@@ -188,7 +200,9 @@
       "source_verification": "Recommended solution from component delta analysis"
     },
     {
+      "interface_id": "orchestrator_coordination",
       "name": "orchestrator_coordination",
+      "type": "internal",
       "interface_type": "service_dependency",
       "communication_pattern": "synchronous",
       "dependency_type": "direct",
