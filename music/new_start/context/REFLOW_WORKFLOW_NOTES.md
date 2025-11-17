@@ -233,6 +233,22 @@ Track what works well and what doesn't in the reflow workflow to help improve th
   - Emphasis on validating immediately (not deferring to SE-06)
   - This level of detail is helpful for preventing common mistakes
 
+#### SE-03: Constraints & Template Validation
+- **Validation passed immediately**: 0 issues found
+  - All checks passed: directory_structure, interface_consistency, resource_isolation, dependency_cycles
+  - No rework needed (validation done correctly in BU-05 and SE-02)
+- **Step is mostly redundant for bottom-up**: We already ran validate_architecture.py in BU-05
+  - BU-05 created architecture with validation
+  - SE-02 refined and re-validated
+  - SE-03 validates again (3rd validation of same artifacts)
+  - **Improvement needed**: For bottom-up workflow, SE-03 could be fast-tracked or merged with BU-06
+- **Constraint validation is manual**: SE-03-A02 checks technical, deployment, security, performance constraints
+  - For our CLI tool: No deployment constraints (local execution), minimal security constraints
+  - Constraints are implicitly validated through architecture choices (Python 3.8+, NetworkX, mido)
+- **Step file is minimal**: Only 42 lines, very simple compared to other steps
+  - Primarily points to validate_architecture.py tool
+  - No complex workflows or conditional logic
+
 ---
 
 ## Notes to be Added as Workflow Progresses
