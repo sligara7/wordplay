@@ -92,15 +92,19 @@ Track what works well and what doesn't in the reflow workflow to help improve th
 - ✅ 00a-basic_setup (S-01, S-02, S-03)
 - ✅ BU-01: Component Inventory
 - ✅ BU-02: Integration Requirements
+- ✅ BU-03: Integration Gap Analysis
+- ✅ BU-04: Component Delta Analysis
+- ✅ BU-05: Integration Architecture Design
+- ✅ BU-06: Validation & Verification (G-BU-06 PASSED)
 
-**In Progress**:
-- 🔄 BU-03: Integration Gap Analysis
+**Next Decision Point**:
+- **Option A**: Continue with full workflow (SE-01: Functional Allocation, then SE-02 through SE-06)
+- **Option B**: Skip to implementation (implement 3 missing components using delta specifications)
 
-**Upcoming**:
-- ⏭️ BU-04: Component Delta Analysis
-- ⏭️ BU-05: Integration Architecture Design
-- ⏭️ BU-06: Validation & Verification
-- ⏭️ SE-02 through SE-06
+**Upcoming** (if Option A):
+- ⏭️ SE-01: Functional Allocation
+- ⏭️ SE-02: Service Architecture Specification
+- ⏭️ SE-03 through SE-06
 
 ---
 
@@ -154,6 +158,37 @@ Track what works well and what doesn't in the reflow workflow to help improve th
 - **Value of validation**: Catching interface mismatches at architecture time prevents integration bugs later
 - **Symlink requirement**: Need to create symlink from service_architecture.json to versioned file
   - This supports versioning and rollback
+
+#### BU-06: Validation & Verification
+- **Tool: system_of_systems_graph_v2.py works well**: Generated graph successfully from index.json
+  - Clear command-line interface: `python3 tool.py /path/to/index.json`
+  - Good error messages when path was wrong
+  - Output includes metadata (framework, node/edge counts, generation date)
+- **Path format in index.json**: Paths must be relative from system root, not from specs/machine
+  - Initial error: Used `service_arch/...` → file not found
+  - Fix: Changed to `specs/machine/service_arch/...` → success
+  - Template wasn't clear about this, could benefit from explicit examples
+- **Single-service system graph**: Graph has 1 node (our service), 0 edges (no inter-service dependencies)
+  - This is correct for CLI tool with internal component architecture
+  - All internal interfaces are embedded in the node's raw data
+- **version_manifest.json template is comprehensive**: Covers version tracking, rollback procedures, mixed-version testing
+  - Template provided excellent guidance
+  - Added custom fields for bottom-up workflow tracking (component_deltas, validation_history, implementation_status)
+  - Template supports complex versioning scenarios (may be overkill for simple systems, but good to have)
+- **validate_component_deltas.py tool limitation**: Tool doesn't support bottom-up workflow
+  - Error: "Component not found in inventory" for all 3 new components
+  - Root cause: Tool expects components to exist in codebase, checks for source files
+  - Our workflow: Components exist in inventory with status="not_started", but no source files yet
+  - Workaround: Manual feasibility assessment documented in INTEGRATION_VALIDATION_REPORT.md
+  - **Improvement needed**: Tool should handle bottom-up case where components are in inventory but not yet implemented
+- **Quality gate validation is manual**: No automated G-BU-06 quality gate checker
+  - Had to manually verify each criterion
+  - Created INTEGRATION_VALIDATION_REPORT.md to document quality gate compliance
+  - Would be helpful to have automated checker that reads quality gate criteria from workflow JSON
+- **Clear quality gate criteria**: G-BU-06 criteria are well-defined and checkable
+  - Each criterion has clear pass/fail conditions
+  - Easy to assess compliance
+  - Provides good checklist for validation
 
 ---
 

@@ -1,0 +1,120 @@
+{
+  "template_version": "1.0.0",
+  "system_name": "audio_to_midi_transcription",
+  "description": "Version tracking for audio-to-MIDI transcription system architecture artifacts",
+  "created_date": "2025-11-16",
+  "services": {
+    "audio_to_midi_transcription": {
+      "latest_version": "v1.0.0-20251116",
+      "versions": [
+        {
+          "version": "v1.0.0-20251116",
+          "architecture_file": "service_architecture_v1.0.0-20251116.json",
+          "documentation_files": [
+            "docs/SYSTEM_MISSION_STATEMENT.md",
+            "docs/USER_SCENARIOS.md",
+            "docs/SUCCESS_CRITERIA.md",
+            "docs/COMPONENT_INVENTORY_SUMMARY.md",
+            "docs/COMPONENT_DELTAS_SUMMARY.md"
+          ],
+          "created_date": "2025-11-16",
+          "change_type": "initial",
+          "description": "Initial architecture definition via reflow bottom-up integration workflow. Includes 3 existing components (spectral_analyzer, audio_graph_builder, harmonic_analyzer) and specifications for 3 missing components (onset_detector, midi_generator, pipeline_orchestrator). Architecture validated with 0 critical issues.",
+          "author": "Claude Sonnet 4.5 (reflow workflow)",
+          "breaking_changes": false,
+          "workflow": "01b-bottom_up_integration",
+          "workflow_steps_completed": [
+            "BU-01: Component Inventory",
+            "BU-02: Integration Requirements",
+            "BU-03: Integration Gap Analysis",
+            "BU-04: Component Delta Analysis",
+            "BU-05: Integration Architecture Design",
+            "BU-06: Validation & Verification"
+          ]
+        }
+      ]
+    }
+  },
+  "version_indexes": [
+    {
+      "name": "latest",
+      "file": "index.json",
+      "description": "Points to latest version (v1.0.0-20251116) of audio_to_midi_transcription service via symlink",
+      "created_date": "2025-11-16",
+      "is_default": true
+    }
+  ],
+  "system_graphs": [
+    {
+      "version": "latest",
+      "file": "graphs/system_of_systems_graph.json",
+      "index_used": "index.json",
+      "generated_date": "2025-11-16",
+      "tool_version": "system_of_systems_graph_v2.py v2.0",
+      "is_default": true,
+      "metadata": {
+        "framework": "UAF 1.2",
+        "num_nodes": 1,
+        "num_edges": 0,
+        "note": "Single service system with internal component architecture"
+      }
+    }
+  ],
+  "component_deltas": {
+    "description": "Detailed specifications for components not yet implemented",
+    "files": [
+      {
+        "component": "onset_detector",
+        "file": "component_deltas/onset_detector_delta.json",
+        "status": "not_started",
+        "estimated_effort": "12-16 hours",
+        "priority": 1
+      },
+      {
+        "component": "midi_generator",
+        "file": "component_deltas/midi_generator_delta.json",
+        "status": "not_started",
+        "estimated_effort": "8-12 hours",
+        "priority": 2
+      },
+      {
+        "component": "pipeline_orchestrator",
+        "file": "component_deltas/pipeline_orchestrator_delta.json",
+        "status": "not_started",
+        "estimated_effort": "6-8 hours",
+        "priority": 3
+      }
+    ],
+    "total_estimated_effort": "26-36 hours (plus 8-12 hours for testing)"
+  },
+  "interface_registry": {
+    "file": "interface_registry.json",
+    "version": "1.0",
+    "created_date": "2025-11-16",
+    "total_interfaces": 7,
+    "note": "Central catalog of all data contracts between pipeline components"
+  },
+  "validation_history": [
+    {
+      "date": "2025-11-16",
+      "tool": "validate_architecture.py",
+      "result": "PASS",
+      "checks": {
+        "directory_structure": "pass",
+        "interface_consistency": "pass",
+        "resource_isolation": "pass",
+        "dependency_cycles": "pass"
+      },
+      "issues_found": 0,
+      "critical_issues": 0
+    }
+  ],
+  "implementation_status": "recommended",
+  "next_steps": [
+    "Implement onset_detector component (GAP-001)",
+    "Implement midi_generator component (GAP-002)",
+    "Implement pipeline_orchestrator component (GAP-003)",
+    "Create comprehensive test suite (400-550 lines)",
+    "Validate end-to-end WAV → MIDI transcription"
+  ]
+}

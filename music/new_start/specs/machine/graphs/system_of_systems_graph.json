@@ -1,0 +1,438 @@
+{
+  "metadata": {
+    "generated": "2025-11-16T18:55:57.478165",
+    "framework": "UAF 1.2",
+    "framework_id": "uaf",
+    "component_term": "service",
+    "connection_term": "interface",
+    "num_nodes": 1,
+    "num_edges": 0,
+    "tool_version": "2.0"
+  },
+  "graph": {
+    "directed": true,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+      {
+        "name": "audio_to_midi_transcription",
+        "type": null,
+        "functions": [],
+        "interfaces": [
+          {
+            "name": "spectral_to_graph",
+            "interface_type": "data_contract",
+            "communication_pattern": "synchronous",
+            "dependency_type": "direct",
+            "auth_required": false,
+            "description": "Spectral analyzer outputs 2D numpy array consumed by graph builder",
+            "producer": "spectral_analyzer",
+            "consumer": "audio_graph_builder",
+            "data_format": "numpy.ndarray [frequency_index, time_index] = amplitude",
+            "implementation_status": "existing",
+            "source_verification": "Based on actual source code"
+          },
+          {
+            "name": "graph_to_harmonic",
+            "interface_type": "data_contract",
+            "communication_pattern": "synchronous",
+            "dependency_type": "direct",
+            "auth_required": false,
+            "description": "Graph builder outputs NetworkX graph consumed by harmonic analyzer",
+            "producer": "audio_graph_builder",
+            "consumer": "harmonic_analyzer",
+            "data_format": "networkx.MultiDiGraph with temporal and harmonic edges",
+            "implementation_status": "existing",
+            "source_verification": "Based on actual source code"
+          },
+          {
+            "name": "fundamentals_to_onset",
+            "interface_type": "data_contract",
+            "communication_pattern": "synchronous",
+            "dependency_type": "direct",
+            "auth_required": false,
+            "description": "Harmonic analyzer outputs fundamental notes consumed by onset detector",
+            "producer": "harmonic_analyzer",
+            "consumer": "onset_detector",
+            "data_format": "List[Dict] with keys: node_id, frequency, note, intensity, time_seconds, confidence",
+            "implementation_status": "recommended",
+            "source_verification": "Recommended solution from component delta analysis"
+          },
+          {
+            "name": "graph_to_onset",
+            "interface_type": "data_contract",
+            "communication_pattern": "synchronous",
+            "dependency_type": "direct",
+            "auth_required": false,
+            "description": "Graph builder outputs graph also consumed by onset detector for temporal flow analysis",
+            "producer": "audio_graph_builder",
+            "consumer": "onset_detector",
+            "data_format": "networkx.MultiDiGraph",
+            "implementation_status": "recommended",
+            "source_verification": "Recommended solution from component delta analysis"
+          },
+          {
+            "name": "onsets_to_midi",
+            "interface_type": "data_contract",
+            "communication_pattern": "synchronous",
+            "dependency_type": "direct",
+            "auth_required": false,
+            "description": "Onset detector outputs note events consumed by MIDI generator",
+            "producer": "onset_detector",
+            "consumer": "midi_generator",
+            "data_format": "List[Dict] with keys: onset_time_seconds, duration_seconds, velocity, note_name, midi_note",
+            "implementation_status": "recommended",
+            "source_verification": "Recommended solution from component delta analysis"
+          },
+          {
+            "name": "midi_to_filesystem",
+            "interface_type": "data_contract",
+            "communication_pattern": "synchronous",
+            "dependency_type": "direct",
+            "auth_required": false,
+            "description": "MIDI generator writes output file to filesystem",
+            "producer": "midi_generator",
+            "consumer": "filesystem",
+            "data_format": "Standard MIDI file (.mid)",
+            "implementation_status": "recommended",
+            "source_verification": "Recommended solution from component delta analysis"
+          },
+          {
+            "name": "orchestrator_coordination",
+            "interface_type": "service_dependency",
+            "communication_pattern": "synchronous",
+            "dependency_type": "direct",
+            "auth_required": false,
+            "description": "Pipeline orchestrator coordinates all components in sequence",
+            "producer": "pipeline_orchestrator",
+            "consumer": "all_components",
+            "data_format": "Python function calls",
+            "implementation_status": "recommended",
+            "source_verification": "Recommended solution from component delta analysis"
+          }
+        ],
+        "dependencies": [],
+        "raw": {
+          "$schema": "../../templates/schemas/service_architecture_schema.json",
+          "template_version": "1.1",
+          "service_name": "audio_to_midi_transcription",
+          "service_id": "audio_to_midi_transcription",
+          "hierarchical_tier": "tier_1_systems",
+          "component_classification": "service",
+          "purpose": "Graph-based audio-to-MIDI transcription system using spectral analysis and NetworkX algorithms",
+          "components": [
+            {
+              "component_id": "spectral_analyzer",
+              "component_name": "Spectral Analyzer",
+              "component_type": "input_processor",
+              "purpose": "Performs Fourier-like spectral analysis on WAV audio files",
+              "implementation_status": "existing",
+              "source_file": "spectral_analyzer.py",
+              "main_class": "SpectralAnalyzer",
+              "key_methods": [
+                "dotop(signal) -> np.ndarray"
+              ],
+              "dependencies": [
+                "numpy",
+                "scipy",
+                "matplotlib"
+              ]
+            },
+            {
+              "component_id": "audio_graph_builder",
+              "component_name": "Audio Graph Builder",
+              "component_type": "graph_constructor",
+              "purpose": "Converts spectral data into NetworkX directed graph with temporal and harmonic edges",
+              "implementation_status": "existing",
+              "source_file": "audio_graph_builder.py",
+              "main_class": "AudioGraphBuilder",
+              "key_methods": [
+                "build_graph() -> nx.MultiDiGraph"
+              ],
+              "dependencies": [
+                "networkx",
+                "numpy"
+              ]
+            },
+            {
+              "component_id": "harmonic_analyzer",
+              "component_name": "Harmonic Analyzer",
+              "component_type": "analyzer",
+              "purpose": "Uses community detection to identify fundamental frequencies from harmonics",
+              "implementation_status": "existing",
+              "source_file": "harmonic_analyzer.py",
+              "main_class": "HarmonicAnalyzer",
+              "key_methods": [
+                "analyze_all_time_samples() -> Dict[int, List[Dict]]",
+                "filter_noise() -> List[Dict]"
+              ],
+              "dependencies": [
+                "networkx",
+                "numpy"
+              ]
+            },
+            {
+              "component_id": "onset_detector",
+              "component_name": "Onset Detector",
+              "component_type": "analyzer",
+              "purpose": "Detects note onsets using temporal flow analysis",
+              "implementation_status": "recommended",
+              "source_file": "onset_detector.py",
+              "main_class": "OnsetDetector",
+              "key_methods": [
+                "detect_onsets(fundamentals) -> List[Dict]"
+              ],
+              "dependencies": [
+                "networkx",
+                "numpy"
+              ],
+              "delta_reference": "specs/machine/component_deltas/onset_detector_delta.json"
+            },
+            {
+              "component_id": "midi_generator",
+              "component_name": "MIDI Generator",
+              "component_type": "output_generator",
+              "purpose": "Converts detected note events to standard MIDI file format",
+              "implementation_status": "recommended",
+              "source_file": "midi_generator.py",
+              "main_class": "MidiGenerator",
+              "key_methods": [
+                "generate_midi(note_events, output_path) -> str"
+              ],
+              "dependencies": [
+                "mido"
+              ],
+              "delta_reference": "specs/machine/component_deltas/midi_generator_delta.json"
+            },
+            {
+              "component_id": "pipeline_orchestrator",
+              "component_name": "Pipeline Orchestrator",
+              "component_type": "orchestrator",
+              "purpose": "Coordinates all components and provides CLI interface",
+              "implementation_status": "recommended",
+              "source_file": "audio_to_midi_pipeline.py",
+              "main_function": "transcribe(wav_path, output_path, **options)",
+              "cli_entry": "main()",
+              "dependencies": [
+                "argparse",
+                "scipy",
+                "all pipeline components"
+              ],
+              "delta_reference": "specs/machine/component_deltas/pipeline_orchestrator_delta.json"
+            }
+          ],
+          "dependencies": [],
+          "interfaces": [
+            {
+              "name": "spectral_to_graph",
+              "interface_type": "data_contract",
+              "communication_pattern": "synchronous",
+              "dependency_type": "direct",
+              "auth_required": false,
+              "description": "Spectral analyzer outputs 2D numpy array consumed by graph builder",
+              "producer": "spectral_analyzer",
+              "consumer": "audio_graph_builder",
+              "data_format": "numpy.ndarray [frequency_index, time_index] = amplitude",
+              "implementation_status": "existing",
+              "source_verification": "Based on actual source code"
+            },
+            {
+              "name": "graph_to_harmonic",
+              "interface_type": "data_contract",
+              "communication_pattern": "synchronous",
+              "dependency_type": "direct",
+              "auth_required": false,
+              "description": "Graph builder outputs NetworkX graph consumed by harmonic analyzer",
+              "producer": "audio_graph_builder",
+              "consumer": "harmonic_analyzer",
+              "data_format": "networkx.MultiDiGraph with temporal and harmonic edges",
+              "implementation_status": "existing",
+              "source_verification": "Based on actual source code"
+            },
+            {
+              "name": "fundamentals_to_onset",
+              "interface_type": "data_contract",
+              "communication_pattern": "synchronous",
+              "dependency_type": "direct",
+              "auth_required": false,
+              "description": "Harmonic analyzer outputs fundamental notes consumed by onset detector",
+              "producer": "harmonic_analyzer",
+              "consumer": "onset_detector",
+              "data_format": "List[Dict] with keys: node_id, frequency, note, intensity, time_seconds, confidence",
+              "implementation_status": "recommended",
+              "source_verification": "Recommended solution from component delta analysis"
+            },
+            {
+              "name": "graph_to_onset",
+              "interface_type": "data_contract",
+              "communication_pattern": "synchronous",
+              "dependency_type": "direct",
+              "auth_required": false,
+              "description": "Graph builder outputs graph also consumed by onset detector for temporal flow analysis",
+              "producer": "audio_graph_builder",
+              "consumer": "onset_detector",
+              "data_format": "networkx.MultiDiGraph",
+              "implementation_status": "recommended",
+              "source_verification": "Recommended solution from component delta analysis"
+            },
+            {
+              "name": "onsets_to_midi",
+              "interface_type": "data_contract",
+              "communication_pattern": "synchronous",
+              "dependency_type": "direct",
+              "auth_required": false,
+              "description": "Onset detector outputs note events consumed by MIDI generator",
+              "producer": "onset_detector",
+              "consumer": "midi_generator",
+              "data_format": "List[Dict] with keys: onset_time_seconds, duration_seconds, velocity, note_name, midi_note",
+              "implementation_status": "recommended",
+              "source_verification": "Recommended solution from component delta analysis"
+            },
+            {
+              "name": "midi_to_filesystem",
+              "interface_type": "data_contract",
+              "communication_pattern": "synchronous",
+              "dependency_type": "direct",
+              "auth_required": false,
+              "description": "MIDI generator writes output file to filesystem",
+              "producer": "midi_generator",
+              "consumer": "filesystem",
+              "data_format": "Standard MIDI file (.mid)",
+              "implementation_status": "recommended",
+              "source_verification": "Recommended solution from component delta analysis"
+            },
+            {
+              "name": "orchestrator_coordination",
+              "interface_type": "service_dependency",
+              "communication_pattern": "synchronous",
+              "dependency_type": "direct",
+              "auth_required": false,
+              "description": "Pipeline orchestrator coordinates all components in sequence",
+              "producer": "pipeline_orchestrator",
+              "consumer": "all_components",
+              "data_format": "Python function calls",
+              "implementation_status": "recommended",
+              "source_verification": "Recommended solution from component delta analysis"
+            }
+          ],
+          "is_external": false,
+          "parent_system": "wordplay",
+          "security": {
+            "api_key_authentication": false,
+            "ssl_tls": false,
+            "additional_requirements": [
+              "File system access for reading WAV files",
+              "File system access for writing MIDI files"
+            ]
+          },
+          "deployment": {
+            "ansible_managed": false,
+            "systemd_service": false,
+            "python_uvicorn": false,
+            "docker_container": false,
+            "deployment_type": "cli_tool",
+            "python_version": "3.8+",
+            "installation": "pip install -r requirements.txt",
+            "execution": "python audio_to_midi_pipeline.py INPUT.wav [OPTIONS]",
+            "ports": {
+              "note": "CLI tool - no network ports required"
+            },
+            "additional_info": {
+              "packaging": "Python package with command-line entry point",
+              "distribution": "GitHub repository or PyPI package"
+            }
+          },
+          "performance": {
+            "expected_load": "single-user CLI tool",
+            "scaling_strategy": "none (processes one file at a time)",
+            "resource_requirements": {
+              "memory": "< 500MB for 3-minute audio file",
+              "cpu": "single-threaded (no parallelization in MVP)",
+              "disk": "minimal (only MIDI output, no intermediate files)",
+              "processing_time": "< 3x audio duration"
+            }
+          },
+          "data_flow": {
+            "pipeline_stages": [
+              {
+                "stage": 1,
+                "component": "spectral_analyzer",
+                "input": "WAV file from filesystem",
+                "output": "2D frequency-time-intensity array",
+                "processing": "Fourier-like spectral decomposition"
+              },
+              {
+                "stage": 2,
+                "component": "audio_graph_builder",
+                "input": "Spectral data array",
+                "output": "NetworkX MultiDiGraph",
+                "processing": "Graph construction with temporal/harmonic edges"
+              },
+              {
+                "stage": 3,
+                "component": "harmonic_analyzer",
+                "input": "NetworkX graph",
+                "output": "List of fundamental notes with confidence scores",
+                "processing": "Community detection and harmonic filtering"
+              },
+              {
+                "stage": 4,
+                "component": "onset_detector",
+                "input": "Fundamentals + graph",
+                "output": "Note events with timing and velocity",
+                "processing": "Temporal flow analysis for onset detection"
+              },
+              {
+                "stage": 5,
+                "component": "midi_generator",
+                "input": "Note events",
+                "output": "MIDI file",
+                "processing": "Convert to standard MIDI format"
+              }
+            ]
+          },
+          "version": "1.0.0-20251116",
+          "source_references": {
+            "github_repo": "https://github.com/sligara7/wordplay",
+            "documentation_links": [
+              "docs/AUDIO_TRANSCRIPTION.md",
+              "docs/COMPONENT_INVENTORY_SUMMARY.md",
+              "docs/COMPONENT_DELTAS_SUMMARY.md"
+            ],
+            "analysis_date": "2025-11-16",
+            "confidence_level": "high"
+          },
+          "implementation_status": "recommended",
+          "verification_notes": "Based on actual source code analysis for existing components (spectral_analyzer, audio_graph_builder, harmonic_analyzer) and detailed component delta specifications for missing components (onset_detector, midi_generator, pipeline_orchestrator). All interfaces and data flows derived from integration requirements analysis.",
+          "justification": {
+            "rationale": "Bottom-up integration approach starting from proven spectral analysis component. Graph-based approach using NetworkX provides interpretable results and extensibility. Pipeline architecture is linear and straightforward (DAG), making it easy to understand, test, and maintain.",
+            "alternatives_considered": [
+              {
+                "alternative": "Machine learning approach (CNN for onset detection, RNN for note transcription)",
+                "rejected_because": "Requires large training datasets, less interpretable, harder to debug. Graph-based approach provides transparency into analysis decisions."
+              },
+              {
+                "alternative": "Traditional DSP approach (peak picking, pitch tracking)",
+                "rejected_because": "Less robust to polyphonic music, harder to separate harmonics from fundamentals. Community detection provides superior harmonic analysis."
+              }
+            ],
+            "benefits": [
+              "Interpretable results via graph analysis",
+              "Extensible (easy to add new edge types or analysis algorithms)",
+              "No ML training data required",
+              "Modular design enables independent testing",
+              "Clear data flow (DAG pipeline)"
+            ],
+            "risks": [
+              "Processing speed may be slower than real-time for long files",
+              "Accuracy depends on parameter tuning (thresholds, confidence levels)",
+              "Untested on highly polyphonic music (>5 simultaneous instruments)"
+            ]
+          }
+        },
+        "id": "audio_to_midi_transcription"
+      }
+    ],
+    "links": []
+  }
+}
