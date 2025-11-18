@@ -1,0 +1,148 @@
+
+Testing real audio chord detection on: /home/ajs7/project/wordplay/music/new_start/wav_file/andy_song_2.wav
+
+================================================================================
+REAL AUDIO CHORD DETECTION
+================================================================================
+
+File: /home/ajs7/project/wordplay/music/new_start/wav_file/andy_song_2.wav
+
+1. Loading audio file...
+   Duration: 220.23 seconds
+   Sample rate: 44100 Hz
+   Samples: 9712332
+
+2. Loading PSF templates...
+Loading templates from: multi_octave_psf_templates.pkl
+✓ Loaded 660 templates
+  Sample rate: 44100 Hz
+  Cycles: 4
+  Octaves: [2, 3, 4, 5, 6]
+  Chord types: 11
+  Root notes: 12
+
+3. Initializing detector...
+FastMHTChordDetector initialized:
+  Templates: 660
+  Frequencies: 1081
+  Threshold: 6.5
+  Outlier removal: True
+
+4. Initializing spectral analyzer...
+
+5. Detecting chords over time...
+
+Analyzing audio...
+  Duration: 220.23 seconds
+  Sample rate: 44100 Hz
+  Hop size: 0.1 sec (100 ms)
+  Window size: 0.145 sec (6415 samples)
+  Hop samples: 4410
+  Number of windows: 2200
+
+  Progress: 50/2200 windows (2.3%) - 8.7 windows/sec
+  Progress: 100/2200 windows (4.5%) - 14.1 windows/sec
+  Progress: 150/2200 windows (6.8%) - 16.9 windows/sec
+  Progress: 200/2200 windows (9.1%) - 19.2 windows/sec
+  Progress: 250/2200 windows (11.4%) - 20.9 windows/sec
+  Progress: 300/2200 windows (13.6%) - 22.1 windows/sec
+  Progress: 350/2200 windows (15.9%) - 23.3 windows/sec
+  Progress: 400/2200 windows (18.2%) - 24.3 windows/sec
+  Progress: 450/2200 windows (20.5%) - 24.8 windows/sec
+  Progress: 500/2200 windows (22.7%) - 25.2 windows/sec
+  Progress: 550/2200 windows (25.0%) - 25.7 windows/sec
+  Progress: 600/2200 windows (27.3%) - 26.1 windows/sec
+  Progress: 650/2200 windows (29.5%) - 26.5 windows/sec
+  Progress: 700/2200 windows (31.8%) - 26.5 windows/sec
+  Progress: 750/2200 windows (34.1%) - 26.6 windows/sec
+  Progress: 800/2200 windows (36.4%) - 26.9 windows/sec
+  Progress: 850/2200 windows (38.6%) - 27.0 windows/sec
+  Progress: 900/2200 windows (40.9%) - 27.4 windows/sec
+  Progress: 950/2200 windows (43.2%) - 27.5 windows/sec
+  Progress: 1000/2200 windows (45.5%) - 27.6 windows/sec
+  Progress: 1050/2200 windows (47.7%) - 27.6 windows/sec
+  Progress: 1100/2200 windows (50.0%) - 27.7 windows/sec
+  Progress: 1150/2200 windows (52.3%) - 27.7 windows/sec
+  Progress: 1200/2200 windows (54.5%) - 27.8 windows/sec
+  Progress: 1250/2200 windows (56.8%) - 28.0 windows/sec
+  Progress: 1300/2200 windows (59.1%) - 27.9 windows/sec
+  Progress: 1350/2200 windows (61.4%) - 28.1 windows/sec
+  Progress: 1400/2200 windows (63.6%) - 28.1 windows/sec
+  Progress: 1450/2200 windows (65.9%) - 28.1 windows/sec
+  Progress: 1500/2200 windows (68.2%) - 28.2 windows/sec
+  Progress: 1550/2200 windows (70.5%) - 28.3 windows/sec
+  Progress: 1600/2200 windows (72.7%) - 28.4 windows/sec
+  Progress: 1650/2200 windows (75.0%) - 28.4 windows/sec
+  Progress: 1700/2200 windows (77.3%) - 28.3 windows/sec
+  Progress: 1750/2200 windows (79.5%) - 28.3 windows/sec
+  Progress: 1800/2200 windows (81.8%) - 28.3 windows/sec
+  Progress: 1850/2200 windows (84.1%) - 28.3 windows/sec
+  Progress: 1900/2200 windows (86.4%) - 28.5 windows/sec
+  Progress: 1950/2200 windows (88.6%) - 28.5 windows/sec
+  Progress: 2000/2200 windows (90.9%) - 28.6 windows/sec
+  Progress: 2050/2200 windows (93.2%) - 28.6 windows/sec
+  Progress: 2100/2200 windows (95.5%) - 28.8 windows/sec
+  Progress: 2150/2200 windows (97.7%) - 28.8 windows/sec
+  Progress: 2200/2200 windows (100.0%) - 28.9 windows/sec
+
+  Analysis complete: 76.05 seconds
+  Rate: 28.9 windows/sec
+
+6. Analyzing chord progression...
+   Detected 213 chord segments
+
+================================================================================
+RESULTS
+================================================================================
+
+Detection Statistics:
+  Total windows: 2200
+  Chords detected: 2200 (100.0%)
+  No chord: 0 (0.0%)
+
+Chord Progression (213 segments):
+     Start       End    Duration   Avg SNR  Chord               
+  ----------------------------------------------------------------------
+      0.07      1.77        1.70s     35.04  C_min7_oct2         
+      2.07      2.27        0.20s     24.68  D_sus2_oct2         
+      3.67      4.07        0.40s     26.19  D_maj7_oct2         
+      4.27      4.47        0.20s     26.35  D_dom9_oct3         
+      4.57      4.87        0.30s     27.20  D_maj7_oct2         
+      5.17      5.37        0.20s     26.66  A_sus4_oct2         
+      5.57      5.97        0.40s     37.38  A_sus4_oct2         
+      6.27      6.57        0.30s     31.88  D_dom9_oct3         
+      6.87      7.17        0.30s     32.22  G_sus2_oct2         
+      7.27      7.57        0.30s     37.86  A_sus4_oct2         
+      9.17      9.37        0.20s     33.30  D#_maj7_oct2        
+      9.77      9.97        0.20s     37.87  D_sus4_oct2         
+     10.87     11.37        0.50s     27.26  D_maj7_oct2         
+     12.17     12.37        0.20s     27.31  D_maj11_oct3        
+     12.97     13.47        0.50s     35.59  A_sus4_oct2         
+     13.77     14.07        0.30s     40.20  A_sus4_oct2         
+     14.17     14.67        0.50s     46.30  A_sus4_oct2         
+     14.77     14.97        0.20s     38.20  C_min7_oct2         
+     15.27     15.47        0.20s     30.69  C#_sus2_oct3        
+     17.87     18.17        0.30s     21.70  D_maj11_oct2        
+  ... (193 more segments)
+
+Chord Distribution:
+  Chord                       Count   Total Duration     Avg Duration
+  ----------------------------------------------------------------------
+  C_min7_oct2                    16             8.00s             0.50s
+  D_sus2_oct2                    21             7.20s             0.34s
+  D_maj7_oct2                    23             6.70s             0.29s
+  G_sus2_oct2                    15             4.40s             0.29s
+  A_sus4_oct2                    10             3.30s             0.33s
+  D_sus2_oct3                    11             2.80s             0.25s
+  D_maj11_oct2                    7             2.40s             0.34s
+  D_sus4_oct2                     8             2.10s             0.26s
+  C_minor_oct2                    9             2.00s             0.22s
+  A#_sus2_oct5                    2             1.50s             0.75s
+
+7. Creating visualization...
+
+✓ Saved visualization to: andy_song_2_chord_detection.png
+
+================================================================================
+
+✓ Analysis complete!

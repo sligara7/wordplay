@@ -1,0 +1,73 @@
+
+Testing vectorized chord detection on: /home/ajs7/project/wordplay/music/new_start/test_amazing_grace.wav
+
+================================================================================
+VECTORIZED CHORD DETECTION
+================================================================================
+
+File: /home/ajs7/project/wordplay/music/new_start/test_amazing_grace.wav
+
+1. Loading audio file...
+   Duration: 178.72 seconds
+   Sample rate: 44100 Hz
+   Samples: 7881345
+
+2. Loading PSF templates...
+Loading templates from: multi_octave_psf_templates.pkl
+✓ Loaded 660 templates
+  Sample rate: 44100 Hz
+  Cycles: 4
+  Octaves: [2, 3, 4, 5, 6]
+  Chord types: 11
+  Root notes: 12
+
+3. Initializing detector...
+FastMHTChordDetector initialized:
+  Templates: 660
+  Frequencies: 1081
+  Threshold: 6.5
+  Outlier removal: True
+
+4. Initializing spectral analyzer...
+
+5. Analyzing entire audio file...
+   (This may take a moment for long files...)
+   ✓ Spectral analysis complete: 1.37 seconds
+   Spectral data shape: (1081, 1229)
+
+6. Detecting chords (vectorized)...
+
+Vectorized chord detection...
+  Spectral data shape: (1081, 1229)
+  Frequency bins: 1081
+  Time slices: 1229
+  Time per slice: 0.12 ms
+  Total duration: 0.15 seconds
+  Progress: 500/1229 slices (40.7%) - 129 slices/sec
+  Progress: 1000/1229 slices (81.4%) - 227 slices/sec
+  Progress: 1229/1229 slices (100.0%) - 272 slices/sec
+
+  Detection complete: 4.51 seconds
+  Rate: 272 slices/sec
+
+7. Analyzing chord progression...
+   Detected 0 chord segments
+
+================================================================================
+RESULTS
+================================================================================
+
+Detection Statistics:
+  Total time slices: 1229
+  Chords detected: 1187 (96.6%)
+  No chord: 42 (3.4%)
+
+8. Creating visualization...
+
+✓ Saved visualization to: test_amazing_grace_vectorized_detection.png
+
+================================================================================
+Total processing time: 10.92 seconds
+================================================================================
+
+✓ Vectorized analysis complete!

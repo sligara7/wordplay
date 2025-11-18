@@ -1,0 +1,131 @@
+
+Testing ALL chord types with PSF templates...
+
+================================================================================
+COMPREHENSIVE PSF-BASED CHORD DETECTION TEST
+================================================================================
+
+Configuration:
+  Sample rate: 44100 Hz
+  Cycles: 4
+  Chord types: 11
+  Root notes: 12
+  Runs per chord: 3
+  Total tests: 396
+
+1. Building PSF templates for ALL chord types...
+======================================================================
+BUILDING CHORD PSF TEMPLATES
+======================================================================
+Sample rate: 44100 Hz
+Cycles: 4
+Octave: 4
+Chord types: 11
+Root notes: 12
+Total templates: 132
+
+Frequency bins: 1081
+Frequency range: 25.89 - 4687.34 Hz
+
+Generating major chords...
+  ✓ 12 templates generated
+Generating minor chords...
+  ✓ 12 templates generated
+Generating dim chords...
+  ✓ 12 templates generated
+Generating aug chords...
+  ✓ 12 templates generated
+Generating sus2 chords...
+  ✓ 12 templates generated
+Generating sus4 chords...
+  ✓ 12 templates generated
+Generating maj7 chords...
+  ✓ 12 templates generated
+Generating min7 chords...
+  ✓ 12 templates generated
+Generating dom7 chords...
+  ✓ 12 templates generated
+Generating dom9 chords...
+  ✓ 12 templates generated
+Generating maj11 chords...
+  ✓ 12 templates generated
+
+======================================================================
+✓ Total templates generated: 132
+======================================================================
+
+   Template generation time: 46.51 seconds
+
+2. Initializing detector...
+FastMHTChordDetector initialized:
+  Templates: 132
+  Frequencies: 1081
+  Threshold: 6.5
+  Outlier removal: False
+
+3. Initializing spectral analyzer...
+
+4. Testing all chords (3 runs each)...
+--------------------------------------------------------------------------------
+
+--- Run 1/3 ---
+
+--- Run 2/3 ---
+
+--- Run 3/3 ---
+
+================================================================================
+RESULTS SUMMARY
+================================================================================
+
+Total tests:        396
+Detected:           396 (100.0%)
+Correct:            396 (100.0%)
+Accuracy:           100.0%
+
+Testing time:       17.07 seconds
+Rate:               23 tests/sec
+
+--------------------------------------------------------------------------------
+PER CHORD TYPE ACCURACY:
+--------------------------------------------------------------------------------
+Chord Type    Notes   Total  Correct   Accuracy    Avg SNR    SNR Std
+--------------------------------------------------------------------------------
+major             3      36       36     100.0%      33.05       0.15
+minor             3      36       36     100.0%      32.98       0.15
+dim               3      36       36     100.0%      33.04       0.13
+aug               3      36       36     100.0%      32.97       0.13
+sus2              3      36       36     100.0%      33.07       0.14
+sus4              3      36       36     100.0%      33.06       0.14
+maj7              4      36       36     100.0%      32.94       0.16
+min7              4      36       36     100.0%      32.92       0.17
+dom7              4      36       36     100.0%      32.95       0.15
+dom9              5      36       36     100.0%      32.90       0.13
+maj11             6      36       36     100.0%      32.86       0.12
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+REPEATABILITY CHECK:
+--------------------------------------------------------------------------------
+Consistent across runs: 132/132 (100.0%)
+
+================================================================================
+
+Analyzing SNR patterns...
+
+✓ Saved SNR analysis to: psf_snr_analysis.png
+
+================================================================================
+FINAL SUMMARY
+================================================================================
+✓ Total tests:        396
+✓ Accuracy:           100.0%
+✓ Consistent:         132/132 (100.0%)
+✓ Template gen time:  46.51 sec
+✓ Testing time:       17.07 sec
+✓ Rate:               23 tests/sec
+================================================================================
+
+🎉 PERFECT! 100% accuracy achieved! 🎉
+
+✓ Test complete!

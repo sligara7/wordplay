@@ -16,9 +16,7 @@ from typing import Tuple, Optional
 from scipy.io import wavfile
 
 from spectral_analyzer import SpectralAnalyzer
-from audio_graph_builder import AudioGraphBuilder
-from harmonic_analyzer import HarmonicAnalyzer
-from onset_detector import OnsetDetector
+from autocorrelation_analyzer import AutocorrelationAnalyzer
 from midi_generator import MidiGenerator
 
 
@@ -95,7 +93,7 @@ def transcribe(wav_path: str, output_path: str,
 
     # Step 1: Validate input file
     if verbose:
-        print(f"[1/6] Validating input file: {wav_path}")
+        print(f"[1/4] Validating input file: {wav_path}")
 
     is_valid, error_msg = validate_wav_file(wav_path)
     if not is_valid:
@@ -103,7 +101,7 @@ def transcribe(wav_path: str, output_path: str,
 
     # Step 2: Load and analyze audio
     if verbose:
-        print("[2/6] Performing spectral analysis...")
+        print("[2/4] Performing spectral analysis...")
 
     try:
         sample_rate, audio_data = wavfile.read(wav_path)
@@ -112,15 +110,15 @@ def transcribe(wav_path: str, output_path: str,
         if len(audio_data.shape) > 1:
             audio_data = audio_data[:, 0]
 
-        # Create SpectralAnalyzer
+        # Create SpectralAnalyzer with high frequency resolution
         # Standard musical range: A0 (27.5 Hz) to C8 (4186 Hz)
         analyzer = SpectralAnalyzer(
             samplefreq=sample_rate,
-            cycles=2,  # 2 cycles per window for good frequency resolution
+            cycles=3,  # 3 cycles of A0 for better frequency resolution
             standard_A4=440.0,
             note_begin=21,  # A0
             note_end=108,   # C8
-            increments=1    # Semitone resolution
+            increments=12   # 12 subdivisions per semitone (1/12 semitone = ~8 cents resolution)
         )
 
         # Run spectral analysis
@@ -132,70 +130,32 @@ def transcribe(wav_path: str, output_path: str,
     except Exception as e:
         raise RuntimeError(f"Spectral analysis failed: {e}")
 
-    # Step 3: Build audio graph
+    # Step 3: Detect fundamentals using autocorrelation
     if verbose:
-        print("[3/6] Building audio graph...")
+        print("[3/4] Detecting fundamental frequencies using autocorrelation...")
 
     try:
-        graph_builder = AudioGraphBuilder(
+        autocorr_analyzer = AutocorrelationAnalyzer(
             spectral_data=spectral_data,
-            frequencies=analyzer.note_freqs,
+            frequencies=analyzer.frequencies,
             sample_rate=sample_rate,
             window_length=analyzer.window_length,
-            intensity_threshold=intensity_threshold
+            min_autocorr_peak=confidence_threshold,
+            min_frequency=80.0,   # A1 (MIDI 33) ≈ 55Hz, using 80Hz to avoid very low notes
+            max_frequency=1000.0  # C6 (MIDI 84) ≈ 1047Hz
         )
 
-        # Build graph with temporal and harmonic edges
-        graph = graph_builder.build_graph()
-
-        if verbose:
-            print(f"   Graph nodes: {graph.number_of_nodes()}")
-            print(f"   Graph edges: {graph.number_of_edges()}")
-
-    except Exception as e:
-        raise RuntimeError(f"Graph construction failed: {e}")
-
-    # Step 4: Analyze harmonics
-    if verbose:
-        print("[4/6] Detecting fundamental frequencies...")
-
-    try:
-        harmonic_analyzer = HarmonicAnalyzer(graph)
-
-        # Detect fundamentals across all time samples
-        fundamentals_by_time = harmonic_analyzer.analyze_all_time_samples()
-
-        # Filter noise
-        filtered_fundamentals = harmonic_analyzer.filter_noise(
-            confidence_threshold=confidence_threshold,
+        # Analyze all time samples
+        note_events = autocorr_analyzer.analyze_all_times(
+            intensity_threshold=intensity_threshold,
             min_duration_samples=min_duration_samples
         )
-
-        if verbose:
-            print(f"   Detected {len(filtered_fundamentals)} fundamental notes")
-
-    except Exception as e:
-        raise RuntimeError(f"Harmonic analysis failed: {e}")
-
-    # Step 5: Detect onsets
-    if verbose:
-        print("[5/6] Detecting note onsets...")
-
-    try:
-        onset_detector = OnsetDetector(
-            graph=graph,
-            onset_threshold=0.3,
-            min_onset_gap_seconds=0.05
-        )
-
-        # Detect onsets from fundamentals
-        note_events = onset_detector.detect_onsets(filtered_fundamentals)
 
         if verbose:
             print(f"   Detected {len(note_events)} note events")
 
     except Exception as e:
-        raise RuntimeError(f"Onset detection failed: {e}")
+        raise RuntimeError(f"Autocorrelation analysis failed: {e}")
 
     # Check if we got any notes
     if not note_events:
@@ -207,9 +167,9 @@ def transcribe(wav_path: str, output_path: str,
             print("   - Lower --confidence (current: {:.2f})".format(
                 confidence_threshold))
 
-    # Step 6: Generate MIDI
+    # Step 4: Generate MIDI
     if verbose:
-        print(f"[6/6] Generating MIDI file: {output_path}")
+        print(f"[4/4] Generating MIDI file: {output_path}")
 
     try:
         midi_generator = MidiGenerator(tempo=tempo)

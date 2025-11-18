@@ -1,0 +1,241 @@
+
+Testing multi-octave chord detection...
+
+================================================================================
+MULTI-OCTAVE CHORD DETECTION TEST
+================================================================================
+
+1. Loading multi-octave PSF templates...
+Loading templates from: multi_octave_psf_templates.pkl
+✓ Loaded 660 templates
+  Sample rate: 44100 Hz
+  Cycles: 4
+  Octaves: [2, 3, 4, 5, 6]
+  Chord types: 11
+  Root notes: 12
+   Templates loaded: 660
+   Frequency bins: 1081
+
+2. Test configuration:
+   Test octaves: [2, 3, 4, 5, 6]
+   Chord types: ['major', 'minor', 'dim', 'maj7', 'dom9']
+   Root notes: ['C', 'E', 'G', 'A']
+   Total tests: 100
+
+3. Initializing detector...
+FastMHTChordDetector initialized:
+  Templates: 660
+  Frequencies: 1081
+  Threshold: 6.5
+  Outlier removal: False
+
+4. Initializing spectral analyzer...
+
+5. Testing chords across octaves...
+--------------------------------------------------------------------------------
+
+--- Testing Octave 2 ---
+
+MAJOR:
+✓ C_major (oct 2) → Detected: C_major_oct2         SNR=  35.63
+✓ E_major (oct 2) → Detected: E_major_oct2         SNR=  35.41
+✓ G_major (oct 2) → Detected: G_major_oct2         SNR=  34.96
+✓ A_major (oct 2) → Detected: A_major_oct2         SNR=  34.89
+
+MINOR:
+✓ C_minor (oct 2) → Detected: C_minor_oct2         SNR=  35.74
+✓ E_minor (oct 2) → Detected: E_minor_oct2         SNR=  35.32
+✓ G_minor (oct 2) → Detected: G_minor_oct2         SNR=  35.01
+✓ A_minor (oct 2) → Detected: A_minor_oct2         SNR=  35.00
+
+DIM:
+✓ C_dim (oct 2) → Detected: C_dim_oct2           SNR=  35.80
+✓ E_dim (oct 2) → Detected: E_dim_oct2           SNR=  35.35
+✓ G_dim (oct 2) → Detected: G_dim_oct2           SNR=  34.98
+✓ A_dim (oct 2) → Detected: A_dim_oct2           SNR=  34.92
+
+MAJ7:
+✓ C_maj7 (oct 2) → Detected: C_maj7_oct2          SNR=  36.02
+✓ E_maj7 (oct 2) → Detected: E_maj7_oct2          SNR=  35.65
+✓ G_maj7 (oct 2) → Detected: G_maj7_oct2          SNR=  35.26
+✓ A_maj7 (oct 2) → Detected: A_maj7_oct2          SNR=  34.95
+
+DOM9:
+✓ C_dom9 (oct 2) → Detected: C_dom9_oct2          SNR=  36.27
+✓ E_dom9 (oct 2) → Detected: E_dom9_oct2          SNR=  35.81
+✓ G_dom9 (oct 2) → Detected: G_dom9_oct2          SNR=  35.22
+✓ A_dom9 (oct 2) → Detected: A_dom9_oct2          SNR=  34.98
+
+--- Testing Octave 3 ---
+
+MAJOR:
+✓ C_major (oct 3) → Detected: C_major_oct3         SNR=  34.45
+✓ E_major (oct 3) → Detected: E_major_oct3         SNR=  34.10
+✓ G_major (oct 3) → Detected: G_major_oct3         SNR=  33.05
+✓ A_major (oct 3) → Detected: A_major_oct3         SNR=  33.50
+
+MINOR:
+✓ C_minor (oct 3) → Detected: C_minor_oct3         SNR=  34.47
+✓ E_minor (oct 3) → Detected: E_minor_oct3         SNR=  33.70
+✓ G_minor (oct 3) → Detected: G_minor_oct3         SNR=  33.03
+✓ A_minor (oct 3) → Detected: A_minor_oct3         SNR=  33.70
+
+DIM:
+✓ C_dim (oct 3) → Detected: C_dim_oct3           SNR=  34.54
+✓ E_dim (oct 3) → Detected: E_dim_oct3           SNR=  33.77
+✓ G_dim (oct 3) → Detected: G_dim_oct3           SNR=  33.12
+✓ A_dim (oct 3) → Detected: A_dim_oct3           SNR=  33.75
+
+MAJ7:
+✓ C_maj7 (oct 3) → Detected: C_maj7_oct3          SNR=  34.39
+✓ E_maj7 (oct 3) → Detected: E_maj7_oct3          SNR=  33.94
+✓ G_maj7 (oct 3) → Detected: G_maj7_oct3          SNR=  32.82
+✓ A_maj7 (oct 3) → Detected: A_maj7_oct3          SNR=  33.19
+
+DOM9:
+✓ C_dom9 (oct 3) → Detected: C_dom9_oct3          SNR=  34.16
+✓ E_dom9 (oct 3) → Detected: E_dom9_oct3          SNR=  33.87
+✓ G_dom9 (oct 3) → Detected: G_dom9_oct3          SNR=  32.56
+✓ A_dom9 (oct 3) → Detected: A_dom9_oct3          SNR=  33.43
+
+--- Testing Octave 4 ---
+
+MAJOR:
+✓ C_major (oct 4) → Detected: C_major_oct4         SNR=  33.53
+✓ E_major (oct 4) → Detected: E_major_oct4         SNR=  32.99
+✓ G_major (oct 4) → Detected: G_major_oct4         SNR=  33.03
+✓ A_major (oct 4) → Detected: A_major_oct4         SNR=  33.01
+
+MINOR:
+✓ C_minor (oct 4) → Detected: C_minor_oct4         SNR=  33.36
+✓ E_minor (oct 4) → Detected: E_minor_oct4         SNR=  33.17
+✓ G_minor (oct 4) → Detected: G_minor_oct4         SNR=  33.00
+✓ A_minor (oct 4) → Detected: A_minor_oct4         SNR=  32.99
+
+DIM:
+✓ C_dim (oct 4) → Detected: C_dim_oct4           SNR=  33.34
+✓ E_dim (oct 4) → Detected: E_dim_oct4           SNR=  33.22
+✓ G_dim (oct 4) → Detected: G_dim_oct4           SNR=  33.03
+✓ A_dim (oct 4) → Detected: A_dim_oct4           SNR=  33.03
+
+MAJ7:
+✓ C_maj7 (oct 4) → Detected: C_maj7_oct4          SNR=  33.39
+✓ E_maj7 (oct 4) → Detected: E_maj7_oct4          SNR=  32.81
+✓ G_maj7 (oct 4) → Detected: G_maj7_oct4          SNR=  32.94
+✓ A_maj7 (oct 4) → Detected: A_maj7_oct4          SNR=  32.97
+
+DOM9:
+✓ C_dom9 (oct 4) → Detected: C_dom9_oct4          SNR=  33.23
+✓ E_dom9 (oct 4) → Detected: E_dom9_oct4          SNR=  32.73
+✓ G_dom9 (oct 4) → Detected: G_dom9_oct4          SNR=  32.92
+✓ A_dom9 (oct 4) → Detected: A_dom9_oct4          SNR=  32.91
+
+--- Testing Octave 5 ---
+
+MAJOR:
+✓ C_major (oct 5) → Detected: C_major_oct5         SNR=  32.94
+✓ E_major (oct 5) → Detected: E_major_oct5         SNR=  32.95
+✓ G_major (oct 5) → Detected: G_major_oct5         SNR=  32.95
+✓ A_major (oct 5) → Detected: A_major_oct5         SNR=  32.93
+
+MINOR:
+✓ C_minor (oct 5) → Detected: C_minor_oct5         SNR=  32.94
+✓ E_minor (oct 5) → Detected: E_minor_oct5         SNR=  32.92
+✓ G_minor (oct 5) → Detected: G_minor_oct5         SNR=  32.95
+✓ A_minor (oct 5) → Detected: A_minor_oct5         SNR=  32.91
+
+DIM:
+✓ C_dim (oct 5) → Detected: C_dim_oct5           SNR=  32.88
+✓ E_dim (oct 5) → Detected: E_dim_oct5           SNR=  32.95
+✓ G_dim (oct 5) → Detected: G_dim_oct5           SNR=  32.93
+✓ A_dim (oct 5) → Detected: A_dim_oct5           SNR=  32.87
+
+MAJ7:
+✓ C_maj7 (oct 5) → Detected: C_maj7_oct5          SNR=  32.91
+✓ E_maj7 (oct 5) → Detected: E_maj7_oct5          SNR=  32.92
+✓ G_maj7 (oct 5) → Detected: G_maj7_oct5          SNR=  32.92
+✓ A_maj7 (oct 5) → Detected: A_maj7_oct5          SNR=  32.93
+
+DOM9:
+✓ C_dom9 (oct 5) → Detected: C_dom9_oct5          SNR=  32.90
+✓ E_dom9 (oct 5) → Detected: E_dom9_oct5          SNR=  32.89
+✓ G_dom9 (oct 5) → Detected: G_dom9_oct5          SNR=  32.88
+✓ A_dom9 (oct 5) → Detected: A_dom9_oct5          SNR=  32.89
+
+--- Testing Octave 6 ---
+
+MAJOR:
+✓ C_major (oct 6) → Detected: C_major_oct6         SNR=  32.95
+✓ E_major (oct 6) → Detected: E_major_oct6         SNR=  32.95
+✓ G_major (oct 6) → Detected: G_major_oct6         SNR=  32.95
+✓ A_major (oct 6) → Detected: A_major_oct6         SNR=  32.99
+
+MINOR:
+✓ C_minor (oct 6) → Detected: C_minor_oct6         SNR=  32.90
+✓ E_minor (oct 6) → Detected: E_minor_oct6         SNR=  32.96
+✓ G_minor (oct 6) → Detected: G_minor_oct6         SNR=  32.90
+✓ A_minor (oct 6) → Detected: A_minor_oct6         SNR=  33.00
+
+DIM:
+✓ C_dim (oct 6) → Detected: C_dim_oct6           SNR=  32.95
+✓ E_dim (oct 6) → Detected: E_dim_oct6           SNR=  32.94
+✓ G_dim (oct 6) → Detected: G_dim_oct6           SNR=  32.94
+✓ A_dim (oct 6) → Detected: A_dim_oct6           SNR=  32.88
+
+MAJ7:
+✓ C_maj7 (oct 6) → Detected: C_maj7_oct6          SNR=  32.95
+✓ E_maj7 (oct 6) → Detected: E_maj7_oct6          SNR=  32.98
+✗ G_maj7 (oct 6) → Detected: G_major_oct6         SNR=  32.97
+✓ A_maj7 (oct 6) → Detected: A_maj7_oct6          SNR=  33.00
+
+DOM9:
+✓ C_dom9 (oct 6) → Detected: C_dom9_oct6          SNR=  32.92
+✗ E_dom9 (oct 6) → Detected: E_dom7_oct6          SNR=  32.91
+✓ G_dom9 (oct 6) → Detected: G_dom9_oct6          SNR=  32.91
+✓ A_dom9 (oct 6) → Detected: A_dom9_oct6          SNR=  32.97
+
+================================================================================
+RESULTS BY OCTAVE
+================================================================================
+
+  Octave    Total   Detected    Correct   Accuracy    Avg SNR
+--------------------------------------------------------------------------------
+       2       20         20         20     100.0%      35.36
+       3       20         20         20     100.0%      33.68
+       4       20         20         20     100.0%      33.08
+       5       20         20         20     100.0%      32.92
+       6       20         20         18      90.0%      32.95
+--------------------------------------------------------------------------------
+
+OVERALL:
+  Total tests: 100
+  Detected: 100 (100.0%)
+  Correct: 98 (98.0%)
+  Testing time: 6.75 seconds
+  Rate: 14.8 tests/sec
+
+--------------------------------------------------------------------------------
+PER CHORD TYPE:
+--------------------------------------------------------------------------------
+major     :  20/ 20 correct (100.0%) SNR=33.61
+minor     :  20/ 20 correct (100.0%) SNR=33.60
+dim       :  20/ 20 correct (100.0%) SNR=33.61
+maj7      :  19/ 20 correct ( 95.0%) SNR=33.60
+dom9      :  19/ 20 correct ( 95.0%) SNR=33.57
+
+--------------------------------------------------------------------------------
+FAILED DETECTIONS (2 total):
+--------------------------------------------------------------------------------
+  Expected: G_maj7_oct6               → Detected: G_major_oct6              SNR= 32.97
+  Expected: E_dom9_oct6               → Detected: E_dom7_oct6               SNR= 32.91
+
+================================================================================
+CONCLUSION
+================================================================================
+
+✓ Excellent! 98.0% accuracy
+  → Multi-octave detection works well
+
+================================================================================
+
+✓ Multi-octave detection test complete!

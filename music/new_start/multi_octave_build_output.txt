@@ -1,0 +1,193 @@
+
+Multi-Octave PSF Template Generator
+
+This will generate PSF templates for:
+  - 11 chord types
+  - 12 root notes
+  - 5 octaves
+  - Total: 660 templates
+
+Estimated generation time: 230 seconds (~3.8 minutes)
+
+Starting generation...
+
+================================================================================
+BUILDING MULTI-OCTAVE PSF TEMPLATES
+================================================================================
+Sample rate: 44100 Hz
+Cycles: 4
+Octaves: [2, 3, 4, 5, 6]
+Chord types: 11
+Root notes: 12
+Total templates: 660
+
+Frequency bins: 1081
+Frequency range: 25.89 - 4687.34 Hz
+
+
+================================================================================
+OCTAVE 2
+================================================================================
+  Generating major chords (octave 2)...
+    ✓ 12 templates generated
+  Generating minor chords (octave 2)...
+    ✓ 12 templates generated
+  Generating dim chords (octave 2)...
+    ✓ 12 templates generated
+  Generating aug chords (octave 2)...
+    ✓ 12 templates generated
+  Generating sus2 chords (octave 2)...
+    ✓ 12 templates generated
+  Generating sus4 chords (octave 2)...
+    ✓ 12 templates generated
+  Generating maj7 chords (octave 2)...
+    ✓ 12 templates generated
+  Generating min7 chords (octave 2)...
+    ✓ 12 templates generated
+  Generating dom7 chords (octave 2)...
+    ✓ 12 templates generated
+  Generating dom9 chords (octave 2)...
+    ✓ 12 templates generated
+  Generating maj11 chords (octave 2)...
+    ✓ 12 templates generated
+  Octave 2 time: 50.35 seconds
+
+================================================================================
+OCTAVE 3
+================================================================================
+  Generating major chords (octave 3)...
+    ✓ 12 templates generated
+  Generating minor chords (octave 3)...
+    ✓ 12 templates generated
+  Generating dim chords (octave 3)...
+    ✓ 12 templates generated
+  Generating aug chords (octave 3)...
+    ✓ 12 templates generated
+  Generating sus2 chords (octave 3)...
+    ✓ 12 templates generated
+  Generating sus4 chords (octave 3)...
+    ✓ 12 templates generated
+  Generating maj7 chords (octave 3)...
+    ✓ 12 templates generated
+  Generating min7 chords (octave 3)...
+    ✓ 12 templates generated
+  Generating dom7 chords (octave 3)...
+    ✓ 12 templates generated
+  Generating dom9 chords (octave 3)...
+    ✓ 12 templates generated
+  Generating maj11 chords (octave 3)...
+    ✓ 12 templates generated
+  Octave 3 time: 55.68 seconds
+
+================================================================================
+OCTAVE 4
+================================================================================
+  Generating major chords (octave 4)...
+    ✓ 12 templates generated
+  Generating minor chords (octave 4)...
+    ✓ 12 templates generated
+  Generating dim chords (octave 4)...
+    ✓ 12 templates generated
+  Generating aug chords (octave 4)...
+    ✓ 12 templates generated
+  Generating sus2 chords (octave 4)...
+    ✓ 12 templates generated
+  Generating sus4 chords (octave 4)...
+    ✓ 12 templates generated
+  Generating maj7 chords (octave 4)...
+    ✓ 12 templates generated
+  Generating min7 chords (octave 4)...
+    ✓ 12 templates generated
+  Generating dom7 chords (octave 4)...
+    ✓ 12 templates generated
+  Generating dom9 chords (octave 4)...
+    ✓ 12 templates generated
+  Generating maj11 chords (octave 4)...
+    ✓ 12 templates generated
+  Octave 4 time: 48.35 seconds
+
+================================================================================
+OCTAVE 5
+================================================================================
+  Generating major chords (octave 5)...
+    ✓ 12 templates generated
+  Generating minor chords (octave 5)...
+    ✓ 12 templates generated
+  Generating dim chords (octave 5)...
+    ✓ 12 templates generated
+  Generating aug chords (octave 5)...
+    ✓ 12 templates generated
+  Generating sus2 chords (octave 5)...
+    ✓ 12 templates generated
+  Generating sus4 chords (octave 5)...
+    ✓ 12 templates generated
+  Generating maj7 chords (octave 5)...
+    ✓ 12 templates generated
+  Generating min7 chords (octave 5)...
+    ✓ 12 templates generated
+  Generating dom7 chords (octave 5)...
+    ✓ 12 templates generated
+  Generating dom9 chords (octave 5)...
+    ✓ 12 templates generated
+  Generating maj11 chords (octave 5)...
+    ✓ 12 templates generated
+  Octave 5 time: 48.32 seconds
+
+================================================================================
+OCTAVE 6
+================================================================================
+  Generating major chords (octave 6)...
+    ✓ 12 templates generated
+  Generating minor chords (octave 6)...
+    ✓ 12 templates generated
+  Generating dim chords (octave 6)...
+    ✓ 12 templates generated
+  Generating aug chords (octave 6)...
+    ✓ 12 templates generated
+  Generating sus2 chords (octave 6)...
+    ✓ 12 templates generated
+  Generating sus4 chords (octave 6)...
+    ✓ 12 templates generated
+  Generating maj7 chords (octave 6)...
+    ✓ 12 templates generated
+  Generating min7 chords (octave 6)...
+    ✓ 12 templates generated
+  Generating dom7 chords (octave 6)...
+    ✓ 12 templates generated
+  Generating dom9 chords (octave 6)...
+    ✓ 12 templates generated
+  Generating maj11 chords (octave 6)...
+    ✓ 12 templates generated
+  Octave 6 time: 45.34 seconds
+
+================================================================================
+✓ Total templates generated: 660
+✓ Total time: 248.05 seconds (2.7 templates/sec)
+================================================================================
+
+Saving templates to: multi_octave_psf_templates.pkl
+✓ Saved 660 templates
+
+================================================================================
+TEMPLATE SUMMARY
+================================================================================
+Octave 2: 132 templates
+Octave 3: 132 templates
+Octave 4: 132 templates
+Octave 5: 132 templates
+Octave 6: 132 templates
+
+major     : 60 templates
+minor     : 60 templates
+dim       : 60 templates
+aug       : 60 templates
+sus2      : 60 templates
+sus4      : 60 templates
+maj7      : 60 templates
+min7      : 60 templates
+dom7      : 60 templates
+dom9      : 60 templates
+maj11     : 60 templates
+
+✓ Multi-octave PSF templates generated successfully!
+✓ Saved to: multi_octave_psf_templates.pkl

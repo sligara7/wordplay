@@ -39,3 +39,4 @@ Thumbs.db
 
 # Byzantine text cache (downloaded on demand)
 data/byzantine/
+music/new_start/midi_to_wav/other/model.pkl

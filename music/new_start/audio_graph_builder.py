@@ -70,7 +70,8 @@ class AudioGraphBuilder:
             # Calculate semitones above A0
             semitones = 12 * np.log2(freq / A0_freq)
             octave = int(semitones // 12)
-            note_idx = int(round(semitones % 12))
+            # Round and wrap to ensure note_idx is in [0, 11]
+            note_idx = int(round(semitones % 12)) % 12
             note_name = f"{note_names[note_idx]}{octave}"
             self.note_lookup.append(note_name)
 
@@ -109,9 +110,11 @@ class AudioGraphBuilder:
                         frequency=self.frequencies[freq_idx],
                         note=self.note_lookup[freq_idx],
                         time_sample=time_idx,
+                        time_idx=time_idx,  # For onset detector
                         time_seconds=self._get_time_in_seconds(time_idx),
                         intensity=float(intensity),
-                        freq_index=freq_idx
+                        freq_index=freq_idx,
+                        freq_idx=freq_idx  # For onset detector
                     )
                     node_count += 1
 

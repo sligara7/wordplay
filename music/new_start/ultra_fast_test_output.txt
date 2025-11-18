@@ -1,0 +1,74 @@
+
+Testing ultra-fast chord detection with matrix multiplication...
+
+================================================================================
+ULTRA-FAST CHORD DETECTION TEST
+================================================================================
+
+1. Loading audio: /home/ajs7/project/wordplay/music/new_start/test_amazing_grace.wav
+   Duration: 178.72 seconds
+   Sample rate: 44100 Hz
+
+2. Loading PSF templates...
+Loading templates from: multi_octave_psf_templates.pkl
+✓ Loaded 660 templates
+  Sample rate: 44100 Hz
+  Cycles: 4
+  Octaves: [2, 3, 4, 5, 6]
+  Chord types: 11
+  Root notes: 12
+
+3. Initializing ultra-fast detector...
+UltraFastChordDetector initialized:
+  Templates: 660
+  Frequencies: 1081
+  PSF matrix shape: (660, 1081)
+  Threshold: 6.5
+  Outlier removal: True
+
+4. Analyzing audio with spectral analyzer...
+   ✓ Spectral analysis complete: 1.27 seconds
+   Spectral data shape: (1081, 1229)
+
+5. Detecting chords using ultra-fast matrix multiplication...
+
+Processing 1229 time slices with 660 templates...
+  Computing correlation matrix: (660, 1081) @ (1081, 1229)
+  ✓ Correlation matrix computed: (660, 1229)
+  ✓ SNR matrix computed: (660, 1229)
+  ✓ All 1229 time slices processed in 0.182 seconds
+  Rate: 6769 slices/sec
+  Detected: 1187/1229 (96.6%)
+
+================================================================================
+RESULTS
+================================================================================
+
+Time slices: 1229
+Detected: 1187 (96.6%)
+Processing time: 0.182 seconds
+Rate: 6769 slices/sec
+
+First 20 detections:
+    1.16s: G_dom7_oct3               (SNR=22.02)
+    1.31s: D_aug_oct4                (SNR=622.36)
+    1.45s: D_aug_oct4                (SNR=559.13)
+    1.60s: D_aug_oct4                (SNR=622.41)
+    1.74s: G_sus4_oct2               (SNR=200.47)
+    1.89s: D_sus4_oct3               (SNR=254.08)
+    2.04s: G_maj11_oct3              (SNR=135.98)
+    2.18s: B_minor_oct3              (SNR=278.98)
+    2.33s: D_sus4_oct4               (SNR=310.08)
+    2.47s: D_sus4_oct4               (SNR=296.98)
+    2.62s: D_sus4_oct4               (SNR=267.04)
+    2.76s: D_sus4_oct4               (SNR=289.45)
+
+6. Visualizing results...
+   ✓ Saved visualization: ultra_fast_detection_results.png
+
+================================================================================
+TOTAL TIME: 1.45 seconds
+SPEEDUP: 123.4× real-time
+================================================================================
+
+✓ Test complete!

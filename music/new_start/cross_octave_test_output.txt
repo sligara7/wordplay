@@ -1,0 +1,180 @@
+
+Testing cross-octave detection capability...
+
+================================================================================
+CROSS-OCTAVE DETECTION TEST
+================================================================================
+
+Configuration:
+  Template octave: 4
+  Test octaves: [2, 3, 4, 5, 6]
+  Chord types: ['major', 'minor', 'dim']
+  Root notes: ['C', 'E', 'G']
+  Total tests: 45
+
+1. Building PSF templates (octave 4)...
+======================================================================
+BUILDING CHORD PSF TEMPLATES
+======================================================================
+Sample rate: 44100 Hz
+Cycles: 4
+Octave: 4
+Chord types: 3
+Root notes: 3
+Total templates: 9
+
+Frequency bins: 1081
+Frequency range: 25.89 - 4687.34 Hz
+
+Generating major chords...
+  ✓ 3 templates generated
+Generating minor chords...
+  ✓ 3 templates generated
+Generating dim chords...
+  ✓ 3 templates generated
+
+======================================================================
+✓ Total templates generated: 9
+======================================================================
+   Templates generated: 9
+
+2. Initializing detector...
+FastMHTChordDetector initialized:
+  Templates: 9
+  Frequencies: 1081
+  Threshold: 6.5
+  Outlier removal: False
+
+3. Initializing spectral analyzer...
+
+4. Testing chords across octaves...
+--------------------------------------------------------------------------------
+
+--- Testing Octave 2 ---
+
+MAJOR:
+✗ C_major (octave 2) → Detected: None            SNR=   3.37
+✗ E_major (octave 2) → Detected: None            SNR=   3.95
+✗ G_major (octave 2) → Detected: None            SNR=   3.59
+
+MINOR:
+✗ C_minor (octave 2) → Detected: None            SNR=   3.39
+✗ E_minor (octave 2) → Detected: None            SNR=   3.72
+✗ G_minor (octave 2) → Detected: None            SNR=   3.60
+
+DIM:
+✗ C_dim (octave 2) → Detected: None            SNR=   3.30
+✗ E_dim (octave 2) → Detected: None            SNR=   3.73
+✗ G_dim (octave 2) → Detected: None            SNR=   3.70
+
+--- Testing Octave 3 ---
+
+MAJOR:
+✗ C_major (octave 3) → Detected: None            SNR=   4.04
+✗ E_major (octave 3) → Detected: C_major         SNR=   6.64
+✗ G_major (octave 3) → Detected: None            SNR=   6.06
+
+MINOR:
+✗ C_minor (octave 3) → Detected: None            SNR=   3.72
+✗ E_minor (octave 3) → Detected: None            SNR=   5.80
+✗ G_minor (octave 3) → Detected: None            SNR=   4.51
+
+DIM:
+✗ C_dim (octave 3) → Detected: None            SNR=   3.96
+✗ E_dim (octave 3) → Detected: None            SNR=   4.85
+✗ G_dim (octave 3) → Detected: None            SNR=   5.29
+
+--- Testing Octave 4 ---
+
+MAJOR:
+✓ C_major (octave 4) → Detected: C_major         SNR=  33.53
+✓ E_major (octave 4) → Detected: E_major         SNR=  32.99
+✓ G_major (octave 4) → Detected: G_major         SNR=  33.03
+
+MINOR:
+✓ C_minor (octave 4) → Detected: C_minor         SNR=  33.36
+✓ E_minor (octave 4) → Detected: E_minor         SNR=  33.17
+✓ G_minor (octave 4) → Detected: G_minor         SNR=  33.00
+
+DIM:
+✓ C_dim (octave 4) → Detected: C_dim           SNR=  33.34
+✓ E_dim (octave 4) → Detected: E_dim           SNR=  33.22
+✓ G_dim (octave 4) → Detected: G_dim           SNR=  33.03
+
+--- Testing Octave 5 ---
+
+MAJOR:
+✗ C_major (octave 5) → Detected: None            SNR=   3.62
+✗ E_major (octave 5) → Detected: None            SNR=   1.50
+✗ G_major (octave 5) → Detected: None            SNR=   0.72
+
+MINOR:
+✗ C_minor (octave 5) → Detected: None            SNR=   3.93
+✗ E_minor (octave 5) → Detected: None            SNR=   1.57
+✗ G_minor (octave 5) → Detected: None            SNR=   0.71
+
+DIM:
+✗ C_dim (octave 5) → Detected: None            SNR=   3.89
+✗ E_dim (octave 5) → Detected: None            SNR=   1.57
+✗ G_dim (octave 5) → Detected: None            SNR=   0.65
+
+--- Testing Octave 6 ---
+
+MAJOR:
+✗ C_major (octave 6) → Detected: None            SNR=   0.26
+✗ E_major (octave 6) → Detected: None            SNR=   0.13
+✗ G_major (octave 6) → Detected: None            SNR=   0.07
+
+MINOR:
+✗ C_minor (octave 6) → Detected: None            SNR=   0.27
+✗ E_minor (octave 6) → Detected: None            SNR=   0.17
+✗ G_minor (octave 6) → Detected: None            SNR=   0.05
+
+DIM:
+✗ C_dim (octave 6) → Detected: None            SNR=   0.25
+✗ E_dim (octave 6) → Detected: None            SNR=   0.17
+✗ G_dim (octave 6) → Detected: None            SNR=   0.07
+
+================================================================================
+RESULTS BY OCTAVE
+================================================================================
+
+  Octave   Δ Octave    Total   Detected    Correct   Accuracy    Avg SNR
+--------------------------------------------------------------------------------
+       2         -2        9          0          0       0.0%       3.59
+       3         -1        9          1          0       0.0%       4.99
+       4         +0        9          9          9     100.0%      33.19
+       5         +1        9          0          0       0.0%       2.02
+       6         +2        9          0          0       0.0%       0.16
+--------------------------------------------------------------------------------
+
+OVERALL:
+  Total tests: 45
+  Detected: 10 (22.2%)
+  Correct: 9 (20.0%)
+
+================================================================================
+ANALYSIS
+================================================================================
+
+Same octave (test=template=4): 100.0% accuracy
+Different octave (test≠template): 0.0% accuracy
+
+================================================================================
+CONCLUSION
+================================================================================
+
+✗ Cross-octave detection FAILS!
+  → Octave-4 templates cannot detect chords in other octaves
+  → We NEED PSF templates for multiple octaves
+  → Recommend generating templates for octaves 2-6
+
+5. Generating visualizations...
+   ✓ Saved visualization to: cross_octave_detection_results.png
+
+================================================================================
+
+✓ Test complete!
+
+Key result: 20.0% overall accuracy across all octaves
+Cross-octave accuracy: 0.0%

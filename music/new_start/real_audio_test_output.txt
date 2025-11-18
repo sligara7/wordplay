@@ -1,0 +1,140 @@
+
+Testing real audio chord detection on: /home/ajs7/project/wordplay/music/new_start/test_amazing_grace.wav
+
+================================================================================
+REAL AUDIO CHORD DETECTION
+================================================================================
+
+File: /home/ajs7/project/wordplay/music/new_start/test_amazing_grace.wav
+
+1. Loading audio file...
+   Duration: 178.72 seconds
+   Sample rate: 44100 Hz
+   Samples: 7881345
+
+2. Loading PSF templates...
+Loading templates from: multi_octave_psf_templates.pkl
+✓ Loaded 660 templates
+  Sample rate: 44100 Hz
+  Cycles: 4
+  Octaves: [2, 3, 4, 5, 6]
+  Chord types: 11
+  Root notes: 12
+
+3. Initializing detector...
+FastMHTChordDetector initialized:
+  Templates: 660
+  Frequencies: 1081
+  Threshold: 6.5
+  Outlier removal: True
+
+4. Initializing spectral analyzer...
+
+5. Detecting chords over time...
+
+Analyzing audio...
+  Duration: 178.72 seconds
+  Sample rate: 44100 Hz
+  Hop size: 0.1 sec (100 ms)
+  Window size: 0.145 sec (6415 samples)
+  Hop samples: 4410
+  Number of windows: 1785
+
+  Progress: 50/1785 windows (2.8%) - 7.5 windows/sec
+  Progress: 100/1785 windows (5.6%) - 12.5 windows/sec
+  Progress: 150/1785 windows (8.4%) - 15.4 windows/sec
+  Progress: 200/1785 windows (11.2%) - 17.1 windows/sec
+  Progress: 250/1785 windows (14.0%) - 18.7 windows/sec
+  Progress: 300/1785 windows (16.8%) - 19.8 windows/sec
+  Progress: 350/1785 windows (19.6%) - 20.8 windows/sec
+  Progress: 400/1785 windows (22.4%) - 21.5 windows/sec
+  Progress: 450/1785 windows (25.2%) - 22.1 windows/sec
+  Progress: 500/1785 windows (28.0%) - 22.7 windows/sec
+  Progress: 550/1785 windows (30.8%) - 23.2 windows/sec
+  Progress: 600/1785 windows (33.6%) - 23.7 windows/sec
+  Progress: 650/1785 windows (36.4%) - 24.2 windows/sec
+  Progress: 700/1785 windows (39.2%) - 24.5 windows/sec
+  Progress: 750/1785 windows (42.0%) - 25.0 windows/sec
+  Progress: 800/1785 windows (44.8%) - 25.4 windows/sec
+  Progress: 850/1785 windows (47.6%) - 25.8 windows/sec
+  Progress: 900/1785 windows (50.4%) - 26.0 windows/sec
+  Progress: 950/1785 windows (53.2%) - 26.3 windows/sec
+  Progress: 1000/1785 windows (56.0%) - 26.4 windows/sec
+  Progress: 1050/1785 windows (58.8%) - 26.6 windows/sec
+  Progress: 1100/1785 windows (61.6%) - 26.9 windows/sec
+  Progress: 1150/1785 windows (64.4%) - 27.2 windows/sec
+  Progress: 1200/1785 windows (67.2%) - 27.2 windows/sec
+  Progress: 1250/1785 windows (70.0%) - 27.2 windows/sec
+  Progress: 1300/1785 windows (72.8%) - 27.2 windows/sec
+  Progress: 1350/1785 windows (75.6%) - 27.2 windows/sec
+  Progress: 1400/1785 windows (78.4%) - 27.3 windows/sec
+  Progress: 1450/1785 windows (81.2%) - 27.3 windows/sec
+  Progress: 1500/1785 windows (84.0%) - 27.4 windows/sec
+  Progress: 1550/1785 windows (86.8%) - 27.5 windows/sec
+  Progress: 1600/1785 windows (89.6%) - 27.7 windows/sec
+  Progress: 1650/1785 windows (92.4%) - 27.8 windows/sec
+  Progress: 1700/1785 windows (95.2%) - 27.9 windows/sec
+  Progress: 1750/1785 windows (98.0%) - 27.8 windows/sec
+  Progress: 1785/1785 windows (100.0%) - 27.8 windows/sec
+
+  Analysis complete: 64.12 seconds
+  Rate: 27.8 windows/sec
+
+6. Analyzing chord progression...
+   Detected 304 chord segments
+
+================================================================================
+RESULTS
+================================================================================
+
+Detection Statistics:
+  Total windows: 1785
+  Chords detected: 1725 (96.6%)
+  No chord: 60 (3.4%)
+
+Chord Progression (304 segments):
+     Start       End    Duration   Avg SNR  Chord               
+  ----------------------------------------------------------------------
+      1.37      1.77        0.40s     52.45  D_aug_oct4          
+      1.97      2.17        0.20s     35.54  D_sus4_oct3         
+      2.37      2.87        0.50s     38.94  D_sus4_oct4         
+      2.87      3.27        0.40s     36.49  G_maj11_oct4        
+      3.27      3.77        0.50s     36.76  D_sus4_oct4         
+      4.17      4.57        0.40s     31.02  G_maj7_oct4         
+      4.57      4.77        0.20s     32.08  D_dim_oct4          
+      4.77      5.57        0.80s     40.97  G_dom9_oct4         
+      5.77      6.07        0.30s     31.73  G_sus4_oct3         
+      6.07      6.47        0.40s     39.13  A_minor_oct4        
+      6.47      6.77        0.30s     39.00  A_min7_oct4         
+      6.87      7.57        0.70s     38.10  E_min7_oct4         
+      7.77      8.37        0.60s     43.51  G_sus4_oct2         
+      8.47      8.97        0.50s     42.82  E_minor_oct4        
+      9.17      9.37        0.20s     43.12  B_minor_oct3        
+      9.67     10.27        0.60s     37.36  D_sus4_oct3         
+     10.57     10.97        0.40s     52.76  D_sus4_oct4         
+     11.27     11.57        0.30s     30.64  A_maj11_oct2        
+     11.97     12.47        0.50s     35.23  B_sus4_oct3         
+     12.67     12.87        0.20s     48.40  G_major_oct3        
+  ... (284 more segments)
+
+Chord Distribution:
+  Chord                       Count   Total Duration     Avg Duration
+  ----------------------------------------------------------------------
+  B_sus4_oct3                    46            15.70s             0.34s
+  G_sus4_oct3                    15             6.00s             0.40s
+  G_maj11_oct4                    4             3.70s             0.92s
+  D_sus4_oct3                     9             3.40s             0.38s
+  D_sus4_oct4                     9             3.10s             0.34s
+  B_sus4_oct2                    11             3.00s             0.27s
+  D_sus4_oct6                     2             2.70s             1.35s
+  D_aug_oct4                      7             2.50s             0.36s
+  A_sus4_oct3                     9             2.30s             0.26s
+  E_min7_oct4                     4             2.30s             0.58s
+
+7. Creating visualization...
+
+✓ Saved visualization to: test_amazing_grace_chord_detection.png
+
+================================================================================
+
+✓ Analysis complete!
