@@ -1,0 +1,44 @@
+{
+  "onset_times": [
+    0.0,
+    0.5,
+    1.0,
+    1.5,
+    2.0,
+    2.5,
+    3.0,
+    3.5
+  ],
+  "midi_notes": [
+    60,
+    62,
+    64,
+    65,
+    67,
+    69,
+    71,
+    72
+  ],
+  "velocities": [
+    80,
+    80,
+    80,
+    80,
+    80,
+    80,
+    80,
+    80
+  ],
+  "durations": [
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5
+  ],
+  "tempo": 120,
+  "file": "/home/ajs7/project/wordplay/music/new_start/working_files/test_data/test_simple_scale.mid"
+}

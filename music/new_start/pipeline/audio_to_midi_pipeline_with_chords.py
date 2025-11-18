@@ -27,6 +27,7 @@ from autocorrelation_analyzer import AutocorrelationAnalyzer
 from ultra_fast_detector import UltraFastChordDetector
 from build_multi_octave_psf import load_multi_octave_psfs
 from midi_generator import MidiGenerator
+from aggressive_theory_filter import AggressiveTheoryFilter
 
 
 def validate_wav_file(file_path: str) -> Tuple[bool, str]:
@@ -72,15 +73,17 @@ def detect_chords_psf(spectral_data: np.ndarray,
                      sample_rate: int,
                      audio_duration: float,
                      psf_template_path: str = "multi_octave_psf_templates.pkl",
+                     filter_mode: str = "HARD",
                      verbose: bool = False) -> List[Dict]:
     """
-    Detect chords using ultra-fast PSF matcher.
+    Detect chords using ultra-fast PSF matcher with music theory filtering.
 
     Args:
         spectral_data: Spectral matrix from SpectralAnalyzer
         sample_rate: Audio sample rate
         audio_duration: Total audio duration in seconds
         psf_template_path: Path to PSF templates
+        filter_mode: Theory filtering mode ('HARD', 'MEDIUM', 'SOFT', or 'BASELINE')
         verbose: Print progress messages
 
     Returns:
@@ -107,6 +110,7 @@ def detect_chords_psf(spectral_data: np.ndarray,
 
     if verbose:
         print(f"   Detecting chords using ultra-fast PSF matching...")
+        print(f"   Music theory filtering: {filter_mode} mode")
 
     # Detect chords across all time slices (THE FAST WAY!)
     start_time = time.perf_counter()
@@ -114,26 +118,47 @@ def detect_chords_psf(spectral_data: np.ndarray,
     detection_time = time.perf_counter() - start_time
 
     if verbose:
-        print(f"   ✓ Chord detection complete: {detection_time:.3f}s")
+        print(f"   ✓ SNR matrix computed: {detection_time:.3f}s")
         print(f"   Rate: {results['num_time'] / detection_time:.0f} slices/sec")
 
-    # Convert to chord events (merge consecutive same chords)
-    chord_events = []
+    # Apply music theory filtering
     num_time = results['num_time']
     time_per_slice = audio_duration / num_time
 
-    current_chord = None
-    start_time_pos = None
+    if filter_mode == "BASELINE":
+        # BASELINE: No theory filtering (original argmax approach)
+        if verbose:
+            print(f"   Using BASELINE mode (no theory filtering)")
 
-    for i in range(num_time):
-        if results['detected_flags'][i]:
-            chord = results['chord_names'][i]
-            time_pos = i * time_per_slice
+        chord_events = []
+        current_chord = None
+        start_time_pos = None
 
-            # New chord or continue current?
-            if chord != current_chord:
-                # Save previous chord
+        for i in range(num_time):
+            if results['detected_flags'][i]:
+                chord = results['chord_names'][i]
+                time_pos = i * time_per_slice
+
+                # New chord or continue current?
+                if chord != current_chord:
+                    # Save previous chord
+                    if current_chord is not None:
+                        chord_events.append({
+                            'chord': current_chord,
+                            'start_time': start_time_pos,
+                            'end_time': time_pos,
+                            'duration': time_pos - start_time_pos,
+                            'avg_snr': np.mean([results['best_snrs'][j]
+                                               for j in range(int(start_time_pos/time_per_slice), i)])
+                        })
+
+                    # Start new chord
+                    current_chord = chord
+                    start_time_pos = time_pos
+            else:
+                # No chord - end current if any
                 if current_chord is not None:
+                    time_pos = i * time_per_slice
                     chord_events.append({
                         'chord': current_chord,
                         'start_time': start_time_pos,
@@ -142,38 +167,52 @@ def detect_chords_psf(spectral_data: np.ndarray,
                         'avg_snr': np.mean([results['best_snrs'][j]
                                            for j in range(int(start_time_pos/time_per_slice), i)])
                     })
+                    current_chord = None
+                    start_time_pos = None
 
-                # Start new chord
-                current_chord = chord
-                start_time_pos = time_pos
-        else:
-            # No chord - end current if any
-            if current_chord is not None:
-                time_pos = i * time_per_slice
-                chord_events.append({
-                    'chord': current_chord,
-                    'start_time': start_time_pos,
-                    'end_time': time_pos,
-                    'duration': time_pos - start_time_pos,
-                    'avg_snr': np.mean([results['best_snrs'][j]
-                                       for j in range(int(start_time_pos/time_per_slice), i)])
-                })
-                current_chord = None
-                start_time_pos = None
+        # Final chord
+        if current_chord is not None:
+            chord_events.append({
+                'chord': current_chord,
+                'start_time': start_time_pos,
+                'end_time': audio_duration,
+                'duration': audio_duration - start_time_pos,
+                'avg_snr': np.mean([results['best_snrs'][j]
+                                   for j in range(int(start_time_pos/time_per_slice), num_time)])
+            })
 
-    # Final chord
-    if current_chord is not None:
-        chord_events.append({
-            'chord': current_chord,
-            'start_time': start_time_pos,
-            'end_time': audio_duration,
-            'duration': audio_duration - start_time_pos,
-            'avg_snr': np.mean([results['best_snrs'][j]
-                               for j in range(int(start_time_pos/time_per_slice), num_time)])
-        })
+    else:
+        # SOFT/MEDIUM/HARD: Use aggressive theory filtering
+        if verbose:
+            print(f"   Applying {filter_mode} mode theory filtering...")
+
+        # Initialize aggressive filter
+        theory_filter = AggressiveTheoryFilter(
+            snr_threshold=6.5,
+            top_k_candidates=10,
+            filter_mode=filter_mode
+        )
+
+        # Apply filtering to SNR matrix
+        filter_results = theory_filter.detect_with_aggressive_filtering(
+            results['snr_matrix'],
+            detector.template_names,
+            time_per_slice
+        )
+
+        # Convert to chord events format
+        chord_events = []
+        for segment in filter_results['detections']:
+            chord_events.append({
+                'chord': segment['chord'],
+                'start_time': segment['start_time'],
+                'end_time': segment['start_time'] + segment['duration'],
+                'duration': segment['duration'],
+                'avg_snr': segment['avg_snr']
+            })
 
     if verbose:
-        print(f"   Detected {len(chord_events)} chord segments")
+        print(f"   ✓ Detected {len(chord_events)} chord segments")
 
     return chord_events
 
@@ -245,19 +284,21 @@ def chord_to_midi_notes(chord_name: str) -> List[int]:
 def transcribe_with_chords(wav_path: str, output_path: str,
                            enable_chord_detection: bool = True,
                            enable_melody_detection: bool = True,
+                           filter_mode: str = "HARD",
                            intensity_threshold: float = 0.05,
                            confidence_threshold: float = 0.3,
                            min_duration_samples: int = 3,
                            tempo: int = 120,
                            verbose: bool = False) -> str:
     """
-    Enhanced transcription with chord detection.
+    Enhanced transcription with chord detection and music theory filtering.
 
     Args:
         wav_path: Path to input WAV file
         output_path: Path for output MIDI file
         enable_chord_detection: Enable PSF chord detection (default: True)
         enable_melody_detection: Enable autocorrelation melody detection (default: True)
+        filter_mode: Music theory filtering mode ('HARD', 'MEDIUM', 'SOFT', 'BASELINE')
         intensity_threshold: Minimum intensity for graph nodes
         confidence_threshold: Minimum confidence for fundamentals
         min_duration_samples: Minimum sustained duration
@@ -332,6 +373,7 @@ def transcribe_with_chords(wav_path: str, output_path: str,
                 spectral_data,
                 sample_rate,
                 audio_duration,
+                filter_mode=filter_mode,
                 verbose=verbose
             )
 
@@ -499,6 +541,12 @@ Features:
     parser.add_argument('--tempo', type=int, default=120,
                         help='MIDI tempo in BPM (default: 120)')
 
+    parser.add_argument('--filter-mode', type=str, default='HARD',
+                        choices=['HARD', 'MEDIUM', 'SOFT', 'BASELINE'],
+                        help='Music theory filtering mode (default: HARD). '
+                             'HARD: Only in-key chords. MEDIUM: Strong penalties. '
+                             'SOFT: Mild bonuses. BASELINE: No filtering.')
+
     parser.add_argument('--verbose', '-v', action='store_true',
                         help='Verbose output')
 
@@ -517,6 +565,7 @@ Features:
             output_path=args.output,
             enable_chord_detection=not args.no_chords,
             enable_melody_detection=not args.no_melody,
+            filter_mode=args.filter_mode,
             intensity_threshold=args.intensity_threshold,
             confidence_threshold=args.confidence,
             min_duration_samples=args.min_duration,
