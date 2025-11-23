@@ -13,6 +13,7 @@ Goal: Onset timing error < 50ms
 import numpy as np
 from scipy import signal
 from scipy.ndimage import maximum_filter1d
+from scipy.signal import find_peaks
 
 
 class OnsetDetector:
@@ -54,7 +55,7 @@ class OnsetDetector:
             for i in range(0, len(audio) - frame_length, self.hop_length)
         ])
 
-        # Smooth the energy envelope
+        # Smooth the energy envelope (balance between noise reduction and onset preservation)
         rms = self._smooth(rms, window_size=3)
 
         # Find peaks in energy (onsets)
@@ -98,7 +99,7 @@ class OnsetDetector:
         if np.max(flux) > 0:
             flux = flux / np.max(flux)
 
-        # Smooth
+        # Smooth (balance between noise reduction and onset preservation)
         flux = self._smooth(flux, window_size=3)
 
         # Find peaks
@@ -109,7 +110,7 @@ class OnsetDetector:
 
         return onset_times
 
-    def detect_onsets_combined(self, audio):
+    def detect_onsets_combined(self, audio, first_onset_only=False):
         """
         Detect onsets using combined energy + spectral flux.
 
@@ -117,6 +118,7 @@ class OnsetDetector:
 
         Args:
             audio: Audio signal (mono, float32)
+            first_onset_only: If True, return only the first onset (for single-note recordings)
 
         Returns:
             onset_times: Array of onset times in seconds
@@ -131,6 +133,10 @@ class OnsetDetector:
 
         # Merge onsets within 50ms of each other
         merged_onsets = self._merge_close_onsets(all_onsets, tolerance=0.05)
+
+        # If requested, return only first onset (useful for single-note samples)
+        if first_onset_only and len(merged_onsets) > 0:
+            return np.array([merged_onsets[0]])
 
         return merged_onsets
 
@@ -167,7 +173,7 @@ class OnsetDetector:
         # Combine energy and flux
         combined = 0.5 * energy + 0.5 * flux
 
-        # Smooth
+        # Smooth (balance between noise reduction and onset preservation)
         combined = self._smooth(combined, window_size=3)
 
         # Find peaks
@@ -196,22 +202,28 @@ class OnsetDetector:
         smoothed = np.convolve(signal, kernel, mode='same')
         return smoothed
 
-    def _find_peaks(self, signal, threshold=0.3):
+    def _find_peaks(self, onset_signal, threshold=0.3):
         """
-        Find peaks in signal using local maxima.
+        Find peaks in signal using scipy's find_peaks with prominence.
+
+        Uses prominence (how much a peak stands out) to filter spurious peaks.
 
         Args:
-            signal: 1D signal
+            onset_signal: 1D signal
             threshold: Minimum peak height (0-1)
 
         Returns:
             peak_indices: Indices of peaks
         """
-        # Find local maxima
-        max_filter = maximum_filter1d(signal, size=5, mode='constant')
-        is_peak = (signal == max_filter) & (signal > threshold)
-
-        peak_indices = np.where(is_peak)[0]
+        # Use scipy's find_peaks with prominence requirement
+        # Prominence measures how much a peak stands out relative to surrounding signal
+        # This filters out small bumps that aren't real onsets
+        peak_indices, properties = find_peaks(
+            onset_signal,
+            height=threshold,            # Minimum peak height
+            prominence=threshold * 0.15,  # Peak must stand out by 15% of threshold
+            distance=3                   # Minimum 3 frames (~35ms) between peaks
+        )
 
         return peak_indices
 
@@ -267,23 +279,26 @@ class VelocityEstimator:
         """
         self.sample_rate = sample_rate
 
-    def estimate_velocity(self, audio, onset_time, window_duration=0.05):
+    def estimate_velocity(self, audio, onset_time, window_duration=0.015):
         """
         Estimate MIDI velocity for a note onset.
+
+        Uses peak amplitude during attack transient (first 15ms after onset).
+        This captures the initial strike intensity, not the sustain.
 
         Args:
             audio: Audio signal (mono, float32)
             onset_time: Time of onset in seconds
-            window_duration: Duration of attack window in seconds (default 50ms)
+            window_duration: Duration of attack window in seconds (default 15ms)
 
         Returns:
             velocity: MIDI velocity (0-127)
         """
-        # Get audio segment around onset
+        # Get audio segment around onset (attack transient only)
         onset_sample = int(onset_time * self.sample_rate)
         window_samples = int(window_duration * self.sample_rate)
 
-        # Extract window
+        # Extract window starting from onset
         start = max(0, onset_sample)
         end = min(len(audio), onset_sample + window_samples)
         window = audio[start:end]
@@ -291,24 +306,20 @@ class VelocityEstimator:
         if len(window) == 0:
             return 64  # Default velocity
 
-        # Compute RMS energy
-        rms = np.sqrt(np.mean(window**2))
+        # Use PEAK amplitude during attack (not RMS)
+        # Peak amplitude better represents the strike intensity
+        peak_amplitude = np.max(np.abs(window))
 
         # Map to MIDI velocity (0-127)
-        # Calibration: typical RMS ranges from 0.01 (quiet) to 0.5 (loud)
-        # Use logarithmic scaling for better perceptual mapping
-        if rms < 0.001:
-            velocity = 1
-        else:
-            # Log scaling: velocity = 127 * log10(rms / min_rms) / log10(max_rms / min_rms)
-            min_rms = 0.001
-            max_rms = 0.5
-            log_rms = np.log10(np.clip(rms, min_rms, max_rms))
-            log_min = np.log10(min_rms)
-            log_max = np.log10(max_rms)
+        # Real piano recordings have peak amplitudes roughly:
+        # - p (piano/soft): 0.05 - 0.15
+        # - mf (mezzo-forte): 0.15 - 0.4
+        # - ff (fortissimo/loud): 0.4 - 1.0
 
-            velocity = int(127 * (log_rms - log_min) / (log_max - log_min))
-            velocity = np.clip(velocity, 1, 127)
+        # Use power scaling (square root) for perceptual loudness
+        # This compresses the dynamic range appropriately
+        velocity = int(127 * np.sqrt(peak_amplitude))
+        velocity = np.clip(velocity, 1, 127)
 
         return velocity
 
