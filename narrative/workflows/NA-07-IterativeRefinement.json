@@ -1,0 +1,192 @@
+{
+  "workflow_id": "NA-07",
+  "name": "Iterative Story Refinement",
+  "description": "Cyclical workflow for refining and evolving a story DAG through multiple iterations. Supports adding/removing/modifying nodes with impact analysis.",
+  "version": "1.0.0",
+  "is_cyclical": true,
+  "entry_requirements": [
+    "Existing story DAG (from NA-01 through NA-05)",
+    "Specific change request (add character, modify plot point, etc.)"
+  ],
+  "phases": [
+    {
+      "phase_id": "NA-07-A",
+      "name": "Change Identification",
+      "description": "Identify what change the author wants to make",
+      "change_types_supported": [
+        "add_node",
+        "remove_node",
+        "modify_node",
+        "add_subplot",
+        "merge_subplot",
+        "reorder_chapters",
+        "add_character",
+        "remove_character"
+      ],
+      "llm_prompts": [
+        {
+          "id": "identify_change",
+          "prompt": "The author wants to make a change to their story. Based on their request, identify:\n1. What TYPE of change is this? (add_node, remove_node, modify_node, add_subplot, etc.)\n2. What specific elements are affected? (node IDs, characters, chapters)\n3. What is the author's intent behind this change?\n4. Are there any ambiguities that need clarification?\n\nAuthor's request: {author_request}\nCurrent DAG summary: {dag_summary}",
+          "output_schema": {
+            "change_type": "string",
+            "affected_elements": ["string"],
+            "author_intent": "string",
+            "clarifications_needed": ["string"]
+          }
+        }
+      ]
+    },
+    {
+      "phase_id": "NA-07-B",
+      "name": "Impact Preview",
+      "description": "Preview the impact of the change before applying it",
+      "automated_steps": [
+        {
+          "action": "create_snapshot",
+          "params": {"name": "pre_change_{timestamp}"}
+        },
+        {
+          "action": "run_impact_analysis",
+          "params": {"change_type": "{change_type}", "target": "{affected_elements}"}
+        }
+      ],
+      "llm_prompts": [
+        {
+          "id": "explain_impact",
+          "prompt": "Analyze this impact report and explain to the author:\n1. What will break or change if they proceed\n2. What ripple effects will occur\n3. Whether this is a safe change or risky\n4. Recommendations for proceeding\n\nImpact Report:\n{impact_report}\n\nProvide a clear, non-technical explanation.",
+          "output_schema": {
+            "summary": "string",
+            "risk_level": "low|medium|high",
+            "proceed_recommendation": "boolean",
+            "suggested_modifications": ["string"]
+          }
+        }
+      ],
+      "decision_point": {
+        "question": "Proceed with change?",
+        "options": ["proceed", "modify_change", "cancel"]
+      }
+    },
+    {
+      "phase_id": "NA-07-C",
+      "name": "Apply Change",
+      "description": "Apply the change with full tracking",
+      "automated_steps": [
+        {
+          "action": "apply_change",
+          "params": {
+            "change_type": "{change_type}",
+            "change_details": "{change_details}",
+            "author_notes": "{author_notes}"
+          }
+        }
+      ],
+      "llm_prompts": [
+        {
+          "id": "suggest_connections",
+          "prompt": "A new node has been added to the story DAG. Suggest how it should connect to existing nodes:\n\nNew Node: {new_node}\nExisting nearby nodes (by chapter): {nearby_nodes}\nExisting character nodes: {character_nodes}\nSubplot context: {subplot_context}\n\nSuggest 2-3 incoming edges and 2-3 outgoing edges with appropriate edge types.",
+          "condition": "change_type == 'add_node'",
+          "output_schema": {
+            "incoming_edges": [{"from": "string", "type": "string", "rationale": "string"}],
+            "outgoing_edges": [{"to": "string", "type": "string", "rationale": "string"}]
+          }
+        }
+      ]
+    },
+    {
+      "phase_id": "NA-07-D",
+      "name": "Coherence Validation",
+      "description": "Validate the DAG is still coherent after changes",
+      "automated_steps": [
+        {
+          "action": "run_full_validation"
+        },
+        {
+          "action": "run_functional_analysis"
+        },
+        {
+          "action": "run_gap_detection"
+        }
+      ],
+      "llm_prompts": [
+        {
+          "id": "interpret_validation",
+          "prompt": "Review the validation results and provide guidance:\n\nCoherence Report: {coherence_report}\nFunctional Analysis: {functional_report}\nGap Detection: {gap_report}\n\nIdentify:\n1. Critical issues that MUST be fixed\n2. Warnings that SHOULD be addressed\n3. Suggestions for improvement\n4. Overall health of the story structure",
+          "output_schema": {
+            "critical_issues": ["string"],
+            "warnings": ["string"],
+            "suggestions": ["string"],
+            "overall_health": "healthy|needs_attention|broken"
+          }
+        }
+      ],
+      "decision_point": {
+        "question": "DAG Status",
+        "options": ["healthy_continue", "fix_issues", "rollback"]
+      }
+    },
+    {
+      "phase_id": "NA-07-E",
+      "name": "Fix Issues",
+      "description": "Address any issues found during validation",
+      "is_loop": true,
+      "loop_until": "all_critical_issues_resolved",
+      "llm_prompts": [
+        {
+          "id": "generate_fix",
+          "prompt": "For this critical issue, generate a fix:\n\nIssue: {issue}\nCurrent DAG state: {dag_state}\nAuthor's original intent: {author_intent}\n\nPropose a minimal fix that:\n1. Resolves the issue\n2. Preserves author's intent\n3. Maintains story coherence\n4. Minimizes additional changes",
+          "output_schema": {
+            "fix_type": "string",
+            "fix_details": "object",
+            "rationale": "string",
+            "side_effects": ["string"]
+          }
+        }
+      ],
+      "automated_steps": [
+        {
+          "action": "apply_fix",
+          "params": {"fix": "{generated_fix}"}
+        },
+        {
+          "action": "revalidate"
+        }
+      ]
+    },
+    {
+      "phase_id": "NA-07-F",
+      "name": "Finalize Iteration",
+      "description": "Complete this iteration and prepare for next",
+      "automated_steps": [
+        {
+          "action": "create_snapshot",
+          "params": {"name": "post_change_{timestamp}"}
+        },
+        {
+          "action": "update_change_log"
+        }
+      ],
+      "llm_prompts": [
+        {
+          "id": "summarize_iteration",
+          "prompt": "Summarize what changed in this iteration:\n\nChanges made: {change_log}\nBefore snapshot: {before_summary}\nAfter snapshot: {after_summary}\n\nProvide a concise summary for the author's records.",
+          "output_schema": {
+            "summary": "string",
+            "nodes_affected": "number",
+            "edges_affected": "number",
+            "next_suggested_action": "string"
+          }
+        }
+      ],
+      "exits_to": ["NA-07-A", "NA-06", "complete"]
+    }
+  ],
+  "rollback_procedure": {
+    "steps": [
+      "Identify last good snapshot",
+      "Restore snapshot",
+      "Log rollback reason",
+      "Notify author"
+    ]
+  }
+}

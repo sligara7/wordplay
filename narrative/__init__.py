@@ -45,6 +45,18 @@ from .workflow_runner import (
     StepResult,
     create_story_project,
 )
+from .iterative_authoring import (
+    ChangeType,
+    ChangeEvent,
+    ImpactReport,
+    Subplot,
+    DynamicNarrativeDAG,
+    CoherenceValidator,
+    ImpactAnalyzer,
+    create_dynamic_dag,
+    validate_dag,
+    analyze_impact,
+)
 
 __all__ = [
     # Core data structures
@@ -93,4 +105,15 @@ __all__ = [
     "StepStatus",
     "StepResult",
     "create_story_project",
+    # Iterative Authoring
+    "ChangeType",
+    "ChangeEvent",
+    "ImpactReport",
+    "Subplot",
+    "DynamicNarrativeDAG",
+    "CoherenceValidator",
+    "ImpactAnalyzer",
+    "create_dynamic_dag",
+    "validate_dag",
+    "analyze_impact",
 ]

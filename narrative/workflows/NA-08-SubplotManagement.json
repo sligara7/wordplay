@@ -1,0 +1,200 @@
+{
+  "workflow_id": "NA-08",
+  "name": "Subplot & Side-Story Management",
+  "description": "Workflow for creating, developing, and merging subplots with the main story. Supports parallel storylines that eventually converge.",
+  "version": "1.0.0",
+  "entry_requirements": [
+    "Existing main plot DAG",
+    "Concept for subplot or side-story"
+  ],
+  "phases": [
+    {
+      "phase_id": "NA-08-A",
+      "name": "Subplot Conception",
+      "description": "Define the subplot's purpose and relationship to main plot",
+      "llm_prompts": [
+        {
+          "id": "define_subplot",
+          "prompt": "Help the author develop this subplot concept:\n\nMain plot summary: {main_plot_summary}\nSubplot idea: {subplot_idea}\n\nDefine:\n1. Subplot's thematic purpose (what does it add to the story?)\n2. Primary character(s) driving this subplot\n3. How it CONTRASTS or PARALLELS the main plot\n4. Estimated chapter range (when does it run?)\n5. Emotional arc of the subplot\n6. Where it should merge with main plot (and WHY that moment)",
+          "output_schema": {
+            "subplot_id": "string",
+            "name": "string",
+            "thematic_purpose": "string",
+            "primary_characters": ["string"],
+            "relationship_to_main": "contrasts|parallels|complicates|reveals",
+            "chapter_range": {"start": "number", "end": "number"},
+            "emotional_arc": "string",
+            "merge_point_chapter": "number",
+            "merge_rationale": "string"
+          }
+        }
+      ]
+    },
+    {
+      "phase_id": "NA-08-B",
+      "name": "Subplot Structure",
+      "description": "Create the subplot's internal structure",
+      "llm_prompts": [
+        {
+          "id": "generate_subplot_nodes",
+          "prompt": "Generate the plot nodes for this subplot:\n\nSubplot definition: {subplot_definition}\nMain plot nodes in same chapter range: {overlapping_main_nodes}\n\nCreate 5-10 nodes that:\n1. Tell a complete mini-arc within the subplot\n2. Can interweave with main plot chapters\n3. Build toward the merge point\n4. Have clear causality between them\n\nFor each node specify: id, type, description, chapter, character, stakes_level",
+          "output_schema": {
+            "nodes": [{
+              "id": "string",
+              "node_type": "string",
+              "description": "string",
+              "chapter": "number",
+              "character": "string",
+              "stakes_level": "number"
+            }],
+            "internal_edges": [{
+              "from": "string",
+              "to": "string",
+              "type": "string"
+            }]
+          }
+        }
+      ],
+      "automated_steps": [
+        {
+          "action": "create_subplot",
+          "params": {"subplot_def": "{subplot_definition}"}
+        },
+        {
+          "action": "add_nodes_to_subplot",
+          "params": {"nodes": "{generated_nodes}"}
+        },
+        {
+          "action": "add_internal_edges",
+          "params": {"edges": "{internal_edges}"}
+        }
+      ]
+    },
+    {
+      "phase_id": "NA-08-C",
+      "name": "Interweaving",
+      "description": "Connect subplot to main plot through subtle links",
+      "llm_prompts": [
+        {
+          "id": "find_connections",
+          "prompt": "Find natural connection points between subplot and main plot:\n\nSubplot nodes: {subplot_nodes}\nMain plot nodes: {main_plot_nodes}\n\nIdentify 3-5 places where:\n1. A subplot event FORESHADOWS something in main plot\n2. A main plot event ENABLES something in subplot\n3. Events PARALLEL each other thematically\n4. Information from one REVEALS context for the other\n\nThese connections should feel organic, not forced.",
+          "output_schema": {
+            "connections": [{
+              "from": "string",
+              "to": "string",
+              "edge_type": "string",
+              "rationale": "string",
+              "visibility": "explicit|subtle|hidden"
+            }]
+          }
+        }
+      ],
+      "automated_steps": [
+        {
+          "action": "add_cross_edges",
+          "params": {"edges": "{connections}"}
+        },
+        {
+          "action": "validate_timeline"
+        }
+      ]
+    },
+    {
+      "phase_id": "NA-08-D",
+      "name": "Merge Point Design",
+      "description": "Design where and how subplot merges with main plot",
+      "llm_prompts": [
+        {
+          "id": "design_merge",
+          "prompt": "Design the subplot merge with main plot:\n\nSubplot climax: {subplot_climax_node}\nMain plot at merge chapter: {main_plot_context}\nMerge chapter: {merge_chapter}\n\nDesign:\n1. The MERGE NODE - where both storylines converge\n2. How subplot resolution affects main plot\n3. What new understanding emerges from the merge\n4. Edges connecting subplot's end to merge node\n5. Edges connecting merge node to main plot continuation",
+          "output_schema": {
+            "merge_node": {
+              "id": "string",
+              "node_type": "string",
+              "description": "string",
+              "chapter": "number"
+            },
+            "subplot_to_merge_edges": [{
+              "from": "string",
+              "type": "string"
+            }],
+            "merge_to_main_edges": [{
+              "to": "string",
+              "type": "string"
+            }],
+            "thematic_resolution": "string"
+          }
+        }
+      ],
+      "automated_steps": [
+        {
+          "action": "add_merge_node",
+          "params": {"node": "{merge_node}"}
+        },
+        {
+          "action": "set_merge_point",
+          "params": {
+            "subplot_id": "{subplot_id}",
+            "merge_node_id": "{merge_node.id}"
+          }
+        },
+        {
+          "action": "add_merge_edges",
+          "params": {"edges": "{all_merge_edges}"}
+        }
+      ]
+    },
+    {
+      "phase_id": "NA-08-E",
+      "name": "Validation",
+      "description": "Validate subplot integration",
+      "automated_steps": [
+        {
+          "action": "run_subplot_validation",
+          "params": {"subplot_id": "{subplot_id}"}
+        },
+        {
+          "action": "run_full_dag_validation"
+        }
+      ],
+      "llm_prompts": [
+        {
+          "id": "assess_integration",
+          "prompt": "Assess how well the subplot integrates:\n\nSubplot status: {subplot_status}\nValidation report: {validation_report}\n\nEvaluate:\n1. Does subplot feel organic or forced?\n2. Is the merge point earned and meaningful?\n3. Are there pacing issues (too much/too little subplot)?\n4. Does subplot enhance or distract from main plot?\n5. Suggestions for improvement",
+          "output_schema": {
+            "integration_quality": "excellent|good|needs_work|problematic",
+            "pacing_assessment": "string",
+            "enhancement_score": "number",
+            "suggestions": ["string"]
+          }
+        }
+      ],
+      "decision_point": {
+        "question": "Subplot integration quality",
+        "options": ["accept", "refine", "major_rework", "remove_subplot"]
+      }
+    }
+  ],
+  "subplot_patterns": {
+    "parallel_journey": {
+      "description": "Secondary character on similar journey, merges when paths cross",
+      "typical_merge": "confrontation or revelation"
+    },
+    "investigation_b": {
+      "description": "Different investigation that reveals key information",
+      "typical_merge": "evidence convergence"
+    },
+    "relationship_subplot": {
+      "description": "Romance or relationship that complicates/enables main plot",
+      "typical_merge": "personal stakes raise main plot stakes"
+    },
+    "backstory_thread": {
+      "description": "Past events revealed through flashbacks",
+      "typical_merge": "past explains present crisis"
+    },
+    "antagonist_pov": {
+      "description": "Villain's perspective and plans",
+      "typical_merge": "plans collide with protagonist"
+    }
+  }
+}

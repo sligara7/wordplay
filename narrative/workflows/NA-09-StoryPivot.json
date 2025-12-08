@@ -1,0 +1,237 @@
+{
+  "workflow_id": "NA-09",
+  "name": "Story Pivot Handler",
+  "description": "Handle major story changes that ripple through the entire DAG. For when an author wants to fundamentally change direction mid-story.",
+  "version": "1.0.0",
+  "trigger_conditions": [
+    "Author wants to change a character's fundamental nature",
+    "Major plot point needs to change with downstream effects",
+    "Genre shift or tone change",
+    "Killing/removing a major character",
+    "Changing the ending",
+    "Adding a major twist that requires setup"
+  ],
+  "phases": [
+    {
+      "phase_id": "NA-09-A",
+      "name": "Pivot Analysis",
+      "description": "Understand the scope and impact of the proposed pivot",
+      "llm_prompts": [
+        {
+          "id": "analyze_pivot",
+          "prompt": "Analyze this major story pivot:\n\nCurrent story state: {dag_summary}\nProposed change: {pivot_description}\n\nDetermine:\n1. BLAST RADIUS - How many nodes are directly affected?\n2. RIPPLE EFFECTS - What indirect changes cascade from this?\n3. SETUP REQUIREMENTS - What earlier changes are needed to make this work?\n4. CONTRADICTION CHECK - What existing elements now contradict this?\n5. OPPORTUNITY ANALYSIS - What new possibilities does this open up?\n\nBe thorough - major pivots can break stories.",
+          "output_schema": {
+            "blast_radius": {
+              "directly_affected_nodes": ["string"],
+              "count": "number"
+            },
+            "ripple_effects": [{
+              "node_id": "string",
+              "current_state": "string",
+              "required_change": "string"
+            }],
+            "setup_requirements": [{
+              "chapter": "number",
+              "requirement": "string",
+              "implementation": "string"
+            }],
+            "contradictions": [{
+              "node_id": "string",
+              "contradiction": "string",
+              "severity": "minor|major|breaking"
+            }],
+            "new_opportunities": ["string"],
+            "pivot_feasibility": "easy|moderate|difficult|near_impossible"
+          }
+        }
+      ]
+    },
+    {
+      "phase_id": "NA-09-B",
+      "name": "Decision Point",
+      "description": "Author decides how to proceed given the analysis",
+      "present_to_author": {
+        "summary": "{pivot_analysis_summary}",
+        "options": [
+          {
+            "id": "full_pivot",
+            "description": "Make all necessary changes to support the pivot",
+            "effort": "high",
+            "risk": "medium"
+          },
+          {
+            "id": "partial_pivot",
+            "description": "Implement a modified version with less disruption",
+            "effort": "medium",
+            "risk": "low"
+          },
+          {
+            "id": "defer_pivot",
+            "description": "Save this for a future story/sequel",
+            "effort": "low",
+            "risk": "none"
+          },
+          {
+            "id": "abandon_pivot",
+            "description": "Keep the story as-is",
+            "effort": "none",
+            "risk": "none"
+          }
+        ]
+      },
+      "llm_prompts": [
+        {
+          "id": "recommend_approach",
+          "prompt": "Given this pivot analysis, recommend an approach:\n\nAnalysis: {pivot_analysis}\nAuthor's stated goals: {author_goals}\nStory progress: {completion_percentage}% complete\n\nConsider:\n- How much work has already been done?\n- Does the pivot make the story better?\n- Is there a simpler way to achieve the author's goal?\n- What would you recommend and why?",
+          "output_schema": {
+            "recommendation": "full_pivot|partial_pivot|defer_pivot|abandon_pivot",
+            "rationale": "string",
+            "alternative_suggestion": "string"
+          }
+        }
+      ]
+    },
+    {
+      "phase_id": "NA-09-C",
+      "name": "Pivot Planning",
+      "description": "Create detailed plan for implementing the pivot",
+      "condition": "decision != 'abandon_pivot'",
+      "automated_steps": [
+        {
+          "action": "create_snapshot",
+          "params": {"name": "pre_pivot_{pivot_id}"}
+        }
+      ],
+      "llm_prompts": [
+        {
+          "id": "create_pivot_plan",
+          "prompt": "Create a step-by-step pivot implementation plan:\n\nPivot: {pivot_description}\nAffected nodes: {affected_nodes}\nRequired setup: {setup_requirements}\n\nCreate an ordered list of changes where:\n1. Earlier changes don't depend on later ones\n2. Each change is atomic and testable\n3. Validation checkpoints are included\n4. Rollback points are identified\n\nGroup changes into phases that can be validated independently.",
+          "output_schema": {
+            "phases": [{
+              "phase_name": "string",
+              "changes": [{
+                "order": "number",
+                "change_type": "string",
+                "target": "string",
+                "details": "object",
+                "rationale": "string"
+              }],
+              "validation_checkpoint": "string",
+              "is_rollback_point": "boolean"
+            }]
+          }
+        }
+      ]
+    },
+    {
+      "phase_id": "NA-09-D",
+      "name": "Execute Pivot",
+      "description": "Execute the pivot plan phase by phase",
+      "is_loop": true,
+      "loop_over": "phases",
+      "for_each_phase": {
+        "steps": [
+          {
+            "action": "execute_changes",
+            "params": {"changes": "{phase.changes}"}
+          },
+          {
+            "action": "run_validation",
+            "params": {"checkpoint": "{phase.validation_checkpoint}"}
+          },
+          {
+            "condition": "phase.is_rollback_point",
+            "action": "create_snapshot",
+            "params": {"name": "pivot_checkpoint_{phase_name}"}
+          }
+        ],
+        "on_failure": {
+          "action": "pause_and_report",
+          "options": ["fix_and_continue", "rollback_to_checkpoint", "abort_pivot"]
+        }
+      }
+    },
+    {
+      "phase_id": "NA-09-E",
+      "name": "Pivot Validation",
+      "description": "Comprehensive validation after pivot",
+      "automated_steps": [
+        {
+          "action": "run_full_validation"
+        },
+        {
+          "action": "run_functional_analysis"
+        },
+        {
+          "action": "compare_snapshots",
+          "params": {
+            "before": "pre_pivot_{pivot_id}",
+            "after": "current"
+          }
+        }
+      ],
+      "llm_prompts": [
+        {
+          "id": "assess_pivot_success",
+          "prompt": "Assess whether the pivot was successful:\n\nOriginal goal: {pivot_description}\nChanges made: {change_summary}\nValidation results: {validation_report}\nBefore/after comparison: {comparison}\n\nEvaluate:\n1. Did the pivot achieve its goal?\n2. Is the story still coherent?\n3. Are there new issues introduced?\n4. Does the story feel better or worse?\n5. Any remaining work needed?",
+          "output_schema": {
+            "goal_achieved": "boolean",
+            "coherence_maintained": "boolean",
+            "new_issues": ["string"],
+            "quality_assessment": "improved|same|degraded",
+            "remaining_work": ["string"],
+            "final_recommendation": "accept|needs_more_work|rollback"
+          }
+        }
+      ]
+    },
+    {
+      "phase_id": "NA-09-F",
+      "name": "Finalize or Rollback",
+      "description": "Complete the pivot or restore previous state",
+      "decision_point": {
+        "based_on": "{pivot_assessment.final_recommendation}",
+        "actions": {
+          "accept": {
+            "steps": [
+              {"action": "create_final_snapshot", "params": {"name": "post_pivot_{pivot_id}"}},
+              {"action": "log_pivot_completion"},
+              {"action": "cleanup_intermediate_snapshots"}
+            ]
+          },
+          "needs_more_work": {
+            "exits_to": "NA-07"
+          },
+          "rollback": {
+            "steps": [
+              {"action": "restore_snapshot", "params": {"name": "pre_pivot_{pivot_id}"}},
+              {"action": "log_pivot_rollback"}
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "common_pivots": {
+    "villain_reveal": {
+      "description": "Reveal that an ally is actually the villain",
+      "setup_needed": ["Plant earlier suspicious behavior", "Add foreshadowing", "Explain access/opportunity"],
+      "affected_areas": ["All scenes with character", "Investigation threads", "Trust relationships"]
+    },
+    "character_death": {
+      "description": "Kill a major character",
+      "setup_needed": ["Emotional stakes", "Impact on other characters", "Plot threads to resolve or transfer"],
+      "affected_areas": ["All future scenes with character", "Relationship arcs", "Subplot resolution"]
+    },
+    "genre_shift": {
+      "description": "Story changes genre mid-way (e.g., mystery becomes horror)",
+      "setup_needed": ["Genre element seeds", "Tone transition", "Reader expectation management"],
+      "affected_areas": ["Pacing", "Stakes escalation", "Resolution approach"]
+    },
+    "timeline_restructure": {
+      "description": "Add non-linear storytelling",
+      "setup_needed": ["Identify natural break points", "Ensure each timeline is followable", "Plant connections"],
+      "affected_areas": ["Chapter order", "Information revelation", "Reader understanding"]
+    }
+  }
+}
