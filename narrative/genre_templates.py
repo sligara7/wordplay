@@ -601,6 +601,277 @@ def _build_literary_fiction_skeleton(dag: NarrativeDAG) -> None:
     dag.add_edge("present_moment", "ambiguous_resolution", EdgeType.CONTRASTS)
 
 
+def _build_riddle_novel_skeleton(dag: NarrativeDAG) -> None:
+    """
+    Build the skeleton for a riddle-novel.
+
+    The entire plot functions as a riddle for the reader to solve.
+    Uses misdirection, hidden answers in plain sight, and a perspective
+    shift that recontextualizes everything.
+    """
+    # ACT 1: THE FRAME (Chapters 1-6)
+    # Establish what the reader THINKS the story is about
+
+    dag.add_node(PlotNode(
+        id="opening_question",
+        node_type=NodeType.SETUP,
+        description="Opening scene poses implicit question. Sets false frame",
+        chapter=1,
+        stakes_level=3,
+    ))
+
+    dag.add_node(PlotNode(
+        id="frame_establishment",
+        node_type=NodeType.SETUP,
+        description="World/situation established. Reader forms assumptions",
+        chapter=2,
+        stakes_level=3,
+    ))
+
+    dag.add_node(PlotNode(
+        id="protagonist_goal",
+        node_type=NodeType.CATALYST,
+        description="Protagonist's apparent goal introduced. Seems straightforward",
+        chapter=3,
+        character="Protagonist",
+        stakes_level=4,
+    ))
+
+    dag.add_node(PlotNode(
+        id="answer_planted_1",
+        node_type=NodeType.FORESHADOWING,
+        description="THE ANSWER appears in plain sight, disguised as ordinary detail",
+        chapter=4,
+        stakes_level=2,
+    ))
+
+    dag.add_node(PlotNode(
+        id="decoy_clue_1",
+        node_type=NodeType.COMPLICATION,
+        description="First misdirection - points toward false answer",
+        chapter=5,
+        stakes_level=4,
+    ))
+
+    dag.add_node(PlotNode(
+        id="supporting_cast",
+        node_type=NodeType.SETUP,
+        description="Characters introduced who seem to fit expected roles",
+        chapter=6,
+        stakes_level=3,
+    ))
+
+    # ACT 2A: DEEPENING THE FRAME (Chapters 7-12)
+    # Make the false frame feel real while planting more hidden truth
+
+    dag.add_node(PlotNode(
+        id="false_progress",
+        node_type=NodeType.CONSEQUENCE,
+        description="Protagonist makes progress toward apparent goal",
+        chapter=7,
+        character="Protagonist",
+        stakes_level=5,
+    ))
+
+    dag.add_node(PlotNode(
+        id="decoy_clue_2",
+        node_type=NodeType.COMPLICATION,
+        description="Second misdirection - stronger false path",
+        chapter=8,
+        stakes_level=5,
+    ))
+
+    dag.add_node(PlotNode(
+        id="answer_planted_2",
+        node_type=NodeType.FORESHADOWING,
+        description="More truth hidden in plain sight. Pattern if reader looks",
+        chapter=9,
+        stakes_level=3,
+    ))
+
+    dag.add_node(PlotNode(
+        id="false_revelation",
+        node_type=NodeType.REVELATION,
+        description="'Revelation' that fits the false frame perfectly",
+        chapter=10,
+        stakes_level=6,
+        is_twist=True,  # Feels like a twist but isn't the real one
+    ))
+
+    dag.add_node(PlotNode(
+        id="decoy_climax",
+        node_type=NodeType.CONFRONTATION,
+        description="Confrontation that seems climactic but isn't",
+        chapter=11,
+        stakes_level=7,
+    ))
+
+    dag.add_node(PlotNode(
+        id="hollow_victory",
+        node_type=NodeType.CONSEQUENCE,
+        description="'Victory' that feels wrong. Something doesn't fit",
+        chapter=12,
+        stakes_level=6,
+    ))
+
+    # ACT 2B: THE PARADOX (Chapters 13-18)
+    # Things stop making sense in the false frame
+
+    dag.add_node(PlotNode(
+        id="first_crack",
+        node_type=NodeType.COMPLICATION,
+        description="First event that doesn't fit the frame. Dismissed",
+        chapter=13,
+        stakes_level=6,
+    ))
+
+    dag.add_node(PlotNode(
+        id="answer_planted_3",
+        node_type=NodeType.FORESHADOWING,
+        description="Third planting of truth. Pattern now visible if looking",
+        chapter=14,
+        stakes_level=4,
+    ))
+
+    dag.add_node(PlotNode(
+        id="second_crack",
+        node_type=NodeType.COMPLICATION,
+        description="Second contradiction. Harder to dismiss",
+        chapter=15,
+        stakes_level=7,
+    ))
+
+    dag.add_node(PlotNode(
+        id="protagonist_doubt",
+        node_type=NodeType.DECISION,
+        description="Protagonist begins questioning assumptions",
+        chapter=16,
+        character="Protagonist",
+        stakes_level=7,
+    ))
+
+    dag.add_node(PlotNode(
+        id="paradox_moment",
+        node_type=NodeType.COMPLICATION,
+        description="Event that is IMPOSSIBLE in the false frame",
+        chapter=17,
+        stakes_level=8,
+    ))
+
+    dag.add_node(PlotNode(
+        id="stuck_point",
+        node_type=NodeType.CONSEQUENCE,
+        description="Complete confusion. Old understanding broken",
+        chapter=18,
+        stakes_level=8,
+        emotional_valence=-0.5,
+    ))
+
+    # ACT 3: THE SHIFT (Chapters 19-24)
+    # Perspective changes, everything recontextualizes
+
+    dag.add_node(PlotNode(
+        id="shift_trigger",
+        node_type=NodeType.REVELATION,
+        description="Single detail that triggers the perspective shift",
+        chapter=19,
+        stakes_level=9,
+    ))
+
+    dag.add_node(PlotNode(
+        id="perspective_shift",
+        node_type=NodeType.REVELATION,
+        description="THE SHIFT - reader/protagonist sees truth",
+        chapter=20,
+        stakes_level=10,
+        is_twist=True,  # The REAL twist
+    ))
+
+    dag.add_node(PlotNode(
+        id="reframe_cascade",
+        node_type=NodeType.CONSEQUENCE,
+        description="Everything clicks. Earlier events gain new meaning",
+        chapter=21,
+        stakes_level=9,
+        emotional_valence=0.7,
+    ))
+
+    dag.add_node(PlotNode(
+        id="true_confrontation",
+        node_type=NodeType.CONFRONTATION,
+        description="Real confrontation now that truth is known",
+        chapter=22,
+        stakes_level=10,
+    ))
+
+    dag.add_node(PlotNode(
+        id="real_resolution",
+        node_type=NodeType.RESOLUTION,
+        description="Resolution that satisfies both frame and truth",
+        chapter=23,
+        stakes_level=7,
+    ))
+
+    dag.add_node(PlotNode(
+        id="retrospective_clarity",
+        node_type=NodeType.RESOLUTION,
+        description="Final image that rewards re-reading",
+        chapter=24,
+        stakes_level=5,
+        emotional_valence=0.6,
+    ))
+
+    # BUILD EDGES
+
+    # Frame establishment chain
+    dag.add_edge("opening_question", "frame_establishment", EdgeType.ENABLES)
+    dag.add_edge("frame_establishment", "protagonist_goal", EdgeType.ENABLES)
+    dag.add_edge("protagonist_goal", "supporting_cast", EdgeType.ENABLES)
+
+    # Hidden answers (all point to final revelation)
+    dag.add_edge("answer_planted_1", "perspective_shift", EdgeType.FORESHADOWS)
+    dag.add_edge("answer_planted_2", "perspective_shift", EdgeType.FORESHADOWS)
+    dag.add_edge("answer_planted_3", "perspective_shift", EdgeType.FORESHADOWS)
+
+    # Decoy chain (misdirection)
+    dag.add_edge("frame_establishment", "decoy_clue_1", EdgeType.ENABLES)
+    dag.add_edge("decoy_clue_1", "false_progress", EdgeType.CAUSES)
+    dag.add_edge("false_progress", "decoy_clue_2", EdgeType.ENABLES)
+    dag.add_edge("decoy_clue_2", "false_revelation", EdgeType.CAUSES)
+    dag.add_edge("false_revelation", "decoy_climax", EdgeType.CAUSES)
+    dag.add_edge("decoy_climax", "hollow_victory", EdgeType.CAUSES)
+
+    # Contrast: false path vs real truth
+    dag.add_edge("false_revelation", "perspective_shift", EdgeType.CONTRASTS)
+    dag.add_edge("decoy_climax", "true_confrontation", EdgeType.CONTRASTS)
+
+    # Paradox build-up
+    dag.add_edge("hollow_victory", "first_crack", EdgeType.CAUSES)
+    dag.add_edge("first_crack", "second_crack", EdgeType.ENABLES)
+    dag.add_edge("second_crack", "protagonist_doubt", EdgeType.CAUSES)
+    dag.add_edge("protagonist_doubt", "paradox_moment", EdgeType.ENABLES)
+    dag.add_edge("paradox_moment", "stuck_point", EdgeType.CAUSES)
+
+    # The shift sequence
+    dag.add_edge("stuck_point", "shift_trigger", EdgeType.ENABLES)
+    dag.add_edge("shift_trigger", "perspective_shift", EdgeType.CAUSES)
+    dag.add_edge("perspective_shift", "reframe_cascade", EdgeType.CAUSES)
+
+    # Reframe connects back to early events
+    dag.add_edge("answer_planted_1", "reframe_cascade", EdgeType.REVEALS)
+    dag.add_edge("answer_planted_2", "reframe_cascade", EdgeType.REVEALS)
+    dag.add_edge("answer_planted_3", "reframe_cascade", EdgeType.REVEALS)
+
+    # Resolution
+    dag.add_edge("reframe_cascade", "true_confrontation", EdgeType.ENABLES)
+    dag.add_edge("true_confrontation", "real_resolution", EdgeType.CAUSES)
+    dag.add_edge("real_resolution", "retrospective_clarity", EdgeType.ENABLES)
+
+    # Full circle
+    dag.add_edge("opening_question", "retrospective_clarity", EdgeType.RESOLVES)
+    dag.add_edge("protagonist_goal", "real_resolution", EdgeType.RESOLVES)
+
+
 # Define the genre templates
 GENRE_TEMPLATES: dict[str, GenreTemplate] = {
     "mystery": GenreTemplate(
@@ -705,6 +976,28 @@ GENRE_TEMPLATES: dict[str, GenreTemplate] = {
         ],
         typical_subplot_count=(1, 3),
         build_skeleton=_build_literary_fiction_skeleton,
+    ),
+    "riddle_novel": GenreTemplate(
+        name="Riddle-Novel",
+        description="The entire plot IS a riddle - reader solves it through perspective shift",
+        typical_chapter_count=(20, 28),
+        key_structural_features=[
+            "False frame that seems like the real story",
+            "Answer hidden in plain sight (planted 3+ times)",
+            "Compelling decoy clues and false climax",
+            "Paradox that breaks the false frame",
+            "Perspective shift that recontextualizes everything",
+            "Retrospective clarity on re-read",
+        ],
+        required_node_types=[
+            NodeType.SETUP,  # Frame establishment
+            NodeType.FORESHADOWING,  # Hidden answers
+            NodeType.COMPLICATION,  # Decoys and paradox
+            NodeType.REVELATION,  # The shift
+            NodeType.RESOLUTION,  # True resolution
+        ],
+        typical_subplot_count=(1, 2),
+        build_skeleton=_build_riddle_novel_skeleton,
     ),
 }
 
