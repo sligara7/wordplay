@@ -112,7 +112,41 @@ Find structural resonances across domains (Structural Rorschach / Synesthesia).
 
 **Note:** This project is also available as a standalone repo at [synesthesia](https://github.com/sligara7/synesthesia).
 
-### 7. Tools & Utilities (`tools/`)
+### 7. Narrative Plot Structures (`narrative/`)
+Model, analyze, and generate book/novel plot structures using DAGs.
+
+> "Structure is the bones. Prose is the skin. Character is the soul. The DAG reveals the skeleton."
+
+```bash
+# Create a mystery novel skeleton
+python3 -c "
+from narrative import get_template
+dag = get_template('mystery').create_skeleton('My Mystery', 'Author Name')
+print(dag)
+print(dag.calculate_metrics().summary())
+"
+
+# Analyze a narrative structure
+python3 -c "
+from narrative import NarrativeAnalyzer
+from narrative.genre_templates import get_template
+dag = get_template('thriller').create_skeleton()
+analyzer = NarrativeAnalyzer(dag)
+diagnosis = analyzer.diagnose()
+print(diagnosis.summary())
+"
+```
+
+**Features:**
+- Genre templates (Mystery, Thriller, Romance, Epic Fantasy, Literary Fiction)
+- Plot node types (Setup, Catalyst, Revelation, Complication, etc.)
+- Edge types (Causes, Enables, Foreshadows, Reveals, etc.)
+- Structural diagnostics (dangling threads, pacing issues, deus ex machina detection)
+- Cross-domain signature extraction for Structural Rorschach integration
+
+**Docs:** [DAG_BOOK_PLOTS.md](narrative/DAG_BOOK_PLOTS.md)
+
+### 8. Tools & Utilities (`tools/`)
 Translation matrices, gap detection, batch merging.
 
 **Files:**
@@ -140,6 +174,7 @@ wordplay/
 ├── llm/                     # LLM evaluation tools
 ├── cross_domain/            # Structural Rorschach
 │   └── structural_rorschach/
+├── narrative/               # Book/novel plot structures
 ├── tools/                   # Translation & gap analysis
 ├── books/                   # Input text files
 ├── data/                    # Cached downloads (KJV, Byzantine)
@@ -189,6 +224,7 @@ When merging graphs from different domains:
 | Image | [FUTURE_IDEAS.md](image/FUTURE_IDEAS.md) |
 | LLM | [LLM_ANALYZER_GUIDE.md](llm/LLM_ANALYZER_GUIDE.md) |
 | Cross-Domain | [CROSS_DOMAIN_DAG_FOUNDATION.md](cross_domain/CROSS_DOMAIN_DAG_FOUNDATION.md) |
+| Narrative | [DAG_BOOK_PLOTS.md](narrative/DAG_BOOK_PLOTS.md) |
 | Tools | [translation_matrix_gap_analysis.md](tools/translation_matrix_gap_analysis.md) |
 
 ## Integration
