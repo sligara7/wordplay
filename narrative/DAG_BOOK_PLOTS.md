@@ -655,6 +655,187 @@ for gap in detector.detect_all_gaps():
 
 ---
 
+## Reflow Integration
+
+The narrative module exports to [reflow](https://github.com/sligara7/reflow)'s `system_of_systems_graph.json` format, enabling use of all reflow analysis tools on narrative structures.
+
+### Export to Reflow Format
+
+```python
+from narrative import get_template, export_narrative_to_reflow
+
+# Create a narrative DAG
+dag = get_template('mystery').create_skeleton('Murder at Midnight')
+
+# Export for reflow analysis
+export_narrative_to_reflow(dag, 'output/mystery_graph.json')
+```
+
+### Mapping Narrative → Systems Engineering
+
+| Narrative Concept | Reflow Concept | Example |
+|------------------|----------------|---------|
+| Plot Event | System/Component | "Discover Body" → `discovery_system` |
+| Chapter | Tier/Layer | Chapter 5 → `tier: 5` |
+| Character | Interface | "Detective Smith" → `interfaces: ["Smith"]` |
+| Subplot | Framework | "Romance subplot" → `framework_id: "romance"` |
+| Causal Link | Dependency | CAUSES → `dependency` edge |
+
+### Using Reflow Tools on Narratives
+
+```bash
+# Analyze narrative for integration gaps (plot holes)
+python3 reflow/tools/analyze_integration_gaps.py output/mystery_graph.json
+
+# Link multiple storylines
+python3 reflow/tools/link_architectures.py story1.json story2.json -o combined.json
+
+# Detect missing scenes using matrix analysis
+python3 reflow/tools/matrix_gap_detection.py beginning.json ending.json
+```
+
+### Round-Trip Editing
+
+```python
+from narrative import export_narrative_to_reflow, import_narrative_from_reflow
+
+# Export → Edit with reflow tools → Import back
+export_narrative_to_reflow(dag, 'temp.json')
+# ... run reflow analysis/modification tools ...
+modified_dag = import_narrative_from_reflow('temp.json')
+```
+
+---
+
+## Functional Analysis: Systems Engineering Approach
+
+Inspired by reflow's functional analysis workflows (FA-01 through FA-07), the narrative module supports a full systems engineering approach to plot design.
+
+### The Systems Engineering Analogy
+
+| Systems Engineering | Narrative Writing |
+|--------------------|-------------------|
+| Functional Requirement | "The story must make readers care about the hero" |
+| Atomic Function | "Reveal hero's vulnerability in scene 3" |
+| Service/Component | Chapter (allocation unit) |
+| Workflow | Character arc |
+| Domain | Subplot |
+
+### Requirements-Driven Plot Development
+
+```python
+from narrative import NarrativeFunctionalAnalyzer, NarrativeFunctionType
+
+analyzer = NarrativeFunctionalAnalyzer()
+
+# Step 1: Extract requirements from genre
+analyzer.extract_requirements_from_genre('mystery')
+
+# Step 2: Add premise-specific requirements
+analyzer.add_requirement(
+    description="Reader must be able to solve mystery before detective",
+    function_type=NarrativeFunctionType.PLANT_CLUE,
+    priority=1,
+    success_criteria=["At least 5 fair clues planted", "No essential info withheld"]
+)
+
+# Step 3: Decompose requirements into atomic functions
+for req_id in analyzer.requirements:
+    analyzer.decompose_requirement(req_id)
+
+# Step 4: Create chapters and allocate functions
+for i in range(1, 25):
+    analyzer.add_chapter(i)
+analyzer.auto_allocate()
+
+# Step 5: Validate coverage
+coverage = analyzer.validate_coverage()
+print(f"Coverage: {coverage['coverage_percentage']:.1f}%")
+print(f"Uncovered requirements: {len(coverage['uncovered'])}")
+```
+
+### Atomic Functions
+
+Following reflow's principle: "Smallest reusable unit of functionality that performs ONE specific task."
+
+```python
+# Each function has inputs, outputs, and satisfies requirements
+analyzer.add_function(
+    name="Reveal Victim's Secret",
+    description="Detective discovers victim was blackmailing someone",
+    function_type=NarrativeFunctionType.PLANT_CLUE,
+    inputs=["victim_identity", "detective_investigating"],
+    outputs=["blackmail_motive_established", "suspect_pool_expanded"],
+    characters=["Detective", "Witness"],
+    satisfies=["NR-003"]  # Links to requirement
+)
+```
+
+### Chapter Allocation Strategies
+
+Like reflow's service organization strategies:
+
+```python
+from narrative import AllocationStrategy
+
+# Chronological: Events in time order
+analyzer.auto_allocate(AllocationStrategy.CHRONOLOGICAL)
+
+# POV-based: Group by point-of-view character
+analyzer.auto_allocate(AllocationStrategy.POV_BASED)
+
+# Subplot-based: Group by storyline
+analyzer.auto_allocate(AllocationStrategy.SUBPLOT_BASED)
+
+# Emotional arc: Group by emotional beats
+analyzer.auto_allocate(AllocationStrategy.EMOTIONAL_ARC)
+```
+
+### Quick Start: From Premise to Plot
+
+```python
+from narrative import create_narrative_from_premise
+
+# One-liner to generate a plot structure
+analyzer, dag = create_narrative_from_premise(
+    premise="A detective discovers her partner is the killer",
+    genre="mystery",
+    num_chapters=24
+)
+
+# Check what was generated
+print(f"Requirements: {len(analyzer.requirements)}")
+print(f"Functions: {len(analyzer.functions)}")
+print(f"Chapters: {len(analyzer.chapters)}")
+
+# Validate and export
+print(analyzer.validate_coverage())
+analyzer.save('my_mystery_analysis.json')
+```
+
+### Flow Analysis
+
+Track how functions connect to form narrative flows:
+
+```python
+# Create a character arc flow
+arc = analyzer.create_character_arc_flow("Detective Smith")
+print(f"Arc contains {len(arc.functions)} functions")
+print(f"Entry: {arc.entry_point}, Exit: {arc.exit_points}")
+
+# Create a mystery revelation flow
+analyzer.add_flow(
+    name="Mystery Unraveling",
+    flow_type="process",
+    functions=["F-012", "F-015", "F-018", "F-023"],
+    decision_points=[
+        {"at": "F-015", "condition": "clue_found", "branches": ["F-016", "F-017"]}
+    ]
+)
+```
+
+---
+
 ## Implementation Roadmap
 
 ### Phase 1: Data Model

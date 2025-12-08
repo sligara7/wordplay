@@ -143,6 +143,8 @@ print(diagnosis.summary())
 - Edge types (Causes, Enables, Foreshadows, Reveals, etc.)
 - Structural diagnostics (dangling threads, pacing issues, deus ex machina detection)
 - Cross-domain signature extraction for Structural Rorschach integration
+- **Reflow integration**: Export to `system_of_systems_graph.json` for analysis with reflow tools
+- **Functional analysis**: Systems engineering approach with requirements, atomic functions, and chapter allocation
 
 **Docs:** [DAG_BOOK_PLOTS.md](narrative/DAG_BOOK_PLOTS.md)
 
