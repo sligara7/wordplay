@@ -1,0 +1,127 @@
+{
+  "workflow_id": "NA-04",
+  "name": "Gap Detection and Closure",
+  "description": "Find structural gaps, plot holes, and missing connections, then close them",
+  "version": "1.0",
+  "prerequisites": ["NA-03-PlotStructure"],
+  "inputs": {
+    "detailed_dag": {
+      "type": "file",
+      "path": "output/{story_id}/detailed_dag.json"
+    },
+    "story_requirements": {
+      "type": "file",
+      "path": "output/{story_id}/requirements.json"
+    },
+    "character_profiles": {
+      "type": "file",
+      "path": "output/{story_id}/characters.json"
+    },
+    "scene_list": {
+      "type": "file",
+      "path": "output/{story_id}/scenes.json"
+    }
+  },
+  "outputs": {
+    "gap_report": {
+      "type": "file",
+      "path": "output/{story_id}/gap_report.json",
+      "description": "All detected gaps with severity"
+    },
+    "closure_suggestions": {
+      "type": "file",
+      "path": "output/{story_id}/closure_suggestions.json",
+      "description": "Suggested scenes/connections to close gaps"
+    },
+    "updated_dag": {
+      "type": "file",
+      "path": "output/{story_id}/dag_gaps_closed.json",
+      "description": "DAG with gaps addressed"
+    }
+  },
+  "steps": [
+    {
+      "step_id": "NA-04-01",
+      "name": "Run Gap Detection",
+      "description": "Use NarrativeGapDetector to find all structural gaps",
+      "tool": "narrative.NarrativeGapDetector.detect_all_gaps",
+      "inputs": ["detailed_dag"],
+      "outputs": ["detected_gaps"]
+    },
+    {
+      "step_id": "NA-04-02",
+      "name": "Categorize and Prioritize Gaps",
+      "description": "Organize gaps by type and severity",
+      "llm_prompt": "Given these detected gaps:\n{detected_gaps}\n\nCategorize and prioritize them:\n\n**CRITICAL (Must Fix)**\n- Plot holes that break story logic\n- Missing character introductions\n- Unresolved major conflicts\n- Setup without payoff for key mysteries\n\n**IMPORTANT (Should Fix)**\n- Pacing issues (sagging middle)\n- Character disappearances\n- Weak causal connections\n- Stakes not escalating properly\n\n**MINOR (Nice to Fix)**\n- Small continuity gaps\n- Missing transition scenes\n- Underdeveloped minor characters\n\nFor each gap, assess:\n1. Impact on reader experience (1-10)\n2. Difficulty to fix (easy/medium/hard)\n3. Related gaps (fixing one might fix others)\n\nOutput prioritized gap list.",
+      "outputs": ["prioritized_gaps"]
+    },
+    {
+      "step_id": "NA-04-03",
+      "name": "Check Requirements Coverage",
+      "description": "Verify all requirements are satisfied",
+      "tool": "narrative.NarrativeFunctionalAnalyzer.validate_coverage",
+      "llm_prompt": "Compare the current DAG against requirements:\n\nRequirements:\n{story_requirements}\n\nCurrent DAG:\n{detailed_dag}\n\nFor each requirement:\n1. Is it fully satisfied? Partially? Not at all?\n2. Which scenes address it?\n3. If unsatisfied, what scenes would satisfy it?\n\nFlag any requirements with no coverage as CRITICAL gaps.",
+      "outputs": ["coverage_report", "uncovered_requirements"]
+    },
+    {
+      "step_id": "NA-04-04",
+      "name": "Generate Closure Suggestions",
+      "description": "Create specific suggestions to close each gap",
+      "tool": "narrative.suggest_gap_closure",
+      "llm_prompt": "For each gap in priority order:\n{prioritized_gaps}\n\nGenerate specific closure suggestions:\n\n1. **New Scene** - Describe a scene that would close the gap\n   - What happens?\n   - Who is involved?\n   - Where does it fit in the chapter structure?\n   - What edges would it add to the DAG?\n\n2. **Modified Scene** - Could an existing scene be expanded?\n   - Which scene?\n   - What would be added?\n\n3. **New Edge** - Could a connection close the gap?\n   - What type of edge?\n   - Between which nodes?\n\n4. **Restructure** - Should scenes be reordered?\n   - What would change?\n   - Why would this help?\n\nFor each suggestion, note:\n- Estimated impact on story\n- Side effects (what else changes)\n- Dependencies (other gaps this might create/close)",
+      "outputs": ["closure_suggestions"]
+    },
+    {
+      "step_id": "NA-04-05",
+      "name": "User Review",
+      "description": "Present suggestions for user approval",
+      "type": "user_interaction",
+      "prompt": "Here are the suggested gap closures:\n\n{closure_suggestions}\n\nFor each suggestion:\n- ACCEPT: Apply this change\n- MODIFY: Apply with changes (describe)\n- REJECT: Skip this suggestion\n- DEFER: Save for later consideration",
+      "outputs": ["user_decisions"]
+    },
+    {
+      "step_id": "NA-04-06",
+      "name": "Apply Accepted Closures",
+      "description": "Update the DAG with accepted changes",
+      "tool": "narrative.NarrativeDAG",
+      "process": [
+        "For each ACCEPT: Add new nodes/edges",
+        "For each MODIFY: Add modified version",
+        "Update chapter allocations",
+        "Recalculate metrics"
+      ],
+      "outputs": ["updated_dag"]
+    },
+    {
+      "step_id": "NA-04-07",
+      "name": "Verify Closures",
+      "description": "Re-run gap detection to verify fixes",
+      "tool": "narrative.NarrativeGapDetector.detect_all_gaps",
+      "validation": [
+        "Critical gap count decreased",
+        "No new critical gaps introduced",
+        "Requirements coverage improved"
+      ],
+      "on_failure": {
+        "action": "return_to_step",
+        "target": "NA-04-04",
+        "message": "Some closures created new issues. Regenerating suggestions."
+      },
+      "outputs": ["verification_report", "updated_dag"]
+    }
+  ],
+  "next_workflow": "NA-05-SubplotWeaving",
+  "iteration_triggers": [
+    {
+      "condition": "critical_gaps_remain",
+      "action": "return_to_step",
+      "target": "NA-04-04"
+    },
+    {
+      "condition": "user_requests_reanalysis",
+      "action": "return_to_step",
+      "target": "NA-04-01"
+    }
+  ],
+  "notes": "This workflow is inherently iterative. Run multiple passes until critical gaps are closed."
+}

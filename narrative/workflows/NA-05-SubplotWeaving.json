@@ -1,0 +1,109 @@
+{
+  "workflow_id": "NA-05",
+  "name": "Subplot Weaving",
+  "description": "Integrate subplots with main plot, ensure proper interleaving and thematic resonance",
+  "version": "1.0",
+  "prerequisites": ["NA-04-GapDetection"],
+  "inputs": {
+    "updated_dag": {
+      "type": "file",
+      "path": "output/{story_id}/dag_gaps_closed.json"
+    },
+    "character_profiles": {
+      "type": "file",
+      "path": "output/{story_id}/characters.json"
+    },
+    "story_requirements": {
+      "type": "file",
+      "path": "output/{story_id}/requirements.json"
+    }
+  },
+  "outputs": {
+    "subplot_definitions": {
+      "type": "file",
+      "path": "output/{story_id}/subplots.json"
+    },
+    "woven_dag": {
+      "type": "file",
+      "path": "output/{story_id}/dag_woven.json"
+    },
+    "weaving_report": {
+      "type": "file",
+      "path": "output/{story_id}/weaving_report.json"
+    }
+  },
+  "steps": [
+    {
+      "step_id": "NA-05-01",
+      "name": "Identify Subplots",
+      "description": "Extract distinct storylines from the DAG",
+      "llm_prompt": "Analyze this story DAG:\n{updated_dag}\n\nAnd these characters:\n{character_profiles}\n\nIdentify all subplots (storylines beyond the main plot):\n\n1. **Main Plot** - The primary story engine\n2. **Subplots** - Secondary storylines\n\nFor each subplot identified:\n- Subplot ID (SP-001, SP-002, etc.)\n- Name (e.g., 'Romance subplot', 'Mentor's secret')\n- Primary characters involved\n- What question/conflict drives it?\n- How does it relate to the main plot?\n- When does it begin and resolve?\n- Thematic purpose (what does it add to the story?)\n\nCommon subplot types:\n- Romance/Relationship\n- Character backstory\n- Parallel investigation\n- Mentor/student dynamic\n- Antagonist's plan\n- Comic relief thread\n- Thematic mirror (same theme, different characters)",
+      "outputs": ["subplot_definitions"]
+    },
+    {
+      "step_id": "NA-05-02",
+      "name": "Analyze Subplot-Main Plot Connections",
+      "description": "Map how subplots connect to and affect the main plot",
+      "tool": "narrative.NarrativeAnalyzer",
+      "llm_prompt": "For each subplot:\n{subplot_definitions}\n\nAgainst the main plot in:\n{updated_dag}\n\nAnalyze connections:\n\n1. **Entry Point** - Where does the subplot begin?\n2. **Touch Points** - Where do subplot and main plot intersect?\n3. **Influence** - How does the subplot affect main plot events?\n4. **Resolution Timing** - Does subplot resolve before/during/after main climax?\n5. **Character Overlap** - Which characters bridge subplot and main plot?\n\nFor each connection point:\n- Scene ID\n- Type: PARALLEL (both advance), COLLISION (subplot interrupts main), REVELATION (subplot info affects main)\n- Strength: Tight (essential), Moderate (enriching), Loose (could remove)",
+      "outputs": ["subplot_connections"]
+    },
+    {
+      "step_id": "NA-05-03",
+      "name": "Check Weaving Balance",
+      "description": "Ensure subplots are properly distributed",
+      "llm_prompt": "Given subplot connections:\n{subplot_connections}\n\nAnd chapter structure:\n{updated_dag}\n\nAnalyze weaving balance:\n\n1. **Distribution**\n   - Are subplots spread throughout or clustered?\n   - Any subplot disappear for too long?\n   - Does any subplot overwhelm main plot?\n\n2. **Pacing Impact**\n   - Do subplots slow down crucial main plot moments?\n   - Are subplots used for breathing room appropriately?\n   - Is there variety in chapter focus?\n\n3. **Resolution Timing**\n   - Do subplots resolve at appropriate times?\n   - Is there subplot resolution fatigue (too many endings)?\n   - Does main climax get proper focus?\n\n4. **Thematic Resonance**\n   - Do subplots reinforce main themes?\n   - Any thematic contradictions?\n\nFlag any balance issues.",
+      "outputs": ["balance_analysis"]
+    },
+    {
+      "step_id": "NA-05-04",
+      "name": "Generate Weaving Recommendations",
+      "description": "Suggest improvements to subplot integration",
+      "llm_prompt": "Based on balance analysis:\n{balance_analysis}\n\nGenerate specific recommendations:\n\n**ADD** - Scenes needed to strengthen subplot presence\n- What scene?\n- Where in chapter structure?\n- What does it accomplish?\n\n**MOVE** - Scenes that should relocate\n- Which scene?\n- From where to where?\n- Why?\n\n**MERGE** - Opportunities to combine subplot and main plot scenes\n- Which scenes?\n- How would they combine?\n- Efficiency gain?\n\n**CONNECT** - New edges to add between subplot and main plot\n- Edge type?\n- Between which nodes?\n- What relationship does it establish?\n\n**REMOVE** - Subplot content that dilutes the story\n- What content?\n- Why remove?\n- Impact assessment",
+      "outputs": ["weaving_recommendations"]
+    },
+    {
+      "step_id": "NA-05-05",
+      "name": "Apply Weaving Changes",
+      "description": "Update DAG with approved weaving changes",
+      "type": "user_interaction",
+      "prompt": "Review weaving recommendations:\n{weaving_recommendations}\n\nApprove changes to apply:",
+      "tool": "narrative.NarrativeMerger",
+      "process": [
+        "Add new subplot scenes",
+        "Move scenes as approved",
+        "Create new connecting edges",
+        "Update subplot assignments in nodes",
+        "Recalculate chapter allocations"
+      ],
+      "outputs": ["woven_dag"]
+    },
+    {
+      "step_id": "NA-05-06",
+      "name": "Validate Woven Structure",
+      "description": "Ensure weaving improved the story",
+      "tool": "narrative.NarrativeAnalyzer.diagnose",
+      "checks": [
+        "All subplots have entry and resolution",
+        "No subplot gap > 5 chapters",
+        "Main plot maintains prominence",
+        "Touch points distributed across acts",
+        "No new orphan nodes created"
+      ],
+      "outputs": ["weaving_report", "woven_dag"]
+    }
+  ],
+  "next_workflow": "NA-06-Revision",
+  "iteration_triggers": [
+    {
+      "condition": "subplot_balance_poor",
+      "action": "return_to_step",
+      "target": "NA-05-04"
+    },
+    {
+      "condition": "user_adds_subplot",
+      "action": "return_to_step",
+      "target": "NA-05-01"
+    }
+  ]
+}

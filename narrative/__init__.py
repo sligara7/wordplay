@@ -38,6 +38,13 @@ from .functional_analysis import (
     NarrativeFunctionalAnalyzer,
     create_narrative_from_premise,
 )
+from .workflow_runner import (
+    WorkflowRunner,
+    WorkflowState,
+    StepStatus,
+    StepResult,
+    create_story_project,
+)
 
 __all__ = [
     # Core data structures
@@ -80,4 +87,10 @@ __all__ = [
     "FunctionalFlow",
     "NarrativeFunctionalAnalyzer",
     "create_narrative_from_premise",
+    # Workflow Runner
+    "WorkflowRunner",
+    "WorkflowState",
+    "StepStatus",
+    "StepResult",
+    "create_story_project",
 ]

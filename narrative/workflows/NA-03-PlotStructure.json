@@ -1,0 +1,121 @@
+{
+  "workflow_id": "NA-03",
+  "name": "Plot Structure",
+  "description": "Build out the detailed plot DAG with scenes, chapters, and causality",
+  "version": "1.0",
+  "prerequisites": ["NA-01-StoryInception", "NA-02-CharacterDevelopment"],
+  "inputs": {
+    "dag_with_arcs": {
+      "type": "file",
+      "path": "output/{story_id}/dag_with_arcs.json"
+    },
+    "story_requirements": {
+      "type": "file",
+      "path": "output/{story_id}/requirements.json"
+    },
+    "character_profiles": {
+      "type": "file",
+      "path": "output/{story_id}/characters.json"
+    },
+    "genre": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "detailed_dag": {
+      "type": "file",
+      "path": "output/{story_id}/detailed_dag.json",
+      "description": "Complete plot DAG with all scenes"
+    },
+    "chapter_outline": {
+      "type": "file",
+      "path": "output/{story_id}/chapter_outline.json",
+      "description": "Chapter-by-chapter breakdown"
+    },
+    "scene_list": {
+      "type": "file",
+      "path": "output/{story_id}/scenes.json",
+      "description": "All scenes with details"
+    }
+  },
+  "steps": [
+    {
+      "step_id": "NA-03-01",
+      "name": "Identify Act Structure",
+      "description": "Determine the act breakdown based on genre and length",
+      "llm_prompt": "Given this story DAG:\n{dag_with_arcs}\n\nAnd genre: {genre}\n\nDetermine the act structure:\n\n1. How many acts? (3-act, 4-act, 5-act, or other)\n2. What percentage of the story does each act occupy?\n3. What is the key turning point at each act boundary?\n4. Which existing nodes mark act boundaries?\n\nFor each act, identify:\n- Purpose (setup, rising action, climax, etc.)\n- Emotional tone\n- Pacing (fast/slow)\n- Key events that must occur\n\nOutput as JSON with act definitions.",
+      "outputs": ["act_structure"]
+    },
+    {
+      "step_id": "NA-03-02",
+      "name": "Expand to Scenes",
+      "description": "Break down plot nodes into specific scenes",
+      "llm_prompt": "For each major node in the DAG:\n{dag_with_arcs}\n\nExpand into specific scenes. Each scene needs:\n\n1. **Scene ID** (S-001, S-002, etc.)\n2. **Title** (action phrase: \"Detective discovers the body\")\n3. **Purpose** - What story function does this serve?\n4. **POV Character** - Whose perspective?\n5. **Characters Present** - Who is in the scene?\n6. **Setting** - Where and when?\n7. **Conflict** - What tension drives the scene?\n8. **Outcome** - What changes by scene end?\n9. **Hooks**\n   - What question brings reader into scene?\n   - What question makes them turn the page?\n10. **Estimated Length** - Short (1-2 pages), Medium (3-5), Long (6+)\n\nAim for 40-80 scenes for a novel.\nEnsure scenes flow causally (each scene's outcome enables the next).",
+      "outputs": ["scene_list"]
+    },
+    {
+      "step_id": "NA-03-03",
+      "name": "Build Causal Chains",
+      "description": "Establish cause-and-effect between scenes",
+      "tool": "narrative.NarrativeDAG",
+      "llm_prompt": "Given these scenes:\n{scene_list}\n\nBuild the causal chain by determining for each scene:\n1. What scenes MUST happen before this one? (REQUIRES)\n2. What does this scene directly cause? (CAUSES)\n3. What does this scene make possible? (ENABLES)\n4. What earlier scenes does this scene pay off? (RESOLVES)\n5. What does this scene hint at? (FORESHADOWS)\n\nCreate edge list with types.\nIdentify any scenes that are 'orphaned' (no causal connection).\nFlag any scenes that are required but have no setup.",
+      "outputs": ["causal_edges", "orphan_warnings"]
+    },
+    {
+      "step_id": "NA-03-04",
+      "name": "Allocate to Chapters",
+      "description": "Group scenes into chapters with pacing consideration",
+      "tool": "narrative.NarrativeFunctionalAnalyzer.auto_allocate",
+      "llm_prompt": "Given these scenes with causal relationships:\n{scene_list}\n{causal_edges}\n\nAnd this act structure:\n{act_structure}\n\nGroup scenes into chapters following these principles:\n\n1. **Chapter Length**: 3-6 scenes typically, 2000-5000 words\n2. **Chapter Arc**: Each chapter should have mini arc (hook → conflict → outcome)\n3. **Cliffhangers**: End chapters on tension/question when possible\n4. **POV Consistency**: Keep POV consistent within chapter (usually)\n5. **Pacing**:\n   - Action chapters: shorter, punchier\n   - Emotional chapters: can be longer, more internal\n   - Alternate tension levels\n\nFor each chapter provide:\n- Chapter number\n- Title (evocative phrase)\n- Scenes included (in order)\n- POV character\n- Chapter purpose\n- Ending hook\n\nTarget: 20-30 chapters for a novel.",
+      "outputs": ["chapter_outline"]
+    },
+    {
+      "step_id": "NA-03-05",
+      "name": "Construct Detailed DAG",
+      "description": "Build the complete plot DAG with all scenes and edges",
+      "tool": "narrative.ReflowExporter",
+      "process": [
+        "Create PlotNode for each scene",
+        "Add all causal edges",
+        "Set chapter allocations",
+        "Assign characters and subplots",
+        "Calculate stakes levels",
+        "Export to system_of_systems_graph format"
+      ],
+      "outputs": ["detailed_dag"]
+    },
+    {
+      "step_id": "NA-03-06",
+      "name": "Validate Plot Structure",
+      "description": "Run structural diagnostics on the complete DAG",
+      "tool": "narrative.NarrativeAnalyzer.diagnose",
+      "checks": [
+        "No orphan scenes (all causally connected)",
+        "No circular dependencies",
+        "Stakes escalate toward climax",
+        "All setups have payoffs",
+        "All requirements covered by scenes",
+        "Pacing balanced across acts"
+      ],
+      "outputs": ["validation_report", "detailed_dag"]
+    }
+  ],
+  "next_workflow": "NA-04-GapDetection",
+  "iteration_triggers": [
+    {
+      "condition": "orphan_scenes_found",
+      "action": "return_to_step",
+      "target": "NA-03-03"
+    },
+    {
+      "condition": "pacing_issues",
+      "action": "return_to_step",
+      "target": "NA-03-04"
+    },
+    {
+      "condition": "missing_scenes_for_requirements",
+      "action": "return_to_step",
+      "target": "NA-03-02"
+    }
+  ]
+}
