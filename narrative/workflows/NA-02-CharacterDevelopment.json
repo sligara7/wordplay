@@ -1,0 +1,101 @@
+{
+  "workflow_id": "NA-02",
+  "name": "Character Development",
+  "description": "Flesh out characters with detailed profiles, arcs, and relationships",
+  "version": "1.0",
+  "prerequisites": ["NA-01-StoryInception"],
+  "inputs": {
+    "character_seeds": {
+      "type": "file",
+      "path": "output/{story_id}/character_seeds.json",
+      "description": "Initial character concepts from NA-01"
+    },
+    "story_requirements": {
+      "type": "file",
+      "path": "output/{story_id}/requirements.json"
+    },
+    "initial_dag": {
+      "type": "file",
+      "path": "output/{story_id}/initial_dag.json"
+    }
+  },
+  "outputs": {
+    "character_profiles": {
+      "type": "file",
+      "path": "output/{story_id}/characters.json",
+      "description": "Detailed character profiles"
+    },
+    "relationship_map": {
+      "type": "file",
+      "path": "output/{story_id}/relationships.json",
+      "description": "Character relationship graph"
+    },
+    "character_arcs": {
+      "type": "file",
+      "path": "output/{story_id}/arcs.json",
+      "description": "Planned character arcs with beats"
+    }
+  },
+  "steps": [
+    {
+      "step_id": "NA-02-01",
+      "name": "Expand Character Profiles",
+      "description": "Create detailed profiles for each character seed",
+      "llm_prompt": "For each character seed, create a detailed profile:\n\nCharacter Seeds:\n{character_seeds}\n\nFor each character, develop:\n\n1. **Identity**\n   - Full name (or working name)\n   - Age, appearance, distinguishing features\n   - Occupation/role\n   - Voice/speech patterns\n\n2. **Psychology**\n   - Core motivation (what they want)\n   - Deepest fear\n   - Fatal flaw\n   - Secret (something they hide)\n   - Lie they believe about themselves/world\n\n3. **Background**\n   - Key backstory events (2-3 formative moments)\n   - Skills/abilities relevant to plot\n   - Current life situation at story start\n\n4. **Story Role**\n   - Function in the narrative\n   - Which requirements (NR-xxx) they help fulfill\n   - Key scenes they must appear in\n\nOutput as structured JSON.",
+      "outputs": ["expanded_profiles"]
+    },
+    {
+      "step_id": "NA-02-02",
+      "name": "Analyze Character Relationships",
+      "description": "Use CharacterGelAnalyzer to determine relationship dynamics",
+      "tool": "narrative.CharacterGelAnalyzer",
+      "llm_prompt": "Given these character profiles:\n{expanded_profiles}\n\nFor each pair of characters who will interact, determine:\n1. Relationship type (ally, antagonist, mentor, rival, romantic, etc.)\n2. Power dynamic\n3. Source of conflict/tension between them\n4. What each wants from the other\n5. How the relationship changes over the story\n\nCreate a relationship map showing all connections.",
+      "outputs": ["relationship_map"]
+    },
+    {
+      "step_id": "NA-02-03",
+      "name": "Design Character Arcs",
+      "description": "Plan the transformation journey for each major character",
+      "llm_prompt": "For each major character, design their arc:\n\nProfiles:\n{expanded_profiles}\n\nRelationships:\n{relationship_map}\n\nFor each character with a significant arc:\n\n1. **Starting State** - Who are they at the beginning?\n2. **Catalyst** - What event forces them to change?\n3. **Resistance** - How do they resist change initially?\n4. **Midpoint Shift** - What revelation changes their approach?\n5. **Dark Moment** - What is their lowest point?\n6. **Transformation** - What do they finally realize/accept?\n7. **Ending State** - Who have they become?\n\nMap each beat to approximate chapter positions.\nNote which requirements each arc beat satisfies.",
+      "outputs": ["character_arcs"]
+    },
+    {
+      "step_id": "NA-02-04",
+      "name": "Integrate Arcs into DAG",
+      "description": "Add character arc nodes to the plot DAG",
+      "tool": "narrative.NarrativeDAG",
+      "llm_prompt": "Given the current plot DAG:\n{initial_dag}\n\nAnd these character arcs:\n{character_arcs}\n\nIntegrate the character arc beats into the DAG by:\n1. Identifying which existing nodes serve arc purposes\n2. Adding new nodes for arc beats not covered\n3. Creating edges between arc beats (ENABLES, CAUSES)\n4. Ensuring character arcs interweave with plot events\n\nOutput the updated DAG with character arc nodes included.",
+      "outputs": ["dag_with_arcs"]
+    },
+    {
+      "step_id": "NA-02-05",
+      "name": "Validate Character Integration",
+      "description": "Check that characters are well-integrated into the story",
+      "validation": [
+        "Each main character has at least 5 scene appearances",
+        "Character arcs have clear beginning, middle, end",
+        "Relationships have at least one scene establishing them",
+        "No character disappears for more than 5 chapters",
+        "Protagonist has highest node count"
+      ],
+      "on_failure": {
+        "action": "generate_recommendations",
+        "llm_prompt": "The character integration failed these checks:\n{failed_validations}\n\nRecommend specific additions to fix each issue."
+      },
+      "outputs": ["validation_report", "recommendations"]
+    }
+  ],
+  "next_workflow": "NA-03-PlotStructure",
+  "iteration_triggers": [
+    {
+      "condition": "user_wants_more_characters",
+      "action": "return_to_step",
+      "target": "NA-02-01"
+    },
+    {
+      "condition": "relationship_conflict_detected",
+      "action": "return_to_step",
+      "target": "NA-02-02"
+    }
+  ]
+}

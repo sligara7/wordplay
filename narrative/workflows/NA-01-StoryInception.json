@@ -1,0 +1,122 @@
+{
+  "workflow_id": "NA-01",
+  "name": "Story Inception",
+  "description": "Transform a premise into an initial story structure with requirements and skeleton",
+  "version": "1.0",
+  "inputs": {
+    "premise": {
+      "type": "string",
+      "description": "The core story idea or logline",
+      "required": true,
+      "example": "A detective discovers her partner is the killer she's been hunting"
+    },
+    "genre": {
+      "type": "string",
+      "description": "Primary genre for structural guidance",
+      "required": true,
+      "enum": ["mystery", "thriller", "romance", "epic_fantasy", "literary_fiction", "horror", "sci_fi"]
+    },
+    "target_length": {
+      "type": "string",
+      "description": "Intended story length",
+      "required": false,
+      "default": "novel",
+      "enum": ["short_story", "novella", "novel", "series"]
+    },
+    "tone": {
+      "type": "string",
+      "description": "Emotional tone of the story",
+      "required": false,
+      "example": "dark and gritty with moments of dark humor"
+    }
+  },
+  "outputs": {
+    "story_requirements": {
+      "type": "file",
+      "path": "output/{story_id}/requirements.json",
+      "description": "Narrative requirements extracted from premise and genre"
+    },
+    "initial_dag": {
+      "type": "file",
+      "path": "output/{story_id}/initial_dag.json",
+      "description": "Initial skeleton DAG in system_of_systems_graph format"
+    },
+    "character_seeds": {
+      "type": "file",
+      "path": "output/{story_id}/character_seeds.json",
+      "description": "Initial character concepts implied by premise"
+    }
+  },
+  "steps": [
+    {
+      "step_id": "NA-01-01",
+      "name": "Parse Premise",
+      "description": "Extract key story elements from the premise",
+      "llm_prompt": "Analyze this story premise and extract:\n1. The protagonist and their role\n2. The central conflict\n3. The key relationship(s)\n4. The setting implications\n5. The implied stakes\n6. Potential themes\n\nPremise: {premise}\n\nRespond in JSON format with these fields.",
+      "outputs": ["protagonist_concept", "central_conflict", "key_relationships", "setting", "stakes", "themes"]
+    },
+    {
+      "step_id": "NA-01-02",
+      "name": "Extract Genre Requirements",
+      "description": "Get structural requirements from genre conventions",
+      "tool": "narrative.NarrativeFunctionalAnalyzer.extract_requirements_from_genre",
+      "inputs": ["genre"],
+      "outputs": ["genre_requirements"]
+    },
+    {
+      "step_id": "NA-01-03",
+      "name": "Synthesize Story Requirements",
+      "description": "Combine premise elements with genre requirements",
+      "llm_prompt": "Given these premise elements:\n{premise_elements}\n\nAnd these genre requirements for {genre}:\n{genre_requirements}\n\nCreate a comprehensive list of narrative requirements (NR-xxx format) that this story must fulfill. Include:\n- Character requirements (introductions, arcs, relationships)\n- Plot requirements (conflicts, revelations, resolution)\n- Thematic requirements\n- Pacing requirements based on {target_length}\n\nFor each requirement, specify:\n- ID (NR-001, NR-002, etc.)\n- Description\n- Priority (1=critical, 2=important, 3=nice-to-have)\n- Success criteria",
+      "outputs": ["story_requirements"]
+    },
+    {
+      "step_id": "NA-01-04",
+      "name": "Generate Character Seeds",
+      "description": "Create initial character concepts from premise",
+      "llm_prompt": "Based on this premise:\n{premise}\n\nAnd these story requirements:\n{story_requirements}\n\nGenerate character seeds for the main characters. For each character include:\n- Name placeholder (e.g., 'PROTAGONIST', 'ANTAGONIST', 'MENTOR')\n- Role in the story\n- Core motivation\n- Key flaw or internal conflict\n- Relationship to other characters\n- Potential arc (how they might change)\n\nAim for 3-6 characters depending on story complexity.",
+      "outputs": ["character_seeds"]
+    },
+    {
+      "step_id": "NA-01-05",
+      "name": "Create Initial DAG Skeleton",
+      "description": "Build the initial plot structure DAG",
+      "tool": "narrative.genre_templates.get_template",
+      "inputs": ["genre"],
+      "post_process": "template.create_skeleton(premise[:50], 'Author')",
+      "outputs": ["initial_dag"]
+    },
+    {
+      "step_id": "NA-01-06",
+      "name": "Customize Skeleton",
+      "description": "Adapt the genre skeleton to this specific premise",
+      "llm_prompt": "Given this initial plot skeleton:\n{initial_dag}\n\nAnd this premise:\n{premise}\n\nAnd these characters:\n{character_seeds}\n\nCustomize the skeleton by:\n1. Renaming generic nodes to premise-specific events\n2. Assigning characters to appropriate nodes\n3. Adding any missing nodes implied by the premise\n4. Adjusting stakes levels to match the story\n\nOutput the modified DAG structure.",
+      "outputs": ["customized_dag"]
+    },
+    {
+      "step_id": "NA-01-07",
+      "name": "Validate and Export",
+      "description": "Validate the initial structure and save outputs",
+      "tool": "narrative.ReflowExporter",
+      "validation": [
+        "All critical requirements have at least one allocated function",
+        "DAG is acyclic",
+        "All characters appear in at least one node"
+      ],
+      "outputs": ["story_requirements", "initial_dag", "character_seeds"]
+    }
+  ],
+  "next_workflow": "NA-02-CharacterDevelopment",
+  "iteration_triggers": [
+    {
+      "condition": "validation_failed",
+      "action": "return_to_step",
+      "target": "NA-01-03"
+    },
+    {
+      "condition": "user_requests_changes",
+      "action": "return_to_step",
+      "target": "NA-01-01"
+    }
+  ]
+}

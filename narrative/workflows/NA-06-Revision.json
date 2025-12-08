@@ -1,0 +1,139 @@
+{
+  "workflow_id": "NA-06",
+  "name": "Revision and Refinement",
+  "description": "Iterative improvement cycle for polishing the story structure",
+  "version": "1.0",
+  "prerequisites": ["NA-05-SubplotWeaving"],
+  "inputs": {
+    "woven_dag": {
+      "type": "file",
+      "path": "output/{story_id}/dag_woven.json"
+    },
+    "all_artifacts": {
+      "type": "directory",
+      "path": "output/{story_id}/"
+    }
+  },
+  "outputs": {
+    "final_dag": {
+      "type": "file",
+      "path": "output/{story_id}/final_dag.json"
+    },
+    "story_bible": {
+      "type": "file",
+      "path": "output/{story_id}/story_bible.json"
+    },
+    "writing_guide": {
+      "type": "file",
+      "path": "output/{story_id}/writing_guide.md"
+    }
+  },
+  "steps": [
+    {
+      "step_id": "NA-06-01",
+      "name": "Comprehensive Analysis",
+      "description": "Run all analysis tools on the current DAG",
+      "tools": [
+        "narrative.NarrativeAnalyzer.diagnose",
+        "narrative.NarrativeGapDetector.detect_all_gaps",
+        "narrative.NarrativeFunctionalAnalyzer.validate_coverage",
+        "narrative.analyze_narrative_with_reflow"
+      ],
+      "outputs": ["comprehensive_report"]
+    },
+    {
+      "step_id": "NA-06-02",
+      "name": "Structural Integrity Check",
+      "description": "Verify the story structure is sound",
+      "llm_prompt": "Review this story structure:\n{woven_dag}\n\nWith this analysis:\n{comprehensive_report}\n\nCheck for:\n\n1. **Causality** - Does every major event have adequate setup?\n2. **Stakes** - Do stakes escalate appropriately to climax?\n3. **Pacing** - Is there variety? Breathing room? No sagging?\n4. **Character Agency** - Do characters drive events or just react?\n5. **Satisfying Arcs** - Do character arcs complete meaningfully?\n6. **Thematic Unity** - Does everything serve the central themes?\n7. **Emotional Journey** - Does the reader experience intended emotions?\n8. **Surprise/Inevitability** - Are twists surprising yet inevitable in hindsight?\n\nRate each dimension 1-10 and explain.",
+      "outputs": ["integrity_scores"]
+    },
+    {
+      "step_id": "NA-06-03",
+      "name": "Identify Revision Priorities",
+      "description": "Determine what needs the most attention",
+      "llm_prompt": "Based on integrity scores:\n{integrity_scores}\n\nAnd remaining gaps:\n{comprehensive_report}\n\nPrioritize revision efforts:\n\n**MUST FIX** (score < 6)\n- What specific issues?\n- Recommended fixes?\n\n**SHOULD IMPROVE** (score 6-7)\n- What could be better?\n- Suggested enhancements?\n\n**POLISH** (score 8-9)\n- Minor refinements?\n- Nice-to-haves?\n\n**COMPLETE** (score 10)\n- What's working well?\n- Don't change these!\n\nCreate actionable revision checklist.",
+      "outputs": ["revision_priorities"]
+    },
+    {
+      "step_id": "NA-06-04",
+      "name": "Apply Revisions",
+      "description": "Make approved revisions to the DAG",
+      "type": "user_interaction",
+      "prompt": "Review revision priorities:\n{revision_priorities}\n\nSelect revisions to apply.\nFor each, you can:\n- APPLY as suggested\n- MODIFY and apply\n- SKIP for now",
+      "process": [
+        "Apply selected revisions",
+        "Update affected nodes/edges",
+        "Recalculate metrics"
+      ],
+      "outputs": ["revised_dag"]
+    },
+    {
+      "step_id": "NA-06-05",
+      "name": "Generate Story Bible",
+      "description": "Compile all story information into reference document",
+      "llm_prompt": "Compile a comprehensive Story Bible from:\n\nDAG: {revised_dag}\nCharacters: {character_profiles}\nSubplots: {subplot_definitions}\nRequirements: {story_requirements}\n\nStructure:\n\n## Story Bible: {story_title}\n\n### 1. Premise & Themes\n- Logline\n- Central themes\n- Tone and style\n\n### 2. World\n- Setting details\n- Rules/constraints\n- Important locations\n\n### 3. Characters\nFor each major character:\n- Full profile\n- Arc summary\n- Key relationships\n- Important scenes\n\n### 4. Plot Structure\n- Act breakdown\n- Major turning points\n- Climax and resolution\n\n### 5. Subplots\n- Each subplot summarized\n- Integration points\n\n### 6. Timeline\n- Story chronology\n- Key dates/durations\n\n### 7. Open Questions\n- Unresolved decisions\n- Areas needing further development",
+      "outputs": ["story_bible"]
+    },
+    {
+      "step_id": "NA-06-06",
+      "name": "Generate Writing Guide",
+      "description": "Create practical guide for drafting",
+      "llm_prompt": "Create a Writing Guide for drafting this story:\n\nDAG: {revised_dag}\nStory Bible: {story_bible}\n\n## Writing Guide\n\n### Chapter-by-Chapter Guide\nFor each chapter:\n- Chapter N: [Title]\n  - Scenes to write (in order)\n  - POV character\n  - Chapter goal\n  - Emotional beat\n  - Key moments to nail\n  - Setup/payoff notes\n  - Transition from previous / to next\n\n### Scene Cards\nFor each scene:\n- Scene ID and title\n- Purpose (why this scene exists)\n- Characters and their goals in scene\n- Conflict/tension\n- What must be conveyed\n- Sensory details to include\n- Dialogue notes\n- Action/pacing notes\n\n### Tracking Checklist\n- [ ] Setup items to plant\n- [ ] Payoffs to deliver\n- [ ] Character moments to hit\n- [ ] Theme reinforcements\n\n### Voice and Style Notes\n- POV approach\n- Tense\n- Sentence rhythm\n- Vocabulary level\n- Genre conventions to honor",
+      "outputs": ["writing_guide"]
+    },
+    {
+      "step_id": "NA-06-07",
+      "name": "Final Export",
+      "description": "Export all final artifacts",
+      "tool": "narrative.ReflowExporter",
+      "process": [
+        "Export final DAG to system_of_systems_graph format",
+        "Save story bible as JSON and Markdown",
+        "Save writing guide as Markdown",
+        "Create chapter outline document",
+        "Package all artifacts"
+      ],
+      "outputs": ["final_dag", "story_bible", "writing_guide"]
+    },
+    {
+      "step_id": "NA-06-08",
+      "name": "Completion Check",
+      "description": "Verify story is ready for drafting",
+      "validation": [
+        "All critical requirements satisfied",
+        "No critical gaps remaining",
+        "All integrity scores >= 7",
+        "Story bible complete",
+        "Writing guide generated"
+      ],
+      "on_success": {
+        "message": "Story structure complete! Ready for drafting.",
+        "next_action": "Begin writing using the Writing Guide"
+      },
+      "on_failure": {
+        "action": "return_to_step",
+        "target": "NA-06-03",
+        "message": "Some issues remain. Continuing revision cycle."
+      }
+    }
+  ],
+  "iteration_triggers": [
+    {
+      "condition": "user_wants_changes",
+      "action": "return_to_step",
+      "target": "NA-06-04"
+    },
+    {
+      "condition": "major_structural_change",
+      "action": "restart_workflow",
+      "target": "NA-03-PlotStructure"
+    },
+    {
+      "condition": "character_change",
+      "action": "restart_workflow",
+      "target": "NA-02-CharacterDevelopment"
+    }
+  ],
+  "notes": "This workflow can be run multiple times. Each pass should improve scores."
+}
